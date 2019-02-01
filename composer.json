@@ -1,0 +1,23 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bolt/four.git"
+        }
+    ],
+    "require": {
+        "bolt/bolt": "1.0.0-alpha1",
+        "symfony/flex": "^1.1"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require-dev": {
+        "symfony/dotenv": "^4.2",
+        "symfony/debug-bundle": "^4.2",
+        "doctrine/doctrine-fixtures-bundle": "^3.0",
+        "symfony/maker-bundle": "^1.11",
+        "symfony/stopwatch": "^4.2",
+        "symfony/web-profiler-bundle": "^4.2",
+        "symfony/web-server-bundle": "^4.2"
+    }
+}

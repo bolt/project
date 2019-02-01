@@ -1,0 +1,72 @@
+composer.phar
+
+### Built Assets and uploads ###
+/public/assets/
+/public/files/*
+!/public/files/hal.jpg
+!/public/files/kitten.jpg
+!/public/files/vlinders.jpg
+
+### NPM and frontend assets building cruft
+assets/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+### File-system cruft and temporary files
+__*
+._*
+.*.swp
+.swp
+*.lock
+!symfony.lock
+*lock.json
+.buildpath
+
+### Platfom-specific files
+.DS_Store
+thumbs.db
+Vagrantfile
+.vagrant*
+.idea
+.vscode/*
+appveyor.yml
+
+/var/cache/*
+!/var/cache/.gitkeep
+/var/log/*
+!/var/log/.gitkeep
+!/var/log/e2e-reports/performance/.gitkeep
+!/var/log/e2e-reports/report/.gitkeep
+!/var/log/behat-reports/.gitkeep
+/var/data/*
+!/var/data/.gitkeep
+/var/sessions/*
+!/var/sessions/.gitkeep
+
+###Local config
+/config/packages/local
+/config/routes/local
+
+###> symfony/framework-bundle ###
+/.env
+/public/bundles/
+/vendor/
+###< symfony/framework-bundle ###
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php_cs
+/.php_cs.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+###< phpunit/phpunit ###
