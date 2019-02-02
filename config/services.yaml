@@ -32,7 +32,7 @@ services:
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
     Bolt\Controller\:
-        resource: '../src/Controller'
+        resource: '../vendor/bolt/bolt/src/Controller'
         tags: ['controller.service_arguments']
 
     Bolt\EventListener\ContentFillListener:

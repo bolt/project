@@ -2,6 +2,6 @@
 # All routes, used by Bolt: Control Panel, Async and Thumbs, unless overridden
 # in `../routing.yml` or another location
 controllers:
-    resource: '../src/Controller/'
+    resource: '../vendor/bolt/bolt/src/Controller/'
     type: annotation
 
