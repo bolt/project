@@ -6,7 +6,7 @@
         }
     ],
     "require": {
-        "bolt/bolt": "1.0.0-alpha1",
+        "bolt/bolt": "dev-master",
         "symfony/flex": "^1.1"
     },
     "prefer-stable": true,
@@ -15,9 +15,23 @@
         "symfony/dotenv": "^4.2",
         "symfony/debug-bundle": "^4.2",
         "doctrine/doctrine-fixtures-bundle": "^3.0",
+        "php-http/httplug-pack": "^1.1",
+        "php-translation/loco-adapter": "^0.8.0",
         "symfony/maker-bundle": "^1.11",
         "symfony/stopwatch": "^4.2",
         "symfony/web-profiler-bundle": "^4.2",
         "symfony/web-server-bundle": "^4.2"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "security-checker security:check": "script"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
     }
 }
