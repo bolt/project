@@ -1,0 +1,41 @@
+# This file defines routes for the frontend and control panel of your Bolt
+# website. Check below for examples, or read the documentation at
+# https://docs.bolt.cm/configuration/routing
+
+# ------------------------------------------------------------------------------
+# Place your own routes here, that have a HIGHER priority than the default routes.
+
+
+
+# ------------------------------------------------------------------------------
+# These are the routes defining the default behaviour of Bolt's frontend.
+# Changing these might give unexpected results or even break your website. If
+# possible, only add NEW routes above or below these.
+frontend:
+  resource: '../vendor/bolt/bolt/src/Controller/Frontend/'
+  prefix: /
+
+# ------------------------------------------------------------------------------
+# Place your own routes here, that have a LOWER priority than the default routes.
+
+api_entrypoint:
+  path: /bolt/api # moved to admin area firewall
+  controller: api_platform.swagger.action.ui
+
+# ------------------------------------------------------------------------------
+# These are the routes defining the Bolt Control Panel ("backend"). It's common
+# to modify the `prefix` so the Control Panel can be accessed at a custom URL.
+control_panel:
+  resource: '../vendor/bolt/bolt/src/Controller/Backend/'
+  prefix: /bolt # @todo make admin area prefix configurable
+
+# ------------------------------------------------------------------------------
+# Examples:
+
+#contentlisting:
+#  path: /{contenttypeslug}
+#  defaults:
+#    _controller: Bolt\Controller\Frontend\Controller::contentListing
+#  requirements:
+#    contenttypeslug: '%bolt.requirement.pluralcontenttypes%'
+

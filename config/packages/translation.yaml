@@ -1,0 +1,17 @@
+framework:
+    default_locale: '%locale%'
+    translator:
+        fallbacks:
+            - 'en'
+
+# php_translation
+translation:
+    locales: ['en', 'nl', 'es', 'fr', 'de', 'pl', 'it', 'pt_BR']
+    edit_in_place:
+        enabled: false
+        config_name: app
+    configs:
+        app:
+            dirs: ["%kernel.project_dir%/vendor/bolt/bolt/templates", "%kernel.project_dir%/src"]
+            output_dir: "%kernel.project_dir%/vendor/bolt/bolt/translations"
+

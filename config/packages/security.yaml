@@ -1,0 +1,37 @@
+security:
+    encoders:
+        Bolt\Entity\User: bcrypt
+
+    providers:
+        database_users:
+            entity:
+                class: Bolt\Entity\User
+                property: username
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            pattern: ^/
+            anonymous: true
+
+            guard:
+                authenticators:
+                    - Bolt\Security\LoginFormAuthenticator
+
+            logout:
+                path: bolt_logout
+                target: homepage
+
+            remember_me:
+                secret: '%kernel.secret%'
+                lifetime: 2592000
+
+    access_control:
+        # this is a catch-all for the admin area
+        # additional security lives in the controllers
+        # @todo make admin area prefix configurable
+        # - { path: '^/bolt', roles: ROLE_ADMIN }
+        - { path: '^/(%app_locales%)/bolt', roles: ROLE_ADMIN }
