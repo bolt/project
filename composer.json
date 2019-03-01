@@ -1,4 +1,9 @@
 {
+    "name": "bolt/standard-project",
+    "license": "MIT",
+    "type": "project",
+    "description": "Bolt 4 skeleton / prototype",
+
     "repositories": [
         {
             "type": "vcs",
@@ -15,8 +20,6 @@
         "symfony/dotenv": "^4.2",
         "symfony/debug-bundle": "^4.2",
         "doctrine/doctrine-fixtures-bundle": "^3.0",
-        "php-http/httplug-pack": "^1.1",
-        "php-translation/loco-adapter": "^0.8.0",
         "symfony/maker-bundle": "^1.11",
         "symfony/stopwatch": "^4.2",
         "symfony/web-profiler-bundle": "^4.2",

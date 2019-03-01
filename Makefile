@@ -7,10 +7,9 @@ install:
 	composer install
 	cd vendor/bolt/bolt && npm install && npm run build
 	cp -rf vendor/bolt/bolt/public/assets public/
+	cp -rf vendor/bolt/bolt/translations translations/
 	#rm -rf vendor/bolt/bolt/node_modules vendor/bolt/bolt/public/assets
 	# @todo fix this properly, @see https://github.com/Sylius/Sylius/issues/7156
-	mkdir -p vendor/bolt/bolt/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity/MappedSuperclass
-	mkdir -p vendor/bolt/bolt/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity
 
 server:
 	bin/console server:start 127.0.0.1:8088 -q || true
