@@ -1,0 +1,69 @@
+version: '3.4'
+services:
+  php:
+    build:
+      context: docker/php
+      dockerfile: Dockerfile
+      cache_from:
+        - php:7.3-fpm
+    env_file:
+      - .env
+    depends_on:
+      - database
+      - blackfire
+    volumes:
+      - ./:/var/www/bolt
+    working_dir: /var/www/bolt
+
+  database:
+    image: mariadb:10
+    env_file:
+      - .env
+    ports:
+      - 3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_INITDB_SKIP_TZINFO: 0
+
+  web:
+    image: nginx:alpine
+    ports:
+      - 8088:80
+    depends_on:
+      - php
+    volumes:
+      - ./docker/nginx:/etc/nginx/conf.d
+      - ./:/var/www/bolt
+      - ./var/log:/var/log/nginx
+    entrypoint:
+      - sh
+      - /etc/nginx/conf.d/entrypoint.sh
+
+  node:
+    image: node:latest
+    volumes:
+      - ./:/home/node/app
+    working_dir: /home/node/app
+
+  padm:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8099:80
+    links:
+      - database:db
+
+  blackfire:
+    image: blackfire/blackfire
+    env_file:
+      - .env
+    ports:
+      - 8707 # for blackfire probe
+
+#  maildev:
+#    image: djfarrelly/maildev
+#    container_name: sf4_maildev
+#    ports:
+#      - 8089:80
