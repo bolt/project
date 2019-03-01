@@ -19,6 +19,7 @@ __*
 .*.swp
 .swp
 *.lock
+!composer.lock
 !symfony.lock
 *lock.json
 .buildpath
