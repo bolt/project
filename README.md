@@ -37,5 +37,3 @@ make docker-install
 ```
 
 … And you're good to go! 
-
-Note: This 
