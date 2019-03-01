@@ -1,40 +1,39 @@
 {
     "name": "bolt/standard-project",
-    "license": "MIT",
     "type": "project",
-    "description": "Bolt 4 skeleton / prototype",
-
+    "description": "Bolt 4 standard project skeleton",
+    "license": "MIT",
+    "require": {
+        "bolt/bolt": "dev-master",
+        "symfony/flex": "^1.1"
+    },
+    "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.0",
+        "symfony/debug-bundle": "^4.2",
+        "symfony/dotenv": "^4.2",
+        "symfony/maker-bundle": "^1.11",
+        "symfony/stopwatch": "^4.2",
+        "symfony/web-profiler-bundle": "^4.2",
+        "symfony/web-server-bundle": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
     "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/bolt/four.git"
         }
     ],
-    "require": {
-        "bolt/bolt": "dev-master",
-        "symfony/flex": "^1.1"
-    },
-    "prefer-stable": true,
     "minimum-stability": "dev",
-    "require-dev": {
-        "symfony/dotenv": "^4.2",
-        "symfony/debug-bundle": "^4.2",
-        "doctrine/doctrine-fixtures-bundle": "^3.0",
-        "symfony/maker-bundle": "^1.11",
-        "symfony/stopwatch": "^4.2",
-        "symfony/web-profiler-bundle": "^4.2",
-        "symfony/web-server-bundle": "^4.2"
-    },
+    "prefer-stable": true,
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "security-checker security:check": "script"
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
         }
     }
 }
