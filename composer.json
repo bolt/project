@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "bolt/bolt": "dev-master",
-        "symfony/flex": "^1.1"
+        "symfony/flex": "^1.2"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.0",
@@ -34,6 +34,15 @@
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "security-checker security:check": "script"
+        }
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": true,
+            "require": "4.2.*"
         }
     }
 }
