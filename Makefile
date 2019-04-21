@@ -11,7 +11,7 @@ install:
 	cp -rf vendor/bolt/bolt/translations translations/
 
 server:
-	bin/console server:start 127.0.0.1:8088 -q || true
+	bin/console server:start 127.0.0.1:8088 || true
 
 server-stop:
 	bin/console server:stop

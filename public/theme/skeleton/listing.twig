@@ -9,7 +9,7 @@
            'all records tagged with kittens'. #}
 
         {# If used for listing a taxonomy, we add a heading.: #}
-        {% if taxonomytype is defined %}
+        {% if taxonomy|default %}
             <h1>
                 {{ __('general.phrase.overview-for') }}
                 {% if taxonomy.options[slug] is defined %}
@@ -60,6 +60,6 @@
         {% endfor %}
 
         {# If there are more records than will fit on one page, the pager is shown. #}
-        {{ pager(template = 'partials/_sub_pager.twig') }}
+        {{ pager(records, template = 'partials/_sub_pager.twig') }}
 
 {% endblock main %}
