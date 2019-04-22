@@ -198,12 +198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/four.git",
-                "reference": "75bd2ba528148d859a73dd566a46b3566e95d8ce"
+                "reference": "64174e91d9dcf085032211b7708e1b7972be2ca6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/four/zipball/75bd2ba528148d859a73dd566a46b3566e95d8ce",
-                "reference": "75bd2ba528148d859a73dd566a46b3566e95d8ce",
+                "url": "https://api.github.com/repos/bolt/four/zipball/64174e91d9dcf085032211b7708e1b7972be2ca6",
+                "reference": "64174e91d9dcf085032211b7708e1b7972be2ca6",
                 "shasum": ""
             },
             "require": {
@@ -337,10 +337,10 @@
             ],
             "description": "Bolt 4 skeleton / prototype",
             "support": {
-                "source": "https://github.com/bolt/four/tree/master",
+                "source": "https://github.com/bolt/four/tree/4.0.0-alpha3",
                 "issues": "https://github.com/bolt/four/issues"
             },
-            "time": "2019-04-19T13:29:36+00:00"
+            "time": "2019-04-22T07:16:09+00:00"
         },
         {
             "name": "bolt/common",
@@ -4045,16 +4045,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.2.0",
+            "version": "v6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707"
+                "reference": "5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707",
-                "reference": "6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a",
+                "reference": "5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a",
                 "shasum": ""
             },
             "require": {
@@ -4103,7 +4103,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2019-03-10T07:52:41+00:00"
+            "time": "2019-04-21T09:21:45+00:00"
         },
         {
             "name": "symfony/asset",
