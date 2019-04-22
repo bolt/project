@@ -198,12 +198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/four.git",
-                "reference": "64174e91d9dcf085032211b7708e1b7972be2ca6"
+                "reference": "e69770dd79e9b8173a28499a41e995ec99b4a88b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/four/zipball/64174e91d9dcf085032211b7708e1b7972be2ca6",
-                "reference": "64174e91d9dcf085032211b7708e1b7972be2ca6",
+                "url": "https://api.github.com/repos/bolt/four/zipball/e69770dd79e9b8173a28499a41e995ec99b4a88b",
+                "reference": "e69770dd79e9b8173a28499a41e995ec99b4a88b",
                 "shasum": ""
             },
             "require": {
@@ -340,7 +340,7 @@
                 "source": "https://github.com/bolt/four/tree/4.0.0-alpha3",
                 "issues": "https://github.com/bolt/four/issues"
             },
-            "time": "2019-04-22T07:16:09+00:00"
+            "time": "2019-04-22T12:01:38+00:00"
         },
         {
             "name": "bolt/common",
