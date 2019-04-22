@@ -17,23 +17,28 @@ DATABASE_URL=sqlite:///%kernel.project_dir%/var/data/bolt.sqlite
 DATABASE_URL=mysql://root:"root%1"@127.0.0.1:3306/four
 ```
 
-Then, build and copy assets, create the database and add fixtures: 
+Then, build and copy assets, create the database and add fixtures:
 
 ```bash
 make install
 make db-reset
 ```
 
-Run Bolt using the built-in webserver, or Docker: 
+Run Bolt using the built-in webserver, Docker or your own preferred webserver:
 
 ```bash
 bin/console server:start
 ```
 
-or 
+or…
 
 ```bash
 make docker-install
 ```
 
-… And you're good to go! 
+Finally, open the new installation in a browser. If you've used one of the
+commands above, you'll find the frontpage at http://127.0.0.1:8000/
+The Bolt admin panel can be found at http://127.0.0.1:8000/bolt
+
+The installation process created the first user. The username is `admin` and
+the default password is `admin%1`
