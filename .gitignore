@@ -1,11 +1,8 @@
 composer.phar
 
 ### Built Assets and uploads ###
-/public/assets/
+# /public/assets/ - We _do_ want the built assets
 /public/files/*
-!/public/files/hal.jpg
-!/public/files/kitten.jpg
-!/public/files/vlinders.jpg
 
 ### NPM and frontend assets building cruft
 assets/vendor/

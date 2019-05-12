@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="de" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="TG1D5NO" resname="post.blank_summary">
+        <source>post.blank_summary</source>
+        <target>Gib deinem Beitrag eine Zusammenfassung!</target>
+        <note priority="1">obsolete</note>
+      </trans-unit>
+      <trans-unit id="BZOzjk." resname="post.blank_content">
+        <source>post.blank_content</source>
+        <target>Dein Beitrag sollte einen Inhalt haben!</target>
+        <note priority="1">obsolete</note>
+      </trans-unit>
+      <trans-unit id="S6M.YWY" resname="post.too_short_content">
+        <source>post.too_short_content</source>
+        <target>Der Beitragsinhalt ist zu kurz (mindestens {{ limit }} Zeichen)</target>
+        <note priority="1">obsolete</note>
+      </trans-unit>
+      <trans-unit id="ARUoKOV" resname="comment.blank">
+        <source>comment.blank</source>
+        <target>Bitte gib einen Kommentar ein!</target>
+        <note priority="1">obsolete</note>
+      </trans-unit>
+      <trans-unit id="J.L_ppQ" resname="comment.too_short">
+        <source>comment.too_short</source>
+        <target>Der Kommentar ist zu kurz (mindestens {{ limit }} Zeichen)</target>
+        <note priority="1">obsolete</note>
+      </trans-unit>
+      <trans-unit id=".bkQKXb" resname="comment.too_long">
+        <source>comment.too_long</source>
+        <target>Der Kommentar ist zu lang (maximal {{ limit }} Zeichen)</target>
+        <note priority="1">obsolete</note>
+      </trans-unit>
+      <trans-unit id="cTT8h4_" resname="comment.is_spam">
+        <source>comment.is_spam</source>
+        <target>Der Inhalt des Kommentars wird als Spam eingestuft.</target>
+        <note priority="1">obsolete</note>
+      </trans-unit>
+      <trans-unit id="niM7JYj" resname="post.too_many_tags">
+        <source>post.too_many_tags</source>
+        <target>Zu viele Tags (höchstens {{ limit }} Tags sind erlaubt)</target>
+        <note priority="1">obsolete</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
