@@ -1,7 +1,7 @@
 composer.phar
 
 ### Built Assets and uploads ###
-# /public/assets/ - We _do_ want the built assets
+/public/assets/
 /public/files/*
 
 ### NPM and frontend assets building cruft
