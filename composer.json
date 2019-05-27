@@ -8,7 +8,7 @@
         "symfony/flex": "^1.2"
     },
     "require-dev": {
-        "doctrine/doctrine-fixtures-bundle": "^3.0",
+        "doctrine/doctrine-fixtures-bundle": "^3.1",
         "symfony/debug-bundle": "^4.2",
         "symfony/dotenv": "^4.2",
         "symfony/maker-bundle": "^1.11",

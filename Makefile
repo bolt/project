@@ -8,7 +8,7 @@ install:
 	composer install
 	cd vendor/bolt/bolt && npm install && npm run build
 	cp -rf vendor/bolt/bolt/public/assets public/
-	cp -rf vendor/bolt/bolt/translations translations/
+	cp -rf vendor/bolt/bolt/translations/* translations/
 
 server:
 	bin/console server:start 127.0.0.1:8088 || true
