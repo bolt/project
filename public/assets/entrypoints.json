@@ -1,0 +1,34 @@
+{
+  "entrypoints": {
+    "bolt": {
+      "css": [
+        "/assets/0.css",
+        "/assets/bolt.css"
+      ],
+      "js": [
+        "/assets/0.js",
+        "/assets/bolt.js"
+      ]
+    },
+    "theme-default": {
+      "css": [
+        "/assets/theme-default.css"
+      ]
+    },
+    "theme-light": {
+      "css": [
+        "/assets/theme-light.css"
+      ]
+    },
+    "theme-dark": {
+      "css": [
+        "/assets/theme-dark.css"
+      ]
+    },
+    "theme-woordpers": {
+      "css": [
+        "/assets/theme-woordpers.css"
+      ]
+    }
+  }
+}
