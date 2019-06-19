@@ -41,9 +41,6 @@
             "security-checker security:check": "script"
         },
         "post-install-cmd": [
-            "@install"
-        ],
-        "install": [
             "cp -n .env.dist .env || true",
             "bin/console doctrine:database:create",
             "bin/console doctrine:schema:create",
