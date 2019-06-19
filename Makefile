@@ -7,6 +7,7 @@ install:
 	cp -n .env.dist .env || true
 	composer install
 	cd vendor/bolt/bolt && npm install && npm run build
+	rm -rf public/assets
 	cp -rf vendor/bolt/bolt/public/assets public/
 	cp -rf vendor/bolt/bolt/translations/* translations/
 

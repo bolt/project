@@ -1,12 +1,10 @@
 composer.phar
 config/bolt/*_local.yaml
 
-### Built Assets and uploads ###
-/public/assets/
+### Uploads ###
 /public/files/*
 
 ### NPM and frontend assets building cruft
-assets/vendor/
 node_modules/
 npm-debug.log
 yarn-error.log
@@ -20,6 +18,7 @@ __*
 !composer.lock
 !symfony.lock
 *lock.json
+!/package-lock.json
 .buildpath
 
 ### Platfom-specific files
