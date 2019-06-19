@@ -39,7 +39,16 @@
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "security-checker security:check": "script"
-        }
+        },
+        "post-install-cmd": [
+            "@install"
+        ],
+        "install": [
+            "cp -n .env.dist .env || true",
+            "bin/console doctrine:database:create",
+            "bin/console doctrine:schema:create",
+            "bin/console doctrine:fixtures:load -n"
+        ]
     },
     "conflict": {
         "symfony/symfony": "*"

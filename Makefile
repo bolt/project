@@ -1,11 +1,9 @@
-start:
-	make install
-	make db-create
-	make server
-
 install:
 	cp -n .env.dist .env || true
 	composer install
+	make db-create
+
+assets:
 	cd vendor/bolt/bolt && npm install && npm run build
 	rm -rf public/assets
 	cp -rf vendor/bolt/bolt/public/assets public/
@@ -65,7 +63,6 @@ full-test:
 	npm test
 	make behat
 	make e2e
-
 
 db-create:
 	bin/console doctrine:database:create
