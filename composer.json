@@ -43,15 +43,10 @@
             "cp -n .env.dist .env || true",
             "bin/console doctrine:database:create",
             "bin/console doctrine:schema:create",
-            "bin/console doctrine:fixtures:load -n",
-            "@auto-scripts",
-            "bin/console bolt:info"	
+            "bin/console doctrine:fixtures:load -n"
 	],
         "post-install-cmd": [
-            "cp -n .env.dist .env || true",
-            "bin/console doctrine:database:create",
-            "bin/console doctrine:schema:create",
-            "bin/console doctrine:fixtures:load -n",
+
             "@auto-scripts",
             "bin/console bolt:info"
         ],
