@@ -37,14 +37,27 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "security-checker security:check": "script"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
+	"post-create-project-cmd": [
+            "cp -n .env.dist .env || true",
+            "bin/console doctrine:database:create",
+            "bin/console doctrine:schema:create",
+            "bin/console doctrine:fixtures:load -n",
+            "@auto-scripts",
+            "bin/console bolt:info"	
+	],
         "post-install-cmd": [
             "cp -n .env.dist .env || true",
             "bin/console doctrine:database:create",
             "bin/console doctrine:schema:create",
-            "bin/console doctrine:fixtures:load -n"
+            "bin/console doctrine:fixtures:load -n",
+            "@auto-scripts",
+            "bin/console bolt:info"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts",
+            "bin/console bolt:info"
         ]
     },
     "conflict": {
