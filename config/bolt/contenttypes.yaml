@@ -140,11 +140,9 @@ entries:
     listing_records: 10
     default_status: published
     sort: -publishedAt
-    recordsperpage: 20
+    records_per_page: 10
     icon_many: "fa:file-alt"
     icon_one: "fa:file-alt"
-
-    # class: Bundle\Site\BobEntity
 
 
 # The 'Showcases' is not particularly useful in most cases, but it does a good
@@ -402,7 +400,7 @@ dummies:
 #            extensions: [ gif, jpg, png ]
 #        <<: *template_defaults
 #    taxonomy: [ chapters ]
-#    recordsperpage: 10
+#    records_per_page: 10
 #
 # Alternatively, or additionally, you then can then create a ContentType with
 # default fields, and a 'select' field, and a different 'templateselect' option.
@@ -418,4 +416,4 @@ dummies:
 #            type: templateselect
 #            filter: '*_xyz.twig'
 #    taxonomy: [ tags ]
-#    recordsperpage: 20
+#    records_per_page: 20
