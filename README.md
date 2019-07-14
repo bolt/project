@@ -1,10 +1,10 @@
 Bolt 4 standard project skeleton
 ================================
 
-Set up a new Bolt 4 project, using the following command:
+Set up a new Bolt 4 project, using the following command, replacing `project` with your deisred project's name.
 
 ```bash
-composer create-project bolt/standard-project project -s dev
+composer create-project bolt/standard-project project
 ```
 
 Navigate into the newly created folder, and configure the database in `.env`:
@@ -17,17 +17,24 @@ DATABASE_URL=sqlite:///%kernel.project_dir%/var/data/bolt.sqlite
 DATABASE_URL=mysql://root:"root%1"@127.0.0.1:3306/four
 ```
 
-Then, build and copy assets, create the database and add fixtures:
+Then, create the database and add fixtures:
 
 ```bash
 make install
 make db-reset
 ```
 
-Run Bolt using the built-in webserver, Docker or your own preferred webserver:
+Run Bolt using the built-in webserver, Symfony CLI, Docker or your own preferred webserver:
 
 ```bash
 bin/console server:start
+```
+
+or…
+
+```bash
+symfony server:start -d
+symfony open:local
 ```
 
 or…
