@@ -5,9 +5,7 @@ install:
 
 assets:
 	cd vendor/bolt/bolt && npm install && npm run build
-	rm -rf public/assets
-	cp -rf vendor/bolt/bolt/public/assets public/
-	cp -rf vendor/bolt/bolt/translations/* translations/
+	bin/console bolt:install-assets
 
 server:
 	bin/console server:start 127.0.0.1:8088 || true

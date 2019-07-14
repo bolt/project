@@ -45,6 +45,8 @@
   "assets/images/bm.svg": "/assets/images/bm.4706eac3.svg",
   "assets/images/bn.svg": "/assets/images/bn.68773b30.svg",
   "assets/images/bo.svg": "/assets/images/bo.f50f9f76.svg",
+  "assets/images/bolt_logo_cli.png": "/assets/images/bolt_logo_cli.png",
+  "assets/images/bolt_logo_dashboard.svg": "/assets/images/bolt_logo_dashboard.svg",
   "assets/images/bq.svg": "/assets/images/bq.2ac70f73.svg",
   "assets/images/br.svg": "/assets/images/br.490a0ae4.svg",
   "assets/images/bs.svg": "/assets/images/bs.16bc164f.svg",
@@ -275,10 +277,5 @@
   "assets/images/yt.svg": "/assets/images/yt.1776dd4a.svg",
   "assets/images/za.svg": "/assets/images/za.1e71687c.svg",
   "assets/images/zm.svg": "/assets/images/zm.24d00eb2.svg",
-  "assets/images/zw.svg": "/assets/images/zw.db280702.svg",
-  "assets/logos/bolt_logo_cli.png": "/assets/logos/bolt_logo_cli.png",
-  "assets/logos/brand-icon.svg": "/assets/logos/brand-icon.svg",
-  "assets/logos/brand-long.svg": "/assets/logos/brand-long.svg",
-  "assets/logos/brand-white-icon.svg": "/assets/logos/brand-white-icon.svg",
-  "assets/logos/brand-white-long.svg": "/assets/logos/brand-white-long.svg"
+  "assets/images/zw.svg": "/assets/images/zw.db280702.svg"
 }

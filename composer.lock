@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25c8d71ffc22b75ed60dc61997422fe1",
+    "content-hash": "caf1ef169a5c9ba15b71a8a32a406b31",
     "packages": [
         {
             "name": "api-platform/core",
@@ -196,16 +196,16 @@
         },
         {
             "name": "bolt/bolt",
-            "version": "dev-master",
+            "version": "4.0.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/four.git",
-                "reference": "defc1c1565b772d3f53a8dcb022d10816bb84274"
+                "reference": "0912382d4e580a4945b0fff5437d46d3b7e4dc59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/four/zipball/defc1c1565b772d3f53a8dcb022d10816bb84274",
-                "reference": "defc1c1565b772d3f53a8dcb022d10816bb84274",
+                "url": "https://api.github.com/repos/bolt/four/zipball/0912382d4e580a4945b0fff5437d46d3b7e4dc59",
+                "reference": "0912382d4e580a4945b0fff5437d46d3b7e4dc59",
                 "shasum": ""
             },
             "require": {
@@ -321,10 +321,12 @@
             },
             "scripts": {
                 "post-install-cmd": [
-                    "@auto-scripts"
+                    "@auto-scripts",
+                    "bin/console bolt:info"
                 ],
                 "post-update-cmd": [
-                    "@auto-scripts"
+                    "@auto-scripts",
+                    "bin/console bolt:info"
                 ],
                 "auto-scripts": {
                     "cache:clear": "symfony-cmd",
@@ -339,10 +341,10 @@
             ],
             "description": "Bolt 4 skeleton / prototype",
             "support": {
-                "source": "https://github.com/bolt/four/tree/master",
+                "source": "https://github.com/bolt/four/tree/4.0.0-beta.1",
                 "issues": "https://github.com/bolt/four/issues"
             },
-            "time": "2019-07-11T03:45:33+00:00"
+            "time": "2019-07-14T11:23:26+00:00"
         },
         {
             "name": "bolt/common",
@@ -8545,9 +8547,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "bolt/bolt": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

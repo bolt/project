@@ -4,7 +4,7 @@
     "description": "Bolt 4 standard project skeleton",
     "license": "MIT",
     "require": {
-        "bolt/bolt": "dev-master",
+        "bolt/bolt": "^4.0",
         "symfony/flex": "^1.2"
     },
     "require-dev": {
@@ -37,7 +37,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "bolt:install-assets": "symfony-cmd"
         },
 	"post-create-project-cmd": [
             "cp -n .env.dist .env || true",
