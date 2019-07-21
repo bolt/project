@@ -42,11 +42,7 @@
             "bolt:install-assets": "symfony-cmd"
         },
         "post-create-project-cmd": [
-                "cp -n .env.dist .env || true",
-                "bin/console doctrine:database:create",
-                "bin/console doctrine:schema:create",
-                "bin/console bolt:add-user --admin",
-                "bin/console doctrine:fixtures:load --append"
+                "cp -n .env.dist .env || true"
         ],
         "post-install-cmd": [
             "@auto-scripts",

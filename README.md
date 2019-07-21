@@ -17,11 +17,10 @@ DATABASE_URL=sqlite:///%kernel.project_dir%/var/data/bolt.sqlite
 DATABASE_URL=mysql://root:"root%1"@127.0.0.1:3306/four
 ```
 
-Then, create the database and add fixtures:
+Then, set up the database, create the first user and add fixtures:
 
 ```bash
-make install
-make db-reset
+bin/console bolt:setup
 ```
 
 Run Bolt using the built-in webserver, Symfony CLI, Docker or your own preferred webserver:
@@ -47,5 +46,4 @@ Finally, open the new installation in a browser. If you've used one of the
 commands above, you'll find the frontpage at http://127.0.0.1:8000/
 The Bolt admin panel can be found at http://127.0.0.1:8000/bolt
 
-The installation process created the first user. The username is `admin` and
-the default password is `admin%1`
+Log in using the credentials you created when setting up the first user. 

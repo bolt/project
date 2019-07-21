@@ -200,12 +200,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/four.git",
-                "reference": "bb4d8f0e33647e92dbff4dfbfb2336f1f6e5acd0"
+                "reference": "d2e7b11a06b1e3c29ac1615338ac2d2300e619a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/four/zipball/bb4d8f0e33647e92dbff4dfbfb2336f1f6e5acd0",
-                "reference": "bb4d8f0e33647e92dbff4dfbfb2336f1f6e5acd0",
+                "url": "https://api.github.com/repos/bolt/four/zipball/d2e7b11a06b1e3c29ac1615338ac2d2300e619a0",
+                "reference": "d2e7b11a06b1e3c29ac1615338ac2d2300e619a0",
                 "shasum": ""
             },
             "require": {
@@ -344,7 +344,7 @@
                 "source": "https://github.com/bolt/four/tree/4.0.0-beta.1.2",
                 "issues": "https://github.com/bolt/four/issues"
             },
-            "time": "2019-07-21T15:42:17+00:00"
+            "time": "2019-07-21T17:44:28+00:00"
         },
         {
             "name": "bolt/bolt-assets",
@@ -5765,7 +5765,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
