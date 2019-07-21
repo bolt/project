@@ -5,7 +5,8 @@
     "license": "MIT",
     "require": {
         "bolt/bolt": "^4.0",
-        "symfony/flex": "^1.2"
+        "symfony/flex": "^1.2",
+        "bolt/bolt-assets": "^4.0@beta"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.1",
@@ -40,14 +41,14 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "bolt:install-assets": "symfony-cmd"
         },
-	"post-create-project-cmd": [
-            "cp -n .env.dist .env || true",
-            "bin/console doctrine:database:create",
-            "bin/console doctrine:schema:create",
-            "bin/console doctrine:fixtures:load -n"
-	],
+        "post-create-project-cmd": [
+                "cp -n .env.dist .env || true",
+                "bin/console doctrine:database:create",
+                "bin/console doctrine:schema:create",
+                "bin/console bolt:add-user --admin",
+                "bin/console doctrine:fixtures:load --append"
+        ],
         "post-install-cmd": [
-
             "@auto-scripts",
             "bin/console bolt:info"
         ],

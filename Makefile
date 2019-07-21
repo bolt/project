@@ -3,9 +3,17 @@ install:
 	composer install
 	make db-create
 
-assets:
-	cd vendor/bolt/bolt && npm install && npm run build
+build-assets:
+	# cd vendor/bolt/bolt && npm install && npm run build
+	rm -rf public/assets translations
+	cp -rf vendor/bolt/bolt/public/assets public/assets/
+	cp -rf vendor/bolt/bolt/translations translations/
 	bin/console bolt:install-assets
+
+copy-assets:
+	rm -rf ../bolt-assets/assets ../bolt-assets/translations
+	cp -rf vendor/bolt/bolt/public/assets ../bolt-assets/
+	cp -rf translations ../bolt-assets/
 
 server:
 	bin/console server:start 127.0.0.1:8088 || true
