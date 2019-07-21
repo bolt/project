@@ -196,16 +196,16 @@
         },
         {
             "name": "bolt/bolt",
-            "version": "4.0.0-beta.1.1",
+            "version": "4.0.0-beta.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/four.git",
-                "reference": "3a8b74589e01a504c9707fe862ad21726437e73c"
+                "reference": "bb4d8f0e33647e92dbff4dfbfb2336f1f6e5acd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/four/zipball/3a8b74589e01a504c9707fe862ad21726437e73c",
-                "reference": "3a8b74589e01a504c9707fe862ad21726437e73c",
+                "url": "https://api.github.com/repos/bolt/four/zipball/bb4d8f0e33647e92dbff4dfbfb2336f1f6e5acd0",
+                "reference": "bb4d8f0e33647e92dbff4dfbfb2336f1f6e5acd0",
                 "shasum": ""
             },
             "require": {
@@ -341,10 +341,10 @@
             ],
             "description": "Bolt 4 skeleton / prototype",
             "support": {
-                "source": "https://github.com/bolt/four/tree/4.0.0-beta.1.1",
+                "source": "https://github.com/bolt/four/tree/4.0.0-beta.1.2",
                 "issues": "https://github.com/bolt/four/issues"
             },
-            "time": "2019-07-17T18:39:32+00:00"
+            "time": "2019-07-21T15:42:17+00:00"
         },
         {
             "name": "bolt/bolt-assets",
