@@ -4,7 +4,6 @@
 # The Homepage content type is a singleton: There can be only one record of this
 # content type.
 
-
 homepage:
     name: Homepage
     singular_name: Homepage
@@ -144,121 +143,6 @@ entries:
     icon_many: "fa:file-alt"
     icon_one: "fa:file-alt"
 
-
-# The 'Showcases' is not particularly useful in most cases, but it does a good
-# job of showcasing most of the available fieldtypes. Feel free to delete it, or
-# copy some fields to your own ContentTypes.
-# Since no templates are defined for this ContentType, the default record_template,
-# listing_template, and related settings are used from config.yaml
-
-showcases:
-    name: Showcases
-    slug: showcases
-    singular_name: Showcase
-    singular_slug: showcase
-    fields:
-        title:
-            type: text
-            class: large
-            required: true
-            pattern: ".{2,255}" # see: http://html5pattern.com/
-            error: "The Title field is required, and must contain at least 2 characters"
-            group: Text
-        slug:
-            type: slug
-            uses: [ title ]
-        html:
-            type: html
-            height: 150px
-            prefix: This is the prefix for the WYSIWYG field.
-            postfix: This is the postfix for the WYSIWYG field.
-        textarea:
-            type: textarea
-            postfix: "This is a plain text area. the contents will <em><strong>not</em></strong> be processed."
-        markdown:
-            type: markdown
-            postfix: "This field gets parsed as <a href='https://help.github.com/articles/markdown-basics'>Markdown</a>, when rendered on the site."
-        geolocation:
-            type: geolocation
-            group: Media
-        embed:
-            type: embed
-        video:
-            type: video
-        image:
-            type: image
-            attrib: title # Note: retrieve this in your template with {{ record.values.image.title }}
-            extensions: [ gif, jpg, png ]
-            placeholder: https://source.unsplash.com/1280x768/?animal,koala,kitten,puppy,cute/__random__
-        imagelist:
-            type: imagelist
-        file:
-            type: file
-            group: files
-        filelist:
-            type: filelist
-        checkbox:
-            type: checkbox
-            label: "This is a checkbox"
-            group: other
-        datetime:
-            type: date
-            mode: datetime
-        date:
-            type: date
-        integerfield:
-            type: number
-            mode: integer
-            step: 0.25
-        floatfield:
-            type: number
-            mode: float
-        selectfield:
-            type: select
-            values: [ foo, bar, baz ]
-        multiselect:
-            type: select
-            values: [ A-tuin, Donatello, Rafael, Leonardo, Michelangelo, Koopa, Squirtle ]
-            multiple: true
-            postfix: "Select your favourite turtle(s)."
-        selectentry:
-            type: select
-            values: entries/id,title
-            postfix: "Select an entry"
-            autocomplete: true
-            sort: title
-        repeater:
-            type: repeater
-            group: repeater
-            limit: 3
-            prefix: "This allows you to create multiple sets of fields. Use the add button at the bottom to create a new empty set."
-            fields:
-                repeattitle:
-                    type: text
-                repeatimage:
-                    type: image
-                    extensions: [ gif, jpg, png ]
-                repeatcontent:
-                    type: html
-    relations:
-        entries:
-            multiple: false
-            label: "Choose an entry"
-            order: -id
-            format: "{{ item.title|escape }} (№ {{ item.id }})"
-            postfix: "By selecting an Entry, you're creating a bi-directional relationship to that Entry."
-        pages:
-            multiple: true
-            order: title
-            label: Select zero or more pages
-    taxonomy: [ categories, tags ]
-    show_on_dashboard: true
-    default_status: published
-    searchable: true
-    icon_many: "fa:gift"
-    icon_one: "fa:gift"
-
-
 # The 'Blocks' ContentType is a so-called 'resource ContentType'. This means
 # that it can be used to manage smaller pieces of content, like the 'about us'
 # text, an 'our address' in the footer, or similar short blurbs of text.
@@ -276,40 +160,11 @@ blocks:
         slug:
             type: slug
             uses: [ title ]
-
-#        selectfield:
-#            type: select
-#            values: [ foo, bar, baz ]
-#        selectfieldd:
-#            type: select
-#            values:
-#                foo: "Fooo"
-#                bar: Bario
-#                baz: Bazz
-#        multiselect:
-#            type: select
-#            values: [ A-tuin, Donatello, Rafael, Leonardo, Michelangelo, Koopa, Squirtle ]
-#            multiple: false
-#            postfix: "Select your favourite turtle(s)."
-#
-#        multiselect2:
-#            type: select
-#            values: [ A-tuin, Donatello, Rafael, Leonardo, Michelangelo, Koopa, Squirtle ]
-#            multiple: true
-#            required: true
-#            postfix: "Select your favourite turtle(s)."
         content:
             type: html
             height: 150px
-#        contentlink:
-#            type: text
-#            label: Link
-#            placeholder: 'contenttype/slug or http://example.org/'
-#            postfix: "Use this to add a link for this Block. This could either be an 'internal' link like <tt>page/about</tt>, if you use a contentType/slug combination. Otherwise use a proper URL, like `http://example.org`."
-#        image:
-#            type: image
-#            attrib: title
-#            extensions: [ gif, jpg, png ]
+        image:
+            type: image
     show_on_dashboard: true
     viewless: true
     default_status: published
@@ -317,31 +172,6 @@ blocks:
     icon_many: "fa:cubes"
     icon_one: "fa:cube"
 
-
-dummies:
-    name: Dummies
-    singular_name: Dummy
-    fields:
-        title:
-            type: text
-            class: large
-            group: content
-        slug:
-            type: slug
-            uses: title
-        selectfield:
-            type: select
-            values:
-                foo: Foooo
-                bar: Bario
-                baz: BAzzazza
-        multiselect:
-            type: select
-            values: [ A-tuin, Donatello, Rafael, Leonardo, Michelangelo, Koopa, Squirtle ]
-            multiple: true
-            postfix: "Select your favourite turtle(s)."
-    taxonomy: [ groups, categories, tags, foobars ]
-    
 # Possible field types:
 #
 # text - varchar(256) - input type text.
