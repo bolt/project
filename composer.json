@@ -5,9 +5,9 @@
     "license": "MIT",
     "require": {
         "bolt/bolt": "^4.0",
-        "symfony/flex": "^1.2",
         "bolt/bolt-assets": "^4.0@beta",
-        "bolt/themes": "^3.0"
+        "bolt/themes": "^3.0",
+        "symfony/flex": "^1.2"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.1",
@@ -43,7 +43,8 @@
             "bolt:copy-assets": "symfony-cmd"
         },
         "post-create-project-cmd": [
-                "cp -n .env.dist .env || true"
+            "cp -n .env.dist .env || true",
+            "rm public/.gitignore"
         ],
         "post-install-cmd": [
             "bin/console bolt:copy-themes",
