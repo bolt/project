@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb298a3aa0c92f92e4f5af143b911ddd",
+    "content-hash": "12c4e65d7a6053168389ddd87d6079c7",
     "packages": [
         {
             "name": "api-platform/core",
@@ -425,6 +425,44 @@
             ],
             "description": "Common utilities for all Bolt libraries",
             "time": "2019-01-16T09:45:03+00:00"
+        },
+        {
+            "name": "bolt/themes",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bolt/themes.git",
+                "reference": "bdb865889573a630258532b59146d22b021cf51f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/bdb865889573a630258532b59146d22b021cf51f",
+                "reference": "bdb865889573a630258532b59146d22b021cf51f",
+                "shasum": ""
+            },
+            "require": {
+                "twig/twig": "^1.32 || ^2.0"
+            },
+            "conflict": {
+                "bolt/bolt": "< 3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Starter themes for Bolt",
+            "homepage": "http://bolt.cm",
+            "keywords": [
+                "cms",
+                "twig"
+            ],
+            "time": "2019-07-26T14:30:00+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -5765,7 +5803,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",

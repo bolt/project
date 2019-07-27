@@ -6,7 +6,8 @@
     "require": {
         "bolt/bolt": "^4.0",
         "symfony/flex": "^1.2",
-        "bolt/bolt-assets": "^4.0@beta"
+        "bolt/bolt-assets": "^4.0@beta",
+        "bolt/themes": "^3.0"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.1",
@@ -39,12 +40,13 @@
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "bolt:install-assets": "symfony-cmd"
+            "bolt:copy-assets": "symfony-cmd"
         },
         "post-create-project-cmd": [
                 "cp -n .env.dist .env || true"
         ],
         "post-install-cmd": [
+            "bin/console bolt:copy-themes",
             "@auto-scripts",
             "bin/console bolt:info"
         ],

@@ -25,6 +25,9 @@
     "bolt/common": {
         "version": "2.0.5"
     },
+    "bolt/themes": {
+        "version": "3.0.0"
+    },
     "cocur/slugify": {
         "version": "v3.2"
     },
