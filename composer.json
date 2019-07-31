@@ -27,11 +27,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/bolt/four.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/bobdenotter/DoctrineExtensions",
-            "no-api": true
         }
     ],
     "minimum-stability": "dev",
