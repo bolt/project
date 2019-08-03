@@ -6,7 +6,7 @@ twig:
         - 'form/fields.twig'
     paths:
         '%kernel.project_dir%/public/theme/%bolt.theme%': ''
-        '%kernel.project_dir%/vendor/bolt/bolt/templates/': 'bolt'
-    default_path: '%kernel.project_dir%/vendor/bolt/bolt/templates'
+        '%kernel.project_dir%/vendor/bolt/core/templates/': 'bolt'
+    default_path: '%kernel.project_dir%/vendor/bolt/core/templates'
     globals:
         'config': '@Bolt\Configuration\Config'

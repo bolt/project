@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed7858a6b852a031465d05dd0367e84e",
+    "content-hash": "5ea853976abb9905f1cd57b21dca15b2",
     "packages": [
         {
             "name": "api-platform/core",
@@ -195,27 +195,148 @@
             "time": "2017-04-04T11:38:05+00:00"
         },
         {
-            "name": "bolt/bolt",
-            "version": "4.0.0-beta.1.5",
+            "name": "bobdenotter/weatherwidget",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bolt/four.git",
-                "reference": "f80cffb45986779a058a35f4b156dbd07f364ca9"
+                "url": "https://github.com/bobdenotter/weatherwidget.git",
+                "reference": "f069a14acf3afc1251f6db5680f992d6eb935497"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/four/zipball/f80cffb45986779a058a35f4b156dbd07f364ca9",
-                "reference": "f80cffb45986779a058a35f4b156dbd07f364ca9",
+                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/f069a14acf3afc1251f6db5680f992d6eb935497",
+                "reference": "f069a14acf3afc1251f6db5680f992d6eb935497",
+                "shasum": ""
+            },
+            "require-dev": {
+                "bolt/core": "^4.0.0"
+            },
+            "type": "bolt-extension",
+            "extra": {
+                "entrypoint": "BobdenOtter\\WeatherWidget\\Extension"
+            },
+            "autoload": {
+                "psr-4": {
+                    "BobdenOtter\\WeatherWidget\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bob den Otter",
+                    "email": "bob@twokings.nl"
+                }
+            ],
+            "description": "A simple Dashboard Widget that displays the current weather. So you don't actually need to go outside or open the curtains.",
+            "time": "2019-08-03T16:56:34+00:00"
+        },
+        {
+            "name": "bolt/bolt-assets",
+            "version": "4.0.0-beta.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bolt/bolt-assets.git",
+                "reference": "43837f8e0b9d491cabfe0be3f89de4e52c386a55"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bolt/bolt-assets/zipball/43837f8e0b9d491cabfe0be3f89de4e52c386a55",
+                "reference": "43837f8e0b9d491cabfe0be3f89de4e52c386a55",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bob den Otter",
+                    "email": "bob@twokings.nl"
+                }
+            ],
+            "description": "Assets used in Bolt's backend. Don't use directly.",
+            "time": "2019-07-31T17:44:35+00:00"
+        },
+        {
+            "name": "bolt/common",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bolt/common.git",
+                "reference": "f514089ad3b2ae05e20db282e9edf9425f53caaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bolt/common/zipball/f514089ad3b2ae05e20db282e9edf9425f53caaa",
+                "reference": "f514089ad3b2ae05e20db282e9edf9425f53caaa",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "seld/jsonlint": "^1.4",
+                "webmozart/assert": "^1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4",
+                "symfony/phpunit-bridge": "^3.3",
+                "symplify/easy-coding-standard": "^5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bolt\\Common\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carson Full",
+                    "email": "carsonfull@gmail.com"
+                },
+                {
+                    "name": "Bob den Otter",
+                    "email": "bob@twokings.nl"
+                }
+            ],
+            "description": "Common utilities for all Bolt libraries",
+            "time": "2019-01-16T09:45:03+00:00"
+        },
+        {
+            "name": "bolt/core",
+            "version": "4.0.0-beta.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bolt/core.git",
+                "reference": "185f522a4916a3d827c6ffa50b9e1cd8f40e3fb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bolt/core/zipball/185f522a4916a3d827c6ffa50b9e1cd8f40e3fb2",
+                "reference": "185f522a4916a3d827c6ffa50b9e1cd8f40e3fb2",
                 "shasum": ""
             },
             "require": {
                 "api-platform/core": "^2.4",
                 "bolt/common": "^2.0.2",
                 "cocur/slugify": "^3.2",
+                "composer/composer": "^1.9",
                 "doctrine/annotations": "^1.6",
                 "doctrine/doctrine-bundle": "^1.11",
                 "doctrine/doctrine-cache-bundle": "^1.3.1",
                 "doctrine/orm": "^2.6",
+                "drupol/composer-packages": "^1.0",
                 "embed/embed": "^3.3",
                 "erusev/parsedown": "^1.7",
                 "ext-json": "*",
@@ -272,6 +393,8 @@
                 "behat/mink-extension": "^2.3",
                 "behat/mink-goutte-driver": "^1.2",
                 "behatch/contexts": "^3.2",
+                "bobdenotter/weatherwidget": "dev-master",
+                "bolt/newswidget": "^1.0.1",
                 "coduo/php-matcher": "^3.2",
                 "dama/doctrine-test-bundle": "^5.0",
                 "doctrine/doctrine-fixtures-bundle": "^3.1",
@@ -312,101 +435,37 @@
                     "src/Entity/Translation.php"
                 ]
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Bolt\\Tests\\": "tests/php/",
-                    "Context\\": "tests/api/bootstrap/",
-                    "spec\\Bolt\\": "tests/spec/Bolt/"
-                }
-            },
-            "scripts": {
-                "post-install-cmd": [
-                    "@auto-scripts",
-                    "bin/console bolt:info"
-                ],
-                "post-update-cmd": [
-                    "@auto-scripts",
-                    "bin/console bolt:info"
-                ],
-                "auto-scripts": {
-                    "cache:clear": "symfony-cmd",
-                    "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd"
-                },
-                "periodical-tasks": [
-                    "security-checker security:check"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Bolt 4 skeleton / prototype",
-            "support": {
-                "source": "https://github.com/bolt/four/tree/4.0.0-beta.1.5",
-                "issues": "https://github.com/bolt/four/issues"
-            },
-            "time": "2019-07-31T11:13:17+00:00"
-        },
-        {
-            "name": "bolt/bolt-assets",
-            "version": "4.0.0-beta.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bolt/bolt-assets.git",
-                "reference": "460cef6ef4687dbf960fb2d598af3ec3c8141d18"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bolt/bolt-assets/zipball/460cef6ef4687dbf960fb2d598af3ec3c8141d18",
-                "reference": "460cef6ef4687dbf960fb2d598af3ec3c8141d18",
-                "shasum": ""
-            },
-            "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Bob den Otter",
-                    "email": "bob@twokings.nl"
-                }
-            ],
-            "description": "Assets used in Bolt's backend. Don't use directly.",
-            "time": "2019-07-21T14:41:24+00:00"
+            "description": "Bolt 4 Core",
+            "time": "2019-08-03T16:19:52+00:00"
         },
         {
-            "name": "bolt/common",
-            "version": "2.0.5",
+            "name": "bolt/newswidget",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bolt/common.git",
-                "reference": "f514089ad3b2ae05e20db282e9edf9425f53caaa"
+                "url": "https://github.com/bolt/newswidget.git",
+                "reference": "2c7e7dcd5b98af83f92b907d9b32172f05315c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/common/zipball/f514089ad3b2ae05e20db282e9edf9425f53caaa",
-                "reference": "f514089ad3b2ae05e20db282e9edf9425f53caaa",
+                "url": "https://api.github.com/repos/bolt/newswidget/zipball/2c7e7dcd5b98af83f92b907d9b32172f05315c5a",
+                "reference": "2c7e7dcd5b98af83f92b907d9b32172f05315c5a",
                 "shasum": ""
             },
-            "require": {
-                "php": "^7.1",
-                "seld/jsonlint": "^1.4",
-                "webmozart/assert": "^1.2"
-            },
             "require-dev": {
-                "phpunit/phpunit": "^6.4",
-                "symfony/phpunit-bridge": "^3.3",
-                "symplify/easy-coding-standard": "^5.2"
+                "bolt/core": "^4.0.0"
             },
-            "type": "library",
+            "type": "bolt-extension",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
+                "entrypoint": "Bolt\\NewsWidget\\Extension"
             },
             "autoload": {
                 "psr-4": {
-                    "Bolt\\Common\\": "src"
+                    "Bolt\\NewsWidget\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -415,16 +474,12 @@
             ],
             "authors": [
                 {
-                    "name": "Carson Full",
-                    "email": "carsonfull@gmail.com"
-                },
-                {
                     "name": "Bob den Otter",
                     "email": "bob@twokings.nl"
                 }
             ],
-            "description": "Common utilities for all Bolt libraries",
-            "time": "2019-01-16T09:45:03+00:00"
+            "description": "📰 A simple Widget Extension to display the latest Bolt news on the dashboard.",
+            "time": "2019-08-03T16:50:34+00:00"
         },
         {
             "name": "bolt/themes",
@@ -531,16 +586,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "33810d865dd06a674130fceb729b2f279dc79e8c"
+                "reference": "f26a67e397be0e5c00d7c52ec7b5010098e15ce5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/33810d865dd06a674130fceb729b2f279dc79e8c",
-                "reference": "33810d865dd06a674130fceb729b2f279dc79e8c",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/f26a67e397be0e5c00d7c52ec7b5010098e15ce5",
+                "reference": "f26a67e397be0e5c00d7c52ec7b5010098e15ce5",
                 "shasum": ""
             },
             "require": {
@@ -583,7 +638,253 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-07-31T08:13:16+00:00"
+            "time": "2019-08-02T09:05:43+00:00"
+        },
+        {
+            "name": "composer/composer",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/composer.git",
+                "reference": "314aa57fdcfc942065996f59fb73a8b3f74f3fa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/composer/zipball/314aa57fdcfc942065996f59fb73a8b3f74f3fa5",
+                "reference": "314aa57fdcfc942065996f59fb73a8b3f74f3fa5",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.0",
+                "composer/semver": "^1.0",
+                "composer/spdx-licenses": "^1.2",
+                "composer/xdebug-handler": "^1.1",
+                "justinrainbow/json-schema": "^3.0 || ^4.0 || ^5.0",
+                "php": "^5.3.2 || ^7.0",
+                "psr/log": "^1.0",
+                "seld/jsonlint": "^1.4",
+                "seld/phar-utils": "^1.0",
+                "symfony/console": "^2.7 || ^3.0 || ^4.0",
+                "symfony/filesystem": "^2.7 || ^3.0 || ^4.0",
+                "symfony/finder": "^2.7 || ^3.0 || ^4.0",
+                "symfony/process": "^2.7 || ^3.0 || ^4.0"
+            },
+            "conflict": {
+                "symfony/console": "2.8.38"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "phpunit/phpunit-mock-objects": "^2.3 || ^3.0"
+            },
+            "suggest": {
+                "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
+                "ext-zip": "Enabling the zip extension allows you to unzip archives",
+                "ext-zlib": "Allow gzip compression of HTTP requests"
+            },
+            "bin": [
+                "bin/composer"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\": "src/Composer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Composer helps you declare, manage and install dependencies of PHP projects. It ensures you have the right stack everywhere.",
+            "homepage": "https://getcomposer.org/",
+            "keywords": [
+                "autoload",
+                "dependency",
+                "package"
+            ],
+            "time": "2019-08-02T18:55:33+00:00"
+        },
+        {
+            "name": "composer/semver",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
+                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5 || ^5.0.5",
+                "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "time": "2019-03-19T17:25:45+00:00"
+        },
+        {
+            "name": "composer/spdx-licenses",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/spdx-licenses.git",
+                "reference": "7ac1e6aec371357df067f8a688c3d6974df68fa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/7ac1e6aec371357df067f8a688c3d6974df68fa5",
+                "reference": "7ac1e6aec371357df067f8a688c3d6974df68fa5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Spdx\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "SPDX licenses list and validation library.",
+            "keywords": [
+                "license",
+                "spdx",
+                "validator"
+            ],
+            "time": "2019-07-29T10:31:59+00:00"
+        },
+        {
+            "name": "composer/xdebug-handler",
+            "version": "1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/xdebug-handler.git",
+                "reference": "46867cbf8ca9fb8d60c506895449eb799db1184f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/46867cbf8ca9fb8d60c506895449eb799db1184f",
+                "reference": "46867cbf8ca9fb8d60c506895449eb799db1184f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Composer\\XdebugHandler\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Stevenson",
+                    "email": "john-stevenson@blueyonder.co.uk"
+                }
+            ],
+            "description": "Restarts a process without xdebug.",
+            "keywords": [
+                "Xdebug",
+                "performance"
+            ],
+            "time": "2019-05-27T17:52:04+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1640,6 +1941,56 @@
             "time": "2018-06-14T14:45:07+00:00"
         },
         {
+            "name": "drupol/composer-packages",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupol/composer-packages.git",
+                "reference": "e4c895b001c65442c8e9f43bbd47eb578b94bc89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/e4c895b001c65442c8e9f43bbd47eb578b94bc89",
+                "reference": "e4c895b001c65442c8e9f43bbd47eb578b94bc89",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1",
+                "php": "^7.1.3",
+                "twig/twig": "^2.11"
+            },
+            "require-dev": {
+                "composer/composer": "~1.6",
+                "drupol/php-conventions": "^1",
+                "infection/infection": "^0.13",
+                "phptaskman/changelog": "^1.0",
+                "phpunit/phpunit": "^7 || ^8",
+                "scrutinizer/ocular": "^1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "drupol\\ComposerPackages\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ComposerPackages\\": "build",
+                    "drupol\\ComposerPackages\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pol Dellaiera",
+                    "email": "pol.dellaiera@protonmail.com"
+                }
+            ],
+            "description": "Composer Packages is a Composer plugin for getting information about installed packages in your project.",
+            "time": "2019-08-02T09:26:05+00:00"
+        },
+        {
             "name": "egulias/email-validator",
             "version": "2.1.10",
             "source": {
@@ -2335,6 +2686,72 @@
                 "sql"
             ],
             "time": "2014-01-12T16:20:24+00:00"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "5.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "dcb6e1006bb5fd1e392b4daa68932880f37550d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/dcb6e1006bb5fd1e392b4daa68932880f37550d4",
+                "reference": "dcb6e1006bb5fd1e392b4daa68932880f37550d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.2.20",
+                "json-schema/json-schema-test-suite": "1.2.0",
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JsonSchema\\": "src/JsonSchema/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Prieto Reis",
+                    "email": "bruno.p.reis@gmail.com"
+                },
+                {
+                    "name": "Justin Rainbow",
+                    "email": "justin.rainbow@gmail.com"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Robert Schönthal",
+                    "email": "seroscho@googlemail.com"
+                }
+            ],
+            "description": "A library to validate a json schema.",
+            "homepage": "https://github.com/justinrainbow/json-schema",
+            "keywords": [
+                "json",
+                "schema"
+            ],
+            "time": "2019-01-14T23:55:14+00:00"
         },
         {
             "name": "knplabs/knp-menu",
@@ -3813,6 +4230,50 @@
                 "validator"
             ],
             "time": "2018-01-24T12:46:19+00:00"
+        },
+        {
+            "name": "seld/phar-utils",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/phar-utils.git",
+                "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/7009b5139491975ef6486545a39f3e6dad5ac30a",
+                "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Seld\\PharUtils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "PHAR file format utilities, for when PHP phars you up",
+            "keywords": [
+                "phra"
+            ],
+            "time": "2015-10-13T18:44:15+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -6172,6 +6633,55 @@
             "time": "2019-02-06T07:57:58+00:00"
         },
         {
+            "name": "symfony/process",
+            "version": "v4.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "856d35814cf287480465bb7a6c413bb7f5f5e69c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/856d35814cf287480465bb7a6c413bb7f5f5e69c",
+                "reference": "856d35814cf287480465bb7a6c413bb7f5f5e69c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-05-30T16:10:05+00:00"
+        },
+        {
             "name": "symfony/property-access",
             "version": "v4.3.3",
             "source": {
@@ -8399,55 +8909,6 @@
                 "scaffolding"
             ],
             "time": "2019-07-09T22:19:18+00:00"
-        },
-        {
-            "name": "symfony/process",
-            "version": "v4.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "856d35814cf287480465bb7a6c413bb7f5f5e69c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/856d35814cf287480465bb7a6c413bb7f5f5e69c",
-                "reference": "856d35814cf287480465bb7a6c413bb7f5f5e69c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "https://symfony.com",
-            "time": "2019-05-30T16:10:05+00:00"
         },
         {
             "name": "symfony/stopwatch",

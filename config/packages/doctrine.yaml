@@ -14,7 +14,7 @@ doctrine:
             Bolt:
                 is_bundle: false
                 type: annotation
-                dir: '%kernel.project_dir%/vendor/bolt/bolt/src/Entity'
+                dir: '%kernel.project_dir%/vendor/bolt/core/src/Entity'
                 prefix: 'Bolt\Entity'
                 alias: App
             gedmo_translatable:

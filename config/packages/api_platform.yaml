@@ -4,7 +4,7 @@ api_platform:
         graphiql:
             enabled: true
     mapping:
-        paths: ['%kernel.project_dir%/vendor/bolt/bolt/src/Entity']
+        paths: ['%kernel.project_dir%/vendor/bolt/core/src/Entity']
     formats:
         jsonld:   ['application/ld+json']
         json:     ['application/json']

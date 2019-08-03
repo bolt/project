@@ -4,14 +4,14 @@ install:
 	make db-create
 
 build-assets:
-	cd vendor/bolt/bolt && npm install && npm run build
+	cd vendor/bolt/core && npm install && npm run build
 	rm -rf public/assets translations
-	cp -rf vendor/bolt/bolt/public/assets public/assets
-	cp -rf vendor/bolt/bolt/translations translations
+	cp -rf vendor/bolt/core/public/assets public/assets
+	cp -rf vendor/bolt/core/translations translations
 
 copy-assets:
 	rm -rf ../bolt-assets/assets ../bolt-assets/translations
-	cp -rf vendor/bolt/bolt/public/assets ../bolt-assets/
+	cp -rf vendor/bolt/core/public/assets ../bolt-assets/
 	cp -rf translations ../bolt-assets/
 
 server:

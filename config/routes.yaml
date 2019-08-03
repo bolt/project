@@ -12,7 +12,7 @@
 # Changing these might give unexpected results or even break your website. If
 # possible, only add NEW routes above or below these.
 frontend:
-  resource: '../vendor/bolt/bolt/src/Controller/Frontend/'
+  resource: '../vendor/bolt/core/src/Controller/Frontend/'
   prefix: /
 
 # ------------------------------------------------------------------------------
@@ -26,11 +26,11 @@ api_entrypoint:
 # These are the routes defining the Bolt Control Panel ("backend"). It's common
 # to modify the `prefix` so the Control Panel can be accessed at a custom URL.
 control_panel_async:
-  resource: '../vendor/bolt/bolt/src/Controller/Backend/Async'
+  resource: '../vendor/bolt/core/src/Controller/Backend/Async'
   prefix: '%bolt.backend_url%/async'
 
 control_panel:
-  resource: '../vendor/bolt/bolt/src/Controller/Backend/'
+  resource: '../vendor/bolt/core/src/Controller/Backend/'
   prefix: '%bolt.backend_url%'
 
 # ------------------------------------------------------------------------------
