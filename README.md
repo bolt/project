@@ -46,4 +46,4 @@ Finally, open the new installation in a browser. If you've used one of the
 commands above, you'll find the frontpage at http://127.0.0.1:8000/
 The Bolt admin panel can be found at http://127.0.0.1:8000/bolt
 
-Log in using the credentials you created when setting up the first user. 
+Log in using the credentials you created when setting up the first user.
