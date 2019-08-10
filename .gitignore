@@ -69,3 +69,4 @@ appveyor.yml
 ###> phpunit/phpunit ###
 /phpunit.xml
 ###< phpunit/phpunit ###
+*.xlf

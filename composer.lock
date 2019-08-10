@@ -196,16 +196,16 @@
         },
         {
             "name": "bobdenotter/weatherwidget",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/weatherwidget.git",
-                "reference": "a31ba7bae44582b018c762f20c0a958cad749faa"
+                "reference": "6b2dcec3d2143c668fe86ec19f5cb5cfddf37e10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/a31ba7bae44582b018c762f20c0a958cad749faa",
-                "reference": "a31ba7bae44582b018c762f20c0a958cad749faa",
+                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/6b2dcec3d2143c668fe86ec19f5cb5cfddf37e10",
+                "reference": "6b2dcec3d2143c668fe86ec19f5cb5cfddf37e10",
                 "shasum": ""
             },
             "require-dev": {
@@ -231,7 +231,7 @@
                 }
             ],
             "description": "A simple Dashboard Widget that displays the current weather. So you don't actually need to go outside or open the curtains.",
-            "time": "2019-08-05T15:53:14+00:00"
+            "time": "2019-08-05T18:06:24+00:00"
         },
         {
             "name": "bolt/bolt-assets",
@@ -315,16 +315,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.1.7",
+            "version": "4.0.0-beta.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "789414eeec5af593fedfc9545a33eb073939534b"
+                "reference": "ba1c888792ecc7b385233249760d84ab81f0cacd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/789414eeec5af593fedfc9545a33eb073939534b",
-                "reference": "789414eeec5af593fedfc9545a33eb073939534b",
+                "url": "https://api.github.com/repos/bolt/core/zipball/ba1c888792ecc7b385233249760d84ab81f0cacd",
+                "reference": "ba1c888792ecc7b385233249760d84ab81f0cacd",
                 "shasum": ""
             },
             "require": {
@@ -441,7 +441,7 @@
                 "MIT"
             ],
             "description": "Bolt 4 Core",
-            "time": "2019-08-05T16:31:14+00:00"
+            "time": "2019-08-10T12:24:46+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -889,16 +889,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.6.1",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24"
+                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/53120e0eb10355388d6ccbe462f1fea34ddadb24",
-                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
+                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
                 "shasum": ""
             },
             "require": {
@@ -907,12 +907,12 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^6.4"
+                "phpunit/phpunit": "^7.5@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -926,16 +926,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -953,7 +953,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2019-03-25T19:12:02+00:00"
+            "time": "2019-08-08T18:11:40+00:00"
         },
         {
             "name": "doctrine/cache",
