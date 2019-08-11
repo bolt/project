@@ -235,16 +235,16 @@
         },
         {
             "name": "bolt/bolt-assets",
-            "version": "4.0.0-beta.2",
+            "version": "4.0.0-beta.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/bolt-assets.git",
-                "reference": "add38abe741939b4ea3803f37442ac90e521c099"
+                "reference": "42939d7fca05f58f4636afca417dbff12ce628e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/bolt-assets/zipball/add38abe741939b4ea3803f37442ac90e521c099",
-                "reference": "add38abe741939b4ea3803f37442ac90e521c099",
+                "url": "https://api.github.com/repos/bolt/bolt-assets/zipball/42939d7fca05f58f4636afca417dbff12ce628e5",
+                "reference": "42939d7fca05f58f4636afca417dbff12ce628e5",
                 "shasum": ""
             },
             "type": "library",
@@ -259,7 +259,7 @@
                 }
             ],
             "description": "Assets used in Bolt's backend. Don't use directly.",
-            "time": "2019-08-10T12:38:34+00:00"
+            "time": "2019-08-11T18:18:34+00:00"
         },
         {
             "name": "bolt/common",
@@ -315,16 +315,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.2.1",
+            "version": "4.0.0-beta.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "0a2b221b7b4f1697c404682f9b88b54134ea8055"
+                "reference": "9ecf73b00cb3dc41bf7139675a4de5e53fb5d638"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/0a2b221b7b4f1697c404682f9b88b54134ea8055",
-                "reference": "0a2b221b7b4f1697c404682f9b88b54134ea8055",
+                "url": "https://api.github.com/repos/bolt/core/zipball/9ecf73b00cb3dc41bf7139675a4de5e53fb5d638",
+                "reference": "9ecf73b00cb3dc41bf7139675a4de5e53fb5d638",
                 "shasum": ""
             },
             "require": {
@@ -441,7 +441,7 @@
                 "MIT"
             ],
             "description": "Bolt 4 Core",
-            "time": "2019-08-11T06:06:04+00:00"
+            "time": "2019-08-11T18:11:46+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -484,41 +484,36 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.0.0",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "bdb865889573a630258532b59146d22b021cf51f"
+                "reference": "7b97c3711b26ea0e8b1e151f51d7bfaa591464df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/bdb865889573a630258532b59146d22b021cf51f",
-                "reference": "bdb865889573a630258532b59146d22b021cf51f",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/7b97c3711b26ea0e8b1e151f51d7bfaa591464df",
+                "reference": "7b97c3711b26ea0e8b1e151f51d7bfaa591464df",
                 "shasum": ""
             },
             "require": {
-                "twig/twig": "^1.32 || ^2.0"
+                "twig/twig": "^2.0"
             },
             "conflict": {
-                "bolt/bolt": "< 3.5"
+                "bolt/bolt": "< 3.999"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Starter themes for Bolt",
-            "homepage": "http://bolt.cm",
+            "homepage": "http://boltcms.io",
             "keywords": [
                 "cms",
                 "twig"
             ],
-            "time": "2019-07-26T14:30:00+00:00"
+            "time": "2019-08-11T17:59:35+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -4455,23 +4450,23 @@
         },
         {
             "name": "siriusphp/validation",
-            "version": "2.2.3",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/siriusphp/validation.git",
-                "reference": "3c601f2f1bd3997fc6f5695f1564ce6e6c077c25"
+                "reference": "fa93b302802616b1dcf7e38244a70e324c121fb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/siriusphp/validation/zipball/3c601f2f1bd3997fc6f5695f1564ce6e6c077c25",
-                "reference": "3c601f2f1bd3997fc6f5695f1564ce6e6c077c25",
+                "url": "https://api.github.com/repos/siriusphp/validation/zipball/fa93b302802616b1dcf7e38244a70e324c121fb4",
+                "reference": "fa93b302802616b1dcf7e38244a70e324c121fb4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^3.7"
+                "phpunit/phpunit": "^4.8"
             },
             "type": "library",
             "autoload": {
@@ -4497,7 +4492,7 @@
                 "security",
                 "validation"
             ],
-            "time": "2019-04-03T08:57:10+00:00"
+            "time": "2019-08-11T13:55:53+00:00"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
