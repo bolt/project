@@ -9,7 +9,7 @@ database:
     url: '%env(resolve:DATABASE_URL)%'
 
 # The name of the website
-sitename: A sample site in CONFIG
+sitename: Bolt Project Website
 payoff: The amazing payoff goes here
 
 # note: ENV vars do not get parsed, yet!

@@ -35,7 +35,7 @@
         },
         "post-create-project-cmd": [
             "cp -n .env.dist .env || true",
-            "rm public/.gitignore"
+            "rm public/.gitignore translations/.gitignore"
         ],
         "post-install-cmd": [
             "bin/console bolt:copy-themes",
