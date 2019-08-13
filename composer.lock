@@ -484,16 +484,16 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "7b97c3711b26ea0e8b1e151f51d7bfaa591464df"
+                "reference": "176bf1b7d9319bbeb7edef0d06cb277c39548605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/7b97c3711b26ea0e8b1e151f51d7bfaa591464df",
-                "reference": "7b97c3711b26ea0e8b1e151f51d7bfaa591464df",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/176bf1b7d9319bbeb7edef0d06cb277c39548605",
+                "reference": "176bf1b7d9319bbeb7edef0d06cb277c39548605",
                 "shasum": ""
             },
             "require": {
@@ -507,13 +507,13 @@
             "license": [
                 "MIT"
             ],
-            "description": "Starter themes for Bolt",
+            "description": "🎨 Starter themes for Bolt",
             "homepage": "http://boltcms.io",
             "keywords": [
                 "cms",
                 "twig"
             ],
-            "time": "2019-08-11T17:59:35+00:00"
+            "time": "2019-08-12T18:38:01+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -3332,16 +3332,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.2",
+            "version": "v4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420"
+                "reference": "e612609022e935f3d0337c1295176505b41188c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
-                "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e612609022e935f3d0337c1295176505b41188c8",
+                "reference": "e612609022e935f3d0337c1295176505b41188c8",
                 "shasum": ""
             },
             "require": {
@@ -3349,7 +3349,7 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5 || ^7.0"
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -3379,7 +3379,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-05-25T20:07:01+00:00"
+            "time": "2019-08-12T20:17:41+00:00"
         },
         {
             "name": "nyholm/nsa",
