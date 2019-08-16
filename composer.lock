@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ea853976abb9905f1cd57b21dca15b2",
+    "content-hash": "5dbed5315270518225253fe4cbfd7d6f",
     "packages": [
         {
             "name": "api-platform/core",
@@ -196,16 +196,16 @@
         },
         {
             "name": "bobdenotter/weatherwidget",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/weatherwidget.git",
-                "reference": "6b2dcec3d2143c668fe86ec19f5cb5cfddf37e10"
+                "reference": "90880e3d8e83dabe1e5dc50ad7aff82942ecf5d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/6b2dcec3d2143c668fe86ec19f5cb5cfddf37e10",
-                "reference": "6b2dcec3d2143c668fe86ec19f5cb5cfddf37e10",
+                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/90880e3d8e83dabe1e5dc50ad7aff82942ecf5d5",
+                "reference": "90880e3d8e83dabe1e5dc50ad7aff82942ecf5d5",
                 "shasum": ""
             },
             "require-dev": {
@@ -230,22 +230,25 @@
                     "email": "bob@twokings.nl"
                 }
             ],
-            "description": "A simple Dashboard Widget that displays the current weather. So you don't actually need to go outside or open the curtains.",
-            "time": "2019-08-05T18:06:24+00:00"
+            "description": "🌤 A simple Dashboard Widget that displays the current weather. So you don't actually need to go outside or open the curtains.",
+            "time": "2019-08-16T14:38:12+00:00"
         },
         {
-            "name": "bolt/bolt-assets",
-            "version": "4.0.0-beta.2.2",
+            "name": "bolt/assets",
+            "version": "4.0.0-beta.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bolt/bolt-assets.git",
-                "reference": "42939d7fca05f58f4636afca417dbff12ce628e5"
+                "url": "https://github.com/bolt/assets.git",
+                "reference": "eedfd5bd76600775339ca0d7ca5ed1fb0171eb8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/bolt-assets/zipball/42939d7fca05f58f4636afca417dbff12ce628e5",
-                "reference": "42939d7fca05f58f4636afca417dbff12ce628e5",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/eedfd5bd76600775339ca0d7ca5ed1fb0171eb8f",
+                "reference": "eedfd5bd76600775339ca0d7ca5ed1fb0171eb8f",
                 "shasum": ""
+            },
+            "require-dev": {
+                "bolt/core": "^4.0.0"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -258,21 +261,21 @@
                     "email": "bob@twokings.nl"
                 }
             ],
-            "description": "Assets used in Bolt's backend. Don't use directly.",
-            "time": "2019-08-11T18:18:34+00:00"
+            "description": "🛠 Assets used in Bolt's backend. Don't use directly.",
+            "time": "2019-08-16T12:37:41+00:00"
         },
         {
             "name": "bolt/common",
-            "version": "2.0.5",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/common.git",
-                "reference": "f514089ad3b2ae05e20db282e9edf9425f53caaa"
+                "reference": "4d1459fc0313c9942a1cce68d89062e4302886bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/common/zipball/f514089ad3b2ae05e20db282e9edf9425f53caaa",
-                "reference": "f514089ad3b2ae05e20db282e9edf9425f53caaa",
+                "url": "https://api.github.com/repos/bolt/common/zipball/4d1459fc0313c9942a1cce68d89062e4302886bb",
+                "reference": "4d1459fc0313c9942a1cce68d89062e4302886bb",
                 "shasum": ""
             },
             "require": {
@@ -310,26 +313,26 @@
                     "email": "bob@twokings.nl"
                 }
             ],
-            "description": "Common utilities for all Bolt libraries",
-            "time": "2019-01-16T09:45:03+00:00"
+            "description": "🧰 Common utilities for all Bolt libraries",
+            "time": "2019-08-16T13:48:47+00:00"
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.2.3",
+            "version": "4.0.0-beta.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "9ecf73b00cb3dc41bf7139675a4de5e53fb5d638"
+                "reference": "9d3decb88d90c076330f614d6c552813765effc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/9ecf73b00cb3dc41bf7139675a4de5e53fb5d638",
-                "reference": "9ecf73b00cb3dc41bf7139675a4de5e53fb5d638",
+                "url": "https://api.github.com/repos/bolt/core/zipball/9d3decb88d90c076330f614d6c552813765effc8",
+                "reference": "9d3decb88d90c076330f614d6c552813765effc8",
                 "shasum": ""
             },
             "require": {
                 "api-platform/core": "^2.4",
-                "bolt/common": "^2.0.2",
+                "bolt/common": "^2.1.0",
                 "cocur/slugify": "^3.2",
                 "composer/composer": "^1.9",
                 "doctrine/annotations": "^1.6",
@@ -345,7 +348,6 @@
                 "ezyang/htmlpurifier": "^4.10",
                 "fzaninotto/faker": "^1.8",
                 "gedmo/doctrine-extensions": "v2.4.x-dev",
-                "guzzlehttp/guzzle": "^6.3",
                 "knplabs/knp-menu-bundle": "^2.2",
                 "league/glide-symfony": "^1.0",
                 "miljar/php-exif": "^0.6.4",
@@ -366,6 +368,7 @@
                 "symfony/flex": "^1.2",
                 "symfony/form": "^4.3",
                 "symfony/framework-bundle": "^4.3",
+                "symfony/http-client": "^4.3",
                 "symfony/monolog-bridge": "^4.3",
                 "symfony/monolog-bundle": "^3.3",
                 "symfony/polyfill-php72": "^1.11",
@@ -440,21 +443,21 @@
             "license": [
                 "MIT"
             ],
-            "description": "Bolt 4 Core",
-            "time": "2019-08-11T18:11:46+00:00"
+            "description": "🧿 Bolt 4 Core",
+            "time": "2019-08-16T14:46:35+00:00"
         },
         {
             "name": "bolt/newswidget",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/newswidget.git",
-                "reference": "822837d5bf498a2ab98708a0bb237994006a4b29"
+                "reference": "61b275e7fccf618b9875ca0ffe0ca8f770f3705f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/newswidget/zipball/822837d5bf498a2ab98708a0bb237994006a4b29",
-                "reference": "822837d5bf498a2ab98708a0bb237994006a4b29",
+                "url": "https://api.github.com/repos/bolt/newswidget/zipball/61b275e7fccf618b9875ca0ffe0ca8f770f3705f",
+                "reference": "61b275e7fccf618b9875ca0ffe0ca8f770f3705f",
                 "shasum": ""
             },
             "require-dev": {
@@ -480,7 +483,7 @@
                 }
             ],
             "description": "📰 A simple Widget Extension to display the latest Bolt news on the dashboard.",
-            "time": "2019-08-05T15:04:08+00:00"
+            "time": "2019-08-16T14:35:46+00:00"
         },
         {
             "name": "bolt/themes",
@@ -1938,16 +1941,16 @@
         },
         {
             "name": "drupol/composer-packages",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupol/composer-packages.git",
-                "reference": "131c6d3b9f899b67b38b8d7770fc7940a4eb54f4"
+                "reference": "c2f764db73c791360f03e961b40f7e6349b767d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/131c6d3b9f899b67b38b8d7770fc7940a4eb54f4",
-                "reference": "131c6d3b9f899b67b38b8d7770fc7940a4eb54f4",
+                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/c2f764db73c791360f03e961b40f7e6349b767d3",
+                "reference": "c2f764db73c791360f03e961b40f7e6349b767d3",
                 "shasum": ""
             },
             "require": {
@@ -1992,20 +1995,20 @@
                 "composer plugin",
                 "extension"
             ],
-            "time": "2019-08-08T09:14:58+00:00"
+            "time": "2019-08-15T21:01:54+00:00"
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.10",
+            "version": "2.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec"
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
-                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/92dd169c32f6f55ba570c309d83f5209cefb5e23",
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23",
                 "shasum": ""
             },
             "require": {
@@ -2024,7 +2027,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -2050,7 +2053,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-07-19T20:52:08+00:00"
+            "time": "2019-08-13T17:33:27+00:00"
         },
         {
             "name": "embed/embed",
@@ -2385,122 +2388,6 @@
             "time": "2019-07-20T03:49:56+00:00"
         },
         {
-            "name": "guzzlehttp/guzzle",
-            "version": "6.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.4",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
-                "psr/log": "^1.0"
-            },
-            "suggest": {
-                "psr/log": "Required for using the Log middleware"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.3-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle is a PHP HTTP client library",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "rest",
-                "web service"
-            ],
-            "time": "2018-04-22T15:46:56+00:00"
-        },
-        {
-            "name": "guzzlehttp/promises",
-            "version": "v1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/promises.git",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle promises library",
-            "keywords": [
-                "promise"
-            ],
-            "time": "2016-12-20T10:07:11+00:00"
-        },
-        {
             "name": "guzzlehttp/psr7",
             "version": "1.6.1",
             "source": {
@@ -2759,16 +2646,16 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "bda9826d188409f275d24404b5072421f99ae55f"
+                "reference": "1c6e0a5e37fb82227ee9a5e458ddc554731a7bf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/bda9826d188409f275d24404b5072421f99ae55f",
-                "reference": "bda9826d188409f275d24404b5072421f99ae55f",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/1c6e0a5e37fb82227ee9a5e458ddc554731a7bf7",
+                "reference": "1c6e0a5e37fb82227ee9a5e458ddc554731a7bf7",
                 "shasum": ""
             },
             "require": {
@@ -2822,7 +2709,7 @@
                 "menu",
                 "tree"
             ],
-            "time": "2019-07-29T10:12:04+00:00"
+            "time": "2019-08-16T11:08:29+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -3265,16 +3152,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.22.3",
+            "version": "2.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "738fbd8d80b2c5e158fda76c29c2de432fcc6f7e"
+                "reference": "97a08830a22ce0b69549a4966773c0eae900468d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/738fbd8d80b2c5e158fda76c29c2de432fcc6f7e",
-                "reference": "738fbd8d80b2c5e158fda76c29c2de432fcc6f7e",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/97a08830a22ce0b69549a4966773c0eae900468d",
+                "reference": "97a08830a22ce0b69549a4966773c0eae900468d",
                 "shasum": ""
             },
             "require": {
@@ -3321,14 +3208,14 @@
                     "homepage": "http://github.com/kylekatarnls"
                 }
             ],
-            "description": "A simple API extension for DateTime.",
+            "description": "A API extension for DateTime that supports 281 different languages.",
             "homepage": "http://carbon.nesbot.com",
             "keywords": [
                 "date",
                 "datetime",
                 "time"
             ],
-            "time": "2019-08-07T12:36:44+00:00"
+            "time": "2019-08-12T17:19:41+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -5704,6 +5591,125 @@
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
             "time": "2019-07-27T08:36:33+00:00"
+        },
+        {
+            "name": "symfony/http-client",
+            "version": "v4.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client.git",
+                "reference": "7759fabfbdf7f57a1d29655550b49c4ff04891a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/7759fabfbdf7f57a1d29655550b49c4ff04891a5",
+                "reference": "7759fabfbdf7f57a1d29655550b49c4ff04891a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "psr/log": "^1.0",
+                "symfony/http-client-contracts": "^1.1.4",
+                "symfony/polyfill-php73": "^1.11"
+            },
+            "provide": {
+                "psr/http-client-implementation": "1.0",
+                "symfony/http-client-implementation": "1.1"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.0",
+                "psr/http-client": "^1.0",
+                "symfony/http-kernel": "^4.3",
+                "symfony/process": "^4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpClient\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony HttpClient component",
+            "homepage": "https://symfony.com",
+            "time": "2019-07-24T10:16:23+00:00"
+        },
+        {
+            "name": "symfony/http-client-contracts",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client-contracts.git",
+                "reference": "e1924aea9c70ae3e69fff05afa3cb8ce541bf3bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/e1924aea9c70ae3e69fff05afa3cb8ce541bf3bb",
+                "reference": "e1924aea9c70ae3e69fff05afa3cb8ce541bf3bb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "suggest": {
+                "symfony/http-client-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\HttpClient\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to HTTP clients",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2019-06-17T17:43:54+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -8168,7 +8174,7 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.8.31",
+            "version": "v5.8.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
@@ -9093,7 +9099,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "bolt/bolt-assets": 10
+        "bolt/assets": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

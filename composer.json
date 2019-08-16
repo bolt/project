@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "bolt/core": "^4.0",
-        "bolt/bolt-assets": "^4.0@beta",
+        "bolt/assets": "^4.0@beta",
         "bolt/themes": "^3.0",
         "symfony/flex": "^1.2",
         "bolt/newswidget": "^1.0",

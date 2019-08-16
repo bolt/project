@@ -10,9 +10,9 @@ build-assets:
 	cp -rf vendor/bolt/core/translations translations
 
 copy-assets:
-	rm -rf ../bolt-assets/assets ../bolt-assets/translations
-	cp -rf vendor/bolt/core/public/assets ../bolt-assets/
-	cp -rf translations ../bolt-assets/
+	rm -rf ../assets/assets ../assets/translations
+	cp -rf vendor/bolt/core/public/assets ../assets/
+	cp -rf translations ../assets/
 
 server:
 	bin/console server:start 127.0.0.1:8088 || true
