@@ -234,16 +234,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.2.3",
+            "version": "4.0.0-beta.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "eedfd5bd76600775339ca0d7ca5ed1fb0171eb8f"
+                "reference": "f5dac2eb766d3fd90d19fe4b3877a5d525099855"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/eedfd5bd76600775339ca0d7ca5ed1fb0171eb8f",
-                "reference": "eedfd5bd76600775339ca0d7ca5ed1fb0171eb8f",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/f5dac2eb766d3fd90d19fe4b3877a5d525099855",
+                "reference": "f5dac2eb766d3fd90d19fe4b3877a5d525099855",
                 "shasum": ""
             },
             "require-dev": {
@@ -260,8 +260,8 @@
                     "email": "bob@twokings.nl"
                 }
             ],
-            "description": "🛠 Assets used in Bolt's backend. Don't use directly.",
-            "time": "2019-08-16T12:37:41+00:00"
+            "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
+            "time": "2019-08-25T08:04:37+00:00"
         },
         {
             "name": "bolt/common",
