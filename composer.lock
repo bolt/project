@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "api-platform/core",
-            "version": "v2.4.5",
+            "version": "v2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "e056f5d9248588f228c88fb34f8ae2312fbb6387"
+                "reference": "96bfc4da9ea4bdc0d8285f10df5227033445c1e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/e056f5d9248588f228c88fb34f8ae2312fbb6387",
-                "reference": "e056f5d9248588f228c88fb34f8ae2312fbb6387",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/96bfc4da9ea4bdc0d8285f10df5227033445c1e5",
+                "reference": "96bfc4da9ea4bdc0d8285f10df5227033445c1e5",
                 "shasum": ""
             },
             "require": {
@@ -35,8 +35,7 @@
             },
             "conflict": {
                 "doctrine/common": "<2.7",
-                "doctrine/mongodb-odm": "<2.0",
-                "symfony/messenger": ">=4.3"
+                "doctrine/mongodb-odm": "<2.0"
             },
             "require-dev": {
                 "behat/behat": "^3.1",
@@ -57,16 +56,16 @@
                 "guzzlehttp/guzzle": "^6.0",
                 "jangregor/phpstan-prophecy": "^0.3",
                 "justinrainbow/json-schema": "^5.0",
-                "nelmio/api-doc-bundle": "^2.13.3",
+                "nelmio/api-doc-bundle": "^2.13.4",
                 "phpdocumentor/reflection-docblock": "^3.0 || ^4.0",
                 "phpdocumentor/type-resolver": "^0.3 || ^0.4",
                 "phpspec/prophecy": "^1.8",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.11",
+                "phpstan/phpstan": "^0.11.10",
                 "phpstan/phpstan-doctrine": "^0.11",
                 "phpstan/phpstan-phpunit": "^0.11",
                 "phpstan/phpstan-symfony": "^0.11",
-                "phpunit/phpunit": "^7.5.2",
+                "phpunit/phpunit": "^7.5.2 || ^8.0",
                 "psr/log": "^1.0",
                 "ramsey/uuid": "^3.7",
                 "ramsey/uuid-doctrine": "^1.4",
@@ -87,7 +86,7 @@
                 "symfony/framework-bundle": "^4.2",
                 "symfony/mercure-bundle": "*",
                 "symfony/messenger": "^4.2",
-                "symfony/phpunit-bridge": "^4.3",
+                "symfony/phpunit-bridge": "^4.3@dev",
                 "symfony/routing": "^3.4 || ^4.0",
                 "symfony/security-bundle": "^3.4 || ^4.0",
                 "symfony/security-core": "^3.4 || ^4.0",
@@ -148,7 +147,7 @@
                 "rest",
                 "swagger"
             ],
-            "time": "2019-06-22T10:48:51+00:00"
+            "time": "2019-08-19T23:11:34+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -196,16 +195,16 @@
         },
         {
             "name": "bobdenotter/weatherwidget",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/weatherwidget.git",
-                "reference": "90880e3d8e83dabe1e5dc50ad7aff82942ecf5d5"
+                "reference": "6a04d683b06833f233615db286c763e0b34c7bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/90880e3d8e83dabe1e5dc50ad7aff82942ecf5d5",
-                "reference": "90880e3d8e83dabe1e5dc50ad7aff82942ecf5d5",
+                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/6a04d683b06833f233615db286c763e0b34c7bea",
+                "reference": "6a04d683b06833f233615db286c763e0b34c7bea",
                 "shasum": ""
             },
             "require-dev": {
@@ -231,7 +230,7 @@
                 }
             ],
             "description": "🌤 A simple Dashboard Widget that displays the current weather. So you don't actually need to go outside or open the curtains.",
-            "time": "2019-08-16T14:38:12+00:00"
+            "time": "2019-08-23T14:07:44+00:00"
         },
         {
             "name": "bolt/assets",
@@ -318,16 +317,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.2.5",
+            "version": "4.0.0-beta.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "9d3decb88d90c076330f614d6c552813765effc8"
+                "reference": "88c9f6c5ce74621c5344300e89eb182e4a4eb1a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/9d3decb88d90c076330f614d6c552813765effc8",
-                "reference": "9d3decb88d90c076330f614d6c552813765effc8",
+                "url": "https://api.github.com/repos/bolt/core/zipball/88c9f6c5ce74621c5344300e89eb182e4a4eb1a6",
+                "reference": "88c9f6c5ce74621c5344300e89eb182e4a4eb1a6",
                 "shasum": ""
             },
             "require": {
@@ -353,6 +352,7 @@
                 "miljar/php-exif": "^0.6.4",
                 "nelmio/cors-bundle": "^1.5",
                 "nesbot/carbon": "^1.38 || ^2.19",
+                "peterkahl/country-code-to-emoji-flag": "^0.9.1",
                 "php": ">=7.1.3",
                 "php-translation/symfony-bundle": "^0.8",
                 "phpdocumentor/reflection-docblock": "^4.3",
@@ -444,7 +444,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-08-16T14:46:35+00:00"
+            "time": "2019-08-25T06:07:03+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -487,16 +487,16 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "176bf1b7d9319bbeb7edef0d06cb277c39548605"
+                "reference": "86525b8c075b78d9907f874b5546e4e6e54e4531"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/176bf1b7d9319bbeb7edef0d06cb277c39548605",
-                "reference": "176bf1b7d9319bbeb7edef0d06cb277c39548605",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/86525b8c075b78d9907f874b5546e4e6e54e4531",
+                "reference": "86525b8c075b78d9907f874b5546e4e6e54e4531",
                 "shasum": ""
             },
             "require": {
@@ -505,7 +505,17 @@
             "conflict": {
                 "bolt/bolt": "< 3.999"
             },
-            "type": "library",
+            "type": "bolt-theme",
+            "extra": {
+                "screenshots": [
+                    "screenshots/screenshot1.png",
+                    "screenshots/screenshot2.png"
+                ],
+                "themes": [
+                    "skeleton",
+                    "base-2018"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -516,7 +526,7 @@
                 "cms",
                 "twig"
             ],
-            "time": "2019-08-12T18:38:01+00:00"
+            "time": "2019-08-25T07:30:32+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -1941,16 +1951,16 @@
         },
         {
             "name": "drupol/composer-packages",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupol/composer-packages.git",
-                "reference": "c2f764db73c791360f03e961b40f7e6349b767d3"
+                "reference": "e2b3f85dd471744414dea232e3a25a906b3ed895"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/c2f764db73c791360f03e961b40f7e6349b767d3",
-                "reference": "c2f764db73c791360f03e961b40f7e6349b767d3",
+                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/e2b3f85dd471744414dea232e3a25a906b3ed895",
+                "reference": "e2b3f85dd471744414dea232e3a25a906b3ed895",
                 "shasum": ""
             },
             "require": {
@@ -1995,7 +2005,7 @@
                 "composer plugin",
                 "extension"
             ],
-            "time": "2019-08-15T21:01:54+00:00"
+            "time": "2019-08-22T11:50:24+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -2646,16 +2656,16 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "2.4.1",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "1c6e0a5e37fb82227ee9a5e458ddc554731a7bf7"
+                "reference": "f22db6a9232f5118f4ae378bf5e6cfea32e9c5f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/1c6e0a5e37fb82227ee9a5e458ddc554731a7bf7",
-                "reference": "1c6e0a5e37fb82227ee9a5e458ddc554731a7bf7",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/f22db6a9232f5118f4ae378bf5e6cfea32e9c5f5",
+                "reference": "f22db6a9232f5118f4ae378bf5e6cfea32e9c5f5",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2687,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -2709,7 +2719,7 @@
                 "menu",
                 "tree"
             ],
-            "time": "2019-08-16T11:08:29+00:00"
+            "time": "2019-08-23T08:46:21+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -2772,16 +2782,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.53",
+            "version": "1.0.55",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "08e12b7628f035600634a5e76d95b5eb66cea674"
+                "reference": "33c91155537c6dc899eacdc54a13ac6303f156e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/08e12b7628f035600634a5e76d95b5eb66cea674",
-                "reference": "08e12b7628f035600634a5e76d95b5eb66cea674",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/33c91155537c6dc899eacdc54a13ac6303f156e6",
+                "reference": "33c91155537c6dc899eacdc54a13ac6303f156e6",
                 "shasum": ""
             },
             "require": {
@@ -2852,7 +2862,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-06-18T20:09:29+00:00"
+            "time": "2019-08-24T11:17:19+00:00"
         },
         {
             "name": "league/glide",
@@ -3152,16 +3162,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.23.0",
+            "version": "2.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "97a08830a22ce0b69549a4966773c0eae900468d"
+                "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/97a08830a22ce0b69549a4966773c0eae900468d",
-                "reference": "97a08830a22ce0b69549a4966773c0eae900468d",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/767617a047e5b8b8b3b0b6023a2650847ed7df02",
+                "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02",
                 "shasum": ""
             },
             "require": {
@@ -3215,7 +3225,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-08-12T17:19:41+00:00"
+            "time": "2019-08-17T13:57:34+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -3383,6 +3393,50 @@
                 "paging"
             ],
             "time": "2019-07-17T20:56:16+00:00"
+        },
+        {
+            "name": "peterkahl/country-code-to-emoji-flag",
+            "version": "v0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peterkahl/country-code-to-emoji-flag.git",
+                "reference": "9d9a85486dbc29812f88c5f2a53fd90532343a08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/peterkahl/country-code-to-emoji-flag/zipball/9d9a85486dbc29812f88c5f2a53fd90532343a08",
+                "reference": "9d9a85486dbc29812f88c5f2a53fd90532343a08",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "peterkahl\\flagMaster\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Kahl",
+                    "role": "Developer",
+                    "email": "peter.kahl@colossalmind.com",
+                    "homepage": "https://www.colossalmind.com/"
+                }
+            ],
+            "description": "Converts string of country codes into string of emoji flags.",
+            "homepage": "https://github.com/peterkahl/country-code-to-emoji-flag",
+            "keywords": [
+                "country",
+                "emoji",
+                "flag"
+            ],
+            "time": "2018-03-22T14:45:07+00:00"
         },
         {
             "name": "php-translation/common",
@@ -8174,7 +8228,7 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.8.32",
+            "version": "v5.8.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
@@ -8346,16 +8400,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9"
+                "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
-                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/88e6d84706d09a236046d686bbea96f07b3a34f4",
+                "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4",
                 "shasum": ""
             },
             "require": {
@@ -8363,8 +8417,7 @@
                 "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6",
-                "sebastian/version": "^1.0.1"
+                "phpunit/phpunit": "^4.8.36 || ^7.5.13"
             },
             "type": "library",
             "extra": {
@@ -8393,7 +8446,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-12-25T11:19:39+00:00"
+            "time": "2019-08-24T08:43:50+00:00"
         },
         {
             "name": "webmozart/path-util",
@@ -8443,16 +8496,16 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v0.13.6",
+            "version": "v0.13.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "123af49e46d26b0cd2e7a71a387253aa01ea9a6b"
+                "reference": "b7a03cd847ad930d884f354d4e4c7e538c289061"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/123af49e46d26b0cd2e7a71a387253aa01ea9a6b",
-                "reference": "123af49e46d26b0cd2e7a71a387253aa01ea9a6b",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/b7a03cd847ad930d884f354d4e4c7e538c289061",
+                "reference": "b7a03cd847ad930d884f354d4e4c7e538c289061",
                 "shasum": ""
             },
             "require": {
@@ -8491,7 +8544,7 @@
                 "api",
                 "graphql"
             ],
-            "time": "2019-08-07T08:16:55+00:00"
+            "time": "2019-08-23T08:13:00+00:00"
         },
         {
             "name": "white-october/pagerfanta-bundle",
@@ -8854,16 +8907,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.12.0",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "201d0e050dca336c44f93657ce1f34f3b3868432"
+                "reference": "c4388410e2fb6321e77c5dd6e3cb2dba821f9fe6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/201d0e050dca336c44f93657ce1f34f3b3868432",
-                "reference": "201d0e050dca336c44f93657ce1f34f3b3868432",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/c4388410e2fb6321e77c5dd6e3cb2dba821f9fe6",
+                "reference": "c4388410e2fb6321e77c5dd6e3cb2dba821f9fe6",
                 "shasum": ""
             },
             "require": {
@@ -8918,7 +8971,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2019-07-09T22:19:18+00:00"
+            "time": "2019-08-18T17:34:03+00:00"
         },
         {
             "name": "symfony/stopwatch",
