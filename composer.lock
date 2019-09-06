@@ -195,20 +195,24 @@
         },
         {
             "name": "bobdenotter/weatherwidget",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/weatherwidget.git",
-                "reference": "6a04d683b06833f233615db286c763e0b34c7bea"
+                "reference": "74f8bf752b344949c6d47829745c9a7c9cb84c5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/6a04d683b06833f233615db286c763e0b34c7bea",
-                "reference": "6a04d683b06833f233615db286c763e0b34c7bea",
+                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/74f8bf752b344949c6d47829745c9a7c9cb84c5e",
+                "reference": "74f8bf752b344949c6d47829745c9a7c9cb84c5e",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=7.1.3"
+            },
             "require-dev": {
-                "bolt/core": "^4.0.0"
+                "bolt/core": "^4.0.0",
+                "symplify/easy-coding-standard": "^6.0"
             },
             "type": "bolt-extension",
             "extra": {
@@ -230,20 +234,20 @@
                 }
             ],
             "description": "🌤 A simple Dashboard Widget that displays the current weather. So you don't actually need to go outside or open the curtains.",
-            "time": "2019-08-23T12:34:31+00:00"
+            "time": "2019-09-04T19:53:50+00:00"
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.2.5",
+            "version": "4.0.0-beta.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "78826695b5d41c43bf2a44b19c3f522acca561d4"
+                "reference": "dad10d0b25ddfc3533648ec84ac1a1c73ac036bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/78826695b5d41c43bf2a44b19c3f522acca561d4",
-                "reference": "78826695b5d41c43bf2a44b19c3f522acca561d4",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/dad10d0b25ddfc3533648ec84ac1a1c73ac036bc",
+                "reference": "dad10d0b25ddfc3533648ec84ac1a1c73ac036bc",
                 "shasum": ""
             },
             "require-dev": {
@@ -261,7 +265,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-09-04T14:14:25+00:00"
+            "time": "2019-09-06T15:08:58+00:00"
         },
         {
             "name": "bolt/common",
@@ -317,16 +321,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.2.8",
+            "version": "4.0.0-beta.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "49c3409624066f719107773e232c6c7c6a924ace"
+                "reference": "bcb897194781e27ba758573a00a8fd909543cd81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/49c3409624066f719107773e232c6c7c6a924ace",
-                "reference": "49c3409624066f719107773e232c6c7c6a924ace",
+                "url": "https://api.github.com/repos/bolt/core/zipball/bcb897194781e27ba758573a00a8fd909543cd81",
+                "reference": "bcb897194781e27ba758573a00a8fd909543cd81",
                 "shasum": ""
             },
             "require": {
@@ -354,7 +358,7 @@
                 "nesbot/carbon": "^1.38 || ^2.19",
                 "peterkahl/country-code-to-emoji-flag": "^0.9.1",
                 "php": ">=7.1.3",
-                "php-translation/symfony-bundle": "^0.8",
+                "php-translation/symfony-bundle": "^0.9",
                 "phpdocumentor/reflection-docblock": "^4.3",
                 "psr/simple-cache": "^1.0",
                 "sensio/framework-extra-bundle": "^5.3",
@@ -444,7 +448,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-09-02T13:04:04+00:00"
+            "time": "2019-09-06T15:00:59+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -2656,16 +2660,16 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "f22db6a9232f5118f4ae378bf5e6cfea32e9c5f5"
+                "reference": "b6aade272c345b6fbd07fce5929a761cba0909b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/f22db6a9232f5118f4ae378bf5e6cfea32e9c5f5",
-                "reference": "f22db6a9232f5118f4ae378bf5e6cfea32e9c5f5",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/b6aade272c345b6fbd07fce5929a761cba0909b8",
+                "reference": "b6aade272c345b6fbd07fce5929a761cba0909b8",
                 "shasum": ""
             },
             "require": {
@@ -2719,7 +2723,7 @@
                 "menu",
                 "tree"
             ],
-            "time": "2019-08-23T08:46:21+00:00"
+            "time": "2019-09-02T10:16:14+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -3026,16 +3030,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.24.0",
+            "version": "1.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266"
+                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
-                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
+                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
                 "shasum": ""
             },
             "require": {
@@ -3100,7 +3104,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2018-11-05T09:00:11+00:00"
+            "time": "2019-09-06T13:49:17+00:00"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -3530,47 +3534,48 @@
         },
         {
             "name": "php-translation/symfony-bundle",
-            "version": "0.8.1",
+            "version": "0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-translation/symfony-bundle.git",
-                "reference": "fe29aeff419c311672c7d3dc72d9423eefc3ca5c"
+                "reference": "584b8b99ed97cc56a309c28cdd6e9c7bbf98bebb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-translation/symfony-bundle/zipball/fe29aeff419c311672c7d3dc72d9423eefc3ca5c",
-                "reference": "fe29aeff419c311672c7d3dc72d9423eefc3ca5c",
+                "url": "https://api.github.com/repos/php-translation/symfony-bundle/zipball/584b8b99ed97cc56a309c28cdd6e9c7bbf98bebb",
+                "reference": "584b8b99ed97cc56a309c28cdd6e9c7bbf98bebb",
                 "shasum": ""
             },
             "require": {
                 "nyholm/nsa": "^1.1",
-                "php": "^5.5 || ^7.0",
+                "php": "^7.1",
                 "php-translation/common": "^1.0",
-                "php-translation/extractor": "^1.3",
+                "php-translation/extractor": "^1.6",
                 "php-translation/symfony-storage": "^1.0",
-                "symfony/finder": "^2.7 || ^3.0 || ^4.0",
-                "symfony/framework-bundle": "^2.7 || ^3.0 || ^4.0",
-                "symfony/intl": "^2.7 || ^3.0 || ^4.0",
-                "symfony/translation": "^2.7 || ^3.0 || ^4.0",
-                "symfony/twig-bundle": "^2.7 || ^3.0 || ^4.0",
-                "symfony/validator": "^2.7 || ^3.0 || ^4.0"
+                "symfony/finder": "^3.4 || ^4.0",
+                "symfony/framework-bundle": "^3.4 || ^4.0",
+                "symfony/intl": "^3.4 || ^4.0",
+                "symfony/translation": "^3.4 || ^4.0",
+                "symfony/twig-bundle": "^3.4 || ^4.0",
+                "symfony/validator": "^3.4 || ^4.0",
+                "twig/twig": "^1.42 || ^2.11"
             },
             "require-dev": {
-                "guzzlehttp/psr7": "^1.4",
-                "matthiasnoback/symfony-config-test": "^2.2 || ^3.1",
-                "matthiasnoback/symfony-dependency-injection-test": "^1.2 || ^2.3",
-                "nyholm/symfony-bundle-test": "^1.2.3",
+                "matthiasnoback/symfony-config-test": "^4.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^3.1",
+                "nyholm/psr7": "^1.1",
+                "nyholm/symfony-bundle-test": "^1.4",
                 "php-http/curl-client": "^1.7",
                 "php-http/message": "^1.6",
                 "php-http/message-factory": "^1.0.2",
                 "php-translation/translator": "^1.0",
-                "symfony/asset": "^2.7 || ^3.0 || ^4.0",
-                "symfony/console": "^2.7 || ^3.0 || ^4.0",
-                "symfony/dependency-injection": "^2.7 || ^3.0 || ^4.0",
-                "symfony/phpunit-bridge": "^3.4 || ^4.0",
-                "symfony/templating": "^2.7 || ^3.0 || ^4.0",
-                "symfony/twig-bridge": "^2.7 || ^3.0 || ^4.0",
-                "symfony/web-profiler-bundle": "^2.7 || ^3.0 || ^4.0"
+                "symfony/asset": "^3.4 || ^4.0",
+                "symfony/console": "^3.4 || ^4.0",
+                "symfony/dependency-injection": "^3.4 || ^4.0",
+                "symfony/phpunit-bridge": "^4.2",
+                "symfony/templating": "^3.4 || ^4.0",
+                "symfony/twig-bridge": "^3.4 || ^4.0",
+                "symfony/web-profiler-bundle": "^3.4 || ^4.0"
             },
             "suggest": {
                 "php-http/httplug-bundle": "To easier configure your httplug clients."
@@ -3578,13 +3583,16 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.7-dev"
+                    "dev-master": "0.10-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Translation\\Bundle\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3596,7 +3604,7 @@
                     "email": "tobias.nyholm@gmail.com"
                 }
             ],
-            "time": "2018-10-02T10:05:24+00:00"
+            "time": "2019-09-06T07:39:54+00:00"
         },
         {
             "name": "php-translation/symfony-storage",
