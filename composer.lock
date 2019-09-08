@@ -7,6 +7,76 @@
     "content-hash": "5dbed5315270518225253fe4cbfd7d6f",
     "packages": [
         {
+            "name": "antishov/doctrine-extensions-bundle",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antishov/StofDoctrineExtensionsBundle.git",
+                "reference": "1420b1bc4100b51b8ebbcb5f11b59f3ba3fa5775"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antishov/StofDoctrineExtensionsBundle/zipball/1420b1bc4100b51b8ebbcb5f11b59f3ba3fa5775",
+                "reference": "1420b1bc4100b51b8ebbcb5f11b59f3ba3fa5775",
+                "shasum": ""
+            },
+            "require": {
+                "gedmo/doctrine-extensions": "^2.3.4",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "~2.7|~3.2|~4.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^4.0",
+                "symfony/security-bundle": "^2.7 || ^3.2 || ^4.0"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "to use the ORM extensions",
+                "doctrine/mongodb-odm-bundle": "to use the MongoDB ODM extensions"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stof\\DoctrineExtensionsBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Antishov Viktor",
+                    "email": "antishov.viktor@gmail.com"
+                },
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                }
+            ],
+            "description": "Forked from stof/doctrine-extensions-bundle integration of the gedmo/doctrine-extensions with Symfony2",
+            "homepage": "https://github.com/antishov/StofDoctrineExtensionsBundle",
+            "keywords": [
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "loggable",
+                "nestedset",
+                "sluggable",
+                "sortable",
+                "stoof",
+                "timestampable",
+                "translatable",
+                "tree"
+            ],
+            "time": "2019-08-07T19:22:41+00:00"
+        },
+        {
             "name": "api-platform/core",
             "version": "v2.4.6",
             "source": {
@@ -238,16 +308,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.2.6",
+            "version": "4.0.0-beta.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "dad10d0b25ddfc3533648ec84ac1a1c73ac036bc"
+                "reference": "bc74aa3c325fc90f146790f3b25936cd0f02a782"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/dad10d0b25ddfc3533648ec84ac1a1c73ac036bc",
-                "reference": "dad10d0b25ddfc3533648ec84ac1a1c73ac036bc",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/bc74aa3c325fc90f146790f3b25936cd0f02a782",
+                "reference": "bc74aa3c325fc90f146790f3b25936cd0f02a782",
                 "shasum": ""
             },
             "require-dev": {
@@ -265,7 +335,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-09-06T15:08:58+00:00"
+            "time": "2019-09-08T15:46:26+00:00"
         },
         {
             "name": "bolt/common",
@@ -321,19 +391,20 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.2.9",
+            "version": "4.0.0-beta.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "bcb897194781e27ba758573a00a8fd909543cd81"
+                "reference": "b6561048cd2871fe3c2618127f1b7cb3894d630c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/bcb897194781e27ba758573a00a8fd909543cd81",
-                "reference": "bcb897194781e27ba758573a00a8fd909543cd81",
+                "url": "https://api.github.com/repos/bolt/core/zipball/b6561048cd2871fe3c2618127f1b7cb3894d630c",
+                "reference": "b6561048cd2871fe3c2618127f1b7cb3894d630c",
                 "shasum": ""
             },
             "require": {
+                "antishov/doctrine-extensions-bundle": "^1.4",
                 "api-platform/core": "^2.4",
                 "bolt/common": "^2.1.0",
                 "cocur/slugify": "^3.2",
@@ -364,7 +435,6 @@
                 "sensio/framework-extra-bundle": "^5.3",
                 "sensiolabs/security-checker": "^5.0",
                 "siriusphp/upload": "^2.1",
-                "stof/doctrine-extensions-bundle": "^1.3",
                 "symfony/asset": "^4.3",
                 "symfony/console": "^4.3",
                 "symfony/dependency-injection": "^4.3",
@@ -385,7 +455,7 @@
                 "symfony/var-dumper": "^4.3",
                 "symfony/webpack-encore-bundle": "^1.6",
                 "symfony/yaml": "^4.3",
-                "tightenco/collect": "^5.8",
+                "tightenco/collect": "^6.0",
                 "twig/extensions": "^1.5",
                 "webmozart/path-util": "^2.3",
                 "webonyx/graphql-php": "^0.13",
@@ -448,7 +518,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-09-06T15:00:59+00:00"
+            "time": "2019-09-08T15:35:32+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -4444,71 +4514,6 @@
             "time": "2019-08-11T13:55:53+00:00"
         },
         {
-            "name": "stof/doctrine-extensions-bundle",
-            "version": "v1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
-                "reference": "46db71ec7ffee9122eca3cdddd4ef8d84bae269c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/46db71ec7ffee9122eca3cdddd4ef8d84bae269c",
-                "reference": "46db71ec7ffee9122eca3cdddd4ef8d84bae269c",
-                "shasum": ""
-            },
-            "require": {
-                "gedmo/doctrine-extensions": "^2.3.4",
-                "php": ">=5.3.2",
-                "symfony/framework-bundle": "~2.7|~3.2|~4.0"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^4.0",
-                "symfony/security-bundle": "^2.7 || ^3.2 || ^4.0"
-            },
-            "suggest": {
-                "doctrine/doctrine-bundle": "to use the ORM extensions",
-                "doctrine/mongodb-odm-bundle": "to use the MongoDB ODM extensions"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Stof\\DoctrineExtensionsBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christophe Coevoet",
-                    "email": "stof@notk.org"
-                }
-            ],
-            "description": "Integration of the gedmo/doctrine-extensions with Symfony2",
-            "homepage": "https://github.com/stof/StofDoctrineExtensionsBundle",
-            "keywords": [
-                "behaviors",
-                "doctrine2",
-                "extensions",
-                "gedmo",
-                "loggable",
-                "nestedset",
-                "sluggable",
-                "sortable",
-                "timestampable",
-                "translatable",
-                "tree"
-            ],
-            "time": "2017-12-24T16:06:50+00:00"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "v6.2.1",
             "source": {
@@ -8239,16 +8244,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.8.34",
+            "version": "v6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "957e430c26c51b65c80acc87896023229dc05a21"
+                "reference": "1793f44a9362b00a271de0776511726d9d952aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/957e430c26c51b65c80acc87896023229dc05a21",
-                "reference": "957e430c26c51b65c80acc87896023229dc05a21",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/1793f44a9362b00a271de0776511726d9d952aed",
+                "reference": "1793f44a9362b00a271de0776511726d9d952aed",
                 "shasum": ""
             },
             "require": {
@@ -8257,7 +8262,7 @@
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
-                "nesbot/carbon": "^1.26.3",
+                "nesbot/carbon": "^2.23.0",
                 "phpunit/phpunit": "^7.0"
             },
             "type": "library",
@@ -8285,7 +8290,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2019-07-30T19:16:47+00:00"
+            "time": "2019-08-30T16:33:17+00:00"
         },
         {
             "name": "twig/extensions",
