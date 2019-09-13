@@ -4,7 +4,7 @@ Bolt 4 standard project skeleton
 Set up a new Bolt 4 project, using the following command, replacing `project` with your desired project's name.
 
 ```bash
-composer create-project bolt/standard-project myprojectname
+composer create-project bolt/project myprojectname
 ```
 
 Navigate into the newly created folder, and configure the database in `.env`:
