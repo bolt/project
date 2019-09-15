@@ -308,16 +308,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.2.7",
+            "version": "4.0.0-beta.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "bc74aa3c325fc90f146790f3b25936cd0f02a782"
+                "reference": "6e276140bbce41199e44e44efebce27f029b106f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/bc74aa3c325fc90f146790f3b25936cd0f02a782",
-                "reference": "bc74aa3c325fc90f146790f3b25936cd0f02a782",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/6e276140bbce41199e44e44efebce27f029b106f",
+                "reference": "6e276140bbce41199e44e44efebce27f029b106f",
                 "shasum": ""
             },
             "require-dev": {
@@ -335,7 +335,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-09-08T15:46:26+00:00"
+            "time": "2019-09-15T14:32:03+00:00"
         },
         {
             "name": "bolt/common",
@@ -391,16 +391,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.2.10",
+            "version": "4.0.0-beta.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "b6561048cd2871fe3c2618127f1b7cb3894d630c"
+                "reference": "3752d4ce17d45ecdc581eb417959bfa4fe27a311"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/b6561048cd2871fe3c2618127f1b7cb3894d630c",
-                "reference": "b6561048cd2871fe3c2618127f1b7cb3894d630c",
+                "url": "https://api.github.com/repos/bolt/core/zipball/3752d4ce17d45ecdc581eb417959bfa4fe27a311",
+                "reference": "3752d4ce17d45ecdc581eb417959bfa4fe27a311",
                 "shasum": ""
             },
             "require": {
@@ -409,43 +409,43 @@
                 "bolt/common": "^2.1.0",
                 "cocur/slugify": "^3.2",
                 "composer/composer": "^1.9",
-                "doctrine/annotations": "^1.6",
+                "doctrine/annotations": "^1.7",
                 "doctrine/doctrine-bundle": "^1.11",
                 "doctrine/doctrine-cache-bundle": "^1.3.1",
                 "doctrine/orm": "^2.6",
                 "drupol/composer-packages": "^1.0",
-                "embed/embed": "^3.3",
+                "embed/embed": "^3.4",
                 "erusev/parsedown": "^1.7",
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-pdo": "*",
-                "ezyang/htmlpurifier": "^4.10",
+                "ezyang/htmlpurifier": "^4.11",
                 "fzaninotto/faker": "^1.8",
                 "gedmo/doctrine-extensions": "v2.4.x-dev",
                 "knplabs/knp-menu-bundle": "^2.2",
                 "league/glide-symfony": "^1.0",
                 "miljar/php-exif": "^0.6.4",
                 "nelmio/cors-bundle": "^1.5",
-                "nesbot/carbon": "^1.38 || ^2.19",
+                "nesbot/carbon": "^1.38 || ^2.24",
                 "peterkahl/country-code-to-emoji-flag": "^0.9.1",
                 "php": ">=7.1.3",
                 "php-translation/symfony-bundle": "^0.9",
                 "phpdocumentor/reflection-docblock": "^4.3",
                 "psr/simple-cache": "^1.0",
-                "sensio/framework-extra-bundle": "^5.3",
+                "sensio/framework-extra-bundle": "^5.4",
                 "sensiolabs/security-checker": "^5.0",
                 "siriusphp/upload": "^2.1",
                 "symfony/asset": "^4.3",
                 "symfony/console": "^4.3",
                 "symfony/dependency-injection": "^4.3",
                 "symfony/expression-language": "^4.3",
-                "symfony/flex": "^1.2",
+                "symfony/flex": "^1.4",
                 "symfony/form": "^4.3",
                 "symfony/framework-bundle": "^4.3",
                 "symfony/http-client": "^4.3",
                 "symfony/monolog-bridge": "^4.3",
-                "symfony/monolog-bundle": "^3.3",
-                "symfony/polyfill-php72": "^1.11",
+                "symfony/monolog-bundle": "^3.4",
+                "symfony/polyfill-php72": "^1.12",
                 "symfony/security-bundle": "^4.3",
                 "symfony/serializer": "^4.3",
                 "symfony/swiftmailer-bundle": "^3.2",
@@ -475,24 +475,24 @@
                 "bolt/newswidget": "^1.0",
                 "coduo/php-matcher": "^3.2",
                 "dama/doctrine-test-bundle": "^5.0",
-                "doctrine/doctrine-fixtures-bundle": "^3.1",
+                "doctrine/doctrine-fixtures-bundle": "^3.2",
                 "ext-curl": "*",
                 "ext-pdo_sqlite": "*",
                 "lakion/mink-debug-extension": "^1.2",
-                "php-http/httplug-pack": "^1.1",
+                "php-http/httplug-pack": "^1.2",
                 "php-translation/loco-adapter": "^0.8",
                 "phpspec/phpspec": "^5.1",
                 "phpspec/prophecy": "^1.8",
                 "phpstan/phpstan": "^0.11",
                 "phpstan/phpstan-doctrine": "^0.11",
                 "phpstan/phpstan-symfony": "^0.11",
-                "phpunit/phpunit": "^7.0",
+                "phpunit/phpunit": "^7.5",
                 "roave/security-advisories": "dev-master@dev",
                 "symfony/browser-kit": "^4.3",
                 "symfony/css-selector": "^4.3",
                 "symfony/debug-bundle": "^4.3",
                 "symfony/dotenv": "^4.3",
-                "symfony/maker-bundle": "^1.11",
+                "symfony/maker-bundle": "^1.13",
                 "symfony/stopwatch": "^4.3",
                 "symfony/web-profiler-bundle": "^4.3",
                 "symfony/web-server-bundle": "^4.3",
@@ -518,24 +518,28 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-09-08T15:35:32+00:00"
+            "time": "2019-09-15T14:23:14+00:00"
         },
         {
             "name": "bolt/newswidget",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/newswidget.git",
-                "reference": "61b275e7fccf618b9875ca0ffe0ca8f770f3705f"
+                "reference": "f982b4b5047ac52b8404853c955b3c45b0a1f707"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/newswidget/zipball/61b275e7fccf618b9875ca0ffe0ca8f770f3705f",
-                "reference": "61b275e7fccf618b9875ca0ffe0ca8f770f3705f",
+                "url": "https://api.github.com/repos/bolt/newswidget/zipball/f982b4b5047ac52b8404853c955b3c45b0a1f707",
+                "reference": "f982b4b5047ac52b8404853c955b3c45b0a1f707",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=7.1.3"
+            },
             "require-dev": {
-                "bolt/core": "^4.0.0"
+                "bolt/core": "^4.0.0",
+                "symplify/easy-coding-standard": "^6.0"
             },
             "type": "bolt-extension",
             "extra": {
@@ -557,20 +561,20 @@
                 }
             ],
             "description": "📰 A simple Widget Extension to display the latest Bolt news on the dashboard.",
-            "time": "2019-08-16T14:35:46+00:00"
+            "time": "2019-09-02T07:32:14+00:00"
         },
         {
             "name": "bolt/themes",
-            "version": "3.0.4",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "86525b8c075b78d9907f874b5546e4e6e54e4531"
+                "reference": "49ea11038db7aff07394c8ae04f3006516c34fc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/86525b8c075b78d9907f874b5546e4e6e54e4531",
-                "reference": "86525b8c075b78d9907f874b5546e4e6e54e4531",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/49ea11038db7aff07394c8ae04f3006516c34fc8",
+                "reference": "49ea11038db7aff07394c8ae04f3006516c34fc8",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +604,7 @@
                 "cms",
                 "twig"
             ],
-            "time": "2019-08-25T07:30:32+00:00"
+            "time": "2019-09-14T16:01:59+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -1184,16 +1188,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.10.0",
+            "version": "v2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "30e33f60f64deec87df728c02b107f82cdafad9d"
+                "reference": "b8ca1dcf6b0dc8a2af7a09baac8d0c48345df4ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/30e33f60f64deec87df728c02b107f82cdafad9d",
-                "reference": "30e33f60f64deec87df728c02b107f82cdafad9d",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/b8ca1dcf6b0dc8a2af7a09baac8d0c48345df4ff",
+                "reference": "b8ca1dcf6b0dc8a2af7a09baac8d0c48345df4ff",
                 "shasum": ""
             },
             "require": {
@@ -1209,14 +1213,16 @@
             },
             "require-dev": {
                 "doctrine/coding-standard": "^1.0",
-                "phpunit/phpunit": "^6.3",
+                "phpstan/phpstan": "^0.11",
+                "phpstan/phpstan-phpunit": "^0.11",
+                "phpunit/phpunit": "^7.0",
                 "squizlabs/php_codesniffer": "^3.0",
                 "symfony/phpunit-bridge": "^4.0.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.11.x-dev"
                 }
             },
             "autoload": {
@@ -1230,16 +1236,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -1261,7 +1267,7 @@
                 "doctrine",
                 "php"
             ],
-            "time": "2018-11-21T01:24:55+00:00"
+            "time": "2019-09-10T10:10:14+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -3726,35 +3732,33 @@
         },
         {
             "name": "phpdocumentor/reflection-common",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
+                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/63a995caa1ca9e5590304cd845c15ad6d482a62a",
+                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6"
+                "phpunit/phpunit": "~6"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3776,30 +3780,30 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-09-11T18:02:19+00:00"
+            "time": "2018-08-07T13:53:10+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "4.3.1",
+            "version": "4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c"
+                "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
-                "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
+                "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0.0",
-                "phpdocumentor/type-resolver": "^0.4.0",
+                "phpdocumentor/reflection-common": "^1.0.0 || ^2.0.0",
+                "phpdocumentor/type-resolver": "~0.4 || ^1.0.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
-                "doctrine/instantiator": "~1.0.5",
+                "doctrine/instantiator": "^1.0.5",
                 "mockery/mockery": "^1.0",
                 "phpunit/phpunit": "^6.4"
             },
@@ -3827,41 +3831,40 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2019-04-30T17:48:53+00:00"
+            "time": "2019-09-12T14:27:41+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.4.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
+                "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
+                "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0",
-                "phpdocumentor/reflection-common": "^1.0"
+                "php": "^7.1",
+                "phpdocumentor/reflection-common": "^2.0"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^5.2||^4.8.24"
+                "ext-tokenizer": "^7.1",
+                "mockery/mockery": "~1",
+                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3874,7 +3877,8 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2017-07-14T14:27:02+00:00"
+            "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+            "time": "2019-08-22T18:11:29+00:00"
         },
         {
             "name": "psr/cache",
@@ -8244,16 +8248,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v6.0.0",
+            "version": "v6.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "1793f44a9362b00a271de0776511726d9d952aed"
+                "reference": "e35230cde9e682881e9ac27105d0f26c32eca6d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/1793f44a9362b00a271de0776511726d9d952aed",
-                "reference": "1793f44a9362b00a271de0776511726d9d952aed",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/e35230cde9e682881e9ac27105d0f26c32eca6d6",
+                "reference": "e35230cde9e682881e9ac27105d0f26c32eca6d6",
                 "shasum": ""
             },
             "require": {
@@ -8290,7 +8294,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2019-08-30T16:33:17+00:00"
+            "time": "2019-09-09T14:07:34+00:00"
         },
         {
             "name": "twig/extensions",
