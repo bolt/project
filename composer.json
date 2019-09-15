@@ -1,5 +1,5 @@
 {
-    "name": "bolt/standard-project",
+    "name": "bolt/project",
     "type": "project",
     "description": "Bolt 4 standard project skeleton",
     "license": "MIT",
