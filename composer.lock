@@ -78,16 +78,16 @@
         },
         {
             "name": "api-platform/core",
-            "version": "v2.4.6",
+            "version": "v2.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "96bfc4da9ea4bdc0d8285f10df5227033445c1e5"
+                "reference": "53793261113b18931ce8a9e2f174f59fdaa0c1c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/96bfc4da9ea4bdc0d8285f10df5227033445c1e5",
-                "reference": "96bfc4da9ea4bdc0d8285f10df5227033445c1e5",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/53793261113b18931ce8a9e2f174f59fdaa0c1c5",
+                "reference": "53793261113b18931ce8a9e2f174f59fdaa0c1c5",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,7 @@
                 "behat/mink-extension": "^2.2",
                 "behat/symfony2-extension": "^2.1.1",
                 "behatch/contexts": "3.1.0",
-                "doctrine/annotations": "^1.2",
+                "doctrine/annotations": "^1.7",
                 "doctrine/data-fixtures": "^1.2.2",
                 "doctrine/doctrine-bundle": "^1.8",
                 "doctrine/doctrine-cache-bundle": "^1.3.5",
@@ -124,7 +124,7 @@
                 "elasticsearch/elasticsearch": "^6.0",
                 "friendsofsymfony/user-bundle": "^2.2@dev",
                 "guzzlehttp/guzzle": "^6.0",
-                "jangregor/phpstan-prophecy": "^0.3",
+                "jangregor/phpstan-prophecy": "^0.4.2",
                 "justinrainbow/json-schema": "^5.0",
                 "nelmio/api-doc-bundle": "^2.13.4",
                 "phpdocumentor/reflection-docblock": "^3.0 || ^4.0",
@@ -132,9 +132,9 @@
                 "phpspec/prophecy": "^1.8",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan": "^0.11.10",
-                "phpstan/phpstan-doctrine": "^0.11",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-symfony": "^0.11",
+                "phpstan/phpstan-doctrine": "^0.11.5",
+                "phpstan/phpstan-phpunit": "^0.11.2",
+                "phpstan/phpstan-symfony": "^0.11.6",
                 "phpunit/phpunit": "^7.5.2 || ^8.0",
                 "psr/log": "^1.0",
                 "ramsey/uuid": "^3.7",
@@ -164,6 +164,7 @@
                 "symfony/validator": "^3.4 || ^4.0",
                 "symfony/web-profiler-bundle": "^4.2",
                 "symfony/yaml": "^3.4 || ^4.0",
+                "twig/twig": "^1.41 || ^2.10",
                 "webonyx/graphql-php": ">=0.13 <1.0"
             },
             "suggest": {
@@ -217,7 +218,7 @@
                 "rest",
                 "swagger"
             ],
-            "time": "2019-08-19T23:11:34+00:00"
+            "time": "2019-09-17T14:41:55+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -308,16 +309,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.3.1",
+            "version": "4.0.0-beta.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "6e276140bbce41199e44e44efebce27f029b106f"
+                "reference": "d044a914d4195caa5baecebb37d0c55d064e29f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/6e276140bbce41199e44e44efebce27f029b106f",
-                "reference": "6e276140bbce41199e44e44efebce27f029b106f",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/d044a914d4195caa5baecebb37d0c55d064e29f2",
+                "reference": "d044a914d4195caa5baecebb37d0c55d064e29f2",
                 "shasum": ""
             },
             "require-dev": {
@@ -335,7 +336,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-09-15T14:32:03+00:00"
+            "time": "2019-09-17T20:11:10+00:00"
         },
         {
             "name": "bolt/common",
@@ -391,16 +392,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.3.1",
+            "version": "4.0.0-beta.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "3752d4ce17d45ecdc581eb417959bfa4fe27a311"
+                "reference": "47a2fe9bd612a6437cfcbeac3126f8f5503d7c89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/3752d4ce17d45ecdc581eb417959bfa4fe27a311",
-                "reference": "3752d4ce17d45ecdc581eb417959bfa4fe27a311",
+                "url": "https://api.github.com/repos/bolt/core/zipball/47a2fe9bd612a6437cfcbeac3126f8f5503d7c89",
+                "reference": "47a2fe9bd612a6437cfcbeac3126f8f5503d7c89",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +519,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-09-15T14:23:14+00:00"
+            "time": "2019-09-17T20:03:25+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -8246,16 +8247,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v6.0.2",
+            "version": "v6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "e35230cde9e682881e9ac27105d0f26c32eca6d6"
+                "reference": "4aea0cd7acbdff113968c9c4e735532e10ea1393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/e35230cde9e682881e9ac27105d0f26c32eca6d6",
-                "reference": "e35230cde9e682881e9ac27105d0f26c32eca6d6",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/4aea0cd7acbdff113968c9c4e735532e10ea1393",
+                "reference": "4aea0cd7acbdff113968c9c4e735532e10ea1393",
                 "shasum": ""
             },
             "require": {
@@ -8292,7 +8293,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2019-09-09T14:07:34+00:00"
+            "time": "2019-09-17T12:13:52+00:00"
         },
         {
             "name": "twig/extensions",
