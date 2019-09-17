@@ -33,7 +33,7 @@ RUN extBuildDeps=" \
             zip unzip \
             acl \
             iproute2 \
-            ttf-freefont \
+            fonts-freefont-ttf \
             fontconfig \
             dbus \
             openssh-client \
