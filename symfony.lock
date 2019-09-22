@@ -271,6 +271,9 @@
     "ralouphie/getallheaders": {
         "version": "2.0.5"
     },
+    "scienta/doctrine-json-functions": {
+        "version": "4.0.2"
+    },
     "seld/jsonlint": {
         "version": "1.7.1"
     },
