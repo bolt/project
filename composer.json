@@ -35,7 +35,8 @@
         },
         "post-create-project-cmd": [
             "cp -n .env.dist .env || true",
-            "rm public/.gitignore translations/.gitignore"
+            "rm public/.gitignore translations/.gitignore .github/FUNDING.yml",
+            "mv README_project.md README.md"
         ],
         "post-install-cmd": [
             "php bin/console bolt:copy-themes",

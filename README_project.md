@@ -1,9 +1,12 @@
 Bolt 4 standard project skeleton
 ================================
 
-With the release of Bolt 4 stable, there will be a number of ways to install
-the application. For now, we recommend the **composer create-project** as the
-fastest way to get an installation of Bolt up and running.
+Welcome! This is a Bolt 4 project, set up using `composer create-project`. If
+you are the developer of this project, you can modify this README to the
+specifics of your project. Below are the general instructions to set up a _new_
+project, based off the same skeleton.
+
+---
 
 Set up a new Bolt 4 project, using the following command, replacing
 `myprojectname` with your desired project's name.

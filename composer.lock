@@ -392,16 +392,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.3.3",
+            "version": "4.0.0-beta.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "ee4da330a26a2b4ff4110ce24a2f85e70a64d455"
+                "reference": "6a346350c74be3dd53ef1e8a75884fbe63658774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/ee4da330a26a2b4ff4110ce24a2f85e70a64d455",
-                "reference": "ee4da330a26a2b4ff4110ce24a2f85e70a64d455",
+                "url": "https://api.github.com/repos/bolt/core/zipball/6a346350c74be3dd53ef1e8a75884fbe63658774",
+                "reference": "6a346350c74be3dd53ef1e8a75884fbe63658774",
                 "shasum": ""
             },
             "require": {
@@ -520,7 +520,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-09-22T07:58:25+00:00"
+            "time": "2019-09-24T20:03:09+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -1794,16 +1794,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.6.3",
+            "version": "v2.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "434820973cadf2da2d66e7184be370084cc32ca8"
+                "reference": "b52ef5a1002f99ab506a5a2d6dba5a2c236c5f43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/434820973cadf2da2d66e7184be370084cc32ca8",
-                "reference": "434820973cadf2da2d66e7184be370084cc32ca8",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/b52ef5a1002f99ab506a5a2d6dba5a2c236c5f43",
+                "reference": "b52ef5a1002f99ab506a5a2d6dba5a2c236c5f43",
                 "shasum": ""
             },
             "require": {
@@ -1818,9 +1818,8 @@
                 "symfony/console": "~3.0|~4.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^1.0",
-                "phpunit/phpunit": "^6.5",
-                "squizlabs/php_codesniffer": "^3.2",
+                "doctrine/coding-standard": "^5.0",
+                "phpunit/phpunit": "^7.5",
                 "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {
@@ -1846,16 +1845,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -1872,7 +1871,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2018-11-20T23:46:46+00:00"
+            "time": "2019-09-20T14:30:26+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -2033,16 +2032,16 @@
         },
         {
             "name": "drupol/composer-packages",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupol/composer-packages.git",
-                "reference": "e2b3f85dd471744414dea232e3a25a906b3ed895"
+                "reference": "c19557b37e2be8e049d960d20e96c33e37769f82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/e2b3f85dd471744414dea232e3a25a906b3ed895",
-                "reference": "e2b3f85dd471744414dea232e3a25a906b3ed895",
+                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/c19557b37e2be8e049d960d20e96c33e37769f82",
+                "reference": "c19557b37e2be8e049d960d20e96c33e37769f82",
                 "shasum": ""
             },
             "require": {
@@ -2087,7 +2086,7 @@
                 "composer plugin",
                 "extension"
             ],
-            "time": "2019-08-22T11:50:24+00:00"
+            "time": "2019-09-24T18:44:01+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -8308,7 +8307,7 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v6.0.3",
+            "version": "v6.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",

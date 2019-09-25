@@ -21,6 +21,12 @@ frontend:
 
 
 
+# Routes for the project-specific functionality
+project:
+  resource: '../src/'
+  prefix: /
+  type: annotation
+
 # ------------------------------------------------------------------------------
 # Examples:
 
