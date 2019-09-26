@@ -266,16 +266,16 @@
         },
         {
             "name": "bobdenotter/weatherwidget",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/weatherwidget.git",
-                "reference": "74f8bf752b344949c6d47829745c9a7c9cb84c5e"
+                "reference": "b9c96315ea25b20c22feca4a814f3924f68a40f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/74f8bf752b344949c6d47829745c9a7c9cb84c5e",
-                "reference": "74f8bf752b344949c6d47829745c9a7c9cb84c5e",
+                "url": "https://api.github.com/repos/bobdenotter/weatherwidget/zipball/b9c96315ea25b20c22feca4a814f3924f68a40f5",
+                "reference": "b9c96315ea25b20c22feca4a814f3924f68a40f5",
                 "shasum": ""
             },
             "require": {
@@ -305,20 +305,20 @@
                 }
             ],
             "description": "🌤 A simple Dashboard Widget that displays the current weather. So you don't actually need to go outside or open the curtains.",
-            "time": "2019-09-04T19:53:50+00:00"
+            "time": "2019-09-26T11:25:31+00:00"
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.3.3",
+            "version": "4.0.0-beta.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "ad56220d4891b159bf367b77504f4339e8911f6c"
+                "reference": "e962913dcf9ac52a0490aad9d163e249e30e1b79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/ad56220d4891b159bf367b77504f4339e8911f6c",
-                "reference": "ad56220d4891b159bf367b77504f4339e8911f6c",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/e962913dcf9ac52a0490aad9d163e249e30e1b79",
+                "reference": "e962913dcf9ac52a0490aad9d163e249e30e1b79",
                 "shasum": ""
             },
             "require-dev": {
@@ -336,7 +336,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-09-22T10:50:47+00:00"
+            "time": "2019-09-26T11:54:10+00:00"
         },
         {
             "name": "bolt/common",
@@ -392,16 +392,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.3.4",
+            "version": "4.0.0-beta.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "6a346350c74be3dd53ef1e8a75884fbe63658774"
+                "reference": "2e10c76adcface1045167403cb89aaa567c64a8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/6a346350c74be3dd53ef1e8a75884fbe63658774",
-                "reference": "6a346350c74be3dd53ef1e8a75884fbe63658774",
+                "url": "https://api.github.com/repos/bolt/core/zipball/2e10c76adcface1045167403cb89aaa567c64a8f",
+                "reference": "2e10c76adcface1045167403cb89aaa567c64a8f",
                 "shasum": ""
             },
             "require": {
@@ -520,7 +520,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-09-24T20:03:09+00:00"
+            "time": "2019-09-26T11:37:35+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -567,16 +567,16 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "2085fca61ee7e2cbb7bfeba67f7452a582eb3f44"
+                "reference": "8958e04efdb585c496484fd0b24f0eba482f5cc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/2085fca61ee7e2cbb7bfeba67f7452a582eb3f44",
-                "reference": "2085fca61ee7e2cbb7bfeba67f7452a582eb3f44",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/8958e04efdb585c496484fd0b24f0eba482f5cc1",
+                "reference": "8958e04efdb585c496484fd0b24f0eba482f5cc1",
                 "shasum": ""
             },
             "require": {
@@ -606,7 +606,7 @@
                 "cms",
                 "twig"
             ],
-            "time": "2019-09-20T13:03:17+00:00"
+            "time": "2019-09-25T14:30:09+00:00"
         },
         {
             "name": "cocur/slugify",
