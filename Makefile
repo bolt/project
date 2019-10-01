@@ -1,3 +1,5 @@
+DC_RUN ?= docker-compose run --rm
+
 install:
 	cp -n .env.dist .env || true
 	composer install
@@ -90,16 +92,16 @@ docker-install:
 
 docker-install-deps:
 	docker-compose exec -T php sh -c "composer install"
-	docker-compose run node sh -c "npm install"
-	docker-compose run node sh -c "npm rebuild node-sass"
-	docker-compose run node sh -c "npm run build"
+	$(DC_RUN) node sh -c "npm install"
+	$(DC_RUN) node sh -c "npm rebuild node-sass"
+	$(DC_RUN) node sh -c "npm run build"
 
 docker-start:
 	cp -n .env.dist .env || true
 	docker-compose up -d
 
 docker-assets-serve:
-	docker-compose run node sh -c "npm run serve"
+	$(DC_RUN) node sh -c "npm run serve"
 
 docker-update:
 	docker-compose exec -T php sh -c "composer update"
@@ -139,7 +141,7 @@ docker-db-update:
 	docker-compose exec -T php sh -c "bin/console doctrine:schema:update -v --dump-sql --force --complete"
 
 docker-npm-fix-env:
-	docker-compose run node sh -c "npm rebuild node-sass"
+	$(DC_RUN) node sh -c "npm rebuild node-sass"
 
 docker-test:
 	docker-compose exec -T php sh -c "vendor/bin/phpspec run"
