@@ -78,16 +78,16 @@
         },
         {
             "name": "api-platform/core",
-            "version": "v2.4.7",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "53793261113b18931ce8a9e2f174f59fdaa0c1c5"
+                "reference": "97d765b19a19c232bc0224adee552e85e20174ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/53793261113b18931ce8a9e2f174f59fdaa0c1c5",
-                "reference": "53793261113b18931ce8a9e2f174f59fdaa0c1c5",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/97d765b19a19c232bc0224adee552e85e20174ec",
+                "reference": "97d765b19a19c232bc0224adee552e85e20174ec",
                 "shasum": ""
             },
             "require": {
@@ -99,13 +99,14 @@
                 "symfony/http-kernel": "^3.4 || ^4.0",
                 "symfony/property-access": "^3.4 || ^4.0",
                 "symfony/property-info": "^3.4 || ^4.0",
-                "symfony/serializer": "^4.2.6",
+                "symfony/serializer": "^4.3",
                 "symfony/web-link": "^4.1",
                 "willdurand/negotiation": "^2.0.3"
             },
             "conflict": {
                 "doctrine/common": "<2.7",
-                "doctrine/mongodb-odm": "<2.0"
+                "doctrine/mongodb-odm": "<2.0",
+                "doctrine/mongodb-odm-bundle": "4.0.0-RC2"
             },
             "require-dev": {
                 "behat/behat": "^3.1",
@@ -118,14 +119,14 @@
                 "doctrine/data-fixtures": "^1.2.2",
                 "doctrine/doctrine-bundle": "^1.8",
                 "doctrine/doctrine-cache-bundle": "^1.3.5",
-                "doctrine/mongodb-odm": "^2.0@beta",
-                "doctrine/mongodb-odm-bundle": "^4.0@beta",
+                "doctrine/mongodb-odm": "^2.0@rc",
+                "doctrine/mongodb-odm-bundle": "^4.0@rc",
                 "doctrine/orm": "^2.6.3",
                 "elasticsearch/elasticsearch": "^6.0",
                 "friendsofsymfony/user-bundle": "^2.2@dev",
                 "guzzlehttp/guzzle": "^6.0",
                 "jangregor/phpstan-prophecy": "^0.4.2",
-                "justinrainbow/json-schema": "^5.0",
+                "justinrainbow/json-schema": "^5.2.1",
                 "nelmio/api-doc-bundle": "^2.13.4",
                 "phpdocumentor/reflection-docblock": "^3.0 || ^4.0",
                 "phpdocumentor/type-resolver": "^0.3 || ^0.4",
@@ -141,6 +142,7 @@
                 "ramsey/uuid-doctrine": "^1.4",
                 "sebastian/object-enumerator": "^3.0.3",
                 "symfony/asset": "^3.4 || ^4.0",
+                "symfony/browser-kit": "^4.3",
                 "symfony/cache": "^3.4 || ^4.0",
                 "symfony/config": "^3.4 || ^4.0",
                 "symfony/console": "^3.4 || ^4.0",
@@ -153,19 +155,20 @@
                 "symfony/expression-language": "^3.4 || ^4.0",
                 "symfony/finder": "^3.4 || ^4.0",
                 "symfony/form": "^3.4 || ^4.0",
-                "symfony/framework-bundle": "^4.2",
+                "symfony/framework-bundle": "^4.3.2",
+                "symfony/http-client": "^4.3",
                 "symfony/mercure-bundle": "*",
-                "symfony/messenger": "^4.2",
+                "symfony/messenger": "^4.3",
                 "symfony/phpunit-bridge": "^4.3@dev",
                 "symfony/routing": "^3.4 || ^4.0",
                 "symfony/security-bundle": "^3.4 || ^4.0",
-                "symfony/security-core": "^3.4 || ^4.0",
+                "symfony/security-core": "^4.3",
                 "symfony/twig-bundle": "^3.4 || ^4.0",
                 "symfony/validator": "^3.4 || ^4.0",
                 "symfony/web-profiler-bundle": "^4.2",
                 "symfony/yaml": "^3.4 || ^4.0",
                 "twig/twig": "^1.41 || ^2.10",
-                "webonyx/graphql-php": ">=0.13 <1.0"
+                "webonyx/graphql-php": ">=0.13.1 <1.0"
             },
             "suggest": {
                 "doctrine/mongodb-odm-bundle": "To support MongoDB. Only versions 4.0 and later are supported.",
@@ -218,7 +221,7 @@
                 "rest",
                 "swagger"
             ],
-            "time": "2019-09-17T14:41:55+00:00"
+            "time": "2019-09-30T13:47:40+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -309,16 +312,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.3.4",
+            "version": "4.0.0-beta.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "e962913dcf9ac52a0490aad9d163e249e30e1b79"
+                "reference": "0aa23d1253be0c4750d593788a8b998d9df6eb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/e962913dcf9ac52a0490aad9d163e249e30e1b79",
-                "reference": "e962913dcf9ac52a0490aad9d163e249e30e1b79",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/0aa23d1253be0c4750d593788a8b998d9df6eb5e",
+                "reference": "0aa23d1253be0c4750d593788a8b998d9df6eb5e",
                 "shasum": ""
             },
             "require-dev": {
@@ -336,7 +339,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-09-26T11:54:10+00:00"
+            "time": "2019-10-04T10:54:26+00:00"
         },
         {
             "name": "bolt/common",
@@ -392,16 +395,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.3.5",
+            "version": "4.0.0-beta.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "2e10c76adcface1045167403cb89aaa567c64a8f"
+                "reference": "6abaec8d7efa00796d7b1047c3cfe02358a64903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/2e10c76adcface1045167403cb89aaa567c64a8f",
-                "reference": "2e10c76adcface1045167403cb89aaa567c64a8f",
+                "url": "https://api.github.com/repos/bolt/core/zipball/6abaec8d7efa00796d7b1047c3cfe02358a64903",
+                "reference": "6abaec8d7efa00796d7b1047c3cfe02358a64903",
                 "shasum": ""
             },
             "require": {
@@ -520,20 +523,20 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-09-26T11:37:35+00:00"
+            "time": "2019-10-04T06:38:48+00:00"
         },
         {
             "name": "bolt/newswidget",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/newswidget.git",
-                "reference": "f982b4b5047ac52b8404853c955b3c45b0a1f707"
+                "reference": "0e1d42ebe41c728bd7d1acc91d350e8fbe3a9073"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/newswidget/zipball/f982b4b5047ac52b8404853c955b3c45b0a1f707",
-                "reference": "f982b4b5047ac52b8404853c955b3c45b0a1f707",
+                "url": "https://api.github.com/repos/bolt/newswidget/zipball/0e1d42ebe41c728bd7d1acc91d350e8fbe3a9073",
+                "reference": "0e1d42ebe41c728bd7d1acc91d350e8fbe3a9073",
                 "shasum": ""
             },
             "require": {
@@ -563,7 +566,7 @@
                 }
             ],
             "description": "📰 A simple Widget Extension to display the latest Bolt news on the dashboard.",
-            "time": "2019-09-02T07:32:14+00:00"
+            "time": "2019-09-27T09:39:56+00:00"
         },
         {
             "name": "bolt/themes",
@@ -977,16 +980,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb"
+                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
-                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/904dca4eb10715b92569fbcd79e201d5c349b6bc",
+                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc",
                 "shasum": ""
             },
             "require": {
@@ -995,7 +998,7 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^7.5@dev"
+                "phpunit/phpunit": "^7.5"
             },
             "type": "library",
             "extra": {
@@ -1041,7 +1044,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2019-08-08T18:11:40+00:00"
+            "time": "2019-10-01T18:55:10+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -2032,16 +2035,16 @@
         },
         {
             "name": "drupol/composer-packages",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupol/composer-packages.git",
-                "reference": "c19557b37e2be8e049d960d20e96c33e37769f82"
+                "reference": "f2c287a8048d66d060357ef43dec44d1b691f840"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/c19557b37e2be8e049d960d20e96c33e37769f82",
-                "reference": "c19557b37e2be8e049d960d20e96c33e37769f82",
+                "url": "https://api.github.com/repos/drupol/composer-packages/zipball/f2c287a8048d66d060357ef43dec44d1b691f840",
+                "reference": "f2c287a8048d66d060357ef43dec44d1b691f840",
                 "shasum": ""
             },
             "require": {
@@ -2086,7 +2089,7 @@
                 "composer plugin",
                 "extension"
             ],
-            "time": "2019-09-24T18:44:01+00:00"
+            "time": "2019-10-01T17:08:32+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -2402,12 +2405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
-                "reference": "92ab6b0d38eec38858476103df5410d2eb974a25"
+                "reference": "26b872821aab3e3e310080e732d2680293d6d7d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/92ab6b0d38eec38858476103df5410d2eb974a25",
-                "reference": "92ab6b0d38eec38858476103df5410d2eb974a25",
+                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/26b872821aab3e3e310080e732d2680293d6d7d0",
+                "reference": "26b872821aab3e3e310080e732d2680293d6d7d0",
                 "shasum": ""
             },
             "require": {
@@ -2476,7 +2479,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2019-08-09T21:55:46+00:00"
+            "time": "2019-08-29T23:36:56+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -3243,16 +3246,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.24.0",
+            "version": "2.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29"
+                "reference": "b70da677101cca7b584c7489770d2677c2733593"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/934459c5ac0658bc765ad1e53512c7c77adcac29",
-                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/b70da677101cca7b584c7489770d2677c2733593",
+                "reference": "b70da677101cca7b584c7489770d2677c2733593",
                 "shasum": ""
             },
             "require": {
@@ -3299,14 +3302,14 @@
                     "homepage": "http://github.com/kylekatarnls"
                 }
             ],
-            "description": "A API extension for DateTime that supports 281 different languages.",
+            "description": "An API extension for DateTime that supports 281 different languages.",
             "homepage": "http://carbon.nesbot.com",
             "keywords": [
                 "date",
                 "datetime",
                 "time"
             ],
-            "time": "2019-08-31T16:37:55+00:00"
+            "time": "2019-09-30T16:22:22+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -8307,16 +8310,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v6.0.4",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "4aea0cd7acbdff113968c9c4e735532e10ea1393"
+                "reference": "8f56fad98222f8fe8c008cbae449f687e331444a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/4aea0cd7acbdff113968c9c4e735532e10ea1393",
-                "reference": "4aea0cd7acbdff113968c9c4e735532e10ea1393",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/8f56fad98222f8fe8c008cbae449f687e331444a",
+                "reference": "8f56fad98222f8fe8c008cbae449f687e331444a",
                 "shasum": ""
             },
             "require": {
@@ -8353,7 +8356,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2019-09-17T12:13:52+00:00"
+            "time": "2019-10-02T19:55:13+00:00"
         },
         {
             "name": "twig/extensions",
