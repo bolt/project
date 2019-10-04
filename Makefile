@@ -56,7 +56,7 @@ csfix-tests: ## to test with csfixer
 	vendor/bin/ecs check tests/php --fix
 	make stancheck
 
-stancheck: ## to run phpstane
+stancheck: ## to run phpstan
 	vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src
 
 test: ## to run phpunit tests
@@ -158,6 +158,9 @@ docker-test: ## to run phpspec and phpunit tests with docker
 	docker-compose exec -T php sh -c "vendor/bin/phpspec run"
 	docker-compose exec -T php sh -c "vendor/bin/phpunit"
 
+docker-server: ## to start server with docker
+	docker-compose exec -T php bin/console server:start 127.0.0.1:8088
+	
 docker-server-stop: ## to stop server with docker
 	docker-compose exec -T -u www-data php bin/console server:stop
 
