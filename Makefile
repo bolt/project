@@ -1,3 +1,5 @@
+DC_RUN ?= docker-compose run --rm
+
 .PHONY: help install build-assets copy-assets server server-stop cache csclear cscheck csfix csfix-tests stancheck test \
 behat e2e full-test db-create db-update db-reset docker-install docker-install-deps docker-start docker-assets-serve \
 docker-update docker-cache docker-csclear docker-cscheck docker-csfix docker-stancheck docker-db-create docker-db-reset \
@@ -102,15 +104,15 @@ docker-install: ## to install project with docker
 
 docker-install-deps: ## to install all assets with docker
 	docker-compose exec -T php sh -c "composer install"
-	docker-compose run node sh -c "make build-assets"
-	docker-compose run node sh -c "cd vendor/bolt/core && npm rebuild node-sass"
+	$(DC_RUN) node sh -c "make build-assets"
+	$(DC_RUN) node sh -c "cd vendor/bolt/core && npm rebuild node-sass"
 
 docker-start: ## to build containers
 	cp -n .env.dist .env || true
 	docker-compose up -d
 
 docker-assets-serve: ## to run server with npm
-	docker-compose run node sh -c "npm run serve"
+	$(DC_RUN) node sh -c "npm run serve"
 
 docker-update: ## to update dependencies with docker
 	docker-compose exec -T php sh -c "composer update"
@@ -150,7 +152,7 @@ docker-db-update: ## to update schema database with docker
 	docker-compose exec -T php sh -c "bin/console doctrine:schema:update -v --dump-sql --force --complete"
 
 docker-npm-fix-env: ## to rebuild asset sass
-	docker-compose run node sh -c "npm rebuild node-sass"
+	$(DC_RUN) node sh -c "npm rebuild node-sass"
 
 docker-test: ## to run phpspec and phpunit tests with docker
 	docker-compose exec -T php sh -c "vendor/bin/phpspec run"
