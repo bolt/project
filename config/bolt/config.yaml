@@ -76,7 +76,7 @@ homepage_template: index.twig
 # identifiers for records, which will be tried until a match is found.
 #
 # Note: The record specified in this parameter must be set to published.
-notfound: [ not-found.twig, block/404-not-found ]
+notfound: [ blocks/404-not-found, 'helpers/page_404.html.twig' ]
 
 # The default template and amount of records to use for listing-pages on the
 # site.
@@ -105,6 +105,10 @@ record_template: record.twig
 listing_template: listing.twig
 listing_records: 6
 listing_sort: datepublish DESC
+
+# Maximum amount of items to show in a `<select>` for picking a record. For
+# example in `type: select`.
+maximum_listing_select: 1000
 
 # Because of limitations on how the underlying database queries work, there are
 # only two options for sorting on taxonomies. ASC for roughly "oldest first"

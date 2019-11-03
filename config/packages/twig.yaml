@@ -12,3 +12,6 @@ twig:
     default_path: '%kernel.project_dir%/vendor/bolt/core/templates'
     globals:
         'config': '@Bolt\Configuration\Config'
+
+    # Override Symfony's error pages (so we can show custom 404's)
+    exception_controller: Bolt\Controller\ExceptionController::showAction
