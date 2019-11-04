@@ -312,16 +312,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.4.1",
+            "version": "4.0.0-beta.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "677690584aa9aeb3e1779b6564ede10f9fadf308"
+                "reference": "c5f371d25b79b38836d7667d1f19a56b08b9a0e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/677690584aa9aeb3e1779b6564ede10f9fadf308",
-                "reference": "677690584aa9aeb3e1779b6564ede10f9fadf308",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/c5f371d25b79b38836d7667d1f19a56b08b9a0e3",
+                "reference": "c5f371d25b79b38836d7667d1f19a56b08b9a0e3",
                 "shasum": ""
             },
             "require-dev": {
@@ -339,7 +339,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-11-03T18:05:41+00:00"
+            "time": "2019-11-04T20:57:45+00:00"
         },
         {
             "name": "bolt/common",
@@ -395,16 +395,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.4.1",
+            "version": "4.0.0-beta.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "54fcaf7eb5f89bb5c236839750f12dadde5e0446"
+                "reference": "1d35f06a522f2685ebd1543da8259958b92c5afa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/54fcaf7eb5f89bb5c236839750f12dadde5e0446",
-                "reference": "54fcaf7eb5f89bb5c236839750f12dadde5e0446",
+                "url": "https://api.github.com/repos/bolt/core/zipball/1d35f06a522f2685ebd1543da8259958b92c5afa",
+                "reference": "1d35f06a522f2685ebd1543da8259958b92c5afa",
                 "shasum": ""
             },
             "require": {
@@ -527,7 +527,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-11-03T17:41:57+00:00"
+            "time": "2019-11-04T20:12:42+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -8995,16 +8995,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.14.1",
+            "version": "v1.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "f7dd84691dbf399137a5caafc90f419801d09e5f"
+                "reference": "5dfcbc400b168943f15a21d4283ad848605d9bc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/f7dd84691dbf399137a5caafc90f419801d09e5f",
-                "reference": "f7dd84691dbf399137a5caafc90f419801d09e5f",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/5dfcbc400b168943f15a21d4283ad848605d9bc2",
+                "reference": "5dfcbc400b168943f15a21d4283ad848605d9bc2",
                 "shasum": ""
             },
             "require": {
@@ -9059,7 +9059,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2019-11-01T19:39:59+00:00"
+            "time": "2019-11-04T13:50:13+00:00"
         },
         {
             "name": "symfony/stopwatch",
