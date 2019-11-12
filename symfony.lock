@@ -660,6 +660,9 @@
     "twig/twig": {
         "version": "v2.6.2"
     },
+    "ua-parser/uap-php": {
+        "version": "v3.9.2"
+    },
     "webmozart/assert": {
         "version": "1.4.0"
     },
