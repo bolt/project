@@ -13,12 +13,12 @@
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.1",
-        "symfony/debug-bundle": "^4.3",
-        "symfony/dotenv": "^4.3",
+        "symfony/debug-bundle": "^4.4",
+        "symfony/dotenv": "^4.4",
         "symfony/maker-bundle": "^1.11",
-        "symfony/stopwatch": "^4.3",
-        "symfony/web-profiler-bundle": "^4.3",
-        "symfony/web-server-bundle": "^4.3"
+        "symfony/stopwatch": "^4.4",
+        "symfony/web-profiler-bundle": "^4.4",
+        "symfony/web-server-bundle": "^4.4"
     },
     "autoload": {
         "psr-4": {
@@ -54,7 +54,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "require": "^4.3"
+            "require": "^4.4"
         }
     }
 }
