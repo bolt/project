@@ -40,8 +40,6 @@ locale: en
 maintenance_mode: false
 maintenance: [ blocks/503-maintenance-mode, 'helpers/page_503.html.twig' ]
 
-
-
 # If your site is reachable under different urls (say, both blog.example.org/
 # as well as example.org/), its a good idea to set one of these as the
 # canonical, so its clear which is the primary address of the site.

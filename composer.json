@@ -7,18 +7,9 @@
         "bolt/core": "^4.0",
         "bolt/assets": "^4.0",
         "bolt/themes": "^3.0",
-        "symfony/flex": "^1.2",
+        "symfony/flex": "^1.5",
         "bolt/newswidget": "^1.0",
         "bobdenotter/weatherwidget": "^1.0"
-    },
-    "require-dev": {
-        "doctrine/doctrine-fixtures-bundle": "^3.1",
-        "symfony/debug-bundle": "^4.4",
-        "symfony/dotenv": "^4.4",
-        "symfony/maker-bundle": "^1.11",
-        "symfony/stopwatch": "^4.4",
-        "symfony/web-profiler-bundle": "^4.4",
-        "symfony/web-server-bundle": "^4.4"
     },
     "autoload": {
         "psr-4": {
