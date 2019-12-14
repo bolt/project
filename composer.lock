@@ -403,12 +403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "a2ce0b245236d2c600e734f54ce23b4ddc63fb2d"
+                "reference": "7fe2aa0af4c16db55d2ce7115b66cf1df093a54a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/a2ce0b245236d2c600e734f54ce23b4ddc63fb2d",
-                "reference": "a2ce0b245236d2c600e734f54ce23b4ddc63fb2d",
+                "url": "https://api.github.com/repos/bolt/core/zipball/7fe2aa0af4c16db55d2ce7115b66cf1df093a54a",
+                "reference": "7fe2aa0af4c16db55d2ce7115b66cf1df093a54a",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-12-14T10:57:53+00:00"
+            "time": "2019-12-14T13:18:27+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -576,7 +576,7 @@
                 }
             ],
             "description": "📰 A simple Widget Extension to display the latest Bolt news on the dashboard.",
-            "time": "2019-12-14T06:07:58+00:00"
+            "time": "2019-12-14T11:36:54+00:00"
         },
         {
             "name": "bolt/themes",
