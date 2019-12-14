@@ -320,12 +320,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "3f25d2dc7688fc2a0ab7e9b28f31c386d88241f9"
+                "reference": "cf24cf4b4fcb9d286aaf43d693cf5372ac9bb3d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/3f25d2dc7688fc2a0ab7e9b28f31c386d88241f9",
-                "reference": "3f25d2dc7688fc2a0ab7e9b28f31c386d88241f9",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/cf24cf4b4fcb9d286aaf43d693cf5372ac9bb3d3",
+                "reference": "cf24cf4b4fcb9d286aaf43d693cf5372ac9bb3d3",
                 "shasum": ""
             },
             "require-dev": {
@@ -343,7 +343,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-12-14T12:02:08+00:00"
+            "time": "2019-12-14T13:34:38+00:00"
         },
         {
             "name": "bolt/common",
