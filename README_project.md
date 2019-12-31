@@ -6,6 +6,9 @@ you are the developer of this project, you can modify this README to the
 specifics of your project. Below are the general instructions to set up a _new_
 project, based off the same skeleton.
 
+
+Note: If you're updating from an earlier beta, read UPDATE.md for details.
+
 ---
 
 Set up a new Bolt 4 project, using the following command, replacing

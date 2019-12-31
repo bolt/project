@@ -50,17 +50,21 @@ services:
     Bolt\Doctrine\TablePrefix:
         arguments: [ "%bolt.table_prefix%" ]
         tags:
-        - { name: doctrine.event_listener, event: loadClassMetadata, lazy: true }
-
-    Bolt\Extension\RoutesLoader:
-        tags: [routing.loader]
-    Bolt\Event\Listener\FieldDiscriminatorListener:
-        tags:
-        - { name: doctrine.event_listener, event: loadClassMetadata }
+            - { name: doctrine.event_listener, event: loadClassMetadata, lazy: true }
 
     Bolt\Event\Listener\ContentFillListener:
         tags:
-        - { name: doctrine.event_listener, event: postLoad }
+            - { name: doctrine.event_listener, event: postLoad }
+
+    Bolt\Event\Listener\FieldDiscriminatorListener:
+        tags:
+            - { name: doctrine.event_listener, event: loadClassMetadata }
+
+    Bolt\Event\Subscriber\TimedPublishSubscriber:
+        arguments: [ "%bolt.table_prefix%" ]
+
+    Bolt\Extension\RoutesLoader:
+        tags: [routing.loader]
 
     # menus
     Bolt\Menu\BackendMenuBuilder:
@@ -68,9 +72,9 @@ services:
         tags:
             - { name: knp_menu.menu_builder, method: createAdminMenu, alias: admin_menu } # The alias is what is used to retrieve the menu
 
-    Bolt\Menu\FrontendMenuBuilder: ~
-
     Bolt\Menu\BackendMenuBuilderInterface: '@Bolt\Menu\BackendMenuBuilder'
+
+    Bolt\Menu\FrontendMenuBuilder: ~
 
     Bolt\Menu\FrontendMenuBuilderInterface: '@Bolt\Menu\FrontendMenuBuilder'
 
@@ -78,14 +82,14 @@ services:
     Bolt\Storage\ContentQueryParser:
         calls:
             -
-            method: addService
-            arguments: [ 'select', '@Bolt\Storage\SelectQuery' ]
+                method: addService
+                arguments: [ 'select', '@Bolt\Storage\SelectQuery' ]
 
     Bolt\Storage\Query:
         calls:
             -
-            method: addScope
-            arguments: [ 'frontend', '@Bolt\Storage\FrontendQueryScope' ]
+                method: addScope
+                arguments: [ 'frontend', '@Bolt\Storage\FrontendQueryScope' ]
 
     Doctrine\ORM\Query\Expr: ~
 
