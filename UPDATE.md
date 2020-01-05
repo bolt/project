@@ -11,8 +11,40 @@ composer update
 bin/console cache:clear
 ```
 
+## From earlier Beta's to Beta 5
 
-## PDOException > DriverException
+### "Notice: Undefined index: location"
+
+If you get this error: 
+
+```
+ Notice: Undefined index: location
+```
+
+You can fix this by adding the following to your `config/services.yaml`:
+
+```yaml
+    monolog.processor.request:
+        class: Bolt\Log\RequestProcessor
+        tags:
+            - { name: monolog.processor, method: processRecord, handler: db }
+```
+
+### Add `monolog.yaml`
+
+Create a new file `config/packages/monolog.yaml`, to configure the new logging:
+
+```yaml
+monolog:
+    channels: ['db']
+    handlers:
+        db:
+            channels: ['db']
+            type: service
+            id: Bolt\Log\LogHandler
+```
+
+### PDOException > DriverException
 
 If your database is out of date, you get this error: 
 
@@ -28,7 +60,7 @@ Run the following to update it (by force):
 bin/console doctrine:schema:update --force
 ```
 
-## Autowire TimedPublishSubscriber
+### Autowire TimedPublishSubscriber
 
 If you get this error: 
 

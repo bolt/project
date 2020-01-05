@@ -316,16 +316,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.5.3",
+            "version": "4.0.0-beta.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "d6e92688236d972a44eae563d0323acc5990a6ed"
+                "reference": "2db0c10a26448235275e1ee5cda957c14ecfba11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/d6e92688236d972a44eae563d0323acc5990a6ed",
-                "reference": "d6e92688236d972a44eae563d0323acc5990a6ed",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/2db0c10a26448235275e1ee5cda957c14ecfba11",
+                "reference": "2db0c10a26448235275e1ee5cda957c14ecfba11",
                 "shasum": ""
             },
             "require-dev": {
@@ -343,7 +343,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2019-12-31T13:49:45+00:00"
+            "time": "2020-01-05T08:29:38+00:00"
         },
         {
             "name": "bolt/common",
@@ -399,16 +399,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.5.3",
+            "version": "4.0.0-beta.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "9580f3c60f91e9951941340aa0244556e5c5407a"
+                "reference": "6df1ceb21e7dfb330609d5f12098553e54d3002c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/9580f3c60f91e9951941340aa0244556e5c5407a",
-                "reference": "9580f3c60f91e9951941340aa0244556e5c5407a",
+                "url": "https://api.github.com/repos/bolt/core/zipball/6df1ceb21e7dfb330609d5f12098553e54d3002c",
+                "reference": "6df1ceb21e7dfb330609d5f12098553e54d3002c",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2019-12-31T12:27:34+00:00"
+            "time": "2020-01-05T08:13:41+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -1356,16 +1356,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.10.0",
+            "version": "v2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "0c9a646775ef549eb0a213a4f9bd4381d9b4d934"
+                "reference": "c2b8e6e82732a64ecde1cddf9e1e06cb8556e3d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/0c9a646775ef549eb0a213a4f9bd4381d9b4d934",
-                "reference": "0c9a646775ef549eb0a213a4f9bd4381d9b4d934",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c2b8e6e82732a64ecde1cddf9e1e06cb8556e3d8",
+                "reference": "c2b8e6e82732a64ecde1cddf9e1e06cb8556e3d8",
                 "shasum": ""
             },
             "require": {
@@ -1444,7 +1444,7 @@
                 "sqlserver",
                 "sqlsrv"
             ],
-            "time": "2019-11-03T16:50:43+00:00"
+            "time": "2020-01-04T12:56:21+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -3034,16 +3034,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.62",
+            "version": "1.0.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0"
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
-                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8132daec326565036bc8e8d1876f77ec183a7bd6",
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6",
                 "shasum": ""
             },
             "require": {
@@ -3114,7 +3114,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-12-29T14:46:55+00:00"
+            "time": "2020-01-04T16:30:31+00:00"
         },
         {
             "name": "league/glide",
