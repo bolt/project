@@ -169,6 +169,9 @@
     "justinrainbow/json-schema": {
         "version": "5.2.8"
     },
+    "knplabs/doctrine-behaviors": {
+        "version": "v2.0.1"
+    },
     "knplabs/knp-menu": {
         "version": "2.3.0"
     },
@@ -208,6 +211,12 @@
     "nesbot/carbon": {
         "version": "1.36.2"
     },
+    "nette/finder": {
+        "version": "v2.5.2"
+    },
+    "nette/utils": {
+        "version": "v3.1.0"
+    },
     "nikic/php-parser": {
         "version": "v4.2.1"
     },
@@ -216,6 +225,9 @@
     },
     "pagerfanta/pagerfanta": {
         "version": "v2.0.1"
+    },
+    "paragonie/random_compat": {
+        "version": "v9.99.99"
     },
     "peterkahl/country-code-to-emoji-flag": {
         "version": "v0.9.1"
@@ -276,6 +288,9 @@
     },
     "ralouphie/getallheaders": {
         "version": "2.0.5"
+    },
+    "ramsey/uuid": {
+        "version": "3.9.2"
     },
     "scienta/doctrine-json-functions": {
         "version": "4.0.2"
@@ -476,11 +491,17 @@
     "symfony/polyfill-iconv": {
         "version": "v1.11.0"
     },
+    "symfony/polyfill-intl-grapheme": {
+        "version": "v1.13.1"
+    },
     "symfony/polyfill-intl-icu": {
         "version": "v1.10.0"
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.11.0"
+    },
+    "symfony/polyfill-intl-normalizer": {
+        "version": "v1.13.1"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.10.0"
@@ -547,6 +568,9 @@
     },
     "symfony/stopwatch": {
         "version": "v4.4.0"
+    },
+    "symfony/string": {
+        "version": "v5.0.2"
     },
     "symfony/swiftmailer-bundle": {
         "version": "2.5",
@@ -658,6 +682,9 @@
     },
     "symfony/yaml": {
         "version": "v4.2.3"
+    },
+    "symplify/package-builder": {
+        "version": "v7.2.1"
     },
     "tightenco/collect": {
         "version": "v5.8.2"

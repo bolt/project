@@ -13,6 +13,50 @@ bin/console cache:clear
 
 ## From earlier Beta's to Beta 5
 
+### Attempted to load class "StofDoctrineExtensionsBundle"
+
+If you get this error: 
+
+```
+PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "StofDoctrineExtensionsBundle" from namespace "Stof\DoctrineExtensionsBundle".
+```
+
+Remove these two lines from `comfig/services.yaml`:
+
+```yaml
+    doctrine.orm.entity_manager.class: Bolt\Doctrine\TranslatableEntityManager
+    stof_doctrine_extensions.listener.translatable.class: Bolt\Event\Listener\PreTranslatableListener
+```
+
+In `config/bundles.php`, remove one line, and add another. Remove: 
+
+```php
+Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
+```
+
+and replace it with: 
+
+```php
+Knp\DoctrineBehaviors\Bundle\DoctrineBehaviorsBundle::class => ['all' => true],
+```
+
+Then, delete the file `config/packages/stof_doctrine_extensions.yaml`
+
+Then, in `config/packages/doctrine.yaml`, remove these sections: 
+
+```yaml
+            gedmo_translatable:
+                type: annotation
+                prefix: Gedmo\Translatable\Entity
+                dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity/MappedSuperclass"
+                is_bundle: false
+            gedmo_translator:
+                type: annotation
+                prefix: Gedmo\Translator\Entity
+                dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity"
+                is_bundle: false
+```
+
 ### "Notice: Undefined index: location"
 
 If you get this error: 
