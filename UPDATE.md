@@ -13,6 +13,31 @@ bin/console cache:clear
 
 ## From earlier Beta's to Beta 5
 
+### Unable to find file "@TranslationBundle/Resources/config/routing_webui.yml"
+
+If you get this error: 
+
+```
+Unable to find file "@TranslationBundle/Resources/config/routing_webui.yml" in 
+@TranslationBundle/Resources/config/routing_webui.yml (which is being imported 
+from "/Users/bob/Sites/Bolt/standard-project/config/routes/translation.yml").
+```
+
+Update `config/routes/translation.yml`:
+
+```
+    resource: "@TranslationBundle/Resources/config/routing_webui.yaml"
+```
+
+and `config/routes/dev/translation.yml`:
+
+```
+    resource: '@TranslationBundle/Resources/config/routing_symfony_profiler.yaml'
+```
+
+In both cases, you just need to update `.yml` to `.yaml`
+
+
 ### Attempted to load class "StofDoctrineExtensionsBundle"
 
 If you get this error: 

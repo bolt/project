@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f73f8ee42eb6df4295d8336ba30207a",
+    "content-hash": "55cdba6eec95d151ec5eb211e0d6242e",
     "packages": [
         {
             "name": "api-platform/core",
@@ -199,16 +199,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-beta.5.6",
+            "version": "4.0.0-beta.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "750feadf10151e1e77f744c9126aac981f38dc84"
+                "reference": "3d49475c877c67b44ac10e9bfdcd58c4a33b4053"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/750feadf10151e1e77f744c9126aac981f38dc84",
-                "reference": "750feadf10151e1e77f744c9126aac981f38dc84",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/3d49475c877c67b44ac10e9bfdcd58c4a33b4053",
+                "reference": "3d49475c877c67b44ac10e9bfdcd58c4a33b4053",
                 "shasum": ""
             },
             "require-dev": {
@@ -226,7 +226,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-01-11T16:26:36+00:00"
+            "time": "2020-01-12T17:20:05+00:00"
         },
         {
             "name": "bolt/common",
@@ -282,24 +282,24 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-beta.5.6",
+            "version": "4.0.0-beta.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "ea283281bceeac4c134029abcfc324c06f8deb27"
+                "reference": "1e3abf1ca30d9a39605f4fff030681b78fe7a878"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/ea283281bceeac4c134029abcfc324c06f8deb27",
-                "reference": "ea283281bceeac4c134029abcfc324c06f8deb27",
+                "url": "https://api.github.com/repos/bolt/core/zipball/1e3abf1ca30d9a39605f4fff030681b78fe7a878",
+                "reference": "1e3abf1ca30d9a39605f4fff030681b78fe7a878",
                 "shasum": ""
             },
             "require": {
                 "api-platform/core": "^2.5",
                 "bolt/common": "^2.1.0",
-                "cocur/slugify": "^3.2",
+                "cocur/slugify": "^4.0",
                 "composer/composer": "^1.9",
-                "doctrine/doctrine-bundle": "^1.12",
+                "doctrine/doctrine-bundle": "^2.0",
                 "doctrine/doctrine-cache-bundle": "^1.4",
                 "doctrine/doctrine-fixtures-bundle": "^3.3",
                 "doctrine/orm": "^2.7",
@@ -312,14 +312,14 @@
                 "ezyang/htmlpurifier": "^4.12",
                 "fzaninotto/faker": "^1.9",
                 "knplabs/doctrine-behaviors": "^2.0",
-                "knplabs/knp-menu-bundle": "^2.3",
+                "knplabs/knp-menu-bundle": "^3.0",
                 "league/glide-symfony": "^1.0",
                 "miljar/php-exif": "^0.6.4",
                 "nelmio/cors-bundle": "^2.0",
                 "nesbot/carbon": "^2.28",
                 "peterkahl/country-code-to-emoji-flag": "^1.2",
                 "php": ">=7.2.9",
-                "php-translation/symfony-bundle": "^0.9",
+                "php-translation/symfony-bundle": "^0.11",
                 "phpdocumentor/reflection-docblock": "^4.3",
                 "psr/simple-cache": "^1.0",
                 "scienta/doctrine-json-functions": "^4.1",
@@ -353,7 +353,7 @@
                 "symfony/webpack-encore-bundle": "^1.7",
                 "symfony/yaml": "^4.4",
                 "tightenco/collect": "^6.9",
-                "twig/extensions": "^1.5",
+                "twig/twig": "^3.0",
                 "ua-parser/uap-php": "^3.9",
                 "webmozart/path-util": "^2.3",
                 "webonyx/graphql-php": "^0.13",
@@ -377,13 +377,13 @@
                 "behatch/contexts": "^3.2",
                 "bobdenotter/weatherwidget": "^1.0",
                 "bolt/newswidget": "^1.1",
-                "coduo/php-matcher": "^3.2",
+                "coduo/php-matcher": "^4.0",
                 "dama/doctrine-test-bundle": "^6.2.0",
                 "ext-curl": "*",
                 "ext-pdo_sqlite": "*",
                 "lakion/mink-debug-extension": "^1.2",
                 "php-http/httplug-pack": "^1.2",
-                "php-translation/loco-adapter": "^0.8",
+                "php-translation/loco-adapter": "^0.10",
                 "phpspec/phpspec": "^5.1",
                 "phpspec/prophecy": "^1.10",
                 "phpstan/phpstan": "^0.12",
@@ -412,7 +412,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2020-01-11T15:56:43+00:00"
+            "time": "2020-01-12T16:33:31+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -459,20 +459,20 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.0.11",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "3a3843c9d5a1c1304a74830cd927289e87c6ca2f"
+                "reference": "b1a9755f2213a4faa709e3ec5a643f1a79475110"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/3a3843c9d5a1c1304a74830cd927289e87c6ca2f",
-                "reference": "3a3843c9d5a1c1304a74830cd927289e87c6ca2f",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/b1a9755f2213a4faa709e3ec5a643f1a79475110",
+                "reference": "b1a9755f2213a4faa709e3ec5a643f1a79475110",
                 "shasum": ""
             },
             "require": {
-                "twig/twig": "^2.0"
+                "twig/twig": "^2.0 || ^3.0"
             },
             "conflict": {
                 "bolt/bolt": "< 3.999"
@@ -498,41 +498,46 @@
                 "cms",
                 "twig"
             ],
-            "time": "2019-12-14T10:57:37+00:00"
+            "time": "2020-01-12T17:16:52+00:00"
         },
         {
             "name": "cocur/slugify",
-            "version": "v3.2",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cocur/slugify.git",
-                "reference": "d41701efe58ba2df9cae029c3d21e1518cc6780e"
+                "reference": "3f1ffc300f164f23abe8b64ffb3f92d35cec8307"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cocur/slugify/zipball/d41701efe58ba2df9cae029c3d21e1518cc6780e",
-                "reference": "d41701efe58ba2df9cae029c3d21e1518cc6780e",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/3f1ffc300f164f23abe8b64ffb3f92d35cec8307",
+                "reference": "3f1ffc300f164f23abe8b64ffb3f92d35cec8307",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.5.9"
+                "php": ">=7.0"
+            },
+            "conflict": {
+                "symfony/config": "<3.4 || >=4,<4.3",
+                "symfony/dependency-injection": "<3.4 || >=4,<4.3",
+                "symfony/http-kernel": "<3.4 || >=4,<4.3",
+                "twig/twig": "<2.12.1"
             },
             "require-dev": {
                 "laravel/framework": "~5.1",
                 "latte/latte": "~2.2",
                 "league/container": "^2.2.0",
-                "mikey179/vfsstream": "~1.6",
-                "mockery/mockery": "~0.9",
-                "nette/di": "~2.2",
-                "phpunit/phpunit": "~4.8.36|~5.2",
+                "mikey179/vfsstream": "~1.6.8",
+                "mockery/mockery": "^1.3",
+                "nette/di": "~2.4",
+                "phpunit/phpunit": "^5.7.27",
                 "pimple/pimple": "~1.1",
                 "plumphp/plum": "~0.1",
-                "silex/silex": "~1.3",
-                "symfony/config": "~2.4|~3.0|~4.0",
-                "symfony/dependency-injection": "~2.4|~3.0|~4.0",
-                "symfony/http-kernel": "~2.4|~3.0|~4.0",
-                "twig/twig": "~1.26|~2.0",
+                "symfony/config": "^3.4 || ^4.3 || ^5.0",
+                "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0",
+                "symfony/http-kernel": "^3.4 || ^4.3 || ^5.0",
+                "twig/twig": "^2.12.1 || ~3.0",
                 "zendframework/zend-modulemanager": "~2.2",
                 "zendframework/zend-servicemanager": "~2.2",
                 "zendframework/zend-view": "~2.2"
@@ -549,13 +554,13 @@
             ],
             "authors": [
                 {
-                    "name": "Ivo Bathke",
-                    "email": "ivo.bathke@gmail.com"
-                },
-                {
                     "name": "Florian Eckerstorfer",
                     "email": "florian@eckerstorfer.co",
                     "homepage": "https://florian.ec"
+                },
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
                 }
             ],
             "description": "Converts a string into a slug.",
@@ -563,7 +568,7 @@
                 "slug",
                 "slugify"
             ],
-            "time": "2019-01-31T20:38:55+00:00"
+            "time": "2019-12-14T13:04:14+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -1327,30 +1332,29 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "1.12.6",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "08f944760ac471aa97a9b0386dfdb559db80b32d"
+                "reference": "0ef972d3b730f975c80db9fffa4b2a0258c91442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/08f944760ac471aa97a9b0386dfdb559db80b32d",
-                "reference": "08f944760ac471aa97a9b0386dfdb559db80b32d",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/0ef972d3b730f975c80db9fffa4b2a0258c91442",
+                "reference": "0ef972d3b730f975c80db9fffa4b2a0258c91442",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "^2.5.12",
-                "doctrine/doctrine-cache-bundle": "~1.2",
+                "doctrine/dbal": "^2.9.0",
                 "doctrine/persistence": "^1.3.3",
                 "jdorn/sql-formatter": "^1.2.16",
                 "php": "^7.1",
-                "symfony/cache": "^3.4.30|^4.3.3",
-                "symfony/config": "^3.4.30|^4.3.3",
-                "symfony/console": "^3.4.30|^4.3.3",
-                "symfony/dependency-injection": "^3.4.30|^4.3.3",
-                "symfony/doctrine-bridge": "^3.4.30|^4.3.3",
-                "symfony/framework-bundle": "^3.4.30|^4.3.3",
+                "symfony/cache": "^4.3.3|^5.0",
+                "symfony/config": "^4.3.3|^5.0",
+                "symfony/console": "^3.4.30|^4.3.3|^5.0",
+                "symfony/dependency-injection": "^4.3.3|^5.0",
+                "symfony/doctrine-bridge": "^4.3.7|^5.0",
+                "symfony/framework-bundle": "^3.4.30|^4.3.3|^5.0",
                 "symfony/service-contracts": "^1.1.1|^2.0"
             },
             "conflict": {
@@ -1361,14 +1365,13 @@
                 "doctrine/coding-standard": "^6.0",
                 "doctrine/orm": "^2.6",
                 "ocramius/proxy-manager": "^2.1",
-                "php-coveralls/php-coveralls": "^2.1",
                 "phpunit/phpunit": "^7.5",
                 "symfony/phpunit-bridge": "^4.2",
-                "symfony/property-info": "^3.4.30|^4.3.3",
-                "symfony/twig-bridge": "^3.4|^4.1",
-                "symfony/validator": "^3.4.30|^4.3.3",
-                "symfony/web-profiler-bundle": "^3.4.30|^4.3.3",
-                "symfony/yaml": "^3.4.30|^4.3.3",
+                "symfony/property-info": "^4.3.3|^5.0",
+                "symfony/twig-bridge": "^3.4.30|^4.3.3|^5.0",
+                "symfony/validator": "^3.4.30|^4.3.3|^5.0",
+                "symfony/web-profiler-bundle": "^3.4.30|^4.3.3|^5.0",
+                "symfony/yaml": "^3.4.30|^4.3.3|^5.0",
                 "twig/twig": "^1.34|^2.12"
             },
             "suggest": {
@@ -1378,7 +1381,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -1416,7 +1419,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2019-12-19T09:08:00+00:00"
+            "time": "2019-12-19T13:47:07+00:00"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -2784,30 +2787,31 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "2.6.0",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "b6aade272c345b6fbd07fce5929a761cba0909b8"
+                "reference": "df1a329c60e4d96146a6e72d5604d8df010d85c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/b6aade272c345b6fbd07fce5929a761cba0909b8",
-                "reference": "b6aade272c345b6fbd07fce5929a761cba0909b8",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/df1a329c60e4d96146a6e72d5604d8df010d85c9",
+                "reference": "df1a329c60e4d96146a6e72d5604d8df010d85c9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": "^7.2"
             },
             "conflict": {
-                "twig/twig": "<1.40|>=2,<2.9"
+                "twig/twig": "<1.40 || >=2,<2.9"
             },
             "require-dev": {
+                "phpspec/prophecy": "^1.8",
                 "psr/container": "^1.0",
-                "symfony/http-foundation": "~2.4|~3.0|^4.0",
-                "symfony/phpunit-bridge": "~3.3|^4.0",
-                "symfony/routing": "~2.3|~3.0|^4.0",
-                "twig/twig": "^1.40|^2.9"
+                "symfony/http-foundation": "^3.4 || ^4.2|| ^5.0",
+                "symfony/phpunit-bridge": "^3.3 || ^4.2|| ^5.0",
+                "symfony/routing": "^3.4 || ^4.2|| ^5.0",
+                "twig/twig": "^1.40 || ^2.9 || ^3.0"
             },
             "suggest": {
                 "twig/twig": "for the TwigRenderer and the integration with your templates"
@@ -2815,7 +2819,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -2837,7 +2841,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Symfony Community",
+                    "name": "The Community",
                     "homepage": "https://github.com/KnpLabs/KnpMenu/contributors"
                 }
             ],
@@ -2847,36 +2851,37 @@
                 "menu",
                 "tree"
             ],
-            "time": "2019-09-02T10:16:14+00:00"
+            "time": "2019-12-01T13:01:06+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
-            "version": "v2.3.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "78b0cebf8e1490f12ba6555511282954de83f627"
+                "reference": "2795e236db1d807040762be9a2813ab8c6ed0569"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/78b0cebf8e1490f12ba6555511282954de83f627",
-                "reference": "78b0cebf8e1490f12ba6555511282954de83f627",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/2795e236db1d807040762be9a2813ab8c6ed0569",
+                "reference": "2795e236db1d807040762be9a2813ab8c6ed0569",
                 "shasum": ""
             },
             "require": {
-                "knplabs/knp-menu": "~2.3",
-                "php": "^7.1",
-                "symfony/framework-bundle": "^3.4 | ^4.0"
+                "knplabs/knp-menu": "^3.0",
+                "php": "^7.2",
+                "symfony/framework-bundle": "^3.4 | ^4.2 | ^5.0"
             },
             "require-dev": {
-                "symfony/expression-language": "^3.4 | ^4.0",
-                "symfony/phpunit-bridge": "^3.4 | ^4.0",
-                "symfony/templating": "^3.4 | ^4.0"
+                "phpspec/prophecy": "^1.8",
+                "symfony/expression-language": "^3.4 | ^4.2 | ^5.0",
+                "symfony/phpunit-bridge": "^3.4 | ^4.2 | ^5.0",
+                "symfony/templating": "^3.4 | ^4.0 | ^5.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "3.1.x-dev"
                 }
             },
             "autoload": {
@@ -2906,7 +2911,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2019-09-19T08:51:48+00:00"
+            "time": "2019-12-01T13:07:41+00:00"
         },
         {
             "name": "league/flysystem",
@@ -3756,23 +3761,25 @@
         },
         {
             "name": "php-translation/common",
-            "version": "1.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-translation/common.git",
-                "reference": "ceac357a7ad0582d0a6be7b7f2db178c87f229fd"
+                "reference": "dbf73744a22121b85e369ac73ae658c80dd888b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-translation/common/zipball/ceac357a7ad0582d0a6be7b7f2db178c87f229fd",
-                "reference": "ceac357a7ad0582d0a6be7b7f2db178c87f229fd",
+                "url": "https://api.github.com/repos/php-translation/common/zipball/dbf73744a22121b85e369ac73ae658c80dd888b7",
+                "reference": "dbf73744a22121b85e369ac73ae658c80dd888b7",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0"
+                "php": "^7.2",
+                "symfony/translation": " ^3.4 || ^4.3 || ^5.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "^3.4 || ^4.0"
+                "phpunit/phpunit": "^8.4",
+                "symfony/phpunit-bridge": "^4.3 || ^5.0"
             },
             "type": "library",
             "autoload": {
@@ -3791,39 +3798,40 @@
                 }
             ],
             "description": "Common translation stuff",
-            "time": "2018-06-14T16:18:37+00:00"
+            "time": "2019-12-30T10:58:18+00:00"
         },
         {
             "name": "php-translation/extractor",
-            "version": "1.7.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-translation/extractor.git",
-                "reference": "82fc51a07fb626c0bfb31fb3f041baa88fee6acb"
+                "reference": "439717ddc43a333ce49feb99074df2db8ba93071"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-translation/extractor/zipball/82fc51a07fb626c0bfb31fb3f041baa88fee6acb",
-                "reference": "82fc51a07fb626c0bfb31fb3f041baa88fee6acb",
+                "url": "https://api.github.com/repos/php-translation/extractor/zipball/439717ddc43a333ce49feb99074df2db8ba93071",
+                "reference": "439717ddc43a333ce49feb99074df2db8ba93071",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "^1.2",
                 "nikic/php-parser": "^3.0 || ^4.0",
-                "php": "^5.5 || ^7.0",
-                "symfony/finder": "^2.7 || ^3.0 || ^4.0",
-                "twig/twig": "^1.27 || ^2.0"
+                "php": "^7.2",
+                "symfony/finder": "^3.4 || ^4.3 || ^5.0",
+                "twig/twig": "^2.0 || ^3.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "^3.4 || ^4.0",
-                "symfony/translation": "^3.0 || ^4.0",
-                "symfony/twig-bridge": "^3.0 || ^4.0",
-                "symfony/validator": "^3.0 || ^4.0"
+                "phpunit/phpunit": "^8.4",
+                "symfony/phpunit-bridge": "^5.0",
+                "symfony/translation": "^3.4 || ^4.3 || ^5.0",
+                "symfony/twig-bridge": "^3.4 || ^4.3 || ^5.0",
+                "symfony/validator": "^3.4 || ^4.3 || ^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -3842,52 +3850,54 @@
                 }
             ],
             "description": "Extract translations form the source code",
-            "time": "2018-07-09T17:05:17+00:00"
+            "time": "2019-12-26T14:02:26+00:00"
         },
         {
             "name": "php-translation/symfony-bundle",
-            "version": "0.9.1",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-translation/symfony-bundle.git",
-                "reference": "584b8b99ed97cc56a309c28cdd6e9c7bbf98bebb"
+                "reference": "7da36630c8279d0e290ff3e60f79f1bef1bc0772"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-translation/symfony-bundle/zipball/584b8b99ed97cc56a309c28cdd6e9c7bbf98bebb",
-                "reference": "584b8b99ed97cc56a309c28cdd6e9c7bbf98bebb",
+                "url": "https://api.github.com/repos/php-translation/symfony-bundle/zipball/7da36630c8279d0e290ff3e60f79f1bef1bc0772",
+                "reference": "7da36630c8279d0e290ff3e60f79f1bef1bc0772",
                 "shasum": ""
             },
             "require": {
                 "nyholm/nsa": "^1.1",
                 "php": "^7.1",
-                "php-translation/common": "^1.0",
-                "php-translation/extractor": "^1.6",
-                "php-translation/symfony-storage": "^1.0",
-                "symfony/finder": "^3.4 || ^4.0",
-                "symfony/framework-bundle": "^3.4 || ^4.0",
-                "symfony/intl": "^3.4 || ^4.0",
-                "symfony/translation": "^3.4 || ^4.0",
-                "symfony/twig-bundle": "^3.4 || ^4.0",
-                "symfony/validator": "^3.4 || ^4.0",
-                "twig/twig": "^1.42 || ^2.11"
+                "php-translation/extractor": "^2.0",
+                "php-translation/symfony-storage": "^2.1",
+                "symfony/finder": "^3.4 || ^4.3 || ^5.0",
+                "symfony/framework-bundle": "^3.4 || ^4.3 || ^5.0",
+                "symfony/intl": "^3.4 || ^4.3 || ^5.0",
+                "symfony/translation": "^3.4 || ^4.3 || ^5.0",
+                "symfony/twig-bundle": "^3.4 || ^4.3 || ^5.0",
+                "symfony/validator": "^3.4 || ^4.3 || ^5.0",
+                "twig/twig": "^2.11 || ^3.0"
+            },
+            "conflict": {
+                "symfony/config": "<3.4.31"
             },
             "require-dev": {
-                "matthiasnoback/symfony-config-test": "^4.0",
-                "matthiasnoback/symfony-dependency-injection-test": "^3.1",
+                "matthiasnoback/symfony-config-test": "^4.1",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
                 "nyholm/psr7": "^1.1",
-                "nyholm/symfony-bundle-test": "^1.4",
+                "nyholm/symfony-bundle-test": "^1.6.1",
                 "php-http/curl-client": "^1.7",
                 "php-http/message": "^1.6",
                 "php-http/message-factory": "^1.0.2",
                 "php-translation/translator": "^1.0",
-                "symfony/asset": "^3.4 || ^4.0",
-                "symfony/console": "^3.4 || ^4.0",
-                "symfony/dependency-injection": "^3.4 || ^4.0",
-                "symfony/phpunit-bridge": "^4.2",
-                "symfony/templating": "^3.4 || ^4.0",
-                "symfony/twig-bridge": "^3.4 || ^4.0",
-                "symfony/web-profiler-bundle": "^3.4 || ^4.0"
+                "phpunit/phpunit": "^8.4",
+                "symfony/asset": "^3.4 || ^4.3 || ^5.0",
+                "symfony/console": "^3.4 || ^4.3 || ^5.0",
+                "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0",
+                "symfony/phpunit-bridge": "^4.4 || ^5.0",
+                "symfony/twig-bridge": "^3.4 || ^4.3 || ^5.0",
+                "symfony/web-profiler-bundle": "^3.4 || ^4.3 || ^5.0"
             },
             "suggest": {
                 "php-http/httplug-bundle": "To easier configure your httplug clients."
@@ -3916,26 +3926,25 @@
                     "email": "tobias.nyholm@gmail.com"
                 }
             ],
-            "time": "2019-09-06T07:39:54+00:00"
+            "time": "2020-01-07T09:32:27+00:00"
         },
         {
             "name": "php-translation/symfony-storage",
-            "version": "1.1.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-translation/symfony-storage.git",
-                "reference": "ce305cedda67eefae65ea32b198d4d91e9294634"
+                "reference": "7ace69c5e9bc2744d121012fa2bb658477e673c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-translation/symfony-storage/zipball/ce305cedda67eefae65ea32b198d4d91e9294634",
-                "reference": "ce305cedda67eefae65ea32b198d4d91e9294634",
+                "url": "https://api.github.com/repos/php-translation/symfony-storage/zipball/7ace69c5e9bc2744d121012fa2bb658477e673c5",
+                "reference": "7ace69c5e9bc2744d121012fa2bb658477e673c5",
                 "shasum": ""
             },
             "require": {
-                "nyholm/nsa": "^1.1",
                 "php": "^7.2",
-                "php-translation/common": "^1.0",
+                "php-translation/common": "^3.0",
                 "symfony/translation": "^3.4 || ^4.2 || ^5.0"
             },
             "require-dev": {
@@ -3946,7 +3955,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -3965,7 +3974,7 @@
                 }
             ],
             "description": "A translation file storage using Symfony translation component.",
-            "time": "2019-12-05T09:44:20+00:00"
+            "time": "2019-12-30T11:41:01+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -9367,76 +9376,21 @@
             "time": "2019-12-06T22:56:34+00:00"
         },
         {
-            "name": "twig/extensions",
-            "version": "v1.5.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twigphp/Twig-extensions.git",
-                "reference": "57873c8b0c1be51caa47df2cdb824490beb16202"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/57873c8b0c1be51caa47df2cdb824490beb16202",
-                "reference": "57873c8b0c1be51caa47df2cdb824490beb16202",
-                "shasum": ""
-            },
-            "require": {
-                "twig/twig": "^1.27|^2.0"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^3.4",
-                "symfony/translation": "^2.7|^3.4"
-            },
-            "suggest": {
-                "symfony/translation": "Allow the time_diff output to be translated"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Twig_Extensions_": "lib/"
-                },
-                "psr-4": {
-                    "Twig\\Extensions\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Common additional features for Twig that do not directly belong in core",
-            "keywords": [
-                "i18n",
-                "text"
-            ],
-            "time": "2018-12-05T18:34:18+00:00"
-        },
-        {
             "name": "twig/twig",
-            "version": "v2.12.3",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "97b6311585cae66a26833b14b33785f5797f7d39"
+                "reference": "28f856a4c57eeb24485916e8a68403f41a133616"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/97b6311585cae66a26833b14b33785f5797f7d39",
-                "reference": "97b6311585cae66a26833b14b33785f5797f7d39",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/28f856a4c57eeb24485916e8a68403f41a133616",
+                "reference": "28f856a4c57eeb24485916e8a68403f41a133616",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0",
+                "php": "^7.2.5",
                 "symfony/polyfill-ctype": "^1.8",
                 "symfony/polyfill-mbstring": "^1.3"
             },
@@ -9447,13 +9401,10 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.12-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                },
                 "psr-4": {
                     "Twig\\": "src/"
                 }
@@ -9484,7 +9435,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-12-28T07:12:03+00:00"
+            "time": "2019-12-28T07:17:28+00:00"
         },
         {
             "name": "ua-parser/uap-php",
