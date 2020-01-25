@@ -4,12 +4,12 @@
     "description": "Bolt 4 standard project skeleton",
     "license": "MIT",
     "require": {
-        "bolt/core": "^4.0",
+        "bobdenotter/weatherwidget": "^1.0",
         "bolt/assets": "^4.0",
-        "bolt/themes": "^3.1.1",
-        "symfony/flex": "^1.6",
+        "bolt/core": "^4.0",
         "bolt/newswidget": "^1.1",
-        "bobdenotter/weatherwidget": "^1.0"
+        "bolt/themes": "^3.1",
+        "symfony/flex": "^1.6"
     },
     "autoload": {
         "psr-4": {
@@ -26,7 +26,7 @@
         },
         "post-create-project-cmd": [
             "cp -n .env.dist .env || true",
-            "rm public/.gitignore translations/.gitignore .github/FUNDING.yml",
+            "rm public/.gitignore .github/FUNDING.yml",
             "mv README_project.md README.md"
         ],
         "post-install-cmd": [

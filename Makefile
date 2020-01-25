@@ -18,14 +18,12 @@ install: ## to install all project
 
 build-assets: ## to install assets
 	cd vendor/bolt/core && npm install && npm run build
-	rm -rf public/assets translations
+	rm -rf public/assets
 	cp -rf vendor/bolt/core/public/assets public/assets
-	cp -rf vendor/bolt/core/translations translations
 
 copy-assets: ## to install copy assets
-	rm -rf ../assets/assets ../assets/translations
+	rm -rf ../assets/assets
 	cp -rf vendor/bolt/core/public/assets ../assets/
-	cp -rf translations ../assets/
 
 server: ## to start server
 	bin/console server:start 127.0.0.1:8088 || true
