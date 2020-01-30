@@ -46,7 +46,7 @@ If you get this error:
 PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "StofDoctrineExtensionsBundle" from namespace "Stof\DoctrineExtensionsBundle".
 ```
 
-Remove these two lines from `comfig/services.yaml`:
+Remove these two lines from `config/services.yaml`:
 
 ```yaml
     doctrine.orm.entity_manager.class: Bolt\Doctrine\TranslatableEntityManager
