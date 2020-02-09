@@ -202,16 +202,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.1",
+            "version": "4.0.0-rc.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "7d263fe46102c329eeceff8025da04295c3f54ce"
+                "reference": "7a114af482d195e8248b6a5970a9e70705221823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/7d263fe46102c329eeceff8025da04295c3f54ce",
-                "reference": "7d263fe46102c329eeceff8025da04295c3f54ce",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/7a114af482d195e8248b6a5970a9e70705221823",
+                "reference": "7a114af482d195e8248b6a5970a9e70705221823",
                 "shasum": ""
             },
             "require-dev": {
@@ -229,20 +229,20 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-02-02T13:21:02+00:00"
+            "time": "2020-02-09T11:44:32+00:00"
         },
         {
             "name": "bolt/common",
-            "version": "2.1.3",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/common.git",
-                "reference": "2b75c4aba56b2cce2cefe926adcbf16dff7696ae"
+                "reference": "1d02950552a744a6e30d6aa189215267c581d5f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/common/zipball/2b75c4aba56b2cce2cefe926adcbf16dff7696ae",
-                "reference": "2b75c4aba56b2cce2cefe926adcbf16dff7696ae",
+                "url": "https://api.github.com/repos/bolt/common/zipball/1d02950552a744a6e30d6aa189215267c581d5f8",
+                "reference": "1d02950552a744a6e30d6aa189215267c581d5f8",
                 "shasum": ""
             },
             "require": {
@@ -281,20 +281,20 @@
                 }
             ],
             "description": "🧰 Common utilities for all Bolt libraries",
-            "time": "2019-12-30T13:05:27+00:00"
+            "time": "2020-02-02T14:16:10+00:00"
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.1",
+            "version": "4.0.0-rc.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "c3cb8e8a8bb299d38974c7cf1ae545765de7a7f1"
+                "reference": "79ee67e41ee3fbdae099e33eb1f3a97911acf11c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/c3cb8e8a8bb299d38974c7cf1ae545765de7a7f1",
-                "reference": "c3cb8e8a8bb299d38974c7cf1ae545765de7a7f1",
+                "url": "https://api.github.com/repos/bolt/core/zipball/79ee67e41ee3fbdae099e33eb1f3a97911acf11c",
+                "reference": "79ee67e41ee3fbdae099e33eb1f3a97911acf11c",
                 "shasum": ""
             },
             "require": {
@@ -415,7 +415,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2020-02-02T13:12:44+00:00"
+            "time": "2020-02-09T11:39:43+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -631,16 +631,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.9.2",
+            "version": "1.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "7a04aa0201ddaa0b3cf64d41022bd8cdcd7fafeb"
+                "reference": "1291a16ce3f48bfdeca39d64fca4875098af4d7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/7a04aa0201ddaa0b3cf64d41022bd8cdcd7fafeb",
-                "reference": "7a04aa0201ddaa0b3cf64d41022bd8cdcd7fafeb",
+                "url": "https://api.github.com/repos/composer/composer/zipball/1291a16ce3f48bfdeca39d64fca4875098af4d7b",
+                "reference": "1291a16ce3f48bfdeca39d64fca4875098af4d7b",
                 "shasum": ""
             },
             "require": {
@@ -707,7 +707,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2020-01-14T15:30:32+00:00"
+            "time": "2020-02-04T11:58:49+00:00"
         },
         {
             "name": "composer/semver",
@@ -2920,16 +2920,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.63",
+            "version": "1.0.64",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6"
+                "reference": "d13c43dbd4b791f815215959105a008515d1a2e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8132daec326565036bc8e8d1876f77ec183a7bd6",
-                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/d13c43dbd4b791f815215959105a008515d1a2e0",
+                "reference": "d13c43dbd4b791f815215959105a008515d1a2e0",
                 "shasum": ""
             },
             "require": {
@@ -2941,7 +2941,7 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^3.4",
-                "phpunit/phpunit": "^5.7.10"
+                "phpunit/phpunit": "^5.7.26"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -3000,7 +3000,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-01-04T16:30:31+00:00"
+            "time": "2020-02-05T18:14:17+00:00"
         },
         {
             "name": "league/glide",
@@ -4550,16 +4550,16 @@
         },
         {
             "name": "scienta/doctrine-json-functions",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ScientaNL/DoctrineJsonFunctions.git",
-                "reference": "34502880cef2eb06f62e381e71cc1e1f245dc2c9"
+                "reference": "6cab3f93a7415dbc889da15336c7605efbfe7bd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ScientaNL/DoctrineJsonFunctions/zipball/34502880cef2eb06f62e381e71cc1e1f245dc2c9",
-                "reference": "34502880cef2eb06f62e381e71cc1e1f245dc2c9",
+                "url": "https://api.github.com/repos/ScientaNL/DoctrineJsonFunctions/zipball/6cab3f93a7415dbc889da15336c7605efbfe7bd4",
+                "reference": "6cab3f93a7415dbc889da15336c7605efbfe7bd4",
                 "shasum": ""
             },
             "require": {
@@ -4608,7 +4608,7 @@
                 "postgresql",
                 "sqlite"
             ],
-            "time": "2019-12-13T10:04:29+00:00"
+            "time": "2020-02-07T11:05:21+00:00"
         },
         {
             "name": "seld/jsonlint",
@@ -9334,7 +9334,7 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v6.13.0",
+            "version": "v6.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
@@ -9446,16 +9446,16 @@
         },
         {
             "name": "ua-parser/uap-php",
-            "version": "v3.9.4",
+            "version": "v3.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ua-parser/uap-php.git",
-                "reference": "8c1e3c6c7698d197368bfaa0d16734c947d94e99"
+                "reference": "67f8f61bc7fc36fcd23dd6526f6ed5e7a32625c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ua-parser/uap-php/zipball/8c1e3c6c7698d197368bfaa0d16734c947d94e99",
-                "reference": "8c1e3c6c7698d197368bfaa0d16734c947d94e99",
+                "url": "https://api.github.com/repos/ua-parser/uap-php/zipball/67f8f61bc7fc36fcd23dd6526f6ed5e7a32625c7",
+                "reference": "67f8f61bc7fc36fcd23dd6526f6ed5e7a32625c7",
                 "shasum": ""
             },
             "require": {
@@ -9499,7 +9499,7 @@
                 }
             ],
             "description": "A multi-language port of Browserscope's user agent parser.",
-            "time": "2020-01-21T09:54:19+00:00"
+            "time": "2020-02-03T09:54:22+00:00"
         },
         {
             "name": "webmozart/assert",

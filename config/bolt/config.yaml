@@ -31,10 +31,6 @@ locale: en
 
 # Set maintenance mode on or off.
 #
-# While in maintenance mode, only users of level editor or higher can access the
-# site. All other visitors are presented with a notice that the site is 
-# currently offline.
-#
 # The default for the Maintenance mode (503) page. Can be an (array of) template
 # names or identifiers for records, which will be tried until a match is found.
 maintenance_mode: false
