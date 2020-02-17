@@ -224,7 +224,7 @@
         "version": "v0.9.1"
     },
     "php": {
-        "version": "7.2"
+        "version": "7.3"
     },
     "php-translation/common": {
         "version": "1.0.0"
