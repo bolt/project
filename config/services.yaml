@@ -31,7 +31,7 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     Bolt\:
         resource: '../vendor/bolt/core/src/*'
-        exclude: '../vendor/bolt/core/src/{Entity,Exception,Kernel.php}'
+        exclude: '../vendor/bolt/core/src/{Entity,Exception,Migrations,Kernel.php}'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
