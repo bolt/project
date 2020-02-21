@@ -54,3 +54,8 @@ commands above, you'll find the frontpage at http://127.0.0.1:8000/ \
 The Bolt admin panel can be found at http://127.0.0.1:8000/bolt
 
 Log in using the credentials you created when setting up the first user.
+
+## Contributing
+
+If you'd like to contribute, please check [Bolt's core repository](https://github.com/bolt/core/blob/master/CONTRIBUTING.md) 
+and read the ["Contributing to Bolt"](https://docs.bolt.cm/4.0/other/contributing) documentation page.
