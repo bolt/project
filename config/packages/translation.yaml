@@ -14,5 +14,5 @@ translation:
     configs:
         bolt:
             dirs: ["%kernel.project_dir%/vendor/bolt/core/templates", "%kernel.project_dir%/src"]
-            output_dir: "%kernel.project_dir%/vendor/bolt/core/translations"
+            output_dir: "%kernel.project_dir%/translations"
 
