@@ -13,6 +13,27 @@ bin/console cache:clear
 
 ## From earlier Beta's to Beta 5
 
+## "$publicFolder" of method "__construct()"
+
+If you get this error: 
+
+```
+Cannot autowire service "Bolt\Command\CopyAssetsCommand": argument "$public
+!!    Folder" of method "__construct()" is type-hinted "string", you should confi
+!!    gure its value explicitly.
+```
+
+Update services.yaml, add the line with `$publicFolder`: 
+
+```yaml
+services:
+    _defaults:
+        …
+        bind:  
+            …
+            $publicFolder: '%bolt.public_folder%'
+```
+
 ### Unable to find file "@TranslationBundle/Resources/config/routing_webui.yml"
 
 If you get this error:
