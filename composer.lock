@@ -202,16 +202,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.4",
+            "version": "4.0.0-rc.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "737aeb00c8c0b0d181386fc06d6fa21c54cba93b"
+                "reference": "cf64e70182725013666d39ab1562375bbc10ac90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/737aeb00c8c0b0d181386fc06d6fa21c54cba93b",
-                "reference": "737aeb00c8c0b0d181386fc06d6fa21c54cba93b",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/cf64e70182725013666d39ab1562375bbc10ac90",
+                "reference": "cf64e70182725013666d39ab1562375bbc10ac90",
                 "shasum": ""
             },
             "require-dev": {
@@ -229,7 +229,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-02-20T12:04:34+00:00"
+            "time": "2020-02-22T14:02:29+00:00"
         },
         {
             "name": "bolt/common",
@@ -285,16 +285,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.4",
+            "version": "4.0.0-rc.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "9b82253e6608b136a42088543a288b03e3146a90"
+                "reference": "85cfbe0fdfbba26b971a87f36c6e56ccc85e9ed6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/9b82253e6608b136a42088543a288b03e3146a90",
-                "reference": "9b82253e6608b136a42088543a288b03e3146a90",
+                "url": "https://api.github.com/repos/bolt/core/zipball/85cfbe0fdfbba26b971a87f36c6e56ccc85e9ed6",
+                "reference": "85cfbe0fdfbba26b971a87f36c6e56ccc85e9ed6",
                 "shasum": ""
             },
             "require": {
@@ -359,6 +359,7 @@
                 "tightenco/collect": "^6.9",
                 "twig/twig": "^3.0",
                 "ua-parser/uap-php": "^3.9",
+                "webimpress/safe-writer": "^2.0",
                 "webmozart/path-util": "^2.3",
                 "webonyx/graphql-php": "^0.13",
                 "white-october/pagerfanta-bundle": "^1.3"
@@ -416,7 +417,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2020-02-20T11:53:17+00:00"
+            "time": "2020-02-22T13:56:44+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -463,16 +464,16 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.1.2",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "b1a9755f2213a4faa709e3ec5a643f1a79475110"
+                "reference": "2cb63c9c3790c02b6ed7b7dfd090aec39d908c60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/b1a9755f2213a4faa709e3ec5a643f1a79475110",
-                "reference": "b1a9755f2213a4faa709e3ec5a643f1a79475110",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/2cb63c9c3790c02b6ed7b7dfd090aec39d908c60",
+                "reference": "2cb63c9c3790c02b6ed7b7dfd090aec39d908c60",
                 "shasum": ""
             },
             "require": {
@@ -502,7 +503,7 @@
                 "cms",
                 "twig"
             ],
-            "time": "2020-01-12T17:16:52+00:00"
+            "time": "2020-02-20T20:05:16+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -4735,16 +4736,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.9.2",
+            "version": "3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "7779489a47d443f845271badbdcedfe4df8e06fb"
+                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7779489a47d443f845271badbdcedfe4df8e06fb",
-                "reference": "7779489a47d443f845271badbdcedfe4df8e06fb",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7e1633a6964b48589b142d60542f9ed31bd37a92",
+                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92",
                 "shasum": ""
             },
             "require": {
@@ -4818,7 +4819,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2019-12-17T08:18:51+00:00"
+            "time": "2020-02-21T04:36:14+00:00"
         },
         {
             "name": "scienta/doctrine-json-functions",
@@ -9600,16 +9601,16 @@
         },
         {
             "name": "ua-parser/uap-php",
-            "version": "v3.9.6",
+            "version": "v3.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ua-parser/uap-php.git",
-                "reference": "76064d58ad5fc4ee92f31b4bb3c56319c10d92df"
+                "reference": "7efc2f05b7d9817a59132e5d2e5ca91a1c071f6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ua-parser/uap-php/zipball/76064d58ad5fc4ee92f31b4bb3c56319c10d92df",
-                "reference": "76064d58ad5fc4ee92f31b4bb3c56319c10d92df",
+                "url": "https://api.github.com/repos/ua-parser/uap-php/zipball/7efc2f05b7d9817a59132e5d2e5ca91a1c071f6a",
+                "reference": "7efc2f05b7d9817a59132e5d2e5ca91a1c071f6a",
                 "shasum": ""
             },
             "require": {
@@ -9653,7 +9654,55 @@
                 }
             ],
             "description": "A multi-language port of Browserscope's user agent parser.",
-            "time": "2020-02-12T09:54:10+00:00"
+            "time": "2020-02-21T09:54:14+00:00"
+        },
+        {
+            "name": "webimpress/safe-writer",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webimpress/safe-writer.git",
+                "reference": "d03bea3b98abe1d4c8b24cbebf524361ffaafee4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webimpress/safe-writer/zipball/d03bea3b98abe1d4c8b24cbebf524361ffaafee4",
+                "reference": "d03bea3b98abe1d4c8b24cbebf524361ffaafee4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.4.3",
+                "webimpress/coding-standard": "dev-develop"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev",
+                    "dev-develop": "2.1.x-dev",
+                    "dev-release-1.0": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webimpress\\SafeWriter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "Tool to write files safely, to avoid race conditions",
+            "keywords": [
+                "concurrent write",
+                "file writer",
+                "race condition",
+                "safe writer",
+                "webimpress"
+            ],
+            "time": "2019-11-27T19:40:53+00:00"
         },
         {
             "name": "webmozart/assert",
