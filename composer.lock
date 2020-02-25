@@ -202,16 +202,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.5",
+            "version": "4.0.0-rc.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "cf64e70182725013666d39ab1562375bbc10ac90"
+                "reference": "03433d40683b2ce95114822dea220a78fd7d86c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/cf64e70182725013666d39ab1562375bbc10ac90",
-                "reference": "cf64e70182725013666d39ab1562375bbc10ac90",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/03433d40683b2ce95114822dea220a78fd7d86c0",
+                "reference": "03433d40683b2ce95114822dea220a78fd7d86c0",
                 "shasum": ""
             },
             "require-dev": {
@@ -229,7 +229,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-02-22T14:02:29+00:00"
+            "time": "2020-02-25T19:16:09+00:00"
         },
         {
             "name": "bolt/common",
@@ -285,16 +285,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.5",
+            "version": "4.0.0-rc.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "85cfbe0fdfbba26b971a87f36c6e56ccc85e9ed6"
+                "reference": "47d50f3cea057522412f5e3026e217f7167f7fd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/85cfbe0fdfbba26b971a87f36c6e56ccc85e9ed6",
-                "reference": "85cfbe0fdfbba26b971a87f36c6e56ccc85e9ed6",
+                "url": "https://api.github.com/repos/bolt/core/zipball/47d50f3cea057522412f5e3026e217f7167f7fd0",
+                "reference": "47d50f3cea057522412f5e3026e217f7167f7fd0",
                 "shasum": ""
             },
             "require": {
@@ -417,7 +417,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2020-02-22T13:56:44+00:00"
+            "time": "2020-02-25T19:00:18+00:00"
         },
         {
             "name": "bolt/newswidget",
