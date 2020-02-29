@@ -20,7 +20,7 @@ main:
           class: sub-class
           link: page/32
   - label: All pages
-    link: /pages
+    link: pages/
   - label: The Bolt site
     link: https://bolt.cm
     class: bolt-site

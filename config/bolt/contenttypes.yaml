@@ -135,7 +135,6 @@ entries:
     listing_template: listing.twig
     listing_records: 10
     default_status: published
-    sort: -publishedAt
     records_per_page: 10
     icon_many: "fa:file-alt"
     icon_one: "fa:file-alt"
@@ -166,6 +165,7 @@ blocks:
     viewless: true
     default_status: published
     searchable: false
+    sort: title
     icon_many: "fa:cubes"
     icon_one: "fa:cube"
 
@@ -188,6 +188,7 @@ blocks:
 # checkbox - integer - checkbox-field which is 1 (checked) or 0 (unchecked)
 # set - text (65kb) - Input type for sests. Group fields semantically into a combined set field.
 # collection - text (65kb) - Input type for collections. Add multiple fields of different types. Useful for lists.
+# data - text (65kb) - Read-only field, useful for storing (raw) data provided by an external source.
 
 # Using YAML repeated nodes
 #
