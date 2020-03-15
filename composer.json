@@ -46,7 +46,7 @@
         "symfony": {
             "allow-contrib": true,
             "require": "^4.4"
-        }
-    },
-    "public-dir": "public"
+        },
+        "public-dir": "public"
+    }
 }
