@@ -32,6 +32,7 @@ services:
         bind:  
             …
             $publicFolder: '%bolt.public_folder%'
+            $tablePrefix: '%bolt.table_prefix%'            
 ```
 
 ### Unable to find file "@TranslationBundle/Resources/config/routing_webui.yml"
