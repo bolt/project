@@ -288,16 +288,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.9",
+            "version": "4.0.0-rc.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "cf82e1cadca194253768677e6b8197e37215afe3"
+                "reference": "d4706fe5530a4b15dfd0d39db97e65a2749fb597"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/cf82e1cadca194253768677e6b8197e37215afe3",
-                "reference": "cf82e1cadca194253768677e6b8197e37215afe3",
+                "url": "https://api.github.com/repos/bolt/core/zipball/d4706fe5530a4b15dfd0d39db97e65a2749fb597",
+                "reference": "d4706fe5530a4b15dfd0d39db97e65a2749fb597",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-03-15T16:04:38+00:00"
+            "time": "2020-03-18T17:38:06+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -2951,16 +2951,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.65",
+            "version": "1.0.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "8f17b3ba67097aafb8318cd5c553b1acf7c891c8"
+                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8f17b3ba67097aafb8318cd5c553b1acf7c891c8",
-                "reference": "8f17b3ba67097aafb8318cd5c553b1acf7c891c8",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/021569195e15f8209b1c4bebb78bd66aa4f08c21",
+                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21",
                 "shasum": ""
             },
             "require": {
@@ -3033,15 +3033,11 @@
             ],
             "funding": [
                 {
-                    "url": "https://github.com/frankdejonge",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
-                    "type": "tidelift"
+                    "url": "https://offset.earth/frankdejonge",
+                    "type": "other"
                 }
             ],
-            "time": "2020-03-08T18:53:20+00:00"
+            "time": "2020-03-17T18:58:12+00:00"
         },
         {
             "name": "league/glide",
@@ -9291,16 +9287,16 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "v7.2.4",
+            "version": "v7.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "819df91cdc61e901429746656acec37ef1f38aac"
+                "reference": "14b97d2ad3446bc4be539542fea67f6cbe8befb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/819df91cdc61e901429746656acec37ef1f38aac",
-                "reference": "819df91cdc61e901429746656acec37ef1f38aac",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/14b97d2ad3446bc4be539542fea67f6cbe8befb1",
+                "reference": "14b97d2ad3446bc4be539542fea67f6cbe8befb1",
                 "shasum": ""
             },
             "require": {
@@ -9347,7 +9343,7 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v7.1.2",
+            "version": "v7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
