@@ -68,7 +68,7 @@ pages:
             uses: title
         image:
             type: image
-            label: "Eén plaatje"
+            label: Highlighted image
         teaser:
             type: html
             height: 150px
@@ -151,8 +151,8 @@ blocks:
         title:
             type: text
             class: large
-            group: "Block"
-            label: De Titel
+            group: Block
+            label: Title of this Block
         slug:
             type: slug
             uses: [ title ]
