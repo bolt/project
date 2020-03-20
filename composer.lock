@@ -288,16 +288,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.10",
+            "version": "4.0.0-rc.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "d4706fe5530a4b15dfd0d39db97e65a2749fb597"
+                "reference": "ee0d73cd73d8e7a0a0749817a8c165a68dab00e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/d4706fe5530a4b15dfd0d39db97e65a2749fb597",
-                "reference": "d4706fe5530a4b15dfd0d39db97e65a2749fb597",
+                "url": "https://api.github.com/repos/bolt/core/zipball/ee0d73cd73d8e7a0a0749817a8c165a68dab00e0",
+                "reference": "ee0d73cd73d8e7a0a0749817a8c165a68dab00e0",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-03-18T17:38:06+00:00"
+            "time": "2020-03-20T06:25:08+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -9287,16 +9287,16 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "v7.2.6",
+            "version": "v7.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "14b97d2ad3446bc4be539542fea67f6cbe8befb1"
+                "reference": "9e4c4427f1b6185d8cdac259f5554b3b0303264c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/14b97d2ad3446bc4be539542fea67f6cbe8befb1",
-                "reference": "14b97d2ad3446bc4be539542fea67f6cbe8befb1",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/9e4c4427f1b6185d8cdac259f5554b3b0303264c",
+                "reference": "9e4c4427f1b6185d8cdac259f5554b3b0303264c",
                 "shasum": ""
             },
             "require": {
@@ -9339,7 +9339,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-03-12T09:04:14+00:00"
+            "time": "2020-03-18T23:14:48+00:00"
         },
         {
             "name": "tightenco/collect",
