@@ -31,6 +31,9 @@
     "bolt/themes": {
         "version": "3.0.0"
     },
+    "brick/math": {
+        "version": "0.8.14"
+    },
     "cocur/slugify": {
         "version": "v3.2"
     },
@@ -220,9 +223,6 @@
     "pagerfanta/pagerfanta": {
         "version": "v2.0.1"
     },
-    "paragonie/random_compat": {
-        "version": "v9.99.99"
-    },
     "peterkahl/country-code-to-emoji-flag": {
         "version": "v0.9.1"
     },
@@ -282,6 +282,9 @@
     },
     "ralouphie/getallheaders": {
         "version": "2.0.5"
+    },
+    "ramsey/collection": {
+        "version": "1.0.1"
     },
     "ramsey/uuid": {
         "version": "3.9.2"
