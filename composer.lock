@@ -205,16 +205,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.12",
+            "version": "4.0.0-rc.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "0b0f7059fe1e06e114d8ce7eace4715af4b29d3f"
+                "reference": "7658e1f08b79876e5b1e6244576c65ae8e091cc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/0b0f7059fe1e06e114d8ce7eace4715af4b29d3f",
-                "reference": "0b0f7059fe1e06e114d8ce7eace4715af4b29d3f",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/7658e1f08b79876e5b1e6244576c65ae8e091cc9",
+                "reference": "7658e1f08b79876e5b1e6244576c65ae8e091cc9",
                 "shasum": ""
             },
             "require-dev": {
@@ -232,7 +232,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-03-29T11:58:00+00:00"
+            "time": "2020-04-02T17:42:03+00:00"
         },
         {
             "name": "bolt/common",
@@ -288,16 +288,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.13",
+            "version": "4.0.0-rc.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "42c8b55c11b7c2eaa0048fc73d8c80bdb8c3845d"
+                "reference": "1135c28881c2db6da70669a01332d38fa8074570"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/42c8b55c11b7c2eaa0048fc73d8c80bdb8c3845d",
-                "reference": "42c8b55c11b7c2eaa0048fc73d8c80bdb8c3845d",
+                "url": "https://api.github.com/repos/bolt/core/zipball/1135c28881c2db6da70669a01332d38fa8074570",
+                "reference": "1135c28881c2db6da70669a01332d38fa8074570",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 "ext-pdo": "*",
                 "ezyang/htmlpurifier": "^4.12",
                 "fzaninotto/faker": "^1.9",
-                "knplabs/doctrine-behaviors": "^2.0",
+                "knplabs/doctrine-behaviors": "^2.0.3",
                 "knplabs/knp-menu-bundle": "^3.0",
                 "league/glide-symfony": "^1.0",
                 "miljar/php-exif": "^0.6.4",
@@ -426,7 +426,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-03-30T19:29:55+00:00"
+            "time": "2020-04-02T17:34:42+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -951,20 +951,21 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.8.0",
+            "version": "1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc"
+                "reference": "5eb79f3dbdffed6544e1fc287572c0f462bd29bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/904dca4eb10715b92569fbcd79e201d5c349b6bc",
-                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5eb79f3dbdffed6544e1fc287572c0f462bd29bb",
+                "reference": "5eb79f3dbdffed6544e1fc287572c0f462bd29bb",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "1.*",
+                "ext-tokenizer": "*",
                 "php": "^7.1"
             },
             "require-dev": {
@@ -974,7 +975,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev"
+                    "dev-master": "1.9.x-dev"
                 }
             },
             "autoload": {
@@ -1015,7 +1016,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2019-10-01T18:55:10+00:00"
+            "time": "2020-04-02T12:33:25+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -2820,16 +2821,16 @@
         },
         {
             "name": "knplabs/doctrine-behaviors",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/DoctrineBehaviors.git",
-                "reference": "43a841a4bcb2b9d8f667e0852e38bfab72fccf8e"
+                "reference": "92bd39bab67bdc8698c0db02679484a31029bba3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/DoctrineBehaviors/zipball/43a841a4bcb2b9d8f667e0852e38bfab72fccf8e",
-                "reference": "43a841a4bcb2b9d8f667e0852e38bfab72fccf8e",
+                "url": "https://api.github.com/repos/KnpLabs/DoctrineBehaviors/zipball/92bd39bab67bdc8698c0db02679484a31029bba3",
+                "reference": "92bd39bab67bdc8698c0db02679484a31029bba3",
                 "shasum": ""
             },
             "require": {
@@ -2868,7 +2869,8 @@
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
-                    "Knp\\DoctrineBehaviors\\": "src"
+                    "Knp\\DoctrineBehaviors\\": "src",
+                    "Knp\\DoctrineBehaviors\\PHPStan\\": "utils/phpstan-behaviors/src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2893,7 +2895,7 @@
                 "tree",
                 "uuid"
             ],
-            "time": "2020-03-28T13:25:40+00:00"
+            "time": "2020-04-01T09:20:12+00:00"
         },
         {
             "name": "knplabs/knp-menu",
@@ -3410,16 +3412,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.32.1",
+            "version": "2.32.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "ecb525c766deb3bbbb6a0082ea0e41d3d9ae477c"
+                "reference": "f10e22cf546704fab1db4ad4b9dedbc5c797a0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ecb525c766deb3bbbb6a0082ea0e41d3d9ae477c",
-                "reference": "ecb525c766deb3bbbb6a0082ea0e41d3d9ae477c",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f10e22cf546704fab1db4ad4b9dedbc5c797a0dc",
+                "reference": "f10e22cf546704fab1db4ad4b9dedbc5c797a0dc",
                 "shasum": ""
             },
             "require": {
@@ -3487,7 +3489,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-03-26T13:04:10+00:00"
+            "time": "2020-03-31T13:43:19+00:00"
         },
         {
             "name": "nette/finder",
@@ -10204,16 +10206,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v7.3.0",
+            "version": "v7.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "306a4def08c9781ff74fcf1e012f22cbf8686348"
+                "reference": "5024db45b1ec1956e6d5959cbb5cdf5f00f26f56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/306a4def08c9781ff74fcf1e012f22cbf8686348",
-                "reference": "306a4def08c9781ff74fcf1e012f22cbf8686348",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/5024db45b1ec1956e6d5959cbb5cdf5f00f26f56",
+                "reference": "5024db45b1ec1956e6d5959cbb5cdf5f00f26f56",
                 "shasum": ""
             },
             "require": {
@@ -10250,7 +10252,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2020-03-09T16:52:33+00:00"
+            "time": "2020-03-31T17:56:15+00:00"
         },
         {
             "name": "twig/twig",
