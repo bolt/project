@@ -205,16 +205,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.16",
+            "version": "4.0.0-rc.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "09a142a58c98f9e6b20c2427c8c8d7ff0bd6e5fb"
+                "reference": "bc0353fd8d44995eef55b318c37be71ba667b2b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/09a142a58c98f9e6b20c2427c8c8d7ff0bd6e5fb",
-                "reference": "09a142a58c98f9e6b20c2427c8c8d7ff0bd6e5fb",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/bc0353fd8d44995eef55b318c37be71ba667b2b0",
+                "reference": "bc0353fd8d44995eef55b318c37be71ba667b2b0",
                 "shasum": ""
             },
             "require-dev": {
@@ -232,7 +232,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-04-13T13:52:49+00:00"
+            "time": "2020-04-19T15:08:30+00:00"
         },
         {
             "name": "bolt/common",
@@ -288,16 +288,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.16",
+            "version": "4.0.0-rc.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "ece38c2b4ab98c53ca9e350ca513297ededea6f4"
+                "reference": "640cc32386f679d1db06465cdb2f0edfb31186ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/ece38c2b4ab98c53ca9e350ca513297ededea6f4",
-                "reference": "ece38c2b4ab98c53ca9e350ca513297ededea6f4",
+                "url": "https://api.github.com/repos/bolt/core/zipball/640cc32386f679d1db06465cdb2f0edfb31186ce",
+                "reference": "640cc32386f679d1db06465cdb2f0edfb31186ce",
                 "shasum": ""
             },
             "require": {
@@ -420,7 +420,7 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2020-04-13T13:23:28+00:00"
+            "time": "2020-04-19T15:00:47+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -513,25 +513,26 @@
         },
         {
             "name": "brick/math",
-            "version": "0.8.14",
+            "version": "0.8.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "6f7a46b5c3d487b277f38fbd17df57d348cace8a"
+                "reference": "9b08d412b9da9455b210459ff71414de7e6241cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/6f7a46b5c3d487b277f38fbd17df57d348cace8a",
-                "reference": "6f7a46b5c3d487b277f38fbd17df57d348cace8a",
+                "url": "https://api.github.com/repos/brick/math/zipball/9b08d412b9da9455b210459ff71414de7e6241cd",
+                "reference": "9b08d412b9da9455b210459ff71414de7e6241cd",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "ext-json": "*",
+                "php": "^7.1|^8.0"
             },
             "require-dev": {
-                "php-coveralls/php-coveralls": "2.*",
-                "phpunit/phpunit": "7.*",
-                "vimeo/psalm": "3.*"
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^7.5.15|^8.5",
+                "vimeo/psalm": "^3.5"
             },
             "type": "library",
             "autoload": {
@@ -554,7 +555,7 @@
                 "brick",
                 "math"
             ],
-            "time": "2020-02-17T13:57:43+00:00"
+            "time": "2020-04-15T15:59:35+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -2988,16 +2989,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.66",
+            "version": "1.0.67",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21"
+                "reference": "5b1f36c75c4bdde981294c2a0ebdb437ee6f275e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/021569195e15f8209b1c4bebb78bd66aa4f08c21",
-                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/5b1f36c75c4bdde981294c2a0ebdb437ee6f275e",
+                "reference": "5b1f36c75c4bdde981294c2a0ebdb437ee6f275e",
                 "shasum": ""
             },
             "require": {
@@ -3068,7 +3069,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-03-17T18:58:12+00:00"
+            "time": "2020-04-16T13:21:26+00:00"
         },
         {
             "name": "league/glide",
@@ -9300,16 +9301,16 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "v7.2.12",
+            "version": "v7.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "9eacafc4bfc0f5b1ce785ff5662bc3309786c6dd"
+                "reference": "d41e357c3da979eca78823a9f1a4bfd2608548be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/9eacafc4bfc0f5b1ce785ff5662bc3309786c6dd",
-                "reference": "9eacafc4bfc0f5b1ce785ff5662bc3309786c6dd",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/d41e357c3da979eca78823a9f1a4bfd2608548be",
+                "reference": "d41e357c3da979eca78823a9f1a4bfd2608548be",
                 "shasum": ""
             },
             "require": {
@@ -9342,20 +9343,20 @@
                 "MIT"
             ],
             "description": "Dependency Injection, Console and Kernel toolkit for Symplify packages.",
-            "time": "2020-04-07T13:55:45+00:00"
+            "time": "2020-04-19T11:07:36+00:00"
         },
         {
             "name": "tightenco/collect",
-            "version": "v7.5.2",
+            "version": "v7.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "1f5f7a36657a126fa035c7cfaafd738391690967"
+                "reference": "4b6a215656eb77bdaa31b0f61aa9e2a3eaf2f7a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/1f5f7a36657a126fa035c7cfaafd738391690967",
-                "reference": "1f5f7a36657a126fa035c7cfaafd738391690967",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/4b6a215656eb77bdaa31b0f61aa9e2a3eaf2f7a0",
+                "reference": "4b6a215656eb77bdaa31b0f61aa9e2a3eaf2f7a0",
                 "shasum": ""
             },
             "require": {
@@ -9392,7 +9393,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2020-04-08T17:29:27+00:00"
+            "time": "2020-04-17T18:15:55+00:00"
         },
         {
             "name": "twig/twig",
@@ -9563,16 +9564,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "aed98a490f9a8f78468232db345ab9cf606cf598"
+                "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/aed98a490f9a8f78468232db345ab9cf606cf598",
-                "reference": "aed98a490f9a8f78468232db345ab9cf606cf598",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
+                "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
                 "shasum": ""
             },
             "require": {
@@ -9580,7 +9581,7 @@
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
-                "vimeo/psalm": "<3.6.0"
+                "vimeo/psalm": "<3.9.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.36 || ^7.5.13"
@@ -9607,7 +9608,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2020-02-14T12:15:55+00:00"
+            "time": "2020-04-18T12:12:48+00:00"
         },
         {
             "name": "webmozart/path-util",
