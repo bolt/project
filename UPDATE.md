@@ -13,9 +13,31 @@ bin/console cache:clear
 
 ## From earlier Beta's to Beta 5
 
+## "$defaultLocale" of method "__construct()"
+
+If you get this error:
+
+```
+Cannot autowire service "Bolt\Canonical": argument "$defaultLocale" of meth
+!!    od "__construct()" is type-hinted "string", you should configure its value
+!!    explicitly.
+```
+
+Update services.yaml, add the line with `$defaultLocale`:
+
+```yaml
+services:
+    _defaults:
+        …
+        bind:
+            $locales: '%app_locales%'
+            $defaultLocale: '%locale%'
+            …
+```
+
 ## "$publicFolder" of method "__construct()"
 
-If you get this error: 
+If you get this error:
 
 ```
 Cannot autowire service "Bolt\Command\CopyAssetsCommand": argument "$public
@@ -23,16 +45,16 @@ Cannot autowire service "Bolt\Command\CopyAssetsCommand": argument "$public
 !!    gure its value explicitly.
 ```
 
-Update services.yaml, add the line with `$publicFolder`: 
+Update services.yaml, add the line with `$publicFolder`:
 
 ```yaml
 services:
     _defaults:
         …
-        bind:  
+        bind:
             …
             $publicFolder: '%bolt.public_folder%'
-            $tablePrefix: '%bolt.table_prefix%'            
+            $tablePrefix: '%bolt.table_prefix%'
 ```
 
 ### Unable to find file "@TranslationBundle/Resources/config/routing_webui.yml"
