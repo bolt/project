@@ -13,6 +13,21 @@ bin/console cache:clear
 
 ## From earlier Beta's to Beta 5
 
+## Call to a member function setLocale() on array OR Collection fields not visible
+
+If you get this error when saving a record:
+```
+    Call to a member function setLocale() on array
+```
+or, if collection items are not visible after saving them
+
+Update services.yaml, add the 3 lines below:
+```yaml
+    Bolt\Event\Listener\FieldFillListener:
+        tags:
+            - { name: doctrine.event_listener, event: postLoad }
+```
+
 ## "$defaultLocale" of method "__construct()"
 
 If you get this error:
