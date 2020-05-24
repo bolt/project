@@ -205,16 +205,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.19",
+            "version": "4.0.0-rc.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "253dce2ef5fd3762d5ae1c0497bdcb1a9dd17bfe"
+                "reference": "d80954b23b085e866840debd44b7e287b733e339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/253dce2ef5fd3762d5ae1c0497bdcb1a9dd17bfe",
-                "reference": "253dce2ef5fd3762d5ae1c0497bdcb1a9dd17bfe",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/d80954b23b085e866840debd44b7e287b733e339",
+                "reference": "d80954b23b085e866840debd44b7e287b733e339",
                 "shasum": ""
             },
             "require-dev": {
@@ -232,7 +232,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-05-17T12:34:13+00:00"
+            "time": "2020-05-24T16:35:12+00:00"
         },
         {
             "name": "bolt/common",
@@ -288,16 +288,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.19",
+            "version": "4.0.0-rc.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "40017cd03d95ff041576f0767fe11d38cb7a56d1"
+                "reference": "fc9a6a9292db1b259a5eddf275c33c62724c9c5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/40017cd03d95ff041576f0767fe11d38cb7a56d1",
-                "reference": "40017cd03d95ff041576f0767fe11d38cb7a56d1",
+                "url": "https://api.github.com/repos/bolt/core/zipball/fc9a6a9292db1b259a5eddf275c33c62724c9c5e",
+                "reference": "fc9a6a9292db1b259a5eddf275c33c62724c9c5e",
                 "shasum": ""
             },
             "require": {
@@ -382,6 +382,7 @@
                 "behat/mink-selenium2-driver": "^1.3",
                 "behat/symfony2-extension": "^2.1",
                 "behatch/contexts": "^3.2",
+                "bobdenotter/configuration-notices": "^1.0",
                 "bobdenotter/weatherwidget": "^1.0",
                 "bolt/newswidget": "^1.1",
                 "coduo/php-matcher": "^4.0",
@@ -399,9 +400,11 @@
                 "phpstan/phpstan-symfony": "^0.12",
                 "phpunit/phpunit": "^7.5",
                 "roave/security-advisories": "dev-master@dev",
+                "se/selenium-server-standalone": "^3.141",
                 "symfony/browser-kit": "^4.4",
                 "symfony/css-selector": "^4.4",
-                "symplify/easy-coding-standard": "^7.2"
+                "symplify/easy-coding-standard": "^7.2",
+                "vaimo/binary-chromedriver": "^5.0"
             },
             "type": "library",
             "extra": {
@@ -426,7 +429,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-05-17T12:08:22+00:00"
+            "time": "2020-05-24T16:27:20+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -476,16 +479,16 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.1.5",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "179735fa2f7f5dfb1eb14192865d5cd60ff89566"
+                "reference": "bad61b311e2dd6915e2aaa9d17c82e062088317c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/179735fa2f7f5dfb1eb14192865d5cd60ff89566",
-                "reference": "179735fa2f7f5dfb1eb14192865d5cd60ff89566",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/bad61b311e2dd6915e2aaa9d17c82e062088317c",
+                "reference": "bad61b311e2dd6915e2aaa9d17c82e062088317c",
                 "shasum": ""
             },
             "require": {
@@ -515,7 +518,7 @@
                 "cms",
                 "twig"
             ],
-            "time": "2020-04-27T10:09:14+00:00"
+            "time": "2020-05-24T11:11:07+00:00"
         },
         {
             "name": "brick/math",
@@ -3130,16 +3133,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.68",
+            "version": "1.0.69",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "3e4198372276ec99ac3409a21d7c9d1ced9026e4"
+                "reference": "7106f78428a344bc4f643c233a94e48795f10967"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3e4198372276ec99ac3409a21d7c9d1ced9026e4",
-                "reference": "3e4198372276ec99ac3409a21d7c9d1ced9026e4",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
+                "reference": "7106f78428a344bc4f643c233a94e48795f10967",
                 "shasum": ""
             },
             "require": {
@@ -3216,7 +3219,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-05-12T20:33:44+00:00"
+            "time": "2020-05-18T15:13:39+00:00"
         },
         {
             "name": "league/glide",
@@ -3380,16 +3383,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.25.3",
+            "version": "1.25.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "fa82921994db851a8becaf3787a9e73c5976b6f1"
+                "reference": "3022efff205e2448b560c833c6fbbf91c3139168"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fa82921994db851a8becaf3787a9e73c5976b6f1",
-                "reference": "fa82921994db851a8becaf3787a9e73c5976b6f1",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/3022efff205e2448b560c833c6fbbf91c3139168",
+                "reference": "3022efff205e2448b560c833c6fbbf91c3139168",
                 "shasum": ""
             },
             "require": {
@@ -3403,11 +3406,10 @@
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
-                "jakub-onderka/php-parallel-lint": "0.9",
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
+                "php-parallel-lint/php-parallel-lint": "^1.0",
                 "phpunit/phpunit": "~4.5",
-                "phpunit/phpunit-mock-objects": "2.3.0",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "sentry/sentry": "^0.13",
                 "swiftmailer/swiftmailer": "^5.3|^6.0"
@@ -3454,7 +3456,17 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2019-12-20T14:15:16+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-22T07:31:27+00:00"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -3515,16 +3527,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.34.0",
+            "version": "2.34.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "52ea68aebbad8a3b27b5d24e4c66ebe1933f8399"
+                "reference": "3e87404329b8072295ea11d548b47a1eefe5a162"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/52ea68aebbad8a3b27b5d24e4c66ebe1933f8399",
-                "reference": "52ea68aebbad8a3b27b5d24e4c66ebe1933f8399",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/3e87404329b8072295ea11d548b47a1eefe5a162",
+                "reference": "3e87404329b8072295ea11d548b47a1eefe5a162",
                 "shasum": ""
             },
             "require": {
@@ -3594,7 +3606,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-12T19:53:34+00:00"
+            "time": "2020-05-19T22:14:16+00:00"
         },
         {
             "name": "nette/finder",
@@ -6437,32 +6449,32 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.6.3",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "89999fdaad52cab14637709f2d2ce25835a051e6"
+                "reference": "d606fabffa3547a61632bcf3b3bb677e79475449"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/89999fdaad52cab14637709f2d2ce25835a051e6",
-                "reference": "89999fdaad52cab14637709f2d2ce25835a051e6",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/d606fabffa3547a61632bcf3b3bb677e79475449",
+                "reference": "d606fabffa3547a61632bcf3b3bb677e79475449",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0",
-                "php": "^7.0"
+                "php": ">=7.1"
             },
             "require-dev": {
                 "composer/composer": "^1.0.2",
-                "symfony/dotenv": "^3.4|^4.0|^5.0",
-                "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0",
-                "symfony/process": "^2.7|^3.0|^4.0|^5.0"
+                "symfony/dotenv": "^4.4|^5.0",
+                "symfony/phpunit-bridge": "^4.4|^5.0",
+                "symfony/process": "^4.4|^5.0"
             },
             "type": "composer-plugin",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.7-dev"
                 },
                 "class": "Symfony\\Flex\\Flex"
             },
@@ -6496,7 +6508,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-09T12:10:32+00:00"
+            "time": "2020-05-21T12:14:09+00:00"
         },
         {
             "name": "symfony/form",
