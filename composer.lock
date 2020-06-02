@@ -334,16 +334,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.21",
+            "version": "4.0.0-rc.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "7b55fa9d88ddde11e810439979524909720a4ca1"
+                "reference": "edb9257144eb04a6d46218d16f0143b0a878e191"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/7b55fa9d88ddde11e810439979524909720a4ca1",
-                "reference": "7b55fa9d88ddde11e810439979524909720a4ca1",
+                "url": "https://api.github.com/repos/bolt/core/zipball/edb9257144eb04a6d46218d16f0143b0a878e191",
+                "reference": "edb9257144eb04a6d46218d16f0143b0a878e191",
                 "shasum": ""
             },
             "require": {
@@ -476,7 +476,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-05-31T12:55:21+00:00"
+            "time": "2020-06-02T19:16:07+00:00"
         },
         {
             "name": "bolt/newswidget",
