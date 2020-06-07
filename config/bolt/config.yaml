@@ -14,17 +14,6 @@ secret: '%env(APP_SECRET)%'
 # change the name here accordingly.
 theme: base-2018
 
-# The locale that'll be used by the application. If no locale is set the
-# fallback locale is en_GB. For available options, see:
-# https://docs.bolt.cm/other/locales
-#
-# In some cases it may be needed to specify (non-standard) variations of the
-# locale to get everything to work as desired.
-#
-# This can be done as [nl_NL, Dutch_Netherlands] when specifying multiple
-# locales, ensure the first is a standard locale.
-locale: en
-
 # Set the timezone to be used on the website. For a list of valid timezone
 # settings, see: http://php.net/manual/en/timezones.php
 # timezone: UTC
@@ -154,7 +143,7 @@ filepermissions:
 # will be allowed, regardless of it being in the `allowed_tags` setting.
 htmlcleaner:
     allowed_tags: [ div, span, p, br, hr, s, u, strong, em, i, b, li, ul, ol, mark, blockquote, pre, code, tt, h1, h2, h3, h4, h5, h6, dd, dl, dt, table, tbody, thead, tfoot, th, td, tr, a, img, address, abbr, iframe, caption, sub, super, figure, figcaption ]
-    allowed_attributes: [ id, class, style, name, value, href, src, alt, title, width, height, frameborder, allowfullscreen, scrolling, target, colspan, rowspan, download, hreflang ]
+    allowed_attributes: [ id, class, style, name, value, href, src, alt, title, width, height, frameborder, allowfullscreen, scrolling, target, colspan, rowspan ]
 
 # Define the file types (extensions to be exact) that are acceptable for upload
 # in either file fields or through the files screen.

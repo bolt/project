@@ -124,7 +124,7 @@ entries:
             group: media
             upload: entries
         video:
-            type: video
+            type: embed
     relations:
         pages:
           multiple: false
@@ -173,13 +173,12 @@ blocks:
 # Possible field types:
 #
 # text - varchar(256) - input type text.
-# integer - integer - Input field for integer numbers.
-# float - double - Input field for floating numbers, stored as 'Double'.
+# number - double - Input field for numbers, with `mode: integer` or `mode: float`
 # imagelist - text (65kb) - Input type for imagelists. Add multiple images. Useful for image sliders, galleries, etcetera.
 # image - varchar(256) - image select/upload widget, stored as filename.
 # file - varchar(256) - file select/upload widget, stored as filename.
 # filelist - text (65kb) - Input type for a list of files. Including a description.
-# video - varchar(256) - Video embed widget, stored as filename.
+# embed - text (65kb) - embed widget for video and audio. Stored as JSON.
 # html - text (65kb) - wysiwyg element.
 # textarea - varchar(32768) - Simple, plain < textarea > field.
 # markdown - varchar(32768) - wysiwyg element, which is parsed as Markdown text.
