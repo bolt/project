@@ -11,7 +11,30 @@ composer update
 bin/console cache:clear
 ```
 
-## From earlier Beta's to Beta 5
+## From earlier Beta's to more recent versions
+
+## Uncaught Error: Class '…WhiteOctoberPagerfantaBundle' not found
+
+If you get this error:
+
+```
+Script cache:clear returned with error code 255
+!!  PHP Fatal error:  Uncaught Error: Class 'WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle' 
+!!  not found in site/vendor/bolt/core/src/Kernel.php:32 
+!!  Stack trace:
+```
+
+Edit `config/bundles.php`, and replace
+
+```php
+    WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle::class => ['all' => true],
+``` 
+
+with 
+
+```php
+    BabDev\PagerfantaBundle\BabDevPagerfantaBundle::class => ['all' => true],
+```
 
 ## Call to a member function setLocale() on array OR Collection fields not visible
 
