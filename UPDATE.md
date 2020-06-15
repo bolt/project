@@ -13,7 +13,58 @@ bin/console cache:clear
 
 ## From earlier Beta's to more recent versions
 
-## Uncaught Error: Class '…WhiteOctoberPagerfantaBundle' not found
+### Cannot autowire service "Bolt\Controller\ErrorController"
+
+If you get this error:
+
+```
+!!  In DefinitionErrorExceptionPass.php line 54:
+!!
+!!    Cannot autowire service "Bolt\Controller\ErrorController": argument "$error
+!!    Renderer" of method "__construct()" references interface "Symfony\Component
+!!    \ErrorHandler\ErrorRenderer\ErrorRendererInterface" but no such service exi
+!!    sts. You should maybe alias this interface to one of these existing service
+!!    s: "error_handler.error_renderer.html", "error_handler.error_renderer.seria
+!!    lizer", "twig.error_renderer.html".
+```
+
+Replace the following lines in `services.yaml`:
+
+```yaml
+    # Override Symfony's error pages (so we can show custom 404's)
+    Bolt\Controller\ExceptionController:
+        public: true
+        arguments:
+            $debug: '%kernel.debug%'
+```
+
+with: 
+
+```
+    Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface: '@error_handler.error_renderer.html'
+```
+
+Replace this line in `packages/twig.yaml`: 
+
+```yaml
+    exception_controller: Bolt\Controller\ExceptionController::showAction
+```
+
+with: 
+
+```yaml
+    exception_controller: ~
+```
+
+And finally, in `packages/framework.yaml`, add: 
+
+```yaml
+    # Override Symfony's error controller, so we can show custom 404's and 503's
+    error_controller: Bolt\Controller\ErrorController::showAction
+```
+
+
+### Uncaught Error: Class '…WhiteOctoberPagerfantaBundle' not found
 
 If you get this error:
 
@@ -36,7 +87,7 @@ with
     BabDev\PagerfantaBundle\BabDevPagerfantaBundle::class => ['all' => true],
 ```
 
-## Call to a member function setLocale() on array OR Collection fields not visible
+### Call to a member function setLocale() on array OR Collection fields not visible
 
 If you get this error when saving a record:
 ```
@@ -51,7 +102,7 @@ Update services.yaml, add the 3 lines below:
             - { name: doctrine.event_listener, event: postLoad }
 ```
 
-## "$defaultLocale" of method "__construct()"
+### "$defaultLocale" of method "__construct()"
 
 If you get this error:
 
@@ -73,7 +124,7 @@ services:
             …
 ```
 
-## "$publicFolder" of method "__construct()"
+### "$publicFolder" of method "__construct()"
 
 If you get this error:
 
