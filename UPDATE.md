@@ -59,7 +59,7 @@ And finally, in `packages/framework.yaml`, add:
     error_controller: Bolt\Controller\ErrorController::showAction
 ```
 
-### Uncaught …\ClassNotFoundException: Attempted to load class "DoctrineCacheBundle"
+### Uncaught …\ClassNotFoundException: Attempted to load class "DoctrineCacheBundle" / "WhiteOctoberPagerfantaBundle"
 
 If you get this error: 
 
@@ -69,10 +69,19 @@ If you get this error:
 !!  Stack trace:
 ```
 
+Or this error: 
+
+```
+!!  PHP Fatal error:  Uncaught …\ClassNotFoundException: Attempted to load class "WhiteOctoberPagerfantaBundle" from namespace "WhiteOctober\PagerfantaBundle".
+!!  Did you forget a "use" statement for another namespace? in /…/src/Kernel.php:32
+```
+
 You can fix this by _removing_ this line from `config/bundles.php`: 
 
 ```php
     Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle::class => ['all' => true],
+    …
+    WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle::class => ['all' => true],
 ```
 
 
