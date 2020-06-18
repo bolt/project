@@ -38,6 +38,8 @@ with:
 
 ```
     Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface: '@error_handler.error_renderer.html'
+    
+    Squirrel\TwigPhpSyntax\PhpSyntaxExtension: ~
 ```
 
 Replace this line in `packages/twig.yaml`: 
