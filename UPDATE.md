@@ -18,14 +18,10 @@ bin/console cache:clear
 If you get this error:
 
 ```
-!!  In DefinitionErrorExceptionPass.php line 54:
+!!  In AbstractRecursivePass.php line 153:
 !!
-!!    Cannot autowire service "Bolt\Controller\ErrorController": argument "$error
-!!    Renderer" of method "__construct()" references interface "Symfony\Component
-!!    \ErrorHandler\ErrorRenderer\ErrorRendererInterface" but no such service exi
-!!    sts. You should maybe alias this interface to one of these existing service
-!!    s: "error_handler.error_renderer.html", "error_handler.error_renderer.seria
-!!    lizer", "twig.error_renderer.html".
+!!    Invalid service "Bolt\Controller\ExceptionController": class "Bolt\Controll
+!!    er\ExceptionController" does not exist
 ```
 
 Replace the following lines in `services.yaml`:
