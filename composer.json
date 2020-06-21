@@ -21,7 +21,7 @@
     "prefer-stable": true,
     "scripts": {
         "auto-scripts": {
-            "cache:clear": "symfony-cmd",
+            "cache:clear --no-warmup": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "bolt:copy-assets": "symfony-cmd"
         },
