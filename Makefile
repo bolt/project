@@ -24,6 +24,7 @@ build-assets: ## to install assets
 copy-assets: ## to install copy assets
 	rm -rf ../assets/assets
 	cp -rf vendor/bolt/core/public/assets ../assets/
+	cp vendor/bolt/core/package.json ../assets/
 
 server: ## to start server
 	bin/console server:start 127.0.0.1:8088 || true
@@ -158,7 +159,7 @@ docker-test: ## to run phpspec and phpunit tests with docker
 
 docker-server: ## to start server with docker
 	docker-compose exec -T php bin/console server:start 127.0.0.1:8088
-	
+
 docker-server-stop: ## to stop server with docker
 	docker-compose exec -T -u www-data php bin/console server:stop
 
