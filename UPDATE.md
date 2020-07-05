@@ -13,6 +13,35 @@ bin/console cache:clear
 
 ## From earlier Beta's to more recent versions
 
+### The file "../vendor/bolt/core/src/Controller/Backend/" does not exist 
+
+If you get the following error: 
+
+```
+The file "../vendor/bolt/core/src/Controller/Backend/" does not exist (in: "…/config/routes") 
+in ../vendor/bolt/core/src/Controller/Backend/ 
+```
+
+Edit `config/routes/bolt.yaml` to add `../` to each of the `resource:`'s: 
+
+```php 
+control_panel:
+    resource: '../../vendor/bolt/core/src/Controller/Backend/'
+    prefix: '%bolt.backend_url%'
+    type: annotation
+
+# Async: Upload, Embed
+control_panel_async:
+    resource: '../../vendor/bolt/core/src/Controller/Backend/Async'
+    prefix: '%bolt.backend_url%/async'
+    type: annotation
+
+# ImageController, Currently only used for thumbnails
+controllers:
+    resource: '../../vendor/bolt/core/src/Controller/ImageController.php'
+    type: annotation
+```
+
 ### Cannot autowire service "Bolt\Controller\ErrorController"
 
 If you get this error:
@@ -53,6 +82,8 @@ with:
 ```yaml
     exception_controller: ~
 ```
+
+Next, *delete* the file `config/routes/dev/twig.yaml`
 
 And finally, in `packages/framework.yaml`, add: 
 
