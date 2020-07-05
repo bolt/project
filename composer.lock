@@ -159,16 +159,16 @@
         },
         {
             "name": "babdev/pagerfanta-bundle",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BabDev/BabDevPagerfantaBundle.git",
-                "reference": "93c041c59d43263ee63ddd3f922045328334bb81"
+                "reference": "602f4847b27d72364b49b31d15dfc02a59aaece8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BabDev/BabDevPagerfantaBundle/zipball/93c041c59d43263ee63ddd3f922045328334bb81",
-                "reference": "93c041c59d43263ee63ddd3f922045328334bb81",
+                "url": "https://api.github.com/repos/BabDev/BabDevPagerfantaBundle/zipball/602f4847b27d72364b49b31d15dfc02a59aaece8",
+                "reference": "602f4847b27d72364b49b31d15dfc02a59aaece8",
                 "shasum": ""
             },
             "require": {
@@ -229,20 +229,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-06-09T15:42:00+00:00"
+            "time": "2020-06-30T14:02:17+00:00"
         },
         {
             "name": "bobdenotter/configuration-notices",
-            "version": "1.0.6",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/configuration-notices.git",
-                "reference": "265edae80cce50b3e64ce089ffe8de761155d1ba"
+                "reference": "aef3a67a4361a347394ab0ad1821f8f724823b4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/configuration-notices/zipball/265edae80cce50b3e64ce089ffe8de761155d1ba",
-                "reference": "265edae80cce50b3e64ce089ffe8de761155d1ba",
+                "url": "https://api.github.com/repos/bobdenotter/configuration-notices/zipball/aef3a67a4361a347394ab0ad1821f8f724823b4f",
+                "reference": "aef3a67a4361a347394ab0ad1821f8f724823b4f",
                 "shasum": ""
             },
             "require": {
@@ -275,7 +275,7 @@
                 }
             ],
             "description": "💡 A small tool to point out common pitfalls for Bolt 4 configuration settings",
-            "time": "2020-06-29T20:41:12+00:00"
+            "time": "2020-07-01T13:27:25+00:00"
         },
         {
             "name": "bobdenotter/weatherwidget",
@@ -325,16 +325,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.27",
+            "version": "4.0.0-rc.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "ec805abe4c53e0681a84f1c1c3c57a21666e5944"
+                "reference": "f714666042744e4c61e7287ce3b68836bbb0a265"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/ec805abe4c53e0681a84f1c1c3c57a21666e5944",
-                "reference": "ec805abe4c53e0681a84f1c1c3c57a21666e5944",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/f714666042744e4c61e7287ce3b68836bbb0a265",
+                "reference": "f714666042744e4c61e7287ce3b68836bbb0a265",
                 "shasum": ""
             },
             "require-dev": {
@@ -352,7 +352,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-06-29T19:11:30+00:00"
+            "time": "2020-07-05T12:48:53+00:00"
         },
         {
             "name": "bolt/common",
@@ -408,16 +408,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.27",
+            "version": "4.0.0-rc.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "768ff3882cb559b493741132c9f0b46d49205695"
+                "reference": "5214868bd5d79477627bda87a6b65fdba8d6f9f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/768ff3882cb559b493741132c9f0b46d49205695",
-                "reference": "768ff3882cb559b493741132c9f0b46d49205695",
+                "url": "https://api.github.com/repos/bolt/core/zipball/5214868bd5d79477627bda87a6b65fdba8d6f9f7",
+                "reference": "5214868bd5d79477627bda87a6b65fdba8d6f9f7",
                 "shasum": ""
             },
             "require": {
@@ -549,7 +549,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-06-29T20:08:41+00:00"
+            "time": "2020-07-05T12:41:10+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -599,16 +599,16 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "bad61b311e2dd6915e2aaa9d17c82e062088317c"
+                "reference": "140dd69ba321ca48e9e983c4b49255a70bf2588e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/bad61b311e2dd6915e2aaa9d17c82e062088317c",
-                "reference": "bad61b311e2dd6915e2aaa9d17c82e062088317c",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/140dd69ba321ca48e9e983c4b49255a70bf2588e",
+                "reference": "140dd69ba321ca48e9e983c4b49255a70bf2588e",
                 "shasum": ""
             },
             "require": {
@@ -638,7 +638,7 @@
                 "cms",
                 "twig"
             ],
-            "time": "2020-05-24T11:11:07+00:00"
+            "time": "2020-07-05T13:04:36+00:00"
         },
         {
             "name": "brick/math",
@@ -2647,16 +2647,16 @@
         },
         {
             "name": "embed/embed",
-            "version": "v3.4.7",
+            "version": "v3.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/Embed.git",
-                "reference": "c35f948df4e36fe34a9be2ddc34414a7ddea0f65"
+                "reference": "96aab555e399769b9d12c3c362a4232563ccbe76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/c35f948df4e36fe34a9be2ddc34414a7ddea0f65",
-                "reference": "c35f948df4e36fe34a9be2ddc34414a7ddea0f65",
+                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/96aab555e399769b9d12c3c362a4232563ccbe76",
+                "reference": "96aab555e399769b9d12c3c362a4232563ccbe76",
                 "shasum": ""
             },
             "require": {
@@ -2697,7 +2697,7 @@
                 "opengraph",
                 "twitter cards"
             ],
-            "time": "2020-06-29T13:48:20+00:00"
+            "time": "2020-07-03T15:04:01+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -3717,16 +3717,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.35.0",
+            "version": "2.36.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "4b9bd835261ef23d36397a46a76b496a458305e5"
+                "reference": "ee7378a36cc62952100e718bcc58be4c7210e55f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/4b9bd835261ef23d36397a46a76b496a458305e5",
-                "reference": "4b9bd835261ef23d36397a46a76b496a458305e5",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ee7378a36cc62952100e718bcc58be4c7210e55f",
+                "reference": "ee7378a36cc62952100e718bcc58be4c7210e55f",
                 "shasum": ""
             },
             "require": {
@@ -3738,9 +3738,10 @@
             "require-dev": {
                 "doctrine/orm": "^2.7",
                 "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
-                "kylekatarnls/multi-tester": "^1.1",
+                "kylekatarnls/multi-tester": "^2.0",
                 "phpmd/phpmd": "^2.8",
-                "phpstan/phpstan": "^0.11",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12.30",
                 "phpunit/phpunit": "^7.5 || ^8.0",
                 "squizlabs/php_codesniffer": "^3.4"
             },
@@ -3756,6 +3757,11 @@
                 "laravel": {
                     "providers": [
                         "Carbon\\Laravel\\ServiceProvider"
+                    ]
+                },
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
                     ]
                 }
             },
@@ -3796,7 +3802,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-24T18:27:52+00:00"
+            "time": "2020-07-04T12:29:56+00:00"
         },
         {
             "name": "nette/finder",
@@ -3941,16 +3947,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.5.0",
+            "version": "v4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "53c2753d756f5adb586dca79c2ec0e2654dd9463"
+                "reference": "c346bbfafe2ff60680258b631afb730d186ed864"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/53c2753d756f5adb586dca79c2ec0e2654dd9463",
-                "reference": "53c2753d756f5adb586dca79c2ec0e2654dd9463",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c346bbfafe2ff60680258b631afb730d186ed864",
+                "reference": "c346bbfafe2ff60680258b631afb730d186ed864",
                 "shasum": ""
             },
             "require": {
@@ -3989,7 +3995,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-06-03T07:24:19+00:00"
+            "time": "2020-07-02T17:12:47+00:00"
         },
         {
             "name": "nyholm/nsa",
@@ -10772,16 +10778,16 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "v8.1.2",
+            "version": "v8.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "91a5a58fc2e871ca84f49bb3a1b5a865723abd09"
+                "reference": "d466b2e7be5f60433b95557bfd6a196759a4228a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/91a5a58fc2e871ca84f49bb3a1b5a865723abd09",
-                "reference": "91a5a58fc2e871ca84f49bb3a1b5a865723abd09",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/d466b2e7be5f60433b95557bfd6a196759a4228a",
+                "reference": "d466b2e7be5f60433b95557bfd6a196759a4228a",
                 "shasum": ""
             },
             "require": {
@@ -11142,16 +11148,16 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v0.13.8",
+            "version": "v0.13.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "6829ae58f4c59121df1f86915fb9917a2ec595e8"
+                "reference": "d9a94fddcad0a35d4bced212b8a44ad1bc59bdf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/6829ae58f4c59121df1f86915fb9917a2ec595e8",
-                "reference": "6829ae58f4c59121df1f86915fb9917a2ec595e8",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/d9a94fddcad0a35d4bced212b8a44ad1bc59bdf3",
+                "reference": "d9a94fddcad0a35d4bced212b8a44ad1bc59bdf3",
                 "shasum": ""
             },
             "require": {
@@ -11190,7 +11196,13 @@
                 "api",
                 "graphql"
             ],
-            "time": "2019-08-25T10:32:47+00:00"
+            "funding": [
+                {
+                    "url": "https://opencollective.com/webonyx-graphql-php",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2020-07-02T05:49:25+00:00"
         },
         {
             "name": "willdurand/negotiation",
