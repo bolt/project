@@ -160,22 +160,6 @@ accept_media_types: [ gif, jpg, jpeg, png, svg, pdf, mp3, tiff ]
 #`post_max_size` and `upload_max_filesize` in `php.ini`.
 accept_upload_size: 8M
 
-# If you want to brand the Bolt backend for a client, you can change some key
-# variables here, that determine the name of the backend, and adds a primary
-# support/contact link to the footer.  Add a scheme, like `mailto:` or
-# `https://` to the email or URL.
-#
-# Additionally you can change the mount point for the backend, either for
-# convenience or to obscure it from prying eyes.
-#
-# The Bolt backend is accessible as `/bolt/` by default. If you change it here,
-# it will only be accessible through the value set in path.
-# Keep the path simple: lowercase only, no extra slashes or other special
-# characters.
-# branding:
-#     name: SuperCMS
-#     provided_by: [ supercool@example.org, "Supercool Webdesign Co." ]
-
 # There are several options for giving editors more options to insert images,
 # video, etc in the WYSIWYG areas. But, as you give them more options, that
 # means they also have more ways of breaking the preciously designed layout.
