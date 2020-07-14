@@ -13,6 +13,21 @@ bin/console cache:clear
 
 ## From earlier Beta's to more recent versions
 
+### Error: Expected known function, got 'INSTR'"
+
+If you get this error, edit `config/packages/doctrine.yaml` and make sure the following is included:
+
+```yaml
+        dql:
+            string_functions:
+                JSON_EXTRACT: Bolt\Doctrine\Functions\JsonExtract
+                JSON_CONTAINS: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonContains
+                CAST: DoctrineExtensions\Query\Mysql\Cast
+                INSTR: DoctrineExtensions\Query\Mysql\Instr
+            numeric_functions:
+                RAND: Bolt\Doctrine\Functions\Rand
+```
+
 ### The file "../vendor/bolt/core/src/Controller/Backend/" does not exist 
 
 If you get the following error: 
