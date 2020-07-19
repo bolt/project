@@ -2,7 +2,11 @@ parameters:
     tmpDir: var/cache/ecs
     level: 5
     symfony:
-        container_xml_path: '%rootDir%/../../../var/cache/dev/srcBolt_KernelDevDebugContainer.xml'
+        container_xml_path: '%rootDir%/../../../var/cache/dev/Bolt_KernelDevDebugContainer.xml'
+
+    scanDirectories:
+        # In order to 'recognize' Twig functions in global scope
+        - %currentWorkingDirectory%/vendor/twig/twig/src/Extension
 
     ignoreErrors:
         # false positive: `Unreachable statement - code above always terminates.`
@@ -16,13 +20,14 @@ parameters:
             message: '#Call to an undefined method Knp\\DoctrineBehaviors\\Contract\\Entity\\TranslationInterface#'
             path: %currentWorkingDirectory%/src/*
 
-        # false positive: `Method Symfony\Contracts\EventDispatcher\EventDispatcherInterface::dispatch() invoked with 2 parameters, 1 required.`
-        # We skip this error, because it's still what the docs recommend: https://symfony.com/doc/current/components/event_dispatcher.html#dispatch-the-event
+        # Parameters in Storage\Directive\OrderDirective::orderByNumericField() aren't seen as ints
         -
-             message: '#EventDispatcherInterface::dispatch\(\) invoked with 2 parameters#'
-             path: %currentWorkingDirectory%/src/*
+            message: '#of method Doctrine\\ORM\\Query\\Expr::substring\(\) expects int#'
+            path: %currentWorkingDirectory%/src/Storage/Directive/OrderDirective.php
 
 includes:
 	- vendor/phpstan/phpstan-symfony/extension.neon
 	- vendor/phpstan/phpstan-doctrine/extension.neon
 #    - vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon # make ON when thecodingmachine/safe will get stable
+rules:
+	- Symplify\CodingStandard\Rules\NoDebugFuncCallRule
