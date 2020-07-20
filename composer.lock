@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4ed43dc6dace844186126111cff179b",
+    "content-hash": "ea3004b42d47535b44fdcad328ccff81",
     "packages": [
         {
             "name": "api-platform/core",
@@ -462,16 +462,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.30",
+            "version": "4.0.0-rc.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "b1f4d0845afbf62dccea13af1f806f2b3d4ab369"
+                "reference": "e775151927a4d44e1e47da10ca90d12989c940af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/b1f4d0845afbf62dccea13af1f806f2b3d4ab369",
-                "reference": "b1f4d0845afbf62dccea13af1f806f2b3d4ab369",
+                "url": "https://api.github.com/repos/bolt/core/zipball/e775151927a4d44e1e47da10ca90d12989c940af",
+                "reference": "e775151927a4d44e1e47da10ca90d12989c940af",
                 "shasum": ""
             },
             "require": {
@@ -555,7 +555,7 @@
                 "behat/mink-selenium2-driver": "^1.4",
                 "behatch/contexts": "^3.2",
                 "bobdenotter/configuration-notices": "^1.0",
-                "bobdenotter/weatherwidget": "^1.0",
+                "bobdenotter/weatherwidget": "^1.1",
                 "bolt/newswidget": "^1.1",
                 "coduo/php-matcher": "^4.0",
                 "dama/doctrine-test-bundle": "^6.2.0",
@@ -604,7 +604,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-19T12:26:15+00:00"
+            "time": "2020-07-20T11:21:07+00:00"
         },
         {
             "name": "bolt/newswidget",
