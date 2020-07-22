@@ -379,16 +379,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.30",
+            "version": "4.0.0-rc.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "5e3046fe0c501a9ae16999170dd32465032870ec"
+                "reference": "44332512de387c266decef51bc66d825dd468e8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/5e3046fe0c501a9ae16999170dd32465032870ec",
-                "reference": "5e3046fe0c501a9ae16999170dd32465032870ec",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/44332512de387c266decef51bc66d825dd468e8c",
+                "reference": "44332512de387c266decef51bc66d825dd468e8c",
                 "shasum": ""
             },
             "require-dev": {
@@ -406,7 +406,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-07-19T12:49:18+00:00"
+            "time": "2020-07-22T14:28:27+00:00"
         },
         {
             "name": "bolt/common",
@@ -462,16 +462,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.31",
+            "version": "4.0.0-rc.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "c24a596374f2eae4ebc6e21e157aad1b2a8dc912"
+                "reference": "ed2fb43b5e95f03a102a9145d2c76089a9a5a914"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/c24a596374f2eae4ebc6e21e157aad1b2a8dc912",
-                "reference": "c24a596374f2eae4ebc6e21e157aad1b2a8dc912",
+                "url": "https://api.github.com/repos/bolt/core/zipball/ed2fb43b5e95f03a102a9145d2c76089a9a5a914",
+                "reference": "ed2fb43b5e95f03a102a9145d2c76089a9a5a914",
                 "shasum": ""
             },
             "require": {
@@ -604,7 +604,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-20T12:18:43+00:00"
+            "time": "2020-07-22T14:18:08+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -3729,16 +3729,16 @@
         },
         {
             "name": "nelmio/cors-bundle",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioCorsBundle.git",
-                "reference": "9683e6d30d000ef998919261329d825de7c53499"
+                "reference": "be4d5824caebc86da9e224e935e02e1201b3ea54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioCorsBundle/zipball/9683e6d30d000ef998919261329d825de7c53499",
-                "reference": "9683e6d30d000ef998919261329d825de7c53499",
+                "url": "https://api.github.com/repos/nelmio/NelmioCorsBundle/zipball/be4d5824caebc86da9e224e935e02e1201b3ea54",
+                "reference": "be4d5824caebc86da9e224e935e02e1201b3ea54",
                 "shasum": ""
             },
             "require": {
@@ -3782,7 +3782,7 @@
                 "cors",
                 "crossdomain"
             ],
-            "time": "2019-11-15T08:54:08+00:00"
+            "time": "2020-07-22T11:44:28+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -11003,16 +11003,16 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "v8.1.13",
+            "version": "v8.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "8fb79f6148ed7bd29db9582796ad67979abaf7c8"
+                "reference": "968ef813c37ee8c049f503086864b67eb0e6fa3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/8fb79f6148ed7bd29db9582796ad67979abaf7c8",
-                "reference": "8fb79f6148ed7bd29db9582796ad67979abaf7c8",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/968ef813c37ee8c049f503086864b67eb0e6fa3f",
+                "reference": "968ef813c37ee8c049f503086864b67eb0e6fa3f",
                 "shasum": ""
             },
             "require": {
@@ -11051,7 +11051,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-15T22:58:51+00:00"
+            "time": "2020-07-21T00:47:43+00:00"
         },
         {
             "name": "tightenco/collect",
