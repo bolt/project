@@ -26,9 +26,7 @@
             "bolt:copy-assets": "symfony-cmd"
         },
         "post-create-project-cmd": [
-            "cp -n .env.dist .env || true",
-            "rm public/.gitignore .github/FUNDING.yml",
-            "mv README_project.md README.md",
+            "php bin/post-create-project.php",
             "php bin/console bolt:copy-themes"
         ],
         "post-install-cmd": [
