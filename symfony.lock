@@ -459,9 +459,6 @@
     "symfony/http-kernel": {
         "version": "v4.2.3"
     },
-    "symfony/inflector": {
-        "version": "v4.2.3"
-    },
     "symfony/intl": {
         "version": "v4.2.3"
     },
@@ -719,5 +716,8 @@
     },
     "willdurand/negotiation": {
         "version": "v2.3.1"
+    },
+    "xemlock/htmlpurifier-html5": {
+        "version": "v0.1.11"
     }
 }
