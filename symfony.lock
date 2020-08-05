@@ -232,6 +232,9 @@
     "pagerfanta/pagerfanta": {
         "version": "v2.0.1"
     },
+    "paragonie/random_compat": {
+        "version": "v9.99.99"
+    },
     "peterkahl/country-code-to-emoji-flag": {
         "version": "v0.9.1"
     },
@@ -368,9 +371,6 @@
             "config/bootstrap.php"
         ]
     },
-    "symfony/debug": {
-        "version": "v4.2.3"
-    },
     "symfony/debug-bundle": {
         "version": "4.1",
         "recipe": {
@@ -459,9 +459,6 @@
     "symfony/http-kernel": {
         "version": "v4.2.3"
     },
-    "symfony/inflector": {
-        "version": "v4.2.3"
-    },
     "symfony/intl": {
         "version": "v4.2.3"
     },
@@ -526,6 +523,9 @@
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.10.0"
+    },
+    "symfony/polyfill-php70": {
+        "version": "v1.18.0"
     },
     "symfony/polyfill-php72": {
         "version": "v1.10.0"
