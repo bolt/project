@@ -7,7 +7,7 @@
         "bolt/assets": "^4.0",
         "bolt/core": "^4.0",
         "bolt/newswidget": "^1.1",
-        "bolt/themes": "^3.1",
+        "bolt/themes": "^3.2.3",
         "symfony/flex": "^1.6",
         "bobdenotter/configuration-notices": "^1.0",
         "bobdenotter/weatherwidget": "^1.1"

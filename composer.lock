@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea3004b42d47535b44fdcad328ccff81",
+    "content-hash": "a6dbb5d4c0f9c66f89aee476c0b34a10",
     "packages": [
         {
             "name": "api-platform/core",
@@ -379,16 +379,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.32",
+            "version": "4.0.0-rc.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "44332512de387c266decef51bc66d825dd468e8c"
+                "reference": "d72dd8fe1adeba6a33ee357c2507810af90a7dca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/44332512de387c266decef51bc66d825dd468e8c",
-                "reference": "44332512de387c266decef51bc66d825dd468e8c",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/d72dd8fe1adeba6a33ee357c2507810af90a7dca",
+                "reference": "d72dd8fe1adeba6a33ee357c2507810af90a7dca",
                 "shasum": ""
             },
             "require-dev": {
@@ -406,7 +406,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-07-22T14:28:27+00:00"
+            "time": "2020-08-01T14:13:05+00:00"
         },
         {
             "name": "bolt/common",
@@ -462,16 +462,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.32",
+            "version": "4.0.0-rc.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "ed2fb43b5e95f03a102a9145d2c76089a9a5a914"
+                "reference": "dd39a53f1b0697e09375a69ad492c5ce23f0b9ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/ed2fb43b5e95f03a102a9145d2c76089a9a5a914",
-                "reference": "ed2fb43b5e95f03a102a9145d2c76089a9a5a914",
+                "url": "https://api.github.com/repos/bolt/core/zipball/dd39a53f1b0697e09375a69ad492c5ce23f0b9ce",
+                "reference": "dd39a53f1b0697e09375a69ad492c5ce23f0b9ce",
                 "shasum": ""
             },
             "require": {
@@ -491,7 +491,6 @@
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-pdo": "*",
-                "ezyang/htmlpurifier": "^4.12",
                 "fzaninotto/faker": "^1.9",
                 "knplabs/doctrine-behaviors": "^2.0.3",
                 "knplabs/knp-menu-bundle": "^3.0",
@@ -541,7 +540,8 @@
                 "ua-parser/uap-php": "^3.9",
                 "webimpress/safe-writer": "^2.0",
                 "webmozart/path-util": "^2.3",
-                "webonyx/graphql-php": "^0.13"
+                "webonyx/graphql-php": "^0.13",
+                "xemlock/htmlpurifier-html5": "^0.1.11"
             },
             "conflict": {
                 "symfony/symfony": "*"
@@ -586,7 +586,8 @@
                 "symfony": {
                     "allow-contrib": true,
                     "require": "^4.4 | ^5.1"
-                }
+                },
+                "public-dir": "public"
             },
             "autoload": {
                 "psr-4": {
@@ -604,7 +605,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-22T14:18:08+00:00"
+            "time": "2020-08-01T13:58:32+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -654,16 +655,16 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "53fa13b7fc8fa025d2d9dcf203c5936e47597251"
+                "reference": "2c1d7c16d62fc1ae7f6eccd4dc8533f973a2587c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/53fa13b7fc8fa025d2d9dcf203c5936e47597251",
-                "reference": "53fa13b7fc8fa025d2d9dcf203c5936e47597251",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/2c1d7c16d62fc1ae7f6eccd4dc8533f973a2587c",
+                "reference": "2c1d7c16d62fc1ae7f6eccd4dc8533f973a2587c",
                 "shasum": ""
             },
             "require": {
@@ -693,7 +694,7 @@
                 "cms",
                 "twig"
             ],
-            "time": "2020-07-05T15:45:15+00:00"
+            "time": "2020-08-01T14:04:24+00:00"
         },
         {
             "name": "brick/math",
@@ -2519,16 +2520,16 @@
         },
         {
             "name": "doctrine/sql-formatter",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/sql-formatter.git",
-                "reference": "5458bdcf176f6a53292e3f0cc73f292d6302fb0f"
+                "reference": "56070bebac6e77230ed7d306ad13528e60732871"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/5458bdcf176f6a53292e3f0cc73f292d6302fb0f",
-                "reference": "5458bdcf176f6a53292e3f0cc73f292d6302fb0f",
+                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/56070bebac6e77230ed7d306ad13528e60732871",
+                "reference": "56070bebac6e77230ed7d306ad13528e60732871",
                 "shasum": ""
             },
             "require": {
@@ -2568,7 +2569,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2020-05-29T18:32:49+00:00"
+            "time": "2020-07-30T16:57:33+00:00"
         },
         {
             "name": "drupol/composer-packages",
@@ -10919,7 +10920,7 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "v8.1.17",
+            "version": "v8.1.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
@@ -10967,7 +10968,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-21T00:47:43+00:00"
+            "time": "2020-07-22T12:56:30+00:00"
         },
         {
             "name": "tightenco/collect",
@@ -11412,6 +11413,57 @@
                 "negotiation"
             ],
             "time": "2017-05-14T17:21:12+00:00"
+        },
+        {
+            "name": "xemlock/htmlpurifier-html5",
+            "version": "v0.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xemlock/htmlpurifier-html5.git",
+                "reference": "f0d563f9fd4a82a3d759043483f9a94c0d8c2255"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xemlock/htmlpurifier-html5/zipball/f0d563f9fd4a82a3d759043483f9a94c0d8c2255",
+                "reference": "f0d563f9fd4a82a3d759043483f9a94c0d8c2255",
+                "shasum": ""
+            },
+            "require": {
+                "ezyang/htmlpurifier": "^4.8",
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^1.1|^2.1",
+                "phpunit/phpunit": ">=4.7 <8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "library/HTMLPurifier/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "xemlock",
+                    "email": "xemlock@gmail.com"
+                }
+            ],
+            "description": "HTML5 element definitions for HTML Purifier",
+            "keywords": [
+                "HTML5",
+                "Purifier",
+                "html",
+                "htmlpurifier",
+                "security",
+                "tidy",
+                "validator",
+                "xss"
+            ],
+            "time": "2019-08-07T17:19:21+00:00"
         }
     ],
     "packages-dev": [],
