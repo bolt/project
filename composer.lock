@@ -287,16 +287,16 @@
         },
         {
             "name": "bobdenotter/configuration-notices",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/configuration-notices.git",
-                "reference": "193606223a247ad4b4da7aed5daba730cdb51a6b"
+                "reference": "e9621187bc65fd49e57107c2314161822889c554"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/configuration-notices/zipball/193606223a247ad4b4da7aed5daba730cdb51a6b",
-                "reference": "193606223a247ad4b4da7aed5daba730cdb51a6b",
+                "url": "https://api.github.com/repos/bobdenotter/configuration-notices/zipball/e9621187bc65fd49e57107c2314161822889c554",
+                "reference": "e9621187bc65fd49e57107c2314161822889c554",
                 "shasum": ""
             },
             "require": {
@@ -329,7 +329,7 @@
                 }
             ],
             "description": "💡 A small tool to point out common pitfalls for Bolt 4 configuration settings",
-            "time": "2020-07-15T15:16:50+00:00"
+            "time": "2020-08-06T14:51:24+00:00"
         },
         {
             "name": "bobdenotter/weatherwidget",
@@ -379,16 +379,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.34",
+            "version": "4.0.0-rc.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "dc61a9e3a6e3e99d59c351c83edf01438d058ab2"
+                "reference": "86e732a7e0f0a3701477964a9f5326b41feab67b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/dc61a9e3a6e3e99d59c351c83edf01438d058ab2",
-                "reference": "dc61a9e3a6e3e99d59c351c83edf01438d058ab2",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/86e732a7e0f0a3701477964a9f5326b41feab67b",
+                "reference": "86e732a7e0f0a3701477964a9f5326b41feab67b",
                 "shasum": ""
             },
             "require-dev": {
@@ -406,7 +406,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-08-09T12:18:44+00:00"
+            "time": "2020-08-14T13:57:47+00:00"
         },
         {
             "name": "bolt/common",
@@ -462,16 +462,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.34",
+            "version": "4.0.0-rc.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "1960bb2aebe9d8e910f2089546e21fc84d1c4af9"
+                "reference": "75d37c57a3bcb67f7516d1786147871b0ff14aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/1960bb2aebe9d8e910f2089546e21fc84d1c4af9",
-                "reference": "1960bb2aebe9d8e910f2089546e21fc84d1c4af9",
+                "url": "https://api.github.com/repos/bolt/core/zipball/75d37c57a3bcb67f7516d1786147871b0ff14aa5",
+                "reference": "75d37c57a3bcb67f7516d1786147871b0ff14aa5",
                 "shasum": ""
             },
             "require": {
@@ -578,7 +578,7 @@
                 "se/selenium-server-standalone": "^3.141",
                 "symfony/browser-kit": "^4.4 | ^5.1",
                 "symfony/css-selector": "^4.4 | ^5.1",
-                "symplify/easy-coding-standard": "^8.1.10",
+                "symplify/easy-coding-standard": "^8.2.3",
                 "vaimo/binary-chromedriver": "^5.0"
             },
             "type": "library",
@@ -605,7 +605,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-09T12:05:01+00:00"
+            "time": "2020-08-14T13:37:18+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -980,21 +980,21 @@
         },
         {
             "name": "composer/package-versions-deprecated",
-            "version": "1.10.99",
+            "version": "1.10.99.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/package-versions-deprecated.git",
-                "reference": "dd51b4443d58b34b6d9344cf4c288e621c9a826f"
+                "reference": "68c9b502036e820c33445ff4d174327f6bb87486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/dd51b4443d58b34b6d9344cf4c288e621c9a826f",
-                "reference": "dd51b4443d58b34b6d9344cf4c288e621c9a826f",
+                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/68c9b502036e820c33445ff4d174327f6bb87486",
+                "reference": "68c9b502036e820c33445ff4d174327f6bb87486",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1.0 || ^2.0",
-                "php": "^7"
+                "php": "^7 || ^8"
             },
             "replace": {
                 "ocramius/package-versions": "1.10.99"
@@ -1045,7 +1045,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-15T08:39:18+00:00"
+            "time": "2020-08-13T12:55:41+00:00"
         },
         {
             "name": "composer/semver",
@@ -5309,16 +5309,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1"
+                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1",
-                "reference": "ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/3d5eb71705adfa34bd34b993400622932b2f62fd",
+                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd",
                 "shasum": ""
             },
             "require": {
@@ -5364,7 +5364,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-30T19:05:18+00:00"
+            "time": "2020-08-13T09:07:59+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -11010,16 +11010,16 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "v8.2.2",
+            "version": "v8.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "44bb3bcfdbdc1d4ec7745e7fbaef004c433b3e19"
+                "reference": "dbbb2bda689b66aa536b3b2a5e221767479edb38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/44bb3bcfdbdc1d4ec7745e7fbaef004c433b3e19",
-                "reference": "44bb3bcfdbdc1d4ec7745e7fbaef004c433b3e19",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/dbbb2bda689b66aa536b3b2a5e221767479edb38",
+                "reference": "dbbb2bda689b66aa536b3b2a5e221767479edb38",
                 "shasum": ""
             },
             "require": {

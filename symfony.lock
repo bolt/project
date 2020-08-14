@@ -193,6 +193,9 @@
     "league/glide-symfony": {
         "version": "1.0.3"
     },
+    "league/mime-type-detection": {
+        "version": "1.4.0"
+    },
     "miljar/php-exif": {
         "version": "v0.6.4"
     },
