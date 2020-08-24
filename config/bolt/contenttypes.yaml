@@ -21,13 +21,11 @@ homepage:
                 in the webbrowser, edit <code>sitename:</code> in the configuration file.
         image:
             type: image
-        teaser:
-            type: html
+        introduction:
+            type: redactor
             localize: true
-            height: 150px
         content:
-            type: html
-            height: 300px
+            type: redactor
             localize: true
         contentlink:
             type: text
@@ -37,14 +35,13 @@ homepage:
         slug:
             type: slug
             uses: title
-            group: meta
+            group: Meta
     viewless: false
     taxonomy: [ categories, tags, foobars ]
     locales: ['en', 'nl', 'pt_BR', 'es']
     singleton: true
     icon_many: "fa:home"
     icon_one: "fa:home"
-
 
 # Pages can be used for the more 'static' pages on your site. This content-type
 # has a 'templateselect' field, which allows you to override the record_template
@@ -63,29 +60,24 @@ pages:
             type: text
             class: large
             group: content
-        slug:
-            type: slug
-            uses: title
+        teaser:
+            type: textarea
+            postfix: |
+                A text-only version of the content, that can be used to "tease"
+                the content when it's used in listing pages or search results.
         image:
             type: image
             label: Highlighted image
-        teaser:
-            type: html
-            height: 150px
-        marky:
-            type: markdown
         body:
-            type: html
+            type: redactor
             height: 300px
-        textarea:
-            type: textarea
-            postfix: "This is a plain text area. the contents will <em><strong>not</em></strong> be processed."
-        checkbox:
-            type: checkbox
-            label: "This is a checkbox"
+        slug:
+            type: slug
+            uses: title
+            group: Meta
         template:
             type: templateselect
-            filter: '*.twig'
+            filter: '/^[^_].*\.twig$/'
     taxonomy: [ groups ]
     records_per_page: 5
     order: id
@@ -108,22 +100,23 @@ entries:
         title:
             type: text
             class: large
-            group: content
+            group: Entry
+        teaser:
+            type: textarea
+            postfix: |
+                A text-only version of the content, that can be used to "tease"
+                the content when it's used in listing pages or search results.
+        image:
+            type: image
+            upload: entries
+        body:
+            type: article
+        video:
+            type: embed
         slug:
             type: slug
             uses: title
-        teaser:
-            type: html
-            height: 150px
-        body:
-            type: html
-            height: 300px
-        image:
-            type: image
-            group: media
-            upload: entries
-        video:
-            type: embed
+            group: Meta
     relations:
         pages:
           multiple: false
@@ -151,16 +144,21 @@ blocks:
         title:
             type: text
             class: large
-            group: Block
             label: Title of this Block
+            group: Block
+        image:
+            type: image
+        content:
+            type: redactor
+        contentlink:
+            type: text
+            label: Link
+            placeholder: 'contentType/slug or http://example.org/'
+            postfix: "Use this to add a link for this Homepage. This could either be an 'internal' link like <tt>page//about</tt>, if you use a contentType/slug combination. Otherwise use a proper URL, like `http://example.org`."
         slug:
             type: slug
             uses: [ title ]
-        content:
-            type: html
-            height: 150px
-        image:
-            type: image
+            group: Meta
     show_on_dashboard: true
     viewless: true
     default_status: published

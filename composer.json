@@ -10,7 +10,9 @@
         "bolt/themes": "^3.2.3",
         "symfony/flex": "^1.6",
         "bobdenotter/configuration-notices": "^1.0",
-        "bobdenotter/weatherwidget": "^1.1"
+        "bobdenotter/weatherwidget": "^1.1",
+        "bolt/article": "^1.0",
+        "bolt/redactor": "^1.0"
     },
     "autoload": {
         "psr-4": {

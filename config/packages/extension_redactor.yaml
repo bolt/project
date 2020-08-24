@@ -1,0 +1,22 @@
+services:
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Bolt\Redactor\Controller\Upload:
+        tags: ['controller.service_arguments']
+
+### Map entities
+doctrine:
+    orm:
+        auto_generate_proxy_classes: '%kernel.debug%'
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+        mappings:
+            Redactor:
+                is_bundle: false
+                type: annotation
+                dir: '%kernel.project_dir%/vendor/bolt/redactor/src/Entity'
+                prefix: 'Bolt\Redactor'
+                alias: Redactor

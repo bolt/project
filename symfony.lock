@@ -25,6 +25,9 @@
     "bobdenotter/weatherwidget": {
         "version": "1.1.1"
     },
+    "bolt/article": {
+        "version": "1.0.5"
+    },
     "bolt/assets": {
         "version": "4.0.0-beta.2.3"
     },
@@ -36,6 +39,9 @@
     },
     "bolt/newswidget": {
         "version": "1.0.3"
+    },
+    "bolt/redactor": {
+        "version": "1.0.8"
     },
     "bolt/themes": {
         "version": "3.0.0"

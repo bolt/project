@@ -10,6 +10,12 @@ services:
     BobdenOtter\WeatherWidget\:
         resource: '../vendor/bobdenotter/weatherwidget/src/*'
         exclude: '../vendor/bobdenotter/weatherwidget/src/{Entity,Exception}'
+    Bolt\Article\:
+        resource: '../vendor/bolt/article/src/*'
+        exclude: '../vendor/bolt/article/src/{Entity,Exception}'
     Bolt\NewsWidget\:
         resource: '../vendor/bolt/newswidget/src/*'
         exclude: '../vendor/bolt/newswidget/src/{Entity,Exception}'
+    Bolt\Redactor\:
+        resource: '../vendor/bolt/redactor/src/*'
+        exclude: '../vendor/bolt/redactor/src/{Entity,Exception}'

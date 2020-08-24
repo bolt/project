@@ -1,0 +1,4 @@
+redactor_extension_controllers:
+    resource: '../../vendor/bolt/redactor/src/Controller/'
+    prefix: '%bolt.backend_url%/async'
+    type: annotation

@@ -1,0 +1,25 @@
+services:
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Bolt\Article\Controller\Upload:
+        tags: ['controller.service_arguments']
+
+    Bolt\Article\Controller\Images:
+        tags: ['controller.service_arguments']
+
+### Map entities
+doctrine:
+    orm:
+        auto_generate_proxy_classes: '%kernel.debug%'
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+        mappings:
+            Article:
+                is_bundle: false
+                type: annotation
+                dir: '%kernel.project_dir%/vendor/bolt/article/src/Entity'
+                prefix: 'Bolt\Article'
+                alias: Article
