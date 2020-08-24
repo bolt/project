@@ -8,6 +8,8 @@ for more info.
 To check out Bolt and set up your first Bolt installation, read 
 [Installing Bolt 4][installation]. 
 
+---
+
 You can set up a new Bolt 4 project, using the following command, replacing
 `myprojectname` with your desired project's name.
 
