@@ -1,11 +1,14 @@
 Bolt 4 standard project skeleton
 ================================
 
-With the release of Bolt 4 stable, there will be a number of ways to install
-the application. For now, we recommend the **composer create-project** as the
-fastest way to get an installation of Bolt up and running.
+Bolt CMS is an open source, adaptable platform for building and running modern 
+websites. Built on PHP, Symfony and more. [Read the site](https://boltcms.io) 
+for more info. 
 
-Set up a new Bolt 4 project, using the following command, replacing
+To check out Bolt and set up your first Bolt installation, read 
+[Installing Bolt 4][installation]. 
+
+You can set up a new Bolt 4 project, using the following command, replacing
 `myprojectname` with your desired project's name.
 
 ```bash
