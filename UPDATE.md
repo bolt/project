@@ -21,7 +21,6 @@ If you get this error, edit `config/packages/doctrine.yaml` and make sure the fo
         dql:
             string_functions:
                 JSON_EXTRACT: Bolt\Doctrine\Functions\JsonExtract
-                JSON_CONTAINS: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonContains
                 CAST: DoctrineExtensions\Query\Mysql\Cast
                 INSTR: DoctrineExtensions\Query\Mysql\Instr
             numeric_functions:
