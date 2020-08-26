@@ -502,16 +502,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.38",
+            "version": "4.0.0-rc.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "1257909e1f74695a8f0bd81cd7c423ea604943c7"
+                "reference": "ef7bda3e8ff9a54e812801314c864f8973510905"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/1257909e1f74695a8f0bd81cd7c423ea604943c7",
-                "reference": "1257909e1f74695a8f0bd81cd7c423ea604943c7",
+                "url": "https://api.github.com/repos/bolt/core/zipball/ef7bda3e8ff9a54e812801314c864f8973510905",
+                "reference": "ef7bda3e8ff9a54e812801314c864f8973510905",
                 "shasum": ""
             },
             "require": {
@@ -639,7 +639,13 @@
                 "MIT"
             ],
             "description": "🧿 Bolt 4 Core",
-            "time": "2020-08-26T12:31:15+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/bobdenotter",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-08-26T15:41:40+00:00"
         },
         {
             "name": "bolt/newswidget",
