@@ -30,8 +30,9 @@ homepage:
         contentlink:
             type: text
             label: Link
-            placeholder: 'contentType/slug or http://example.org/'
-            postfix: "Use this to add a link for this Homepage. This could either be an 'internal' link like <tt>page//about</tt>, if you use a contentType/slug combination. Otherwise use a proper URL, like `http://example.org`."
+            placeholder: 'contentType/slug or https://example.org/'
+            postfix: "Use this to add a link for this Homepage. This could either be an 'internal' link like <tt>page//about</tt>, if you use a contentType/slug combination. Otherwise use a proper URL, like `https://example.org`."
+            fixture_format: '{url}'
         slug:
             type: slug
             uses: title
@@ -42,6 +43,7 @@ homepage:
     singleton: true
     icon_many: "fa:home"
     icon_one: "fa:home"
+
 
 # Pages can be used for the more 'static' pages on your site. This content-type
 # has a 'templateselect' field, which allows you to override the record_template
@@ -82,6 +84,7 @@ pages:
     records_per_page: 5
     order: id
 
+
 # Entries can be used for things like 'news' or 'blogpostings'. They have a
 # 'teaser', which can be used for a short blurb on listing-pages, allowing
 # visitors to click-through to the rest of the entry. It also has fields for an
@@ -119,9 +122,13 @@ entries:
             group: Meta
     relations:
         pages:
-          multiple: false
-          order: title
-          label: Select a page
+            multiple: false
+            order: title
+            label: Select a page
+        people:
+            multiple: false
+            label: Author of this Entry
+            required: false
     taxonomy: [ categories, tags, groups ]
     record_template: entry.twig
     listing_template: listing.twig
@@ -132,6 +139,44 @@ entries:
     icon_many: "fa:file-alt"
     icon_one: "fa:file-alt"
 
+
+# The 'People' ContentType can be used to build pages about the people in your
+# company, organisation or any other kind of team.
+
+people:
+    name: People
+    singular_name: Person
+    title_format: "{name} ({description})"
+    fields:
+        name:
+            type: text
+            class: large
+            variant: inline
+            fixture_format: '{name}'
+        description:
+            type: text
+            variant: inline
+            postfix: This person's job description, title or somesuch
+            fixture_format: '{jobTitle}'
+        email:
+            type: text
+            variant: inline
+            fixture_format: '{safeEmail}'
+        image:
+            type: image
+        content:
+            type: redactor
+        contentlink:
+            type: text
+            label: Link
+            placeholder: 'contentType/slug or https://example.org/'
+            postfix: "Use this to add a link for this Person. This could either be an 'internal' link like <tt>page//about</tt>, if you use a contentType/slug combination. Otherwise use a proper URL, like `https://example.org`. If left blank, it'll default to the internal link to this Record's detail page."
+            fixture_format: '{url}'
+        slug:
+            type: slug
+            uses: [ name ]
+
+
 # The 'Blocks' ContentType is a so-called 'resource ContentType'. This means
 # that it can be used to manage smaller pieces of content, like the 'about us'
 # text, an 'our address' in the footer, or similar short blurbs of text.
@@ -140,6 +185,7 @@ entries:
 blocks:
     name: Blocks
     singular_name: Block
+    excerpt_format: '{teaser}'
     fields:
         title:
             type: text
@@ -148,13 +194,17 @@ blocks:
             group: Block
         image:
             type: image
+        teaser:
+            type: redactor
+            fixture_format: '{paragraph}'
         content:
             type: redactor
         contentlink:
             type: text
             label: Link
-            placeholder: 'contentType/slug or http://example.org/'
-            postfix: "Use this to add a link for this Homepage. This could either be an 'internal' link like <tt>page//about</tt>, if you use a contentType/slug combination. Otherwise use a proper URL, like `http://example.org`."
+            placeholder: 'contentType/slug or https://example.org/'
+            postfix: "Use this to add a link for this Homepage. This could either be an 'internal' link like <tt>page//about</tt>, if you use a contentType/slug combination. Otherwise use a proper URL, like `https://example.org`."
+            fixture_format: '{url}'
         slug:
             type: slug
             uses: [ title ]
@@ -166,6 +216,59 @@ blocks:
     order: title
     icon_many: "fa:cubes"
     icon_one: "fa:cube"
+
+
+# The 'Products' ContentType can be used to manage information about the
+# products or services you (or your company, organisation) provide.
+
+products:
+    name: Products
+    singular_name: Product
+    fields:
+        title:
+            type: Name
+            class: large
+            variant: inline
+            label: Name of this product
+            group: Block
+            fixture_format: '{catchPhrase}'
+        feature_1:
+            type: text
+            variant: inline
+            fixture_format: '{bs}'
+            label: "Key feature 1"
+        feature_2:
+            type: text
+            variant: inline
+            fixture_format: '{bs}'
+            label: "Key feature 2"
+        feature_3:
+            type: text
+            variant: inline
+            fixture_format: '{bs}'
+            label: "Key feature 3"
+        price:
+            type: text
+            fixture_format: "€ {randomDigitNotNull}0,-"
+        image:
+            type: image
+        teaser:
+            type: redactor
+            fixture_format: '{paragraph}'
+        content:
+            type: redactor
+        slug:
+            type: slug
+            uses: [ title ]
+            group: Meta
+    show_on_dashboard: true
+    viewless: true
+    default_status: published
+    searchable: false
+    order: title
+    icon_many: "fa:cubes"
+    icon_one: "fa:cube"
+
 
 # Possible field types:
 #
