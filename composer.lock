@@ -423,16 +423,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.41",
+            "version": "4.0.0-rc.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "0de468923bf9260c5c0de6354ab7fb9299d8e5e8"
+                "reference": "79e871cfa858b402e0b625c6d245ded4fc2920dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/0de468923bf9260c5c0de6354ab7fb9299d8e5e8",
-                "reference": "0de468923bf9260c5c0de6354ab7fb9299d8e5e8",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/79e871cfa858b402e0b625c6d245ded4fc2920dc",
+                "reference": "79e871cfa858b402e0b625c6d245ded4fc2920dc",
                 "shasum": ""
             },
             "require-dev": {
@@ -450,7 +450,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-09-02T15:51:43+00:00"
+            "time": "2020-09-16T15:57:45+00:00"
         },
         {
             "name": "bolt/common",
@@ -506,16 +506,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.42",
+            "version": "4.0.0-rc.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "9dff59f83508928e139057c8eb2c9ac86c0c4ef1"
+                "reference": "3c78345e280dba6a965fc11f9ba4371536079edf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/9dff59f83508928e139057c8eb2c9ac86c0c4ef1",
-                "reference": "9dff59f83508928e139057c8eb2c9ac86c0c4ef1",
+                "url": "https://api.github.com/repos/bolt/core/zipball/3c78345e280dba6a965fc11f9ba4371536079edf",
+                "reference": "3c78345e280dba6a965fc11f9ba4371536079edf",
                 "shasum": ""
             },
             "require": {
@@ -649,7 +649,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-11T05:44:50+00:00"
+            "time": "2020-09-16T15:22:30+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -1748,16 +1748,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.10.3",
+            "version": "2.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "03ca23afc2ee062f5d3e32426ad37c34a4770dcf"
+                "reference": "47433196b6390d14409a33885ee42b6208160643"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/03ca23afc2ee062f5d3e32426ad37c34a4770dcf",
-                "reference": "03ca23afc2ee062f5d3e32426ad37c34a4770dcf",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/47433196b6390d14409a33885ee42b6208160643",
+                "reference": "47433196b6390d14409a33885ee42b6208160643",
                 "shasum": ""
             },
             "require": {
@@ -1853,7 +1853,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T01:35:42+00:00"
+            "time": "2020-09-12T21:20:41+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -3943,16 +3943,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.39.2",
+            "version": "2.40.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2"
+                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/326efde1bc09077a26cb77f6e2e32e13f06c27f2",
-                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6c7646154181013ecd55e80c201b9fd873c6ee5d",
+                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d",
                 "shasum": ""
             },
             "require": {
@@ -4028,7 +4028,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-10T12:16:42+00:00"
+            "time": "2020-09-11T19:00:58+00:00"
         },
         {
             "name": "nette/finder",
@@ -7046,16 +7046,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.9.3",
+            "version": "v1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34"
+                "reference": "115e67f76ba95d70946a6e0b15d4578bf04927c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34",
-                "reference": "1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/115e67f76ba95d70946a6e0b15d4578bf04927c3",
+                "reference": "115e67f76ba95d70946a6e0b15d4578bf04927c3",
                 "shasum": ""
             },
             "require": {
@@ -7105,7 +7105,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-31T14:36:07+00:00"
+            "time": "2020-09-14T14:58:36+00:00"
         },
         {
             "name": "symfony/form",
@@ -11117,22 +11117,22 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "8.2.27",
+            "version": "8.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "70b37ee279f3a7384fe005702eae107dfbd18cb9"
+                "reference": "05a0bd1c671da722dbd3127e5c3930cf872d3b92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/70b37ee279f3a7384fe005702eae107dfbd18cb9",
-                "reference": "70b37ee279f3a7384fe005702eae107dfbd18cb9",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/05a0bd1c671da722dbd3127e5c3930cf872d3b92",
+                "reference": "05a0bd1c671da722dbd3127e5c3930cf872d3b92",
                 "shasum": ""
             },
             "require": {
                 "nette/finder": "^2.5",
                 "nette/utils": "^3.0",
-                "php": "^7.2|^8.0",
+                "php": ">=7.2",
                 "symfony/config": "^4.4|^5.0",
                 "symfony/console": "^4.4|^5.0",
                 "symfony/dependency-injection": "^4.4|^5.0",
@@ -11146,7 +11146,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "8.3-dev"
+                    "dev-master": "8.4-dev"
                 }
             },
             "autoload": {
@@ -11165,19 +11165,19 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-06T15:09:16+00:00"
+            "time": "2020-09-16T07:47:51+00:00"
         },
         {
             "name": "tightenco/collect",
             "version": "v7.26.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tightenco/collect.git",
+                "url": "https://github.com/tighten/collect.git",
                 "reference": "5e460929279ad806e59fc731e649e9b25fc8774a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/5e460929279ad806e59fc731e649e9b25fc8774a",
+                "url": "https://api.github.com/repos/tighten/collect/zipball/5e460929279ad806e59fc731e649e9b25fc8774a",
                 "reference": "5e460929279ad806e59fc731e649e9b25fc8774a",
                 "shasum": ""
             },
