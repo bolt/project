@@ -228,7 +228,7 @@ products:
     singular_name: Product
     fields:
         title:
-            type: Name
+            type: text
             class: large
             variant: inline
             label: Name of this product
@@ -270,7 +270,6 @@ products:
     order: title
     icon_many: "fa:gifts"
     icon_one: "fa:gift"
-
 
 # Possible field types:
 #

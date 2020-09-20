@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab2c32e6763946ba6568873855f7b3f4",
+    "content-hash": "c43d65f011574e4fd531699b44b97133",
     "packages": [
         {
             "name": "api-platform/core",
@@ -377,16 +377,16 @@
         },
         {
             "name": "bolt/article",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/article.git",
-                "reference": "9fd8870e1973e355dcaaac9499a08b98455de1e7"
+                "reference": "35613a1549e93a0dfa921819c92c7eb6f80b4bba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/article/zipball/9fd8870e1973e355dcaaac9499a08b98455de1e7",
-                "reference": "9fd8870e1973e355dcaaac9499a08b98455de1e7",
+                "url": "https://api.github.com/repos/bolt/article/zipball/35613a1549e93a0dfa921819c92c7eb6f80b4bba",
+                "reference": "35613a1549e93a0dfa921819c92c7eb6f80b4bba",
                 "shasum": ""
             },
             "require": {
@@ -419,20 +419,20 @@
                 }
             ],
             "description": "📝 Bolt Extension to add the Article FieldType",
-            "time": "2020-08-24T12:07:16+00:00"
+            "time": "2020-09-18T13:35:28+00:00"
         },
         {
             "name": "bolt/assets",
-            "version": "4.0.0-rc.43",
+            "version": "4.0.0-rc.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "79e871cfa858b402e0b625c6d245ded4fc2920dc"
+                "reference": "c8895a5ed48aaddb5be8dcd4d942f293fb79b25c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/79e871cfa858b402e0b625c6d245ded4fc2920dc",
-                "reference": "79e871cfa858b402e0b625c6d245ded4fc2920dc",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/c8895a5ed48aaddb5be8dcd4d942f293fb79b25c",
+                "reference": "c8895a5ed48aaddb5be8dcd4d942f293fb79b25c",
                 "shasum": ""
             },
             "require-dev": {
@@ -450,7 +450,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-09-16T15:57:45+00:00"
+            "time": "2020-09-20T14:44:59+00:00"
         },
         {
             "name": "bolt/common",
@@ -506,16 +506,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.0.0-rc.43",
+            "version": "4.0.0-rc.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "3c78345e280dba6a965fc11f9ba4371536079edf"
+                "reference": "637c6f3da3f81c033c5fc7123b6ab738732255ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/3c78345e280dba6a965fc11f9ba4371536079edf",
-                "reference": "3c78345e280dba6a965fc11f9ba4371536079edf",
+                "url": "https://api.github.com/repos/bolt/core/zipball/637c6f3da3f81c033c5fc7123b6ab738732255ae",
+                "reference": "637c6f3da3f81c033c5fc7123b6ab738732255ae",
                 "shasum": ""
             },
             "require": {
@@ -649,7 +649,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-16T15:22:30+00:00"
+            "time": "2020-09-20T14:20:08+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -699,16 +699,16 @@
         },
         {
             "name": "bolt/redactor",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/redactor.git",
-                "reference": "8aee17a26b74996be37b9b1e38be29150f8aaeba"
+                "reference": "0e05ccc8691f137d957fc25a90ba9c2b8acebe38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/redactor/zipball/8aee17a26b74996be37b9b1e38be29150f8aaeba",
-                "reference": "8aee17a26b74996be37b9b1e38be29150f8aaeba",
+                "url": "https://api.github.com/repos/bolt/redactor/zipball/0e05ccc8691f137d957fc25a90ba9c2b8acebe38",
+                "reference": "0e05ccc8691f137d957fc25a90ba9c2b8acebe38",
                 "shasum": ""
             },
             "require": {
@@ -741,20 +741,20 @@
                 }
             ],
             "description": "📝 Bolt Extension to add the Redactor FieldType",
-            "time": "2020-08-24T12:08:12+00:00"
+            "time": "2020-09-18T13:32:44+00:00"
         },
         {
             "name": "bolt/themes",
-            "version": "3.2.5",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "8108357d778e5d17ece97ccbb6af645fd53d10bf"
+                "reference": "8fe03703c8d847468562c5531199e59b6646f802"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/8108357d778e5d17ece97ccbb6af645fd53d10bf",
-                "reference": "8108357d778e5d17ece97ccbb6af645fd53d10bf",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/8fe03703c8d847468562c5531199e59b6646f802",
+                "reference": "8fe03703c8d847468562c5531199e59b6646f802",
                 "shasum": ""
             },
             "require": {
@@ -784,7 +784,7 @@
                 "cms",
                 "twig"
             ],
-            "time": "2020-09-05T10:48:50+00:00"
+            "time": "2020-09-20T13:45:59+00:00"
         },
         {
             "name": "brick/math",
@@ -2762,16 +2762,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.20",
+            "version": "2.1.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "f46887bc48db66c7f38f668eb7d6ae54583617ff"
+                "reference": "563d0cdde5d862235ffe24a158497f4d490191b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/f46887bc48db66c7f38f668eb7d6ae54583617ff",
-                "reference": "f46887bc48db66c7f38f668eb7d6ae54583617ff",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/563d0cdde5d862235ffe24a158497f4d490191b5",
+                "reference": "563d0cdde5d862235ffe24a158497f4d490191b5",
                 "shasum": ""
             },
             "require": {
@@ -2816,7 +2816,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-09-06T13:44:32+00:00"
+            "time": "2020-09-19T14:37:56+00:00"
         },
         {
             "name": "embed/embed",
@@ -4173,16 +4173,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.9.1",
+            "version": "v4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28"
+                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/88e519766fc58bd46b8265561fb79b54e2e00b28",
-                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1c13d05035deff45f1230ca68bd7d74d621762d9",
+                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9",
                 "shasum": ""
             },
             "require": {
@@ -4221,28 +4221,28 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-08-30T16:15:20+00:00"
+            "time": "2020-09-19T14:52:48+00:00"
         },
         {
             "name": "nyholm/nsa",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nyholm/NSA.git",
-                "reference": "2606ebf15fb24e15a8ca8d02977ad77082d391ef"
+                "reference": "6d333d96948f94d498285cf01b60f6972f1dd903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nyholm/NSA/zipball/2606ebf15fb24e15a8ca8d02977ad77082d391ef",
-                "reference": "2606ebf15fb24e15a8ca8d02977ad77082d391ef",
+                "url": "https://api.github.com/repos/Nyholm/NSA/zipball/6d333d96948f94d498285cf01b60f6972f1dd903",
+                "reference": "6d333d96948f94d498285cf01b60f6972f1dd903",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
+                "php": ">=7.1",
                 "webmozart/assert": "^1.1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0"
+                "symfony/phpunit-bridge": "^4.4 || ^5.1"
             },
             "type": "library",
             "autoload": {
@@ -4274,7 +4274,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-06-05T07:41:45+00:00"
+            "time": "2020-09-19T11:20:47+00:00"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -4773,16 +4773,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651"
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e878a14a65245fbe78f8080eba03b47c3b705651",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
                 "shasum": ""
             },
             "require": {
@@ -4814,7 +4814,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-06-27T10:12:23+00:00"
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "psr/cache",
@@ -11117,28 +11117,28 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "8.3.4",
+            "version": "8.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "05a0bd1c671da722dbd3127e5c3930cf872d3b92"
+                "reference": "f6d1fe5b6d372a4f9af76452218c48ef5010d173"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/05a0bd1c671da722dbd3127e5c3930cf872d3b92",
-                "reference": "05a0bd1c671da722dbd3127e5c3930cf872d3b92",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/f6d1fe5b6d372a4f9af76452218c48ef5010d173",
+                "reference": "f6d1fe5b6d372a4f9af76452218c48ef5010d173",
                 "shasum": ""
             },
             "require": {
                 "nette/finder": "^2.5",
                 "nette/utils": "^3.0",
                 "php": ">=7.2",
-                "symfony/config": "^4.4|^5.0",
-                "symfony/console": "^4.4|^5.0",
-                "symfony/dependency-injection": "^4.4|^5.0",
-                "symfony/finder": "^4.4|^5.0",
-                "symfony/http-kernel": "^4.4|^5.0",
-                "symfony/yaml": "^4.4|^5.0"
+                "symfony/config": "^4.4|^5.1",
+                "symfony/console": "^4.4|^5.1",
+                "symfony/dependency-injection": "^4.4|^5.1",
+                "symfony/finder": "^4.4|^5.1",
+                "symfony/http-kernel": "^4.4|^5.1",
+                "symfony/yaml": "^4.4|^5.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5|^9.0"
@@ -11165,7 +11165,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-16T07:47:51+00:00"
+            "time": "2020-09-19T10:20:10+00:00"
         },
         {
             "name": "tightenco/collect",
