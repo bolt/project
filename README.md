@@ -65,4 +65,4 @@ Log in using the credentials you created when setting up the first user.
 If you'd like to contribute, please check [Bolt's core repository](https://github.com/bolt/core/blob/master/CONTRIBUTING.md) 
 and read the ["Contributing to Bolt"](https://docs.bolt.cm/4.0/other/contributing) documentation page.
 
-[installation]: https://docs.bolt.cm/4.0/installation/installation
+[installation]: https://docs.bolt.cm/installation
