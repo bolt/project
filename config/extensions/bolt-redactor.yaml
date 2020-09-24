@@ -3,7 +3,7 @@
 # All options: html, format, bold, italic, deleted, lists, link, file, line, redo, undo, underline, ol, ul, indent, outdent, sup, sub
 default:
   buttons: [ bold, italic, format, lists, link, html, image ]
-  plugins: [ fullscreen, table, inlinestyle, video, widget ]
+  plugins: [ fullscreen, table, inlinestyle, video, widget, definedlinks ]
   source: true
 
 plugins:
