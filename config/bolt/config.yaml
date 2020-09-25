@@ -23,13 +23,6 @@ theme: base-2021
 # format settings, see: https://www.php.net/manual/en/function.date.php
 date_format: 'F j, Y H:i'
 
-# Set maintenance mode on or off.
-#
-# The default for the Maintenance mode (503) page. Can be an (array of) template
-# names or identifiers for records, which will be tried until a match is found.
-maintenance_mode: false
-maintenance: [ blocks/503-maintenance-mode, 'helpers/page_503.html.twig' ]
-
 # If your site is reachable under different urls (say, both blog.example.org/
 # as well as example.org/), its a good idea to set one of these as the
 # canonical, so its clear which is the primary address of the site.
