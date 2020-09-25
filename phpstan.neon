@@ -1,33 +1,10 @@
 parameters:
-    tmpDir: var/cache/ecs
-    level: 5
-    symfony:
-        container_xml_path: '%rootDir%/../../../var/cache/dev/Bolt_KernelDevDebugContainer.xml'
-
-    scanDirectories:
-        # In order to 'recognize' Twig functions in global scope
-        - %currentWorkingDirectory%/vendor/twig/twig/src/Extension
-
-    ignoreErrors:
-        # false positive: `Unreachable statement - code above always terminates.`
-        # Note: https://github.com/phpstan/phpstan/issues/2651 is marked as fixed, but the issue remains.
-        -
-            message: '#Unreachable statement - code above always terminates#'
-            path: %currentWorkingDirectory%/src/*
-
-        # false positive: `TranslationInterface does not know about FieldTranslation::getValue().` Skip this error.
-        -
-            message: '#Call to an undefined method Knp\\DoctrineBehaviors\\Contract\\Entity\\TranslationInterface#'
-            path: %currentWorkingDirectory%/src/*
-
-        # Parameters in Storage\Directive\OrderDirective::orderByNumericField() aren't seen as ints
-        -
-            message: '#of method Doctrine\\ORM\\Query\\Expr::substring\(\) expects int#'
-            path: %currentWorkingDirectory%/src/Storage/Directive/OrderDirective.php
+	tmpDir: var/cache/ecs
+	level: max
+	symfony:
+		container_xml_path: '%rootDir%/../../../var/cache/dev/App_KernelDevDebugContainer.xml'
 
 includes:
 	- vendor/phpstan/phpstan-symfony/extension.neon
 	- vendor/phpstan/phpstan-doctrine/extension.neon
-#    - vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon # make ON when thecodingmachine/safe will get stable
-rules:
-	- Symplify\CodingStandard\Rules\NoDebugFuncCallRule
+	- vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon

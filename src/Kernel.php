@@ -8,5 +8,4 @@ use Bolt\Kernel as BoltKernel;
 
 class Kernel extends BoltKernel
 {
-
 }
