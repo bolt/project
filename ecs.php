@@ -40,20 +40,21 @@ use SlevomatCodingStandard\Sniffs\ControlStructures\DisallowYodaComparisonSniff;
 use Symplify\CodingStandard\Fixer\ArrayNotation\StandaloneLineInMultilineArrayFixer;
 use Symplify\CodingStandard\Fixer\Commenting\RemoveSuperfluousDocBlockWhitespaceFixer;
 use Symplify\CodingStandard\Fixer\Strict\BlankLineAfterStrictTypesFixer;
+use Symplify\EasyCodingStandard\ValueObject\Option;
+use Symplify\EasyCodingStandard\ValueObject\Set\SetList;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();
 
-    $parameters->set('sets', ['clean-code', 'common', 'php70', 'php71', 'psr12', 'symfony', 'symfony-risky']);
+    $parameters->set(Option::SETS, [SetList::CLEAN_CODE, SetList::COMMON, SetList::PHP_70, SetList::PHP_71, SetList::PSR_12, SetList::SYMFONY, SetList::SYMFONY_RISKY]);
 
-    $parameters->set('paths', [
-        __DIR__ . '/src',
-        __DIR__ . '/ecs.php',
-    ]);
+    $parameters->set(Option::PATHS, [__DIR__ . '/']);
 
-    $parameters->set('cache_directory', 'var/cache/ecs');
+    $parameters->set(Option::EXCLUDE_PATHS, [__DIR__ . '/vendor/*', __DIR__ . '/var/*']);
 
-    $parameters->set('skip', [
+    $parameters->set(Option::CACHE_DIRECTORY, 'var/cache/ecs');
+
+    $parameters->set(Option::SKIP, [
         OrderedClassElementsFixer::class => null,
         YodaStyleFixer::class => null,
         IncrementStyleFixer::class => null,
@@ -69,7 +70,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(BlankLineAfterStrictTypesFixer::class);
 
     $services->set(ConcatSpaceFixer::class)
-        ->call('configure', [['spacing' => 'one']]);
+        ->call('configure', [[
+            'spacing' => 'one',
+        ]]);
 
     $services->set(RemoveSuperfluousDocBlockWhitespaceFixer::class);
 
@@ -97,7 +100,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ]]);
 
     $services->set(DeclareEqualNormalizeFixer::class)
-        ->call('configure', [['space' => 'none']]);
+        ->call('configure', [[
+            'space' => 'none',
+        ]]);
 
     $services->set(NewWithBracesFixer::class);
 
@@ -135,7 +140,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(NoSuperfluousPhpdocTagsFixer::class);
 
     $services->set(PhpdocLineSpanFixer::class)
-        ->call('configure', [['property' => 'single']]);
+        ->call('configure', [[
+            'property' => 'single',
+        ]]);
 
     $services->set(DisallowYodaComparisonSniff::class);
 };

@@ -1,69 +1,69 @@
 version: '3.4'
+
 services:
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_DATABASE=bolt
+      - MYSQL_USER=bolt
+      - MYSQL_PASSWORD=!ChangeMe!
+      - MYSQL_ROOT_PASSWORD=!ChangeMe!
+    volumes:
+      - db-data:/var/lib/mysql:rw
+      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
+      # - ./docker/db/data:/var/lib/mysql:rw
+    ports:
+      - target: 3306
+        published: 3306
+        protocol: tcp
+
   php:
     build:
-      context: docker/php
-      dockerfile: Dockerfile
-      cache_from:
-        - php:7.3-fpm
-    env_file:
-      - .env
+      context: ./
+      target: php
+    healthcheck:
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 30s
     depends_on:
-      - database
-      - blackfire
+      - db
+      - mailcatcher
     volumes:
-      - ./:/var/www/bolt
-    working_dir: /var/www/bolt
+      - ./:/srv/bolt:rw,cached
+      - ./docker/php/conf.d/bolt.dev.ini:/usr/local/etc/php/conf.d/bolt.ini
+      # if you develop on Linux, you may use a bind-mounted host directory instead
+      # - ./var:/srv/bolt/var:rw
 
-  database:
-    image: mariadb:10
-    env_file:
-      - .env
-    ports:
-      - 3306
-    environment:
-      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
-      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
-      MYSQL_USER: ${DATABASE_USER}
-      MYSQL_DATABASE: ${DATABASE_NAME}
-      MYSQL_INITDB_SKIP_TZINFO: 0
-
-  web:
-    image: nginx:alpine
-    ports:
-      - 8088:80
+  nginx:
+    build:
+      context: ./
+      target: nginx
     depends_on:
       - php
     volumes:
-      - ./docker/nginx:/etc/nginx/conf.d
-      - ./:/var/www/bolt
-      - ./var/log:/var/log/nginx
-    entrypoint:
-      - sh
-      - /etc/nginx/conf.d/entrypoint.sh
-
-  node:
-    image: node:latest
-    volumes:
-      - ./:/home/node/app
-    working_dir: /home/node/app
-
-  padm:
-    image: phpmyadmin/phpmyadmin
+      - ./public:/srv/bolt/public:ro
     ports:
-      - 8099:80
-    links:
-      - database:db
+      - target: 80
+        published: 80
+        protocol: tcp
 
-  blackfire:
-    image: blackfire/blackfire
-    env_file:
-      - .env
+  h2-proxy:
+    build:
+      context: ./docker/h2-proxy
+    depends_on:
+      - nginx
     ports:
-      - 8707 # for blackfire probe
+      - target: 443
+        published: 443
+        protocol: tcp
 
-#  maildev:
-#    image: djfarrelly/maildev
-#    container_name: sf4_maildev
-#    ports:
-#      - 8089:80
+  mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+      - target: 1080
+        published: 1080
+        protocol: tcp
+
+volumes:
+  db-data: {}

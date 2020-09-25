@@ -14,42 +14,60 @@
         "bolt/themes": "^3.3",
         "symfony/flex": "^1.6"
     },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.48",
+        "phpstan/phpstan-doctrine": "^0.12.20",
+        "phpstan/phpstan-symfony": "^0.12.8",
+        "symplify/easy-coding-standard": "^8.3",
+        "thecodingmachine/phpstan-safe-rule": "^1.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "public-dir": "public",
+        "symfony": {
+            "allow-contrib": true,
+            "require": "^5.1"
+        }
+    },
     "autoload": {
         "psr-4": {
             "App\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "auto-scripts": {
-            "cache:clear --no-warmup": "symfony-cmd",
-            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
-            "bolt:copy-assets": "symfony-cmd"
-        },
-        "post-create-project-cmd": [
-            "php bin/post-create-project.php",
-            "php bin/console bolt:copy-themes"
-        ],
         "post-install-cmd": [
             "@auto-scripts",
-            "php bin/console extensions:configure --with-config",
-            "php bin/console bolt:info"
+            "php bin/console extensions:configure --with-config --ansi"
         ],
         "post-update-cmd": [
             "@auto-scripts",
-            "php bin/console extensions:configure",
-            "php bin/console bolt:info"
+            "php bin/console extensions:configure  --ansi"
         ],
-        "periodical-tasks": [
-            "security-checker security:check"
-        ]
-    },
-    "extra": {
-        "symfony": {
-            "allow-contrib": true,
-            "require": "^5.1"
+        "post-create-project-cmd": [
+            "php bin/console bolt:copy-themes"
+        ],
+        "auto-scripts": {
+            "bolt:copy-assets --ansi": "symfony-cmd",
+            "cache:clear --no-warmup --ansi": "symfony-cmd",
+            "assets:install --ansi": "symfony-cmd",
+            "security-checker security:check": "script"
         },
-        "public-dir": "public"
+        "lint": "php vendor/bin/ecs check --no-progress-bar --no-interaction",
+        "lint:fix": "php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
+        "periodical-tasks": "php bin/console security:check",
+        "phpstan": "php vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src"
     }
 }
