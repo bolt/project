@@ -55,13 +55,28 @@ maintenance: [ blocks/503-maintenance-mode, 'helpers/page_503.html.twig' ]
 homepage: homepage
 homepage_template: index.twig
 
-# The default content for the 404 page. Can be an (array of) template names or
-# identifiers for records, which will be tried until a match is found.
+# The default content for the "Not Found" (404) page. Can be an (array of) template
+# names or identifiers for records, which will be tried until a match is found.
 notfound: [ blocks/404-not-found, 'helpers/page_404.html.twig' ]
 
-# The default content for the 403 page. Can be an (array of) template names or
-# identifiers for records, which will be tried until a match is found.
+# Toggle maintenance mode on or off. Note: If you're logged in, you'll still see
+# the website as usual. Use an incognito window to see the "maintenance" page.
+maintenance_mode: false
+
+# The default for the "Maintenance mode" (503) page. Can be an (array of) template
+# names or identifiers for records, which will be tried until a match is found.
+maintenance: [ blocks/503-maintenance-mode, 'helpers/page_503.html.twig' ]
+
+# The default content for the "Forbidden" (403) page. Can be an (array of) template
+# names or identifiers for records, which will be tried until a match is found.
 forbidden: [ blocks/403-forbidden, 'helpers/page_403.html.twig' ]
+
+# The default content for the "Internal Server Error" (500) page. Can be an
+# (array of) template names or identifiers for records.
+# Note: Only used in `APP_ENV=prod` mode. You're advised to keep this as simple
+# as possible, because if an error occurs in this template, it can not be
+# handled, and you'll have a bad time debugging it!
+internal_server_error: [ 'helpers/page_500.html.twig' ]
 
 # The default template and amount of records to use for listing-pages on the
 # site.
@@ -149,16 +164,16 @@ htmlcleaner:
     allowed_tags: [ div, span, p, br, hr, s, u, strong, em, i, b, li, ul, ol, mark, blockquote, pre, code, tt, h1, h2, h3, h4, h5, h6, dd, dl, dt, table, tbody, thead, tfoot, th, td, tr, a, img, address, abbr, iframe, caption, sub, super, figure, figcaption ]
     allowed_attributes: [ id, class, style, name, value, href, src, alt, title, width, height, frameborder, allowfullscreen, scrolling, target, colspan, rowspan ]
     allowed_frame_targets: [ _blank, _self, _parent, _top ]
-    
+
 # Define the file types (extensions to be exact) that are acceptable for upload
 # in either file fields or through the files screen.
-accept_file_types: [ twig, html, js, css, scss, gif, jpg, jpeg, png, ico, zip, tgz, txt, md, doc, docx, pdf, epub, xls, xlsx, ppt, pptx, mp3, ogg, wav, m4a, mp4, m4v, ogv, wmv, avi, webm, svg]
+accept_file_types: [ twig, html, js, css, scss, gif, jpg, jpeg, png, ico, zip, tgz, txt, md, doc, docx, pdf, epub, xls, xlsx, ppt, pptx, mp3, ogg, wav, m4a, mp4, m4v, ogv, wmv, avi, webm, svg, webp, avif]
 
 # Alternatively, if you wish to limit these, uncomment the following list
 # instead. It just includes file types / extensions that are harder to exploit.
-# accept_file_types: [ gif, jpg, jpeg, png, txt, md, pdf, epub, mp3, svg ]
+# accept_file_types: [ gif, jpg, jpeg, png, txt, md, pdf, epub, mp3 ]
 
-accept_media_types: [ gif, jpg, jpeg, png, svg, pdf, mp3, tiff ]
+accept_media_types: [ gif, jpg, jpeg, png, svg, pdf, mp3, tiff, avif, webp ]
 
 # Set the maximum upload size. Note, this can never exceed the settings for
 #`post_max_size` and `upload_max_filesize` in `php.ini`.
