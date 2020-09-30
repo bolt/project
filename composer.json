@@ -1,8 +1,6 @@
 {
-    "name": "bolt/project",
     "type": "project",
-    "description": "Bolt 4 standard project skeleton",
-    "license": "MIT",
+    "license": "proprietary",
     "require": {
         "bobdenotter/configuration-notices": "^1.0",
         "bobdenotter/weatherwidget": "^1.1",
