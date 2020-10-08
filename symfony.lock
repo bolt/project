@@ -702,8 +702,17 @@
     "symfony/yaml": {
         "version": "v4.2.3"
     },
+    "symplify/autowire-array-parameter": {
+        "version": "8.3.32"
+    },
     "symplify/package-builder": {
         "version": "v7.2.1"
+    },
+    "symplify/smart-file-system": {
+        "version": "8.3.32"
+    },
+    "symplify/symplify-kernel": {
+        "version": "8.3.32"
     },
     "tightenco/collect": {
         "version": "v5.8.2"
