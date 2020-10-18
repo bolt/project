@@ -45,7 +45,7 @@ services:
       - ./public:/srv/bolt/public:ro
     ports:
       - target: 80
-        published: 80
+        published: 8080
         protocol: tcp
 
   h2-proxy:
@@ -54,8 +54,8 @@ services:
     depends_on:
       - nginx
     ports:
-      - target: 443
-        published: 443
+      - target: 8443
+        published: 8443
         protocol: tcp
 
   mailcatcher:

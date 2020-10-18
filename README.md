@@ -108,8 +108,8 @@ This starts the following services:
 |-------------|----------------------------------------------------------------------------|--------------------|--------------------------------------------------|
 | db          | A MySQL 5.7 database server                                                | 3306               | all (prefer using a managed service in prod)     |
 | php         | The Bolt project with PHP, PHP-FPM 7.4, Composer and sensitive configs     | n/a                | all                                              |
-| nginx       | The HTTP server for the Bolt project (NGINX)                               | 80                 | all                                              |
-| h2-proxy    | A HTTP/2 and HTTPS development proxy for all apps                          | 443                | dev (configure properly your web server in prod) |
+| nginx       | The HTTP server for the Bolt project (NGINX)                               | 8080               | all                                              |
+| h2-proxy    | A HTTP/2 and HTTPS development proxy for all apps                          | 8443               | dev (configure properly your web server in prod) |
 | mailcatcher | MailCatcher runs a super simple SMTP server delivered with a web interface | 1025 for smtp port<br/>1080 for interface    | only for dev           |
 
 <details>
