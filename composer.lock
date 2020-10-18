@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6eac19fa9316ca331a5a8cd9c113eef",
+    "content-hash": "939b41231ece76446a6485b586cac1df",
     "packages": [
         {
             "name": "api-platform/core",
@@ -157,16 +157,16 @@
         },
         {
             "name": "babdev/pagerfanta-bundle",
-            "version": "v2.6.1",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BabDev/PagerfantaBundle.git",
-                "reference": "ccebc140a3f6a19ef26e239511ad5d6d078bc4a1"
+                "reference": "1f3078a9134d7073cdba73343ad3cf9401086a8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BabDev/PagerfantaBundle/zipball/ccebc140a3f6a19ef26e239511ad5d6d078bc4a1",
-                "reference": "ccebc140a3f6a19ef26e239511ad5d6d078bc4a1",
+                "url": "https://api.github.com/repos/BabDev/PagerfantaBundle/zipball/1f3078a9134d7073cdba73343ad3cf9401086a8a",
+                "reference": "1f3078a9134d7073cdba73343ad3cf9401086a8a",
                 "shasum": ""
             },
             "require": {
@@ -187,18 +187,23 @@
             "require-dev": {
                 "doctrine/annotations": "^1.8",
                 "friendsofphp/php-cs-fixer": "^2.16",
+                "jms/serializer": "^3.0",
+                "jms/serializer-bundle": "^3.0",
                 "matthiasnoback/symfony-dependency-injection-test": "^4.1",
                 "phpstan/extension-installer": "^1.0.3",
                 "phpstan/phpstan": "^0.12.37",
                 "phpstan/phpstan-phpunit": "^0.12.16",
                 "phpstan/phpstan-symfony": "^0.12.7",
                 "phpunit/phpunit": "^8.5 || ^9.0",
+                "symfony/serializer": "^3.4 || ^4.4 || ^5.1",
                 "symfony/translation": "^3.4 || ^4.4 || ^5.1",
                 "symfony/twig-bridge": "^3.4 || ^4.4 || ^5.1",
                 "symfony/twig-bundle": "^3.4 || ^4.4 || ^5.1",
                 "twig/twig": "^1.35 || ^2.5 || ^3.0"
             },
             "suggest": {
+                "jms/serializer-bundle": "To use the Pagerfanta class with the JMS Serializer",
+                "symfony/serializer": "To use the Pagerfanta class with the Symfony Serializer",
                 "symfony/translation": "To use the Pagerfanta views with translation support",
                 "twig/twig": "To integrate Pagerfanta with Twig through extensions"
             },
@@ -227,7 +232,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-30T22:50:43+00:00"
+            "time": "2020-10-14T22:45:11+00:00"
         },
         {
             "name": "beberlei/doctrineextensions",
@@ -285,23 +290,23 @@
         },
         {
             "name": "bobdenotter/configuration-notices",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/configuration-notices.git",
-                "reference": "a6f8d81f13ede3f626f42b963b9659269101249d"
+                "reference": "d00aa60588d35cdfcdd702038c4d0de6802fe797"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/configuration-notices/zipball/a6f8d81f13ede3f626f42b963b9659269101249d",
-                "reference": "a6f8d81f13ede3f626f42b963b9659269101249d",
+                "url": "https://api.github.com/repos/bobdenotter/configuration-notices/zipball/d00aa60588d35cdfcdd702038c4d0de6802fe797",
+                "reference": "d00aa60588d35cdfcdd702038c4d0de6802fe797",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.9"
             },
             "require-dev": {
-                "bolt/core": "^4.0.0",
+                "bolt/core": "^4.1.0",
                 "symplify/easy-coding-standard": "^7.0"
             },
             "type": "bolt-extension",
@@ -327,7 +332,7 @@
                 }
             ],
             "description": "💡 A small tool to point out common pitfalls for Bolt 4 configuration settings",
-            "time": "2020-08-31T18:18:05+00:00"
+            "time": "2020-10-15T11:01:08+00:00"
         },
         {
             "name": "bobdenotter/weatherwidget",
@@ -423,16 +428,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "7845647d3ff295782649463d6d48e689b821efb3"
+                "reference": "7cf2514d0f3c93d12c7167f0a0ef87dd5176a78a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/7845647d3ff295782649463d6d48e689b821efb3",
-                "reference": "7845647d3ff295782649463d6d48e689b821efb3",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/7cf2514d0f3c93d12c7167f0a0ef87dd5176a78a",
+                "reference": "7cf2514d0f3c93d12c7167f0a0ef87dd5176a78a",
                 "shasum": ""
             },
             "require-dev": {
@@ -450,7 +455,7 @@
                 }
             ],
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
-            "time": "2020-10-08T12:41:25+00:00"
+            "time": "2020-10-18T09:34:23+00:00"
         },
         {
             "name": "bolt/common",
@@ -506,16 +511,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "333f949172f89a20ec3a333a033aa8d732cbc870"
+                "reference": "b7d4716b7be7ec27c0c80eb4d829a677564e3e03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/333f949172f89a20ec3a333a033aa8d732cbc870",
-                "reference": "333f949172f89a20ec3a333a033aa8d732cbc870",
+                "url": "https://api.github.com/repos/bolt/core/zipball/b7d4716b7be7ec27c0c80eb4d829a677564e3e03",
+                "reference": "b7d4716b7be7ec27c0c80eb4d829a677564e3e03",
                 "shasum": ""
             },
             "require": {
@@ -647,20 +652,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-08T12:26:06+00:00"
+            "time": "2020-10-18T09:17:31+00:00"
         },
         {
             "name": "bolt/newswidget",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/newswidget.git",
-                "reference": "ba0f5b48b42868c175262ff3a391200e7424e8ba"
+                "reference": "035f9e8226b436d952d53287fbc9295899a38114"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/newswidget/zipball/ba0f5b48b42868c175262ff3a391200e7424e8ba",
-                "reference": "ba0f5b48b42868c175262ff3a391200e7424e8ba",
+                "url": "https://api.github.com/repos/bolt/newswidget/zipball/035f9e8226b436d952d53287fbc9295899a38114",
+                "reference": "035f9e8226b436d952d53287fbc9295899a38114",
                 "shasum": ""
             },
             "require": {
@@ -693,20 +698,20 @@
                 }
             ],
             "description": "📰 A simple Widget Extension to display the latest Bolt news on the dashboard.",
-            "time": "2020-08-26T13:18:59+00:00"
+            "time": "2020-10-15T10:54:03+00:00"
         },
         {
             "name": "bolt/redactor",
-            "version": "1.0.13",
+            "version": "1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/redactor.git",
-                "reference": "4fd6af09dbc2e7fca852f40e13d5a94ff7a71470"
+                "reference": "c9b71c2715bf2f1ccc4bdcfd7a41cfb3cc77130b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/redactor/zipball/4fd6af09dbc2e7fca852f40e13d5a94ff7a71470",
-                "reference": "4fd6af09dbc2e7fca852f40e13d5a94ff7a71470",
+                "url": "https://api.github.com/repos/bolt/redactor/zipball/c9b71c2715bf2f1ccc4bdcfd7a41cfb3cc77130b",
+                "reference": "c9b71c2715bf2f1ccc4bdcfd7a41cfb3cc77130b",
                 "shasum": ""
             },
             "require": {
@@ -739,7 +744,7 @@
                 }
             ],
             "description": "📝 Bolt Extension to add the Redactor FieldType",
-            "time": "2020-09-26T12:23:13+00:00"
+            "time": "2020-10-15T15:09:26+00:00"
         },
         {
             "name": "bolt/themes",
@@ -978,16 +983,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.10.13",
+            "version": "1.10.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "47c841ba3b2d3fc0b4b13282cf029ea18b66d78b"
+                "reference": "547c9ee73fe26c77af09a0ea16419176b1cdbd12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/47c841ba3b2d3fc0b4b13282cf029ea18b66d78b",
-                "reference": "47c841ba3b2d3fc0b4b13282cf029ea18b66d78b",
+                "url": "https://api.github.com/repos/composer/composer/zipball/547c9ee73fe26c77af09a0ea16419176b1cdbd12",
+                "reference": "547c9ee73fe26c77af09a0ea16419176b1cdbd12",
                 "shasum": ""
             },
             "require": {
@@ -1068,7 +1073,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-09T09:46:34+00:00"
+            "time": "2020-10-13T13:59:09+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
@@ -2371,19 +2376,20 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.7.3",
+            "version": "2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "d95e03ba660d50d785a9925f41927fef0ee553cf"
+                "reference": "7d84a4998091ece4d645253ac65de9f879eeed2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/d95e03ba660d50d785a9925f41927fef0ee553cf",
-                "reference": "d95e03ba660d50d785a9925f41927fef0ee553cf",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/7d84a4998091ece4d645253ac65de9f879eeed2f",
+                "reference": "7d84a4998091ece4d645253ac65de9f879eeed2f",
                 "shasum": ""
             },
             "require": {
+                "composer/package-versions-deprecated": "^1.8",
                 "doctrine/annotations": "^1.8",
                 "doctrine/cache": "^1.9.1",
                 "doctrine/collections": "^1.5",
@@ -2395,7 +2401,6 @@
                 "doctrine/lexer": "^1.0",
                 "doctrine/persistence": "^1.3.3 || ^2.0",
                 "ext-pdo": "*",
-                "ocramius/package-versions": "^1.2",
                 "php": "^7.1",
                 "symfony/console": "^3.0|^4.0|^5.0"
             },
@@ -2455,21 +2460,7 @@
                 "database",
                 "orm"
             ],
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine/orm",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-05-26T16:03:49+00:00"
+            "time": "2020-10-10T17:11:26+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -3941,16 +3932,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.41.0",
+            "version": "2.41.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8690b13ad4da6d54d692afea15aab30b36fee52e"
+                "reference": "e148788eeae9b9b7b87996520358b86faad37b52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8690b13ad4da6d54d692afea15aab30b36fee52e",
-                "reference": "8690b13ad4da6d54d692afea15aab30b36fee52e",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e148788eeae9b9b7b87996520358b86faad37b52",
+                "reference": "e148788eeae9b9b7b87996520358b86faad37b52",
                 "shasum": ""
             },
             "require": {
@@ -4026,7 +4017,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-04T09:11:05+00:00"
+            "time": "2020-10-12T20:36:09+00:00"
         },
         {
             "name": "nette/finder",
@@ -4364,20 +4355,20 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v9.99.99",
+            "version": "v9.99.100",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7"
+                "php": ">= 7"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.*|5.*",
@@ -4405,7 +4396,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-07-02T15:55:56+00:00"
+            "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "peterkahl/country-code-to-emoji-flag",
@@ -7045,16 +7036,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.9.6",
+            "version": "v1.9.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "5c71110ad383ada3d5305c19ff8419a58f799c00"
+                "reference": "7335ec033995aa34133e621627333368f260b626"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/5c71110ad383ada3d5305c19ff8419a58f799c00",
-                "reference": "5c71110ad383ada3d5305c19ff8419a58f799c00",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/7335ec033995aa34133e621627333368f260b626",
+                "reference": "7335ec033995aa34133e621627333368f260b626",
                 "shasum": ""
             },
             "require": {
@@ -7070,7 +7061,7 @@
             "type": "composer-plugin",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-main": "1.9-dev"
                 },
                 "class": "Symfony\\Flex\\Flex"
             },
@@ -7104,7 +7095,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-07T12:55:56+00:00"
+            "time": "2020-10-14T17:41:54+00:00"
         },
         {
             "name": "symfony/form",
@@ -7444,16 +7435,16 @@
         },
         {
             "name": "symfony/http-client-contracts",
-            "version": "v2.2.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client-contracts.git",
-                "reference": "3a5d0fe7908daaa23e3dbf4cee3ba4bfbb19fdd3"
+                "reference": "41db680a15018f9c1d4b23516059633ce280ca33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/3a5d0fe7908daaa23e3dbf4cee3ba4bfbb19fdd3",
-                "reference": "3a5d0fe7908daaa23e3dbf4cee3ba4bfbb19fdd3",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/41db680a15018f9c1d4b23516059633ce280ca33",
+                "reference": "41db680a15018f9c1d4b23516059633ce280ca33",
                 "shasum": ""
             },
             "require": {
@@ -7464,8 +7455,9 @@
             },
             "type": "library",
             "extra": {
+                "branch-version": "2.3",
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-main": "2.3-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -7515,7 +7507,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-07T11:33:47+00:00"
+            "time": "2020-10-14T17:08:19+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -11131,23 +11123,23 @@
         },
         {
             "name": "symplify/autowire-array-parameter",
-            "version": "8.3.32",
+            "version": "8.3.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/autowire-array-parameter.git",
-                "reference": "673ff6554e7f264df45194c1d866c6a487e44e95"
+                "reference": "d180b7fdfd3ef36c91e627fa28ecfd1524df968e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/autowire-array-parameter/zipball/673ff6554e7f264df45194c1d866c6a487e44e95",
-                "reference": "673ff6554e7f264df45194c1d866c6a487e44e95",
+                "url": "https://api.github.com/repos/symplify/autowire-array-parameter/zipball/d180b7fdfd3ef36c91e627fa28ecfd1524df968e",
+                "reference": "d180b7fdfd3ef36c91e627fa28ecfd1524df968e",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^3.0",
                 "php": ">=7.2",
                 "symfony/dependency-injection": "^4.4|^5.1",
-                "symplify/package-builder": "^8.3.32"
+                "symplify/package-builder": "^8.3.40"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5|^9.0"
@@ -11178,20 +11170,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-07T15:50:26+00:00"
+            "time": "2020-10-18T00:16:54+00:00"
         },
         {
             "name": "symplify/package-builder",
-            "version": "8.3.32",
+            "version": "8.3.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "c3d81fc33ac716aa2a98e00b76c9c0c0e9385aa5"
+                "reference": "e0851a22755539f5897abaeef7a851c37a058d60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/c3d81fc33ac716aa2a98e00b76c9c0c0e9385aa5",
-                "reference": "c3d81fc33ac716aa2a98e00b76c9c0c0e9385aa5",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/e0851a22755539f5897abaeef7a851c37a058d60",
+                "reference": "e0851a22755539f5897abaeef7a851c37a058d60",
                 "shasum": ""
             },
             "require": {
@@ -11204,8 +11196,8 @@
                 "symfony/finder": "^4.4|^5.1",
                 "symfony/http-kernel": "^4.4|^5.1",
                 "symfony/yaml": "^4.4|^5.1",
-                "symplify/autowire-array-parameter": "^8.3.32",
-                "symplify/symplify-kernel": "^8.3.32"
+                "symplify/autowire-array-parameter": "^8.3.40",
+                "symplify/symplify-kernel": "^8.3.40"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5|^9.0"
@@ -11236,20 +11228,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-07T15:50:26+00:00"
+            "time": "2020-10-18T00:16:54+00:00"
         },
         {
             "name": "symplify/smart-file-system",
-            "version": "8.3.32",
+            "version": "8.3.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/smart-file-system.git",
-                "reference": "3b9765b1f3238640807b26e4533cbf2080c6a435"
+                "reference": "ead64b1aac55ba1e51f164eb1d0cfbc0af39d576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/smart-file-system/zipball/3b9765b1f3238640807b26e4533cbf2080c6a435",
-                "reference": "3b9765b1f3238640807b26e4533cbf2080c6a435",
+                "url": "https://api.github.com/repos/symplify/smart-file-system/zipball/ead64b1aac55ba1e51f164eb1d0cfbc0af39d576",
+                "reference": "ead64b1aac55ba1e51f164eb1d0cfbc0af39d576",
                 "shasum": ""
             },
             "require": {
@@ -11288,20 +11280,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-05T09:48:44+00:00"
+            "time": "2020-10-14T11:43:23+00:00"
         },
         {
             "name": "symplify/symplify-kernel",
-            "version": "8.3.32",
+            "version": "8.3.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/symplify-kernel.git",
-                "reference": "eb921cac37fe09b31a961854db05315b57f43e29"
+                "reference": "6ac9817da0573613a576e9fff34e7cc97b29a6c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/symplify-kernel/zipball/eb921cac37fe09b31a961854db05315b57f43e29",
-                "reference": "eb921cac37fe09b31a961854db05315b57f43e29",
+                "url": "https://api.github.com/repos/symplify/symplify-kernel/zipball/6ac9817da0573613a576e9fff34e7cc97b29a6c9",
+                "reference": "6ac9817da0573613a576e9fff34e7cc97b29a6c9",
                 "shasum": ""
             },
             "require": {
@@ -11309,8 +11301,8 @@
                 "symfony/console": "^4.4|^5.1",
                 "symfony/dependency-injection": "^4.4|^5.1",
                 "symfony/http-kernel": "^4.4|^5.1",
-                "symplify/package-builder": "^8.3.32",
-                "symplify/smart-file-system": "^8.3.32"
+                "symplify/package-builder": "^8.3.40",
+                "symplify/smart-file-system": "^8.3.40"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5|^9.0"
@@ -11331,7 +11323,7 @@
                 "MIT"
             ],
             "description": "Internal Kernel for Symplify packages",
-            "time": "2020-10-07T15:50:26+00:00"
+            "time": "2020-10-18T00:16:54+00:00"
         },
         {
             "name": "tightenco/collect",
