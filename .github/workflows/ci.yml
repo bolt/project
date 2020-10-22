@@ -1,0 +1,125 @@
+name: Continuous Integration
+
+on: [push, pull_request]
+
+jobs:
+  test-install-with-docker:
+    name: Install Bolt project with Docker Compose (MySQL)
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Disable MySQL
+      run: sudo systemctl stop mysql
+    - name: Start services
+      run: |
+        echo $'version: \'3.4\'\n\nservices:\n  php:\n    environment:\n      - RESET_DATABASE=true\n      - LAUNCH_FIXTURES=true\n\n  nginx:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n\n  h2-proxy:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n' > docker-compose.override.yml
+        docker-compose up -d
+        sleep 5
+    - name: Wait for services
+      run: |
+        while status="$(docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" "$(docker-compose ps -q php)")"; do
+          case $status in
+            starting) sleep 1;;
+            healthy) exit 0;;
+            unhealthy) exit 1;;
+          esac
+        done
+        exit 1
+    - name: Check HTTP reachability
+      run: |
+        curl -fk http://localhost:8080
+        curl -fk http://localhost:8080/bolt
+        curl -fk http://localhost:8080/api/contents
+        curl -fk http://localhost:8080/api/fields
+        curl -fk http://localhost:8080/api/relations
+        curl -fk https://localhost:8443
+        curl -fk https://localhost:8443/bolt
+        curl -fk https://localhost:8443/api/contents
+        curl -fk https://localhost:8443/api/fields
+        curl -fk https://localhost:8443/api/relations
+    - name: Validate composer.json
+      run: docker-compose exec -T php composer validate --no-check-publish
+    - name: Run PHP-CS-Fixer
+      run: docker-compose exec -T php composer lint
+    - name: Run PHP-CS-Fixer with fix flag
+      run: docker-compose exec -T php composer lint:fix
+    - name: Run PHPStan
+      run: docker-compose exec -T php composer phpstan
+    - name: Run Security Checker
+      run: docker-compose exec -T php composer periodical-tasks
+  test-install-with-composer:
+    name: Install Bolt project with Composer (MySQL)
+    runs-on: ubuntu-latest
+    env:
+      APP_ENV: dev
+      APP_SECRET: KnR9FtX39zUT7Um8873wG2Rqv9nU7nve
+      TRUSTED_PROXIES: 127.0.0.0/8
+      TRUSTED_HOSTS: '^localhost$'
+      DATABASE_URL: mysql://bolt:Q2ttiAeS6DT329c9@127.0.0.1:3306/bolt?serverVersion=5.7
+      CORS_ALLOW_ORIGIN: ^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_DATABASE: bolt
+          MYSQL_PASSWORD: Q2ttiAeS6DT329c9
+          MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+          MYSQL_USER: bolt
+        ports:
+        - 3306:3306
+        options: >-
+          --mount type=tmpfs,destination=/var/lib/mysql
+          --health-cmd "mysqladmin ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    strategy:
+      fail-fast: true
+      matrix:
+        php-versions:
+          - '7.4'
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@master
+    - name: Setup PHP, extensions and composer with shivammathur/setup-php
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
+        extensions: intl, pdo_mysql, zip, gd, exif, pdo, iconv, pcntl, mbstring, fileinfo, posix
+      env:
+        update: true
+    - name: Install Symfony Flex
+      run: |
+        composer global require --prefer-dist --no-progress --no-suggest --ansi \
+          symfony/flex
+    - name: Install project with composer
+      run: |
+        composer install --prefer-dist --no-progress --no-suggest --no-interaction
+        composer clear-cache
+    - name: Verify MySQL connection from host
+      run: php bin/console doctrine:query:sql "SELECT 1" > /dev/null 2>&1
+    - name: Setup up Bolt project
+      run: |
+        php bin/console doctrine:schema:create
+        php bin/console doctrine:fixtures:load --no-interaction
+        composer run post-create-project-cmd
+        php bin/console bolt:info
+    - name: Check HTTP reachability
+      run: |
+        wget https://get.symfony.com/cli/installer -O - | bash
+        /home/runner/.symfony/bin/symfony serve --daemon --no-tls
+        curl -fk http://localhost:8000
+        curl -fk http://localhost:8000/bolt
+        curl -fk http://localhost:8000/api/contents
+        curl -fk http://localhost:8000/api/fields
+        curl -fk http://localhost:8000/api/relations
+    - name: Validate composer.json
+      run: composer validate --no-check-publish
+    - name: Run PHP-CS-Fixer
+      run: composer lint
+    - name: Run PHP-CS-Fixer with fix flag
+      run: composer lint:fix
+    - name: Run PHPStan
+      run: composer phpstan
+    - name: Run Security Checker
+      run: composer periodical-tasks
