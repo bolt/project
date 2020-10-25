@@ -6,7 +6,7 @@ parameters:
     app_locales: en|nl|es|fr|de|pl|it|hu|pt_BR|ja|nb|nn|nl_NL|nl_BE|is|ru
     app.notifications.email_sender: anonymous@example.com
     bolt.table_prefix: bolt_
-    bolt.backend_url: /bolt
+    bolt.backend_url: /beheer
 
 services:
     # default configuration for services in *this* file
@@ -60,6 +60,10 @@ services:
     Bolt\Event\Listener\FieldDiscriminatorListener:
         tags:
             - { name: doctrine.event_listener, event: loadClassMetadata }
+
+    Bolt\Event\Listener\TaxonomyFillListener:
+        tags:
+            - { name: doctrine.event_listener, event: postLoad }
 
     Bolt\Extension\RoutesLoader:
         tags: [routing.loader]
