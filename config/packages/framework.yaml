@@ -1,17 +1,23 @@
+# see https://symfony.com/doc/current/reference/configuration/framework.html
 framework:
     secret: '%env(APP_SECRET)%'
-    csrf_protection: { enabled: true }
+    csrf_protection: true
     http_method_override: true
     trusted_hosts: ~
+
+    # Enables session support. Note that the session will ONLY be started if you read or write from it.
+    # Remove or comment this section to explicitly disable session support.
     session:
         # With this config, PHP's native session handling is used
         handler_id: ~
         cookie_lifetime: 1209600 #expires in 14 days
+        cookie_secure: auto
+
     # When using the HTTP Cache, ESI allows to render page fragments separately
     # and with different cache configurations for each fragment
     # https://symfony.com/doc/current/book/http_cache.html#edge-side-includes
-    esi: { enabled: true }
-    fragments: { enabled: true }
+    esi: true
+    fragments: true
     php_errors:
         log: true
     assets:
