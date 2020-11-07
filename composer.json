@@ -57,6 +57,7 @@
             "php bin/console extensions:configure  --ansi"
         ],
         "post-create-project-cmd": [
+            "php bin/post-create-project.php",
             "php bin/console bolt:copy-themes"
         ],
         "auto-scripts": {
