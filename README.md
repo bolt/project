@@ -17,21 +17,18 @@ You can set up a new Bolt 4 project, using the following command, replacing `myp
 composer create-project bolt/project myprojectname
 ```
 
-Navigate into the newly created folder, and configure the database and mailer in `.env`. (The configuration is intended to work with Docker.)
+Navigate into the newly created folder, and configure the database in `.env` (The configuration is intended to work with the database SQLite).
 
 ```dotenv
 # Configure database for doctrine/doctrine-bundle
-# SQLite
+# SQLite (note: _three_ slashes)
 DATABASE_URL=sqlite:///%kernel.project_dir%/var/data/bolt.sqlite
 
-# MySQL
-DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
+# MYSQL / MariaDB
+#DATABASE_URL=mysql://db_user:"db_password"@127.0.0.1:3306/db_name?serverVersion=5.7
 
-# PostgreSQL
-DATABASE_URL=postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8
-
-# Configure mailer for symfony/mailer
-MAILER_DSN=smtp://localhost
+# Postgres
+#DATABASE_URL=postgresql://db_user:"db_password"@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8
 ```
 
 Set up the database, create the first user and add fixtures (dummy content):
@@ -66,6 +63,12 @@ The Bolt admin panel can be found at http://127.0.0.1:8000/bolt
 
 Log in using the credentials you created when setting up the first user.
 
+> Note: If you don't want to use Docker, don't forget to remove what isn't necessary: \
+    - remove `.dockerignore` file \
+    - remove `docker-composer.yml` file \
+    - remove `Dockerfile` file \
+    - remove `docker` folder
+
 ### with Docker
 
 Start by [downloading the Bolt project distribution `.tar.gz` file](https://github.com/bolt/project/releases/latest), or [generate a GitHub repository from the template we provide](https://github.com/bolt/project/generate).
@@ -79,6 +82,26 @@ On Mac, only [Docker for Mac](https://docs.docker.com/docker-for-mac/) is suppor
 Similarly, on Windows, only [Docker for Windows](https://docs.docker.com/docker-for-windows/) is supported. Docker Machine **is not** supported out of the box.
 
 Open a terminal, and navigate to the directory containing your project skeleton.
+
+Navigate into the newly created folder, and configure environment variables in the `.env` file for Docker & the database MySQL version 5.7.
+
+```dotenv
+###> symfony/framework-bundle ###
+APP_ENV=dev
+APP_DEBUG=1
+APP_SECRET=!ChangeMe!
+TRUSTED_PROXIES=127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+TRUSTED_HOSTS='^(localhost|nginx)$'
+###< symfony/framework-bundle ###
+
+###> doctrine/doctrine-bundle ###
+DATABASE_URL=mysql://bolt:!ChangeMe!@db:3306/bolt?serverVersion=5.7
+###< doctrine/doctrine-bundle ###
+
+###> symfony/mailer ###
+MAILER_DSN=smtp://mailcatcher:1025
+###< symfony/mailer ###
+```
 
 Run the following command to start all services using [Docker Compose](https://docs.docker.com/compose/):
 
@@ -127,12 +150,8 @@ This starts the following services:
   ```
 </details>
 
-Finally, open the new installation in a browser. If you've used one of the commands above, you'll find the frontpage at http://localhost/ or https://localhost/ \
-The Bolt admin panel can be found at http://localhost/bolt or https://localhost/bolt
-
-### without Docker
-
-Remove `.dockerignore`, `docker-composer.yml`, `Dockerfile` files and the `docker` folder.
+Finally, open the new installation in a browser. If you've used one of the commands above, you'll find the frontpage at http://localhost:8080/ or https://localhost:8443/ \
+The Bolt admin panel can be found at http://localhost:8080/bolt or https://localhost:8443/bolt
 
 ## The tests
 
@@ -142,8 +161,11 @@ Remove `.dockerignore`, `docker-composer.yml`, `Dockerfile` files and the `docke
 [The `ecs.php` configuration file is located at the root of the cms project](./ecs.php)
 
 ```bash
+# With Composer
 composer lint                         # Launch ECS in dry run mode (command to launch in a Continuous Integration)
 composer lint:fix                     # Launch ECS in fix mode
+
+# With Docker
 docker-compose exec php composer lint # Launch ECS by the php container
 ```
 
@@ -152,7 +174,10 @@ docker-compose exec php composer lint # Launch ECS by the php container
 [The `phpstan.neon` configuration file is located at the root of the cms project](./phpstan.neon)
 
 ```bash
+# With Composer
 composer phpstan                         # Launch PHPStan (command to launch in a Continuous Integration)
+
+# With Docker
 docker-compose exec php composer phpstan # Launch PHPStan by the php container
 ```
 

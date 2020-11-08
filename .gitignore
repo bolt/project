@@ -1,7 +1,5 @@
-###> Docker ###
-docker-compose.override.yml
-docker-compose.override.yaml
-###< Docker ###
+# Comment out the following line, if you wish to store your SQLite database in Git
+/var/data/*
 
 ###> bolt/core ###
 config/bolt/*_local.yaml
@@ -9,11 +7,45 @@ config/bolt/*_local.yaml
 /config/routes/local
 /public/files/*
 !/public/files/.gitkeep
+!/public/files/index.html
 /public/themes/*
 !/public/themes/.gitkeep
 /public/thumbs/*
 !/public/thumbs/.gitkeep
+!/public/thumbs/index.html
 ###< bolt/core ###
+
+### NPM and frontend assets building cruft
+node_modules/
+npm-debug.log
+yarn-error.log
+build_assets.sh
+
+### File-system cruft and temporary files
+__*
+._*
+.*.swp
+.swp
+*.lock
+!composer.lock
+!symfony.lock
+*lock.json
+!/package-lock.json
+.buildpath
+
+### Platfom-specific files
+.DS_Store
+thumbs.db
+Vagrantfile
+.vagrant*
+.idea
+.vscode/*
+appveyor.yml
+
+###> Docker ###
+docker-compose.override.yml
+docker-compose.override.yaml
+###< Docker ###
 
 ###> friendsofphp/php-cs-fixer ###
 /.php_cs
@@ -36,5 +68,9 @@ config/bolt/*_local.yaml
 !/var/cache/.gitkeep
 /var/log/*
 !/var/log/.gitkeep
+!/var/data/.gitkeep
+/var/sessions/*
+!/var/sessions/.gitkeep
 /vendor/
+.web-server-pid
 ###< symfony/framework-bundle ###
