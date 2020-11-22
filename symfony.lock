@@ -163,11 +163,11 @@
     "ezyang/htmlpurifier": {
         "version": "v4.10.0"
     },
+    "fakerphp/faker": {
+        "version": "v1.11.0"
+    },
     "fig/link-util": {
         "version": "1.0.0"
-    },
-    "fzaninotto/faker": {
-        "version": "v1.8.0"
     },
     "guzzlehttp/psr7": {
         "version": "1.5.2"
@@ -222,9 +222,6 @@
     },
     "nesbot/carbon": {
         "version": "1.36.2"
-    },
-    "nette/finder": {
-        "version": "v2.5.2"
     },
     "nette/utils": {
         "version": "v3.1.0"
@@ -698,18 +695,6 @@
     },
     "symfony/yaml": {
         "version": "v4.2.3"
-    },
-    "symplify/autowire-array-parameter": {
-        "version": "8.3.32"
-    },
-    "symplify/package-builder": {
-        "version": "v7.2.1"
-    },
-    "symplify/smart-file-system": {
-        "version": "8.3.32"
-    },
-    "symplify/symplify-kernel": {
-        "version": "8.3.32"
     },
     "tightenco/collect": {
         "version": "v5.8.2"
