@@ -11,6 +11,8 @@ Bolt CMS is an open source, adaptable platform for building and running modern w
 
 ### with Composer
 
+**Note**: Installing with composer and running the site on your local machine using the method described below is the preferred method of the Bolt core development team.
+
 You can set up a new Bolt 4 project, using the following command, replacing `myprojectname` with your desired project's name.
 
 ```bash
@@ -70,6 +72,8 @@ Log in using the credentials you created when setting up the first user.
     - remove `docker` folder
 
 ### with Docker
+
+**Disclaimer**: Docker is not used by the Bolt core development team. Bolt _can_ be run using docker, but you are advised to only attempt this if you have enough experience with Docker yourself to understand what is going on in the `Dockerfile` and in `docker-compose.yml`. The included setup might not be a good fit for _your_ Dockerized setup. When in doubt, follow general advice on running Symfony projects in docker, as Bolt is built using Symfony. The Bolt team doesn't provide pre-built containers.
 
 Start by [downloading the Bolt project distribution `.tar.gz` file](https://github.com/bolt/project/releases/latest), or [generate a GitHub repository from the template we provide](https://github.com/bolt/project/generate).
 Once you have extracted its content, the resulting directory contains the Bolt project structure. You will add your own code and configuration inside it.
