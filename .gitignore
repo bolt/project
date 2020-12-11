@@ -3,6 +3,7 @@
 
 ###> bolt/core ###
 config/bolt/*_local.yaml
+config/extensions/*_local.yaml
 /config/packages/local
 /config/routes/local
 /public/files/*
