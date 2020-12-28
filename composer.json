@@ -8,7 +8,7 @@
         "bobdenotter/weatherwidget": "^1.1",
         "bolt/article": "^1.0",
         "bolt/assets": "^4.1",
-        "bolt/core": "^4.1",
+        "bolt/core": "^4.2",
         "bolt/newswidget": "^1.1",
         "bolt/redactor": "^1.0",
         "bolt/themes": "^3.3",
@@ -45,7 +45,7 @@
             "App\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
