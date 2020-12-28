@@ -46,7 +46,12 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $parameters->set(Option::PATHS, [__DIR__.'/']);
 
-    $parameters->set(Option::EXCLUDE_PATHS, [__DIR__.'/vendor/*', __DIR__.'/var/*']);
+    $parameters->set(Option::EXCLUDE_PATHS, [
+        __DIR__.'/vendor/*',
+        __DIR__.'/var/*',
+        __DIR__.'/config/bundles.php',
+    ]
+    );
 
     $parameters->set(Option::CACHE_DIRECTORY, 'var/cache/ecs');
 
