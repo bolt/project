@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc3e28c8b0fa471ffc9a2a90b38fd458",
+    "content-hash": "6d9cd7be097e6bf68bb5190f7a067139",
     "packages": [
         {
             "name": "api-platform/core",
@@ -403,6 +403,58 @@
             "time": "2020-11-14T14:54:32+00:00"
         },
         {
+            "name": "bobdenotter/yaml-migrations",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobdenotter/yaml-migrations.git",
+                "reference": "8ec67c0a419583889179ace9610493e539e4bfcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobdenotter/yaml-migrations/zipball/8ec67c0a419583889179ace9610493e539e4bfcc",
+                "reference": "8ec67c0a419583889179ace9610493e539e4bfcc",
+                "shasum": ""
+            },
+            "require": {
+                "composer/semver": "^3.2",
+                "nategood/commando": "^0.4.0",
+                "symfony/finder": "^5.1",
+                "symfony/var-dumper": "^5.1",
+                "symfony/yaml": "^5.1",
+                "webimpress/safe-writer": "^2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5",
+                "symplify/easy-coding-standard": "^8.3"
+            },
+            "bin": [
+                "bin/yaml-migrate"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "YamlMigrate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bob den Otter",
+                    "email": "bob@twokings.nl"
+                }
+            ],
+            "description": "A library to facilitate migrations for YAML configuration files",
+            "support": {
+                "issues": "https://github.com/bobdenotter/yaml-migrations/issues",
+                "source": "https://github.com/bobdenotter/yaml-migrations/tree/1.0.1"
+            },
+            "time": "2020-12-28T13:20:29+00:00"
+        },
+        {
             "name": "bolt/article",
             "version": "1.0.19",
             "source": {
@@ -545,22 +597,23 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.2.0-beta.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "6bc4399b474c71c8a5684d36015faedba90915f2"
+                "reference": "8adaac9131d768ad9f412491f2b4d29bea0be73f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/6bc4399b474c71c8a5684d36015faedba90915f2",
-                "reference": "6bc4399b474c71c8a5684d36015faedba90915f2",
+                "url": "https://api.github.com/repos/bolt/core/zipball/8adaac9131d768ad9f412491f2b4d29bea0be73f",
+                "reference": "8adaac9131d768ad9f412491f2b4d29bea0be73f",
                 "shasum": ""
             },
             "require": {
                 "api-platform/core": "^2.5",
                 "babdev/pagerfanta-bundle": "^2.5",
                 "beberlei/doctrineextensions": "^1.2",
+                "bobdenotter/yaml-migrations": "^1.0",
                 "bolt/common": "^3.0",
                 "cocur/slugify": "^4.0",
                 "composer/composer": "^2.0",
@@ -680,7 +733,7 @@
             "description": "🧿 Bolt 4 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/4.2.0-beta.2"
+                "source": "https://github.com/bolt/core/tree/master"
             },
             "funding": [
                 {
@@ -688,7 +741,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-28T12:42:46+00:00"
+            "time": "2020-12-29T12:15:47+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -792,33 +845,33 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.3.6",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "ef911fe09195e3f42cf1ec5a3b28435bd7396bb6"
+                "reference": "8fe03703c8d847468562c5531199e59b6646f802"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/ef911fe09195e3f42cf1ec5a3b28435bd7396bb6",
-                "reference": "ef911fe09195e3f42cf1ec5a3b28435bd7396bb6",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/8fe03703c8d847468562c5531199e59b6646f802",
+                "reference": "8fe03703c8d847468562c5531199e59b6646f802",
                 "shasum": ""
             },
             "require": {
-                "bolt/core": "^4.1",
                 "twig/twig": "^2.0 || ^3.0"
+            },
+            "conflict": {
+                "bolt/bolt": "< 3.999"
             },
             "type": "bolt-theme",
             "extra": {
                 "screenshots": [
                     "screenshots/screenshot1.png",
-                    "screenshots/screenshot2.png",
-                    "screenshots/screenshot3.png"
+                    "screenshots/screenshot2.png"
                 ],
                 "themes": [
                     "skeleton",
-                    "base-2018",
-                    "base-2021"
+                    "base-2018"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -833,9 +886,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bolt/themes/issues",
-                "source": "https://github.com/bolt/themes/tree/3.3.6"
+                "source": "https://github.com/bolt/themes/tree/3.3.2"
             },
-            "time": "2020-12-25T12:05:57+00:00"
+            "time": "2020-09-20T13:45:59+00:00"
         },
         {
             "name": "brick/math",
@@ -2985,16 +3038,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.24",
+            "version": "2.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "ca90a3291eee1538cd48ff25163240695bd95448"
+                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ca90a3291eee1538cd48ff25163240695bd95448",
-                "reference": "ca90a3291eee1538cd48ff25163240695bd95448",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0dbf5d78455d4d6a41d186da50adc1122ec066f4",
+                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4",
                 "shasum": ""
             },
             "require": {
@@ -3041,7 +3094,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/2.1.24"
+                "source": "https://github.com/egulias/EmailValidator/tree/2.1.25"
             },
             "funding": [
                 {
@@ -3049,7 +3102,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-14T15:56:27+00:00"
+            "time": "2020-12-29T14:50:06+00:00"
         },
         {
             "name": "embed/embed",
@@ -3627,6 +3680,61 @@
                 "source": "https://github.com/justinrainbow/json-schema/tree/5.2.10"
             },
             "time": "2020-05-27T16:41:55+00:00"
+        },
+        {
+            "name": "kevinlebrun/colors.php",
+            "version": "0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kevinlebrun/colors.php.git",
+                "reference": "d132f36d06e48ea080855af19b4bcb1fb615224a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kevinlebrun/colors.php/zipball/d132f36d06e48ea080855af19b4bcb1fb615224a",
+                "reference": "d132f36d06e48ea080855af19b4bcb1fb615224a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Colors": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Le Brun",
+                    "email": "lebrun.k@gmail.com",
+                    "homepage": "http://kevinlebrun.fr",
+                    "role": "developer"
+                }
+            ],
+            "description": "Colors for PHP CLI scripts",
+            "homepage": "https://github.com/kevinlebrun/colors.php",
+            "keywords": [
+                "cli",
+                "color",
+                "colors",
+                "console",
+                "shell"
+            ],
+            "support": {
+                "issues": "https://github.com/kevinlebrun/colors.php/issues",
+                "source": "https://github.com/kevinlebrun/colors.php/tree/0.4.1"
+            },
+            "time": "2014-12-23T01:23:37+00:00"
         },
         {
             "name": "knplabs/doctrine-behaviors",
@@ -4461,6 +4569,56 @@
                 }
             ],
             "time": "2020-12-14T13:15:25+00:00"
+        },
+        {
+            "name": "nategood/commando",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nategood/commando.git",
+                "reference": "8fedd49fcb694faf60d87d5c2c4defdffa298fa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nategood/commando/zipball/8fedd49fcb694faf60d87d5c2c4defdffa298fa0",
+                "reference": "8fedd49fcb694faf60d87d5c2c4defdffa298fa0",
+                "shasum": ""
+            },
+            "require": {
+                "kevinlebrun/colors.php": "~0.2",
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Commando": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com"
+                }
+            ],
+            "description": "PHP CLI Commando Style",
+            "homepage": "http://github.com/nategood/commando",
+            "keywords": [
+                "automation",
+                "cli",
+                "command",
+                "command line",
+                "command line interface",
+                "scripting"
+            ],
+            "support": {
+                "issues": "https://github.com/nategood/commando/issues",
+                "source": "https://github.com/nategood/commando/tree/v0.4.0"
+            },
+            "time": "2019-07-10T02:37:11+00:00"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -13836,7 +13994,9 @@
     ],
     "aliases": [],
     "minimum-stability": "beta",
-    "stability-flags": [],
+    "stability-flags": {
+        "bolt/core": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
