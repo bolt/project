@@ -7,16 +7,17 @@ security:
     encoders:
         Bolt\Entity\User: auto
 
-    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
         database_users:
             entity:
                 class: Bolt\Entity\User
                 property: username
+
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+
         main:
             pattern: ^/
             anonymous: true
@@ -34,12 +35,11 @@ security:
             remember_me:
                 secret: '%kernel.secret%'
                 lifetime: 2592000
+                remember_me_parameter: login[remember_me]
 
-    # Easy way to control access for large sections of your site
-    # Note: Only the *first* access control that matches will be used
     access_control:
         # this is a catch-all for the admin area
         # additional security lives in the controllers
-        - { path: '^%bolt.backend_url%/(login|resetpassword)$', roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: '^%bolt.backend_url%/(login|resetpassword|reset-password)$', roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: '^%bolt.backend_url%', roles: ROLE_ADMIN }
         - { path: '^/(%app_locales%)%bolt.backend_url%', roles: ROLE_ADMIN }

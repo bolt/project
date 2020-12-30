@@ -1,8 +1,8 @@
 services:
-    _defaults:
-        autowire: true
-        autoconfigure: true
+    SensioLabs\Security\SecurityChecker:
+        public: false
 
-    SensioLabs\Security\SecurityChecker: null
-
-    SensioLabs\Security\Command\SecurityCheckerCommand: null
+    SensioLabs\Security\Command\SecurityCheckerCommand:
+        arguments: ['@SensioLabs\Security\SecurityChecker']
+        tags:
+            - { name: console.command }
