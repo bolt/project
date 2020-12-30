@@ -25,6 +25,9 @@
     "bobdenotter/weatherwidget": {
         "version": "1.1.2"
     },
+    "bobdenotter/yaml-migrations": {
+        "version": "1.0.2"
+    },
     "bolt/article": {
         "version": "1.0.14"
     },
@@ -212,6 +215,9 @@
     "justinrainbow/json-schema": {
         "version": "5.2.10"
     },
+    "kevinlebrun/colors.php": {
+        "version": "0.4.1"
+    },
     "knplabs/doctrine-behaviors": {
         "version": "v2.0.7"
     },
@@ -247,6 +253,9 @@
     },
     "monolog/monolog": {
         "version": "2.1.1"
+    },
+    "nategood/commando": {
+        "version": "0.4.0"
     },
     "nelmio/cors-bundle": {
         "version": "1.5",
