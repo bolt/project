@@ -12,7 +12,11 @@
         "bolt/newswidget": "^1.1",
         "bolt/redactor": "^1.0",
         "bolt/themes": "^3.3",
+        "nelmio/security-bundle": "^2.10",
         "symfony/flex": "^1.6"
+    },
+    "replace": {
+        "paragonie/random_compat": "9.99.99"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12.48",
