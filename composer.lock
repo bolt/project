@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f73c588489b473d6c1a5e9b7ea94eaf5",
+    "content-hash": "7f7553cd37813446afb2ac724fa9d4aa",
     "packages": [
         {
             "name": "api-platform/core",
@@ -4680,6 +4680,77 @@
                 "source": "https://github.com/nelmio/NelmioCorsBundle/tree/2.1.0"
             },
             "time": "2020-07-22T11:44:28+00:00"
+        },
+        {
+            "name": "nelmio/security-bundle",
+            "version": "v2.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nelmio/NelmioSecurityBundle.git",
+                "reference": "80d6e1091aadf55eab6a79be97a91c06d55e8223"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nelmio/NelmioSecurityBundle/zipball/80d6e1091aadf55eab6a79be97a91c06d55e8223",
+                "reference": "80d6e1091aadf55eab6a79be97a91c06d55e8223",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": "~1.0|~2.0|9.99.99",
+                "php": ">5.4",
+                "symfony/framework-bundle": "~2.3|~v3.0|~4.0|~5.0",
+                "symfony/security-core": "~2.3|~3.0|~4.0|~5.0",
+                "symfony/security-csrf": "~2.3|~3.0|~4.0|~5.0",
+                "symfony/security-http": "~2.3|~3.0|~4.0|~5.0",
+                "ua-parser/uap-php": "^3.4.4"
+            },
+            "require-dev": {
+                "doctrine/cache": "^1.0",
+                "psr/cache": "^1.0",
+                "symfony/phpunit-bridge": "^5.0.5",
+                "symfony/yaml": "~2.3|~3.0|~4.0|~5.0",
+                "twig/twig": "^1.38|^2.10|^3.0"
+            },
+            "suggest": {
+                "ua-parser/uap-php": "To allow adapt CSP directives given the user-agent"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nelmio\\SecurityBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nelmio",
+                    "homepage": "http://nelm.io"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/nelmio/NelmioSecurityBundle/contributors"
+                }
+            ],
+            "description": "Extra security-related features for Symfony: signed/encrypted cookies, HTTPS/SSL/HSTS handling, cookie session storage, ...",
+            "keywords": [
+                "security"
+            ],
+            "support": {
+                "issues": "https://github.com/nelmio/NelmioSecurityBundle/issues",
+                "source": "https://github.com/nelmio/NelmioSecurityBundle/tree/v2.10.1"
+            },
+            "time": "2020-06-18T12:49:09+00:00"
         },
         {
             "name": "nesbot/carbon",
