@@ -456,16 +456,16 @@
         },
         {
             "name": "bolt/article",
-            "version": "1.0.19",
+            "version": "1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/article.git",
-                "reference": "bae63a9fcfb3f0c1cc41ad14f1005c28baf34378"
+                "reference": "2cf54df7d3e20f0abc0c8ec6a5440fd7bc3e3176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/article/zipball/bae63a9fcfb3f0c1cc41ad14f1005c28baf34378",
-                "reference": "bae63a9fcfb3f0c1cc41ad14f1005c28baf34378",
+                "url": "https://api.github.com/repos/bolt/article/zipball/2cf54df7d3e20f0abc0c8ec6a5440fd7bc3e3176",
+                "reference": "2cf54df7d3e20f0abc0c8ec6a5440fd7bc3e3176",
                 "shasum": ""
             },
             "require": {
@@ -500,9 +500,9 @@
             "description": "📝 Bolt Extension to add the Article FieldType",
             "support": {
                 "issues": "https://github.com/bolt/article/issues",
-                "source": "https://github.com/bolt/article/tree/1.0.19"
+                "source": "https://github.com/bolt/article/tree/1.0.20"
             },
-            "time": "2020-12-14T15:02:40+00:00"
+            "time": "2021-01-01T16:58:12+00:00"
         },
         {
             "name": "bolt/assets",
@@ -795,16 +795,16 @@
         },
         {
             "name": "bolt/redactor",
-            "version": "1.0.25",
+            "version": "1.0.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/redactor.git",
-                "reference": "ceafabb8ecc65c1fb2de097f0f12147c7a7518c8"
+                "reference": "3f93004e2f58d9a8e4864074feb634799c41a0b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/redactor/zipball/ceafabb8ecc65c1fb2de097f0f12147c7a7518c8",
-                "reference": "ceafabb8ecc65c1fb2de097f0f12147c7a7518c8",
+                "url": "https://api.github.com/repos/bolt/redactor/zipball/3f93004e2f58d9a8e4864074feb634799c41a0b1",
+                "reference": "3f93004e2f58d9a8e4864074feb634799c41a0b1",
                 "shasum": ""
             },
             "require": {
@@ -839,9 +839,9 @@
             "description": "📝 Bolt Extension to add the Redactor FieldType",
             "support": {
                 "issues": "https://github.com/bolt/redactor/issues",
-                "source": "https://github.com/bolt/redactor/tree/1.0.25"
+                "source": "https://github.com/bolt/redactor/tree/1.0.26"
             },
-            "time": "2020-12-19T10:40:39+00:00"
+            "time": "2021-01-02T15:11:24+00:00"
         },
         {
             "name": "bolt/themes",
