@@ -12,6 +12,8 @@ default:
       '4|8': 'col-4|col-8'
       '6|6': 'col-6|col-6'
       '8|4': 'col-8|col-4'
+  image:
+    thumbnail: 1000×1000×max
 
 plugins:
   ~

@@ -238,9 +238,6 @@
     "pagerfanta/pagerfanta": {
         "version": "v2.0.1"
     },
-    "peterkahl/country-code-to-emoji-flag": {
-        "version": "v0.9.1"
-    },
     "php": {
         "version": "7.2"
     },
