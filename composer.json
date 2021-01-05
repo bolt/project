@@ -53,24 +53,17 @@
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
-            "@auto-scripts",
-            "php bin/console extensions:configure --with-config --ansi"
+            "php vendor/bolt/core/bin/composer-script/project-post-install-cmd.php"
+        ],
+        "pre-update-cmd": [
+            "php vendor/bolt/core/bin/composer-script/project-pre-update-cmd.php"
         ],
         "post-update-cmd": [
-            "@auto-scripts",
-            "php bin/console extensions:configure  --ansi"
+            "php vendor/bolt/core/bin/composer-script/project-post-update-cmd.php"
         ],
         "post-create-project-cmd": [
-            "php bin/post-create-project.php",
-            "php bin/console bolt:copy-themes",
-            "php bin/console bolt:welcome"
+            "php vendor/bolt/core/bin/composer-script/project-post-create-project-cmd.php"
         ],
-        "auto-scripts": {
-            "bolt:copy-assets --ansi": "symfony-cmd",
-            "cache:clear --no-warmup --ansi": "symfony-cmd",
-            "assets:install --ansi": "symfony-cmd",
-            "security-checker security:check": "script"
-        },
         "lint": "php vendor/bin/ecs check --no-progress-bar --no-interaction",
         "lint:fix": "php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
         "periodical-tasks": "php bin/console security:check",
