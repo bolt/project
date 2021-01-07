@@ -404,16 +404,16 @@
         },
         {
             "name": "bobdenotter/yaml-migrations",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/yaml-migrations.git",
-                "reference": "1367691a774ad1bed05867f6e6994c92e89f54ac"
+                "reference": "75693ab0e750ffd02fae8a62d6ebd53c2bb45072"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/yaml-migrations/zipball/1367691a774ad1bed05867f6e6994c92e89f54ac",
-                "reference": "1367691a774ad1bed05867f6e6994c92e89f54ac",
+                "url": "https://api.github.com/repos/bobdenotter/yaml-migrations/zipball/75693ab0e750ffd02fae8a62d6ebd53c2bb45072",
+                "reference": "75693ab0e750ffd02fae8a62d6ebd53c2bb45072",
                 "shasum": ""
             },
             "require": {
@@ -450,9 +450,9 @@
             "description": "A library to facilitate migrations for YAML configuration files",
             "support": {
                 "issues": "https://github.com/bobdenotter/yaml-migrations/issues",
-                "source": "https://github.com/bobdenotter/yaml-migrations/tree/1.0.2"
+                "source": "https://github.com/bobdenotter/yaml-migrations/tree/1.0.3"
             },
-            "time": "2020-12-29T19:03:18+00:00"
+            "time": "2021-01-06T16:15:24+00:00"
         },
         {
             "name": "bolt/article",
@@ -506,16 +506,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.2.0-beta.3",
+            "version": "4.2.0-beta.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "329208394e4995638f518cf00b0e31f5658f2549"
+                "reference": "1545d53297ad8af0a1dc5e2b26611b2a44d6792f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/329208394e4995638f518cf00b0e31f5658f2549",
-                "reference": "329208394e4995638f518cf00b0e31f5658f2549",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/1545d53297ad8af0a1dc5e2b26611b2a44d6792f",
+                "reference": "1545d53297ad8af0a1dc5e2b26611b2a44d6792f",
                 "shasum": ""
             },
             "require-dev": {
@@ -535,9 +535,9 @@
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/4.2.0-beta.3"
+                "source": "https://github.com/bolt/assets/tree/4.2.0-beta.4"
             },
-            "time": "2020-12-30T11:45:13+00:00"
+            "time": "2021-01-07T08:47:35+00:00"
         },
         {
             "name": "bolt/common",
@@ -597,16 +597,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.2.0-beta.3",
+            "version": "4.2.0-beta.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "920b98db014d10f7bab770cff9aa04bdbd012a79"
+                "reference": "a2df5975e98c2f26f87d22e5f2a320b08780e23c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/920b98db014d10f7bab770cff9aa04bdbd012a79",
-                "reference": "920b98db014d10f7bab770cff9aa04bdbd012a79",
+                "url": "https://api.github.com/repos/bolt/core/zipball/a2df5975e98c2f26f87d22e5f2a320b08780e23c",
+                "reference": "a2df5975e98c2f26f87d22e5f2a320b08780e23c",
                 "shasum": ""
             },
             "require": {
@@ -633,9 +633,9 @@
                 "knplabs/knp-menu-bundle": "^3.0",
                 "league/glide-symfony": "^1.0",
                 "miljar/php-exif": "^0.6.4",
+                "nelexa/zip": "^3.3",
                 "nelmio/cors-bundle": "^2.1",
                 "nesbot/carbon": "^2.39",
-                "peterkahl/country-code-to-emoji-flag": "^1.2",
                 "php": ">=7.2.9",
                 "php-translation/symfony-bundle": "^0.12",
                 "phpdocumentor/reflection-docblock": "^5.2",
@@ -733,7 +733,7 @@
             "description": "🧿 Bolt 4 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/4.2.0-beta.3"
+                "source": "https://github.com/bolt/core/tree/4.2.0-beta.4"
             },
             "funding": [
                 {
@@ -741,7 +741,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-30T09:51:55+00:00"
+            "time": "2021-01-07T08:43:06+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -3382,20 +3382,20 @@
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/proxy-manager-lts.git",
-                "reference": "aa76978a8feaf7ddffaf346ba4f409efbfe5f9a9"
+                "reference": "4a66e4e0d3279d3bb3722963b4294331fabe15bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/proxy-manager-lts/zipball/aa76978a8feaf7ddffaf346ba4f409efbfe5f9a9",
-                "reference": "aa76978a8feaf7ddffaf346ba4f409efbfe5f9a9",
+                "url": "https://api.github.com/repos/FriendsOfPHP/proxy-manager-lts/zipball/4a66e4e0d3279d3bb3722963b4294331fabe15bc",
+                "reference": "4a66e4e0d3279d3bb3722963b4294331fabe15bc",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-code": "^3.4.1|^4.0",
+                "laminas/laminas-code": "~3.4.1|^4.0",
                 "php": ">=7.1",
                 "symfony/filesystem": "^4.4.17|^5.0"
             },
@@ -3448,7 +3448,7 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfPHP/proxy-manager-lts/issues",
-                "source": "https://github.com/FriendsOfPHP/proxy-manager-lts/tree/v1.0.1"
+                "source": "https://github.com/FriendsOfPHP/proxy-manager-lts/tree/v1.0.2"
             },
             "funding": [
                 {
@@ -3460,7 +3460,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-28T10:50:10+00:00"
+            "time": "2021-01-04T11:21:26+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -4621,6 +4621,76 @@
             "time": "2019-07-10T02:37:11+00:00"
         },
         {
+            "name": "nelexa/zip",
+            "version": "3.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ne-Lexa/php-zip.git",
+                "reference": "501b52f6fc393a599b44ff348a42740e1eaac7c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ne-Lexa/php-zip/zipball/501b52f6fc393a599b44ff348a42740e1eaac7c6",
+                "reference": "501b52f6fc393a599b44ff348a42740e1eaac7c6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-zlib": "*",
+                "paragonie/random_compat": "*",
+                "php": "^5.5.9 || ^7.0",
+                "psr/http-message": "^1.0",
+                "symfony/finder": "^3.0|^4.0|^5.0"
+            },
+            "require-dev": {
+                "ext-bz2": "*",
+                "ext-fileinfo": "*",
+                "ext-openssl": "*",
+                "ext-xml": "*",
+                "guzzlehttp/psr7": "^1.6",
+                "phpunit/phpunit": "^4.8|^5.7",
+                "symfony/var-dumper": "^3.0|^4.0|^5.0"
+            },
+            "suggest": {
+                "ext-bz2": "Needed to support BZIP2 compression",
+                "ext-fileinfo": "Needed to get mime-type file",
+                "ext-mcrypt": "Needed to support encrypt zip entries or use ext-openssl",
+                "ext-openssl": "Needed to support encrypt zip entries or use ext-mcrypt"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpZip\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ne-Lexa",
+                    "email": "alexey@nelexa.ru",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PhpZip is a php-library for extended work with ZIP-archives. Open, create, update, delete, extract and get info tool. Supports appending to existing ZIP files, WinZip AES encryption, Traditional PKWARE Encryption, ZipAlign tool, BZIP2 compression, external file attributes and ZIP64 extensions. Alternative ZipArchive. It does not require php-zip extension.",
+            "homepage": "https://github.com/Ne-Lexa/php-zip",
+            "keywords": [
+                "archive",
+                "extract",
+                "unzip",
+                "winzip",
+                "zip",
+                "zipalign",
+                "ziparchive"
+            ],
+            "support": {
+                "issues": "https://github.com/Ne-Lexa/php-zip/issues",
+                "source": "https://github.com/Ne-Lexa/php-zip/tree/3.3.3"
+            },
+            "time": "2020-07-11T21:01:42+00:00"
+        },
+        {
             "name": "nelmio/cors-bundle",
             "version": "2.1.0",
             "source": {
@@ -5135,53 +5205,6 @@
                 }
             ],
             "time": "2020-11-16T02:50:07+00:00"
-        },
-        {
-            "name": "peterkahl/country-code-to-emoji-flag",
-            "version": "v1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/peterkahl/country-code-to-emoji-flag.git",
-                "reference": "8ecbf29030e6c53b071f2978e5ec8639ac8923f8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/peterkahl/country-code-to-emoji-flag/zipball/8ecbf29030e6c53b071f2978e5ec8639ac8923f8",
-                "reference": "8ecbf29030e6c53b071f2978e5ec8639ac8923f8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "peterkahl\\flagMaster\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Peter Kahl",
-                    "homepage": "https://github.com/peterkahl",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Converts country code to emoji flag.",
-            "homepage": "https://github.com/peterkahl/country-code-to-emoji-flag",
-            "keywords": [
-                "country",
-                "emoji",
-                "flag"
-            ],
-            "support": {
-                "issues": "https://github.com/peterkahl/country-code-to-emoji-flag/issues",
-                "source": "https://github.com/peterkahl/country-code-to-emoji-flag/tree/v1.2.1"
-            },
-            "time": "2020-10-20T18:29:18+00:00"
         },
         {
             "name": "php-translation/common",
@@ -11984,16 +12007,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.1.1",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "b02fa41f3783a2616eccef7b92fbc2343ffed737"
+                "reference": "f795ca686d38530045859b0350b5352f7d63447d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b02fa41f3783a2616eccef7b92fbc2343ffed737",
-                "reference": "b02fa41f3783a2616eccef7b92fbc2343ffed737",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f795ca686d38530045859b0350b5352f7d63447d",
+                "reference": "f795ca686d38530045859b0350b5352f7d63447d",
                 "shasum": ""
             },
             "require": {
@@ -12008,7 +12031,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -12044,7 +12067,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.1.1"
+                "source": "https://github.com/twigphp/Twig/tree/v3.2.1"
             },
             "funding": [
                 {
@@ -12056,7 +12079,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-27T19:28:23+00:00"
+            "time": "2021-01-05T15:40:36+00:00"
         },
         {
             "name": "ua-parser/uap-php",
@@ -12931,16 +12954,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.64",
+            "version": "0.12.65",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "23eb1cb7ae125f45f1d0e48051bcf67a9a9b08aa"
+                "reference": "1c7658668b28f8d647a8b874372acf14c4352688"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/23eb1cb7ae125f45f1d0e48051bcf67a9a9b08aa",
-                "reference": "23eb1cb7ae125f45f1d0e48051bcf67a9a9b08aa",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/1c7658668b28f8d647a8b874372acf14c4352688",
+                "reference": "1c7658668b28f8d647a8b874372acf14c4352688",
                 "shasum": ""
             },
             "require": {
@@ -12971,7 +12994,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.64"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.65"
             },
             "funding": [
                 {
@@ -12987,7 +13010,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-21T11:59:02+00:00"
+            "time": "2021-01-06T16:51:10+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",

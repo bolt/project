@@ -257,6 +257,9 @@
     "nategood/commando": {
         "version": "0.4.0"
     },
+    "nelexa/zip": {
+        "version": "3.3.3"
+    },
     "nelmio/cors-bundle": {
         "version": "1.5",
         "recipe": {
@@ -295,9 +298,6 @@
     },
     "pagerfanta/pagerfanta": {
         "version": "v2.4.1"
-    },
-    "peterkahl/country-code-to-emoji-flag": {
-        "version": "v1.2.1"
     },
     "php-cs-fixer/diff": {
         "version": "v1.3.1"
