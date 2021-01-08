@@ -15,6 +15,9 @@
         "nelmio/security-bundle": "^2.10",
         "symfony/flex": "^1.6"
     },
+    "replace": {	
+        "paragonie/random_compat": "*"	
+    },
     "require-dev": {
         "phpstan/phpstan": "^0.12.48",
         "phpstan/phpstan-doctrine": "^0.12.20",
