@@ -16,7 +16,7 @@
         "symfony/flex": "^1.6"
     },
     "replace": {
-        "paragonie/random_compat": "9.99.99"
+        "paragonie/random_compat": "*"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12.48",
