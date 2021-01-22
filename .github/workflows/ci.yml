@@ -3,8 +3,8 @@ name: Continuous Integration
 on: [push, pull_request]
 
 jobs:
-  test-install-with-docker:
-    name: Install Bolt project with Docker Compose (MySQL 5.7)
+  test-install-with-docker-and-sqlite:
+    name: Install Bolt project with Docker Compose (SQLite)
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -12,7 +12,7 @@ jobs:
       run: sudo systemctl stop mysql
     - name: Start services
       run: |
-        echo $'version: \'3.4\'\n\nservices:\n  php:\n    environment:\n      - TRUSTED_PROXIES=127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16\n      - TRUSTED_HOSTS=^(localhost|nginx)$$\n      - DATABASE_URL=mysql://bolt:!ChangeMe!@db:3306/bolt?serverVersion=5.7\n      - MAILER_DSN=smtp://mailcatcher:1025\n\n  nginx:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n\n  h2-proxy:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n' > docker-compose.override.yml
+        echo $'version: \'3.4\'\n\nservices:\n  nginx:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n\n  h2-proxy:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n' > docker-compose.override.yml
         docker-compose build --pull
         docker-compose up -d
         sleep 5
@@ -50,8 +50,100 @@ jobs:
       run: docker-compose exec -T php composer lint:fix
     - name: Run PHPStan
       run: docker-compose exec -T php composer phpstan
-    - name: Run Security Checker
-      run: docker-compose exec -T php composer periodical-tasks
+  test-install-with-docker-and-mysql:
+    name: Install Bolt project with Docker Compose (MySQL 5.7)
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Disable MySQL
+      run: sudo systemctl stop mysql
+    - name: Start services
+      run: |
+        echo $'version: \'3.4\'\n\nservices:\n  nginx:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n\n  h2-proxy:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n' > docker-compose.override.yml
+        docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml build --pull
+        docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml up -d
+        sleep 5
+    - name: Wait for services
+      run: |
+        while status="$(docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" "$(docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml ps -q php)")"; do
+          case $status in
+            starting) sleep 1;;
+            healthy) exit 0;;
+            unhealthy) exit 1;;
+          esac
+        done
+        exit 1
+    - name: Setup up Bolt project
+      run: |
+        docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml exec -T php bin/console doctrine:schema:create --env dev
+        docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml exec -T php bin/console doctrine:fixtures:load --no-interaction
+    - name: Check HTTP reachability
+      run: |
+        echo "Check => http://localhost:8080" && curl -fkI http://localhost:8080
+        echo "Check => http://localhost:8080/bolt" && curl -fkI http://localhost:8080/bolt
+        echo "Check => http://localhost:8080/api/contents" && curl -fkI http://localhost:8080/api/contents
+        echo "Check => http://localhost:8080/api/fields" && curl -fkI http://localhost:8080/api/fields
+        echo "Check => http://localhost:8080/api/relations" && curl -fkI http://localhost:8080/api/relations
+        echo "Check => https://localhost:8443" && curl -fkI https://localhost:8443
+        echo "Check => https://localhost:8443/bolt" && curl -fkI https://localhost:8443/bolt
+        echo "Check => https://localhost:8443/api/contents" && curl -fkI https://localhost:8443/api/contents
+        echo "Check => https://localhost:8443/api/fields" && curl -fkI https://localhost:8443/api/fields
+        echo "Check => https://localhost:8443/api/relations" && curl -fkI https://localhost:8443/api/relations
+    - name: Validate composer.json
+      run: docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml exec -T php composer validate --no-check-publish
+    - name: Run PHP-CS-Fixer
+      run: docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml exec -T php composer lint
+    - name: Run PHP-CS-Fixer with fix flag
+      run: docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml exec -T php composer lint:fix
+    - name: Run PHPStan
+      run: docker-compose --file docker-compose.yml --file ./docker-compose.with-mysql.yml exec -T php composer phpstan
+  test-install-with-docker-and-postgresql:
+    name: Install Bolt project with Docker Compose (PostgreSQL 11)
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Disable MySQL
+      run: sudo systemctl stop mysql
+    - name: Start services
+      run: |
+        echo $'version: \'3.4\'\n\nservices:\n  nginx:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n\n  h2-proxy:\n    extra_hosts:\n      - "localhost:0.0.0.0"\n' > docker-compose.override.yml
+        docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml build --pull
+        docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml up -d
+        sleep 5
+    - name: Wait for services
+      run: |
+        while status="$(docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" "$(docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml ps -q php)")"; do
+          case $status in
+            starting) sleep 1;;
+            healthy) exit 0;;
+            unhealthy) exit 1;;
+          esac
+        done
+        exit 1
+    - name: Setup up Bolt project
+      run: |
+        docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml exec -T php bin/console doctrine:schema:create --env dev
+        docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml exec -T php bin/console doctrine:fixtures:load --no-interaction
+    - name: Check HTTP reachability
+      run: |
+        echo "Check => http://localhost:8080" && curl -fkI http://localhost:8080
+        echo "Check => http://localhost:8080/bolt" && curl -fkI http://localhost:8080/bolt
+        echo "Check => http://localhost:8080/api/contents" && curl -fkI http://localhost:8080/api/contents
+        echo "Check => http://localhost:8080/api/fields" && curl -fkI http://localhost:8080/api/fields
+        echo "Check => http://localhost:8080/api/relations" && curl -fkI http://localhost:8080/api/relations
+        echo "Check => https://localhost:8443" && curl -fkI https://localhost:8443
+        echo "Check => https://localhost:8443/bolt" && curl -fkI https://localhost:8443/bolt
+        echo "Check => https://localhost:8443/api/contents" && curl -fkI https://localhost:8443/api/contents
+        echo "Check => https://localhost:8443/api/fields" && curl -fkI https://localhost:8443/api/fields
+        echo "Check => https://localhost:8443/api/relations" && curl -fkI https://localhost:8443/api/relations
+    - name: Validate composer.json
+      run: docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml exec -T php composer validate --no-check-publish
+    - name: Run PHP-CS-Fixer
+      run: docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml exec -T php composer lint
+    - name: Run PHP-CS-Fixer with fix flag
+      run: docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml exec -T php composer lint:fix
+    - name: Run PHPStan
+      run: docker-compose --file docker-compose.yml --file ./docker-compose.with-postgresql.yml exec -T php composer phpstan
   test-install-with-composer-and-sqlite:
     name: Install Bolt project with Composer (SQLite)
     runs-on: ubuntu-latest
@@ -111,8 +203,6 @@ jobs:
       run: composer lint:fix
     - name: Run PHPStan
       run: composer phpstan
-    - name: Run Security Checker
-      run: composer periodical-tasks
   test-install-with-composer-and-mysql:
     name: Install Bolt project with Composer (MySQL 5.7)
     runs-on: ubuntu-latest
@@ -153,7 +243,7 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php-versions }}
-        extensions: intl, pdo_mysql, zip, gd, exif, pdo, iconv, pcntl, mbstring, fileinfo, posix
+        extensions: exif, fileinfo, gd, iconv, intl, mbstring, pcntl, pdo, pdo_mysql, posix, zip
         tools: ${{ matrix.tools }}
       env:
         update: true
@@ -190,5 +280,78 @@ jobs:
       run: composer lint:fix
     - name: Run PHPStan
       run: composer phpstan
-    - name: Run Security Checker
-      run: composer periodical-tasks
+  test-install-with-composer-and-postgresql:
+    name: Install Bolt project with Composer (PostgreSQL 11)
+    runs-on: ubuntu-latest
+    env:
+      APP_ENV: dev
+      APP_SECRET: KnR9FtX39zUT7Um8873wG2Rqv9nU7nve
+      TRUSTED_PROXIES: 127.0.0.0/8
+      TRUSTED_HOSTS: ^localhost$
+      DATABASE_URL: postgresql://bolt:Q2ttiAeS6DT329c9@127.0.0.1:5432/bolt?serverVersion=11&charset=utf8
+      CORS_ALLOW_ORIGIN: ^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$
+    services:
+      postgres:
+        image: postgres:11-alpine
+        env:
+          POSTGRES_DB: bolt
+          POSTGRES_USER: bolt
+          POSTGRES_PASSWORD: Q2ttiAeS6DT329c9
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    strategy:
+      fail-fast: true
+      matrix:
+        php-versions:
+          - '7.4'
+        tools:
+          - 'composer:2'
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@master
+    - name: Setup PHP, extensions and composer with shivammathur/setup-php
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
+        extensions: exif, fileinfo, gd, iconv, intl, mbstring, pcntl, pdo, pdo_pgsql, posix, zip
+        tools: ${{ matrix.tools }}
+      env:
+        update: true
+    - name: Install Symfony Flex
+      run: |
+        composer global require --prefer-dist --no-progress --no-suggest --ansi \
+          symfony/flex
+    - name: Install project with composer
+      run: |
+        composer install --prefer-dist --no-progress --no-suggest --no-interaction
+        composer clear-cache
+    - name: Verify PostgreSQL connection from host
+      run: php bin/console doctrine:query:sql "SELECT 1" > /dev/null 2>&1
+    - name: Setup up Bolt project
+      run: |
+        php bin/console doctrine:schema:create --env dev
+        php bin/console doctrine:fixtures:load --no-interaction
+        composer run post-create-project-cmd
+        php bin/console bolt:info
+    - name: Check HTTP reachability
+      run: |
+        wget https://get.symfony.com/cli/installer -O - | bash
+        /home/runner/.symfony/bin/symfony serve --daemon --no-tls
+        echo "Check => http://localhost:8000" && curl -fkI http://localhost:8000
+        echo "Check => http://localhost:8000/bolt" && curl -fkI http://localhost:8000/bolt
+        echo "Check => http://localhost:8000/api/contents" && curl -fkI http://localhost:8000/api/contents
+        echo "Check => http://localhost:8000/api/fields" && curl -fkI http://localhost:8000/api/fields
+        echo "Check => http://localhost:8000/api/relations" && curl -fkI http://localhost:8000/api/relations
+    - name: Validate composer.json
+      run: composer validate --no-check-publish
+    - name: Run PHP-CS-Fixer
+      run: composer lint
+    - name: Run PHP-CS-Fixer with fix flag
+      run: composer lint:fix
+    - name: Run PHPStan
+      run: composer phpstan

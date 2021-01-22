@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  db:
+    # In production, you may want to use a managed database service
+    image: postgres:11-alpine
+    environment:
+      - POSTGRES_DB=bolt
+      - POSTGRES_USER=bolt
+      # You should definitely change the password in production
+      - POSTGRES_PASSWORD=!ChangeMe!
+    volumes:
+      - db-data:/var/lib/postgresql/data:rw
+      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
+      # - ./docker/db/data:/var/lib/postgresql/data:rw
+    ports:
+      - target: 5432
+        published: 5432
+        protocol: tcp
+
+  php:
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://bolt:!ChangeMe!@db:5432/bolt?serverVersion=11&charset=utf8
+
+volumes:
+  db-data: {}
