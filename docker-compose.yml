@@ -1,22 +1,6 @@
 version: '3.4'
 
 services:
-  db:
-    image: mysql:5.7
-    environment:
-      - MYSQL_DATABASE=bolt
-      - MYSQL_USER=bolt
-      - MYSQL_PASSWORD=!ChangeMe!
-      - MYSQL_ROOT_PASSWORD=!ChangeMe!
-    volumes:
-      - db-data:/var/lib/mysql:rw
-      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      # - ./docker/db/data:/var/lib/mysql:rw
-    ports:
-      - target: 3306
-        published: 3306
-        protocol: tcp
-
   php:
     build:
       context: ./
@@ -26,8 +10,12 @@ services:
       timeout: 3s
       retries: 3
       start_period: 30s
+    environment:
+      - TRUSTED_PROXIES=127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+      - TRUSTED_HOSTS=^(localhost|nginx)$$
+      - DATABASE_URL=sqlite:///%kernel.project_dir%/var/data/bolt.sqlite
+      - MAILER_DSN=smtp://mailcatcher:1025
     depends_on:
-      - db
       - mailcatcher
     volumes:
       - ./:/srv/bolt:rw,cached

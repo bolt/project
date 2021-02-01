@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:experimental
 # the different stages of this Dockerfile are meant to be built into separate images
 # https://docs.docker.com/develop/develop-images/multistage-build/#stop-at-a-specific-build-stage
 # https://docs.docker.com/compose/compose-file/#target
@@ -13,16 +14,16 @@ FROM php:${PHP_VERSION}-fpm-alpine AS php
 # persistent / runtime deps
 RUN apk add --no-cache \
 		acl \
+		dbus \
 		fcgi \
 		file \
+		fontconfig \
+		freetype-dev \
 		gettext \
 		git \
-		ttf-freefont \
-		fontconfig \
-		dbus \
-		freetype-dev \
 		libjpeg-turbo-dev \
-		libpng-dev
+		libpng-dev \
+		ttf-freefont
 
 ARG APCU_VERSION=5.1.18
 RUN set -eux; \
@@ -30,24 +31,26 @@ RUN set -eux; \
 		$PHPIZE_DEPS \
 		icu-dev \
 		libzip-dev \
-		zlib-dev \
 		oniguruma-dev \
+		postgresql-dev \
+		zlib-dev \
 	; \
 	\
 	docker-php-ext-configure zip; \
 	docker-php-ext-configure gd --with-freetype --with-jpeg ;\
 	docker-php-ext-install -j$(nproc) \
-		intl \
-		pdo_mysql \
-		zip \
-		gd \
 		exif \
-		pdo \
-		iconv \
-		pcntl \
-		mbstring \
 		fileinfo \
+		gd \
+		iconv \
+		intl \
+		mbstring \
+		pcntl \
+		pdo \
+		pdo_mysql \
+		pdo_pgsql \
 		posix \
+		zip \
 	; \
 	pecl install \
 		apcu-${APCU_VERSION} \
