@@ -40,9 +40,6 @@
             "@auto-scripts",
             "php bin/console extensions:configure",
             "php bin/console bolt:info"
-        ],
-        "periodical-tasks": [
-            "security-checker security:check"
         ]
     },
     "extra": {
