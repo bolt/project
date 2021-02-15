@@ -52,6 +52,9 @@
     "minimum-stability": "beta",
     "prefer-stable": true,
     "scripts": {
+        "pre-install-cmd": [
+            "php vendor/bolt/core/bin/composer-script/project-pre-install-cmd.php"
+        ],
         "post-install-cmd": [
             "php vendor/bolt/core/bin/composer-script/project-post-install-cmd.php"
         ],
