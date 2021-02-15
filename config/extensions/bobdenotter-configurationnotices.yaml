@@ -1,0 +1,6 @@
+# Settings for Bolt Configuration Notices
+
+local_domains: [ '.foo' ]
+
+# checks:
+#    theme_folder_access: true
