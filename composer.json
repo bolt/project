@@ -66,7 +66,6 @@
         ],
         "lint": "php vendor/bin/ecs check --no-progress-bar --no-interaction",
         "lint:fix": "php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
-        "periodical-tasks": "php bin/console security:check",
         "phpstan": "php vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src"
     }
 }
