@@ -54,19 +54,19 @@
     "prefer-stable": true,
     "scripts": {
         "pre-install-cmd": [
-            "Bolt\ComposerScripts\ProjectEventHandler::preInstall"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::preInstall"
         ],
         "post-install-cmd": [
-            "Bolt\ComposerScripts\ProjectEventHandler::postInstall"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postInstall"
         ],
         "pre-update-cmd": [
-            "Bolt\ComposerScripts\ProjectEventHandler::preUpdate"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::preUpdate"
         ],
         "post-update-cmd": [
-            "Bolt\ComposerScripts\ProjectEventHandler::postUpdate"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postUpdate"
         ],
         "post-create-project-cmd": [
-            "Bolt\ComposerScripts\ProjectEventHandler::postCreateProject"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postCreateProject"
         ],
         "lint": "php vendor/bin/ecs check --no-progress-bar --no-interaction",
         "lint:fix": "php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
