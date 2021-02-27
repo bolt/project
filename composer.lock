@@ -597,16 +597,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "4.2.0-beta.8.2",
+            "version": "4.2.0-beta.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "37cd91a3909141d2180ede17b6f114f70cee7588"
+                "reference": "ae09664bdbed34c04caa1f1fd448643cca2dd483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/37cd91a3909141d2180ede17b6f114f70cee7588",
-                "reference": "37cd91a3909141d2180ede17b6f114f70cee7588",
+                "url": "https://api.github.com/repos/bolt/core/zipball/ae09664bdbed34c04caa1f1fd448643cca2dd483",
+                "reference": "ae09664bdbed34c04caa1f1fd448643cca2dd483",
                 "shasum": ""
             },
             "require": {
@@ -733,7 +733,7 @@
             "description": "🧿 Bolt 4 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/4.2.0-beta.8.2"
+                "source": "https://github.com/bolt/core/tree/4.2.0-beta.8.3"
             },
             "funding": [
                 {
@@ -741,7 +741,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-27T13:20:21+00:00"
+            "time": "2021-02-27T14:15:46+00:00"
         },
         {
             "name": "bolt/newswidget",
