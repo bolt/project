@@ -46,26 +46,30 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "App\\Tests\\": "tests/",
+            "Bolt\\ComposerScripts\\": "vendor/bolt/core/bin/composer-script/"
         }
     },
     "minimum-stability": "beta",
     "prefer-stable": true,
     "scripts": {
         "pre-install-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-pre-install-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::preInstall"
         ],
         "post-install-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-post-install-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postInstall"
         ],
         "pre-update-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-pre-update-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::preUpdate"
         ],
         "post-update-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-post-update-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postUpdate"
         ],
         "post-create-project-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-post-create-project-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postCreateProject"
+        ],
+        "pre-package-uninstall": [
+            "Bolt\\ComposerScripts\\ProjectEventHandler::prePackageUninstall"
         ],
         "lint": "php vendor/bin/ecs check --no-progress-bar --no-interaction",
         "lint:fix": "php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",

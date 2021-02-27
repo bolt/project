@@ -50,8 +50,8 @@ jobs:
       run: docker-compose exec -T php composer lint:fix
     - name: Run PHPStan
       run: docker-compose exec -T php composer phpstan
-    - name: Run Security Checker
-      run: docker-compose exec -T php composer periodical-tasks
+#    - name: Run Security Checker
+#      run: docker-compose exec -T php composer periodical-tasks
   test-install-with-composer-and-sqlite:
     name: Install Bolt project with Composer (SQLite)
     runs-on: ubuntu-latest
@@ -111,8 +111,8 @@ jobs:
       run: composer lint:fix
     - name: Run PHPStan
       run: composer phpstan
-    - name: Run Security Checker
-      run: composer periodical-tasks
+#    - name: Run Security Checker
+#      run: composer periodical-tasks
   test-install-with-composer-and-mysql:
     name: Install Bolt project with Composer (MySQL 5.7)
     runs-on: ubuntu-latest
@@ -190,5 +190,5 @@ jobs:
       run: composer lint:fix
     - name: Run PHPStan
       run: composer phpstan
-    - name: Run Security Checker
-      run: composer periodical-tasks
+#    - name: Run Security Checker
+#      run: composer periodical-tasks
