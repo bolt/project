@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "179c33ff51eb936ff4001e24ca6a7101",
+    "content-hash": "915ab49a93266cc03130321ac98feebb",
     "packages": [
         {
             "name": "api-platform/core",
@@ -506,16 +506,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "4.2.0-beta.8",
+            "version": "5.0.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "c4cc799d22825b3fbe7494738ff3d419178a3ac7"
+                "reference": "86479aaad2e0a0cf689f3a584246b60110c272e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/c4cc799d22825b3fbe7494738ff3d419178a3ac7",
-                "reference": "c4cc799d22825b3fbe7494738ff3d419178a3ac7",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/86479aaad2e0a0cf689f3a584246b60110c272e6",
+                "reference": "86479aaad2e0a0cf689f3a584246b60110c272e6",
                 "shasum": ""
             },
             "require-dev": {
@@ -535,9 +535,9 @@
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/4.2.0-beta.8"
+                "source": "https://github.com/bolt/assets/tree/5.0.0-beta.1"
             },
-            "time": "2021-02-27T13:58:27+00:00"
+            "time": "2021-02-28T14:45:18+00:00"
         },
         {
             "name": "bolt/common",
