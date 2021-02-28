@@ -597,16 +597,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "5.0.0-beta.1.1",
+            "version": "5.0.0-beta.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "05a080f7a0998e9c578f6b21b85c7416842b65c7"
+                "reference": "f87395693dead2522c71cebfe7985d919dd62785"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/05a080f7a0998e9c578f6b21b85c7416842b65c7",
-                "reference": "05a080f7a0998e9c578f6b21b85c7416842b65c7",
+                "url": "https://api.github.com/repos/bolt/core/zipball/f87395693dead2522c71cebfe7985d919dd62785",
+                "reference": "f87395693dead2522c71cebfe7985d919dd62785",
                 "shasum": ""
             },
             "require": {
@@ -734,7 +734,7 @@
             "description": "🧿 Bolt 5 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/5.0.0-beta.1.1"
+                "source": "https://github.com/bolt/core/tree/5.0.0-beta.1.2"
             },
             "funding": [
                 {
@@ -742,7 +742,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-28T12:57:58+00:00"
+            "time": "2021-02-28T13:53:12+00:00"
         },
         {
             "name": "bolt/newswidget",
