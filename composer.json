@@ -1,14 +1,14 @@
 {
     "name": "bolt/project",
     "type": "project",
-    "description": "Bolt 4 standard project skeleton",
+    "description": "Bolt 5 standard project skeleton",
     "license": "MIT",
     "require": {
         "bobdenotter/configuration-notices": "^1.0",
         "bobdenotter/weatherwidget": "^1.1",
         "bolt/article": "^1.0",
         "bolt/assets": "^4.2",
-        "bolt/core": "^4.2",
+        "bolt/core": "^5.0",
         "bolt/newswidget": "^1.1",
         "bolt/redactor": "^1.0",
         "bolt/themes": "^3.3",
@@ -46,27 +46,33 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "App\\Tests\\": "tests/",
+            "Bolt\\ComposerScripts\\": "vendor/bolt/core/bin/composer-script/"
         }
     },
     "minimum-stability": "beta",
     "prefer-stable": true,
     "scripts": {
+        "pre-install-cmd": [
+            "Bolt\\ComposerScripts\\ProjectEventHandler::preInstall"
+        ],
         "post-install-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-post-install-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postInstall"
         ],
         "pre-update-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-pre-update-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::preUpdate"
         ],
         "post-update-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-post-update-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postUpdate"
         ],
         "post-create-project-cmd": [
-            "php vendor/bolt/core/bin/composer-script/project-post-create-project-cmd.php"
+            "Bolt\\ComposerScripts\\ProjectEventHandler::postCreateProject"
+        ],
+        "pre-package-uninstall": [
+            "Bolt\\ComposerScripts\\ProjectEventHandler::prePackageUninstall"
         ],
         "lint": "php vendor/bin/ecs check --no-progress-bar --no-interaction",
         "lint:fix": "php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
-        "periodical-tasks": "php bin/console security:check",
         "phpstan": "php vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src"
     }
 }
