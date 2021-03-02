@@ -21,7 +21,7 @@ assignable_roles: [ROLE_ADMIN, ROLE_EDITOR]
 global:
     about: [ IS_AUTHENTICATED_ANONYMOUSLY ] # view the 'About Bolt' page
     clearcache: [ ROLE_ADMIN ]
-    dashboard: [ IS_AUTHENTICATED_FULLY ]
+    dashboard: [ IS_AUTHENTICATED_REMEMBERED ]
     extensions: [ ROLE_ADMIN ]
     # these control /bolt/file-edit and /bolt/filemanager -> combined create/read/update/delete permission
     # the part after the files: is the 'location' where the files are part of
