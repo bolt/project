@@ -29,7 +29,7 @@ jobs:
     - name: Setup up Bolt project
       run: |
         docker-compose exec -T php bin/console doctrine:schema:create --env dev
-        docker-compose exec -T php bin/console doctrine:fixtures:load --no-interaction
+        docker-compose exec -T php bin/console doctrine:fixtures:load --group=without-images --no-interaction
     - name: Check HTTP reachability
       run: |
         echo "Check => http://localhost:8080" && curl -fkI http://localhost:8080
@@ -91,7 +91,7 @@ jobs:
     - name: Setup up Bolt project
       run: |
         php bin/console doctrine:schema:create --env dev
-        php bin/console doctrine:fixtures:load --no-interaction
+        php bin/console doctrine:fixtures:load --group=without-images --no-interaction
         composer run post-create-project-cmd
         php bin/console bolt:info
     - name: Check HTTP reachability
@@ -170,7 +170,7 @@ jobs:
     - name: Setup up Bolt project
       run: |
         php bin/console doctrine:schema:create --env dev
-        php bin/console doctrine:fixtures:load --no-interaction
+        php bin/console doctrine:fixtures:load --group=without-images --no-interaction
         composer run post-create-project-cmd
         php bin/console bolt:info
     - name: Check HTTP reachability
