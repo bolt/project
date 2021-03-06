@@ -46,5 +46,5 @@ security:
         # additional security lives in the controllers
         - { path: '^%bolt.backend_url%/login$', roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: '^%bolt.backend_url%/reset-password', roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: '^%bolt.backend_url%', roles: ROLE_ADMIN }
-        - { path: '^/(%app_locales%)%bolt.backend_url%', roles: ROLE_ADMIN }
+        - { path: '^%bolt.backend_url%', roles: IS_AUTHENTICATED_REMEMBERED }
+        - { path: '^/(%app_locales%)%bolt.backend_url%', roles: IS_AUTHENTICATED_REMEMBERED }
