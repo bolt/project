@@ -1,8 +1,9 @@
 nelmio_security:
 
     # Signs/verifies all cookies
-    signed_cookie:
-        names: ['*']
+    # Temporarily disabled. See https://github.com/nelmio/NelmioSecurityBundle/issues/154
+    #signed_cookie:
+    #    names: ['*']
 
     # Prevents framing of the entire site
     clickjacking:
