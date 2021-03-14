@@ -164,6 +164,9 @@
     "doctrine/persistence": {
         "version": "2.1.0"
     },
+    "doctrine/reflection": {
+        "version": "1.2.2"
+    },
     "doctrine/sql-formatter": {
         "version": "1.1.1"
     },
