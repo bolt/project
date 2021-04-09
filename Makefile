@@ -37,13 +37,19 @@ stancheck: ## to run phpstan
 
 db-create: ## to create database and load fixtures
 	bin/console doctrine:database:create
-	bin/console doctrine:schema:create
-	bin/console doctrine:fixtures:load --no-interaction
+	bin/console doctrine:schema:create -q
+	bin/console doctrine:migrations:sync-metadata-storage -q
+	bin/console doctrine:migrations:version --add --all --no-interaction -q
+	bin/console doctrine:fixtures:load --no-interaction -q
 
 db-update: ## to update schema database
 	bin/console doctrine:schema:update --complete --dump-sql --force --version
+	bin/console doctrine:migrations:sync-metadata-storage -q
+	bin/console doctrine:migrations:version --add --all --no-interaction -q
 
 db-reset: ## to delete database and load fixtures
 	bin/console doctrine:schema:drop --force --full-database
-	bin/console doctrine:schema:create
+	bin/console doctrine:schema:create -q
+	bin/console doctrine:migrations:sync-metadata-storage -q
+	bin/console doctrine:migrations:version --add --all --no-interaction -q
 	bin/console doctrine:fixtures:load --no-interaction
