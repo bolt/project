@@ -8,23 +8,23 @@
     "packages": [
         {
             "name": "api-platform/core",
-            "version": "v2.6.3",
+            "version": "v2.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "1ba77218dfe61ca9e6cff1bbb3e9a4a6658d4538"
+                "reference": "be971e5d0257a8c01a824ee01cfc217ba04c3200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/1ba77218dfe61ca9e6cff1bbb3e9a4a6658d4538",
-                "reference": "1ba77218dfe61ca9e6cff1bbb3e9a4a6658d4538",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/be971e5d0257a8c01a824ee01cfc217ba04c3200",
+                "reference": "be971e5d0257a8c01a824ee01cfc217ba04c3200",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.0 || ^2.0",
                 "fig/link-util": "^1.0",
                 "php": ">=7.1",
-                "psr/cache": "^1.0",
+                "psr/cache": "^1.0 || ^2.0 || ^3.0",
                 "psr/container": "^1.0",
                 "symfony/http-foundation": "^4.4 || ^5.1",
                 "symfony/http-kernel": "^4.4 || ^5.1",
@@ -154,7 +154,7 @@
             ],
             "support": {
                 "issues": "https://github.com/api-platform/core/issues",
-                "source": "https://github.com/api-platform/core/tree/v2.6.3"
+                "source": "https://github.com/api-platform/core/tree/v2.6.4"
             },
             "funding": [
                 {
@@ -162,7 +162,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-07T19:13:33+00:00"
+            "time": "2021-04-12T14:53:14+00:00"
         },
         {
             "name": "babdev/pagerfanta-bundle",
@@ -458,16 +458,16 @@
         },
         {
             "name": "bolt/article",
-            "version": "1.0.23",
+            "version": "1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/article.git",
-                "reference": "ff5b6d0b22e03730fa8635718c4f9ce0d7b82167"
+                "reference": "c0074c0db17eede4c6e57276c3e38d8423101a68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/article/zipball/ff5b6d0b22e03730fa8635718c4f9ce0d7b82167",
-                "reference": "ff5b6d0b22e03730fa8635718c4f9ce0d7b82167",
+                "url": "https://api.github.com/repos/bolt/article/zipball/c0074c0db17eede4c6e57276c3e38d8423101a68",
+                "reference": "c0074c0db17eede4c6e57276c3e38d8423101a68",
                 "shasum": ""
             },
             "require": {
@@ -502,22 +502,22 @@
             "description": "📝 Bolt Extension to add the Article FieldType",
             "support": {
                 "issues": "https://github.com/bolt/article/issues",
-                "source": "https://github.com/bolt/article/tree/1.0.23"
+                "source": "https://github.com/bolt/article/tree/1.0.24"
             },
-            "time": "2021-03-10T15:15:53+00:00"
+            "time": "2021-04-11T08:24:57+00:00"
         },
         {
             "name": "bolt/assets",
-            "version": "5.0.0-beta.4",
+            "version": "5.0.0-beta.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "5f4f310a507525dcc190d71cfa53bc051ef7e8cb"
+                "reference": "c5468ca946e8c5620f6bd2aa6553a9af476f1e09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/5f4f310a507525dcc190d71cfa53bc051ef7e8cb",
-                "reference": "5f4f310a507525dcc190d71cfa53bc051ef7e8cb",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/c5468ca946e8c5620f6bd2aa6553a9af476f1e09",
+                "reference": "c5468ca946e8c5620f6bd2aa6553a9af476f1e09",
                 "shasum": ""
             },
             "require-dev": {
@@ -537,9 +537,9 @@
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/5.0.0-beta.4"
+                "source": "https://github.com/bolt/assets/tree/5.0.0-beta.5"
             },
-            "time": "2021-04-05T11:54:54+00:00"
+            "time": "2021-04-13T15:18:14+00:00"
         },
         {
             "name": "bolt/common",
@@ -599,16 +599,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "5.0.0-beta.4",
+            "version": "5.0.0-beta.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "0974a2ae51f4b0fb69843caccd2a4be93045dddc"
+                "reference": "3f6caf06361427acf3f1bf472335a6d1453fd1cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/0974a2ae51f4b0fb69843caccd2a4be93045dddc",
-                "reference": "0974a2ae51f4b0fb69843caccd2a4be93045dddc",
+                "url": "https://api.github.com/repos/bolt/core/zipball/3f6caf06361427acf3f1bf472335a6d1453fd1cd",
+                "reference": "3f6caf06361427acf3f1bf472335a6d1453fd1cd",
                 "shasum": ""
             },
             "require": {
@@ -736,7 +736,7 @@
             "description": "🧿 Bolt 5 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/5.0.0-beta.4"
+                "source": "https://github.com/bolt/core/tree/5.0.0-beta.5"
             },
             "funding": [
                 {
@@ -744,7 +744,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-05T09:42:48+00:00"
+            "time": "2021-04-12T14:47:44+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -798,16 +798,16 @@
         },
         {
             "name": "bolt/redactor",
-            "version": "1.0.29",
+            "version": "1.0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/redactor.git",
-                "reference": "cb7a24aeda8933b46e8213571653ff59fcbc0cd9"
+                "reference": "59c9a94c8523c94e11fa008630ef7859440131f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/redactor/zipball/cb7a24aeda8933b46e8213571653ff59fcbc0cd9",
-                "reference": "cb7a24aeda8933b46e8213571653ff59fcbc0cd9",
+                "url": "https://api.github.com/repos/bolt/redactor/zipball/59c9a94c8523c94e11fa008630ef7859440131f2",
+                "reference": "59c9a94c8523c94e11fa008630ef7859440131f2",
                 "shasum": ""
             },
             "require": {
@@ -842,9 +842,9 @@
             "description": "📝 Bolt Extension to add the Redactor FieldType",
             "support": {
                 "issues": "https://github.com/bolt/redactor/issues",
-                "source": "https://github.com/bolt/redactor/tree/1.0.29"
+                "source": "https://github.com/bolt/redactor/tree/1.0.30"
             },
-            "time": "2021-03-10T15:32:48+00:00"
+            "time": "2021-04-10T08:27:49+00:00"
         },
         {
             "name": "bolt/themes",
@@ -2050,16 +2050,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "8b922578bdee2243a26202b13df795e170efaef8"
+                "reference": "a08bc3b4d8567cdff05e89b272ba1e06e9d71c21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/8b922578bdee2243a26202b13df795e170efaef8",
-                "reference": "8b922578bdee2243a26202b13df795e170efaef8",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/a08bc3b4d8567cdff05e89b272ba1e06e9d71c21",
+                "reference": "a08bc3b4d8567cdff05e89b272ba1e06e9d71c21",
                 "shasum": ""
             },
             "require": {
@@ -2071,7 +2071,7 @@
                 "symfony/config": "^4.3.3|^5.0",
                 "symfony/console": "^3.4.30|^4.3.3|^5.0",
                 "symfony/dependency-injection": "^4.3.3|^5.0",
-                "symfony/doctrine-bridge": "^4.3.7|^5.0",
+                "symfony/doctrine-bridge": "^4.4.7|^5.0",
                 "symfony/framework-bundle": "^3.4.30|^4.3.3|^5.0",
                 "symfony/service-contracts": "^1.1.1|^2.0"
             },
@@ -2084,25 +2084,25 @@
                 "doctrine/orm": "^2.6",
                 "friendsofphp/proxy-manager-lts": "^1.0",
                 "phpunit/phpunit": "^7.5 || ^8.0 || ^9.3",
-                "symfony/phpunit-bridge": "^4.2",
+                "psalm/plugin-phpunit": "^0.15.1",
+                "psalm/plugin-symfony": "^2.2.4",
+                "symfony/phpunit-bridge": "^5.2",
                 "symfony/property-info": "^4.3.3|^5.0",
                 "symfony/proxy-manager-bridge": "^3.4|^4.3.3|^5.0",
+                "symfony/security-bundle": "^4.4|5.0",
                 "symfony/twig-bridge": "^3.4.30|^4.3.3|^5.0",
                 "symfony/validator": "^3.4.30|^4.3.3|^5.0",
                 "symfony/web-profiler-bundle": "^3.4.30|^4.3.3|^5.0",
                 "symfony/yaml": "^3.4.30|^4.3.3|^5.0",
-                "twig/twig": "^1.34|^2.12|^3.0"
+                "twig/twig": "^1.34|^2.12|^3.0",
+                "vimeo/psalm": "^4.7"
             },
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle.",
+                "ext-pdo": "*",
                 "symfony/web-profiler-bundle": "To use the data collector."
             },
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Bundle\\DoctrineBundle\\": ""
@@ -2140,7 +2140,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.3.0"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.3.1"
             },
             "funding": [
                 {
@@ -2156,7 +2156,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-16T16:24:04+00:00"
+            "time": "2021-04-05T14:21:02+00:00"
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
@@ -2241,27 +2241,28 @@
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
-            "version": "3.0.2",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "b8de89fe811e62f1dea8cf9aafda0ea45ca6f1f3"
+                "reference": "91f0a5e2356029575f3038432cc188b12f9d5da5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/b8de89fe811e62f1dea8cf9aafda0ea45ca6f1f3",
-                "reference": "b8de89fe811e62f1dea8cf9aafda0ea45ca6f1f3",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/91f0a5e2356029575f3038432cc188b12f9d5da5",
+                "reference": "91f0a5e2356029575f3038432cc188b12f9d5da5",
                 "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-bundle": "~1.0|~2.0",
-                "doctrine/migrations": "~3.0",
+                "doctrine/migrations": "^3.1",
                 "php": "^7.2|^8.0",
                 "symfony/framework-bundle": "~3.4|~4.0|~5.0"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^8.0",
                 "doctrine/orm": "^2.6",
+                "doctrine/persistence": "^1.3||^2.0",
                 "phpstan/phpstan": "^0.12",
                 "phpstan/phpstan-deprecation-rules": "^0.12",
                 "phpstan/phpstan-phpunit": "^0.12",
@@ -2269,11 +2270,6 @@
                 "phpunit/phpunit": "^7.0|^8.0|^9.0"
             },
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Bundle\\MigrationsBundle\\": ""
@@ -2309,7 +2305,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineMigrationsBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/3.0.2"
+                "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/3.1.1"
             },
             "funding": [
                 {
@@ -2325,7 +2321,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-23T15:13:22+00:00"
+            "time": "2021-04-10T16:48:53+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -2774,16 +2770,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.8.3",
+            "version": "2.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "657a30f8ceef2a78c2ff36a9fe6c6a6717c1c448"
+                "reference": "a588555ecd837b8d7e89355d9a13902e54d529c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/657a30f8ceef2a78c2ff36a9fe6c6a6717c1c448",
-                "reference": "657a30f8ceef2a78c2ff36a9fe6c6a6717c1c448",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/a588555ecd837b8d7e89355d9a13902e54d529c7",
+                "reference": "a588555ecd837b8d7e89355d9a13902e54d529c7",
                 "shasum": ""
             },
             "require": {
@@ -2855,9 +2851,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.8.3"
+                "source": "https://github.com/doctrine/orm/tree/2.8.4"
             },
-            "time": "2021-04-01T21:16:53+00:00"
+            "time": "2021-04-05T18:38:36+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -6494,16 +6490,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v6.1.1",
+            "version": "v6.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "8ef75e99f20332f2725587896364f7079b53de95"
+                "reference": "676262b7a65a1033befbcf59e180d072df7504b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/8ef75e99f20332f2725587896364f7079b53de95",
-                "reference": "8ef75e99f20332f2725587896364f7079b53de95",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/676262b7a65a1033befbcf59e180d072df7504b6",
+                "reference": "676262b7a65a1033befbcf59e180d072df7504b6",
                 "shasum": ""
             },
             "require": {
@@ -6566,9 +6562,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/issues",
-                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.1.1"
+                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.1.2"
             },
-            "time": "2021-02-23T11:50:58+00:00"
+            "time": "2021-04-09T16:14:11+00:00"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -12019,16 +12015,16 @@
         },
         {
             "name": "symfonycasts/reset-password-bundle",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyCasts/reset-password-bundle.git",
-                "reference": "fef9bc5343713d2064b2e9b0caba36a62084ab96"
+                "reference": "368a4f64fc4f8174234fc91f9b22d5016257211b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyCasts/reset-password-bundle/zipball/fef9bc5343713d2064b2e9b0caba36a62084ab96",
-                "reference": "fef9bc5343713d2064b2e9b0caba36a62084ab96",
+                "url": "https://api.github.com/repos/SymfonyCasts/reset-password-bundle/zipball/368a4f64fc4f8174234fc91f9b22d5016257211b",
+                "reference": "368a4f64fc4f8174234fc91f9b22d5016257211b",
                 "shasum": ""
             },
             "require": {
@@ -12064,9 +12060,9 @@
             "description": "Symfony bundle that adds password reset functionality.",
             "support": {
                 "issues": "https://github.com/SymfonyCasts/reset-password-bundle/issues",
-                "source": "https://github.com/SymfonyCasts/reset-password-bundle/tree/v1.6.0"
+                "source": "https://github.com/SymfonyCasts/reset-password-bundle/tree/v1.7.0"
             },
-            "time": "2021-03-29T18:43:48+00:00"
+            "time": "2021-04-12T17:29:47+00:00"
         },
         {
             "name": "symplify/autowire-array-parameter",
@@ -12896,16 +12892,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.18.4",
+            "version": "v2.18.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "06f764e3cb6d60822d8f5135205f9d32b5508a31"
+                "reference": "e0f6d05c8b157f50029ca6c65c19ed2694f475bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/06f764e3cb6d60822d8f5135205f9d32b5508a31",
-                "reference": "06f764e3cb6d60822d8f5135205f9d32b5508a31",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/e0f6d05c8b157f50029ca6c65c19ed2694f475bf",
+                "reference": "e0f6d05c8b157f50029ca6c65c19ed2694f475bf",
                 "shasum": ""
             },
             "require": {
@@ -12988,7 +12984,7 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues",
-                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v2.18.4"
+                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v2.18.5"
             },
             "funding": [
                 {
@@ -12996,7 +12992,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-20T14:52:33+00:00"
+            "time": "2021-04-06T18:37:33+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -13358,16 +13354,16 @@
         },
         {
             "name": "phpstan/phpstan-symfony",
-            "version": "0.12.22",
+            "version": "0.12.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-symfony.git",
-                "reference": "4f94ccd437d7031d3513807ad8d4aee551813e0e"
+                "reference": "76d75e326a3b47587c44a2b3aaadeae24f86adcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/4f94ccd437d7031d3513807ad8d4aee551813e0e",
-                "reference": "4f94ccd437d7031d3513807ad8d4aee551813e0e",
+                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/76d75e326a3b47587c44a2b3aaadeae24f86adcc",
+                "reference": "76d75e326a3b47587c44a2b3aaadeae24f86adcc",
                 "shasum": ""
             },
             "require": {
@@ -13422,9 +13418,9 @@
             "description": "Symfony Framework extensions and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-symfony/issues",
-                "source": "https://github.com/phpstan/phpstan-symfony/tree/0.12.22"
+                "source": "https://github.com/phpstan/phpstan-symfony/tree/0.12.24"
             },
-            "time": "2021-04-02T17:12:58+00:00"
+            "time": "2021-04-13T14:34:41+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -13555,16 +13551,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.5.8",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4"
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9d583721a7157ee997f235f327de038e7ea6dac4",
-                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
                 "shasum": ""
             },
             "require": {
@@ -13607,7 +13603,7 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2020-10-23T02:01:07+00:00"
+            "time": "2021-04-09T00:54:41+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
