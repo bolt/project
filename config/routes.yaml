@@ -23,7 +23,7 @@ frontend:
 
 # Routes for the project-specific functionality
 project:
-  resource: '../src/'
+  resource: '../src/Controller'
   prefix: /
   type: annotation
 
