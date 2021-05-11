@@ -58,6 +58,9 @@
     "composer/composer": {
         "version": "1.9.0"
     },
+    "composer/metadata-minifier": {
+        "version": "1.0.0"
+    },
     "composer/package-versions-deprecated": {
         "version": "1.8.1"
     },
