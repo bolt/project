@@ -597,12 +597,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "3e38b7c85a1f1766cb7c9c12549efd05e1d09c04"
+                "reference": "9067764535db4be76c06b7fb98ebe823ebf44c1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/3e38b7c85a1f1766cb7c9c12549efd05e1d09c04",
-                "reference": "3e38b7c85a1f1766cb7c9c12549efd05e1d09c04",
+                "url": "https://api.github.com/repos/bolt/core/zipball/9067764535db4be76c06b7fb98ebe823ebf44c1f",
+                "reference": "9067764535db4be76c06b7fb98ebe823ebf44c1f",
                 "shasum": ""
             },
             "require": {
@@ -743,7 +743,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-13T08:47:51+00:00"
+            "time": "2021-06-14T07:49:52+00:00"
         },
         {
             "name": "bolt/newswidget",
