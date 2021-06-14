@@ -26,7 +26,7 @@
         "thecodingmachine/phpstan-safe-rule": "^1.0"
     },
     "config": {
-        "optimize-autoloader": true,
+        "optimize-autoloaExtensionsConfigureCommand.phpder": true,
         "preferred-install": {
             "*": "dist"
         },
@@ -73,6 +73,9 @@
         ],
         "lint": "php vendor/bin/ecs check --no-progress-bar --no-interaction",
         "lint:fix": "php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
-        "phpstan": "php vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src"
+        "phpstan": "php vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src",
+        "auto-scripts": {
+
+        }
     }
 }

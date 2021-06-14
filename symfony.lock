@@ -215,6 +215,9 @@
     "intervention/image": {
         "version": "2.5.1"
     },
+    "jasny/twig-extensions": {
+        "version": "v1.3.0"
+    },
     "jean85/pretty-package-versions": {
         "version": "1.5.1"
     },
@@ -413,18 +416,6 @@
             "config/packages/sensio_framework_extra.yaml"
         ]
     },
-    "sensiolabs/security-checker": {
-        "version": "4.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "4.0",
-            "ref": "160c9b600564faa1224e8f387d49ef13ceb8b793"
-        },
-        "files": [
-            "config/packages/security_checker.yaml"
-        ]
-    },
     "siriusphp/upload": {
         "version": "3.0.1"
     },
@@ -601,6 +592,9 @@
     "symfony/options-resolver": {
         "version": "v5.1.8"
     },
+    "symfony/password-hasher": {
+        "version": "v5.3.0"
+    },
     "symfony/polyfill-ctype": {
         "version": "v1.20.0"
     },
@@ -630,6 +624,9 @@
     },
     "symfony/polyfill-php80": {
         "version": "v1.20.0"
+    },
+    "symfony/polyfill-php81": {
+        "version": "v1.23.0"
     },
     "symfony/process": {
         "version": "v5.1.8"
@@ -802,6 +799,9 @@
             "config/packages/reset_password.yaml"
         ]
     },
+    "symplify/autowire-array-parameter": {
+        "version": "8.3.48"
+    },
     "symplify/coding-standard": {
         "version": "8.3.48"
     },
@@ -812,6 +812,12 @@
         "version": "8.3.48"
     },
     "symplify/set-config-resolver": {
+        "version": "8.3.48"
+    },
+    "symplify/smart-file-system": {
+        "version": "8.3.48"
+    },
+    "symplify/symplify-kernel": {
         "version": "8.3.48"
     },
     "thecodingmachine/phpstan-safe-rule": {
