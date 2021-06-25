@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a56b9cb153d7a7417ae067a8442a2a7b",
+    "content-hash": "24528435c0444fef1aa226016ee601a0",
     "packages": [
         {
             "name": "api-platform/core",
@@ -307,24 +307,24 @@
         },
         {
             "name": "bobdenotter/configuration-notices",
-            "version": "1.1.10",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/configuration-notices.git",
-                "reference": "bc30991ff0005b6ff6f69e0f1985e997b1a5ddd8"
+                "reference": "b1324c35c52a4b72954526a3b2abd25780ed212f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/configuration-notices/zipball/bc30991ff0005b6ff6f69e0f1985e997b1a5ddd8",
-                "reference": "bc30991ff0005b6ff6f69e0f1985e997b1a5ddd8",
+                "url": "https://api.github.com/repos/bobdenotter/configuration-notices/zipball/b1324c35c52a4b72954526a3b2abd25780ed212f",
+                "reference": "b1324c35c52a4b72954526a3b2abd25780ed212f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.9"
             },
             "require-dev": {
-                "bolt/core": "^4.1.0",
-                "symplify/easy-coding-standard": "^7.0"
+                "bolt/core": "^4.1 || ^5.0",
+                "symplify/easy-coding-standard": "^8.3"
             },
             "type": "bolt-extension",
             "extra": {
@@ -351,9 +351,9 @@
             "description": "💡 A small tool to point out common pitfalls for Bolt 4 configuration settings",
             "support": {
                 "issues": "https://github.com/bobdenotter/configuration-notices/issues",
-                "source": "https://github.com/bobdenotter/configuration-notices/tree/1.1.10"
+                "source": "https://github.com/bobdenotter/configuration-notices/tree/1.2.0"
             },
-            "time": "2021-02-06T09:39:18+00:00"
+            "time": "2021-06-18T13:22:03+00:00"
         },
         {
             "name": "bobdenotter/weatherwidget",
@@ -509,16 +509,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "5.0.0-beta.9",
+            "version": "5.0.0-beta.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "d14e61fb65955d80e0daf15c6dc8c44bb0d9b5c8"
+                "reference": "403670e6936af2fbc780b332383fd1d16bb2c59b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/d14e61fb65955d80e0daf15c6dc8c44bb0d9b5c8",
-                "reference": "d14e61fb65955d80e0daf15c6dc8c44bb0d9b5c8",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/403670e6936af2fbc780b332383fd1d16bb2c59b",
+                "reference": "403670e6936af2fbc780b332383fd1d16bb2c59b",
                 "shasum": ""
             },
             "require-dev": {
@@ -538,9 +538,9 @@
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/5.0.0"
+                "source": "https://github.com/bolt/assets/tree/5.0.0-beta.10"
             },
-            "time": "2021-06-18T12:48:46+00:00"
+            "time": "2021-06-25T10:04:10+00:00"
         },
         {
             "name": "bolt/common",
@@ -600,16 +600,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "5.0.0-beta.9",
+            "version": "5.0.0-beta.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "19e487c07b0cfa9a7527fff477b4e573ec3900ab"
+                "reference": "2963694ff9c7af8499bc944311f0f8886c44d68c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/19e487c07b0cfa9a7527fff477b4e573ec3900ab",
-                "reference": "19e487c07b0cfa9a7527fff477b4e573ec3900ab",
+                "url": "https://api.github.com/repos/bolt/core/zipball/2963694ff9c7af8499bc944311f0f8886c44d68c",
+                "reference": "2963694ff9c7af8499bc944311f0f8886c44d68c",
                 "shasum": ""
             },
             "require": {
@@ -638,7 +638,7 @@
                 "knplabs/knp-menu-bundle": "^3.0",
                 "league/glide-symfony": "^1.0",
                 "miljar/php-exif": "^0.6.4",
-                "nelexa/zip": "dev-support/3.4.x",
+                "nelexa/zip": "^3.3 || ^4.0",
                 "nelmio/cors-bundle": "^2.1",
                 "nesbot/carbon": "^2.39",
                 "php": ">=7.2.9",
@@ -717,7 +717,6 @@
                 "phpstan/phpstan-doctrine": "^0.12",
                 "phpstan/phpstan-symfony": "^0.12",
                 "phpunit/phpunit": "^8.5",
-                "roave/security-advisories": "dev-master@dev",
                 "se/selenium-server-standalone": "^3.141",
                 "symfony/browser-kit": "^5.3",
                 "symfony/css-selector": "^5.3",
@@ -743,7 +742,7 @@
             "description": "🧿 Bolt 5 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/5.0.0-beta.9"
+                "source": "https://github.com/bolt/core/tree/5.0.0-beta.10"
             },
             "funding": [
                 {
@@ -751,7 +750,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-18T12:23:28+00:00"
+            "time": "2021-06-25T09:48:18+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -1979,16 +1978,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.13.x-dev",
+            "version": "2.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "f1453c5c1bedc1d60baa6849fdce9b442c79811a"
+                "reference": "8dd39d2ead4409ce652fd4f02621060f009ea5e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/f1453c5c1bedc1d60baa6849fdce9b442c79811a",
-                "reference": "f1453c5c1bedc1d60baa6849fdce9b442c79811a",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/8dd39d2ead4409ce652fd4f02621060f009ea5e4",
+                "reference": "8dd39d2ead4409ce652fd4f02621060f009ea5e4",
                 "shasum": ""
             },
             "require": {
@@ -2002,7 +2001,7 @@
                 "doctrine/coding-standard": "9.0.0",
                 "jetbrains/phpstorm-stubs": "2020.2",
                 "phpstan/phpstan": "0.12.81",
-                "phpunit/phpunit": "^7.5.20|^8.5|9.5.0",
+                "phpunit/phpunit": "^7.5.20|^8.5|9.5.5",
                 "squizlabs/php_codesniffer": "3.6.0",
                 "symfony/cache": "^4.4",
                 "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
@@ -2067,7 +2066,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/2.13.x"
+                "source": "https://github.com/doctrine/dbal/tree/2.13.2"
             },
             "funding": [
                 {
@@ -2083,7 +2082,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-16T21:54:12+00:00"
+            "time": "2021-06-18T21:48:39+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2745,16 +2744,16 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "8d0c58655cf9d76462d00ec5dd099737e513e86d"
+                "reference": "207210c57f6c15835e8d6228075cd235bd061efc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/8d0c58655cf9d76462d00ec5dd099737e513e86d",
-                "reference": "8d0c58655cf9d76462d00ec5dd099737e513e86d",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/207210c57f6c15835e8d6228075cd235bd061efc",
+                "reference": "207210c57f6c15835e8d6228075cd235bd061efc",
                 "shasum": ""
             },
             "require": {
@@ -2829,7 +2828,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/migrations/issues",
-                "source": "https://github.com/doctrine/migrations/tree/3.1.3"
+                "source": "https://github.com/doctrine/migrations/tree/3.1.4"
             },
             "funding": [
                 {
@@ -2845,7 +2844,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-10T19:24:33+00:00"
+            "time": "2021-06-15T18:57:30+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -4341,16 +4340,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "9be3b16c877d477357c015cec057548cf9b2a14a"
+                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/9be3b16c877d477357c015cec057548cf9b2a14a",
-                "reference": "9be3b16c877d477357c015cec057548cf9b2a14a",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
+                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
                 "shasum": ""
             },
             "require": {
@@ -4366,7 +4365,6 @@
                 "phpunit/phpunit": "^8.5.8"
             },
             "suggest": {
-                "ext-fileinfo": "Required for MimeType",
                 "ext-ftp": "Allows you to use FTP server storage",
                 "ext-openssl": "Allows you to use FTPS server storage",
                 "league/flysystem-aws-s3-v2": "Allows you to use S3 storage with AWS SDK v2",
@@ -4424,7 +4422,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/1.x"
+                "source": "https://github.com/thephpleague/flysystem/tree/1.1.4"
             },
             "funding": [
                 {
@@ -4432,7 +4430,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-08-23T07:39:11+00:00"
+            "time": "2021-06-23T21:56:05+00:00"
         },
         {
             "name": "league/glide",
@@ -4810,38 +4808,39 @@
         },
         {
             "name": "nelexa/zip",
-            "version": "dev-support/3.4.x",
+            "version": "3.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ne-Lexa/php-zip.git",
-                "reference": "c9130665cd3d6e98a6a91c379e73043e1951b607"
+                "reference": "501b52f6fc393a599b44ff348a42740e1eaac7c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ne-Lexa/php-zip/zipball/c9130665cd3d6e98a6a91c379e73043e1951b607",
-                "reference": "c9130665cd3d6e98a6a91c379e73043e1951b607",
+                "url": "https://api.github.com/repos/Ne-Lexa/php-zip/zipball/501b52f6fc393a599b44ff348a42740e1eaac7c6",
+                "reference": "501b52f6fc393a599b44ff348a42740e1eaac7c6",
                 "shasum": ""
             },
             "require": {
                 "ext-zlib": "*",
-                "php": "^7.1.3 | ^8.0",
+                "paragonie/random_compat": "*",
+                "php": "^5.5.9 || ^7.0",
                 "psr/http-message": "^1.0",
-                "symfony/finder": "^3.0 | ^4.0 | ^5.0"
+                "symfony/finder": "^3.0|^4.0|^5.0"
             },
             "require-dev": {
                 "ext-bz2": "*",
                 "ext-fileinfo": "*",
                 "ext-openssl": "*",
                 "ext-xml": "*",
-                "friendsofphp/php-cs-fixer": "^3.0",
                 "guzzlehttp/psr7": "^1.6",
-                "phpunit/phpunit": "^7.5.20 | ^8.5.15 | ^9.5.4",
-                "symfony/var-dumper": "^3.0 | ^4.0 | ^5.0"
+                "phpunit/phpunit": "^4.8|^5.7",
+                "symfony/var-dumper": "^3.0|^4.0|^5.0"
             },
             "suggest": {
                 "ext-bz2": "Needed to support BZIP2 compression",
                 "ext-fileinfo": "Needed to get mime-type file",
-                "ext-openssl": "Needed to support encrypt zip entries"
+                "ext-mcrypt": "Needed to support encrypt zip entries or use ext-openssl",
+                "ext-openssl": "Needed to support encrypt zip entries or use ext-mcrypt"
             },
             "type": "library",
             "autoload": {
@@ -4873,9 +4872,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Ne-Lexa/php-zip/issues",
-                "source": "https://github.com/Ne-Lexa/php-zip/tree/support/3.4.x"
+                "source": "https://github.com/Ne-Lexa/php-zip/tree/3.3.3"
             },
-            "time": "2021-05-21T06:02:22+00:00"
+            "time": "2020-07-11T21:01:42+00:00"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -12098,16 +12097,16 @@
         },
         {
             "name": "symfony/webpack-encore-bundle",
-            "version": "v1.11.2",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/webpack-encore-bundle.git",
-                "reference": "f282fb17ffa4839ba491eb7e3f5ffdd40c86f969"
+                "reference": "9943a59f8551b7a8181e19a2b4efa60e5907c667"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/f282fb17ffa4839ba491eb7e3f5ffdd40c86f969",
-                "reference": "f282fb17ffa4839ba491eb7e3f5ffdd40c86f969",
+                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/9943a59f8551b7a8181e19a2b4efa60e5907c667",
+                "reference": "9943a59f8551b7a8181e19a2b4efa60e5907c667",
                 "shasum": ""
             },
             "require": {
@@ -12149,7 +12148,7 @@
             "description": "Integration with your Symfony app & Webpack Encore!",
             "support": {
                 "issues": "https://github.com/symfony/webpack-encore-bundle/issues",
-                "source": "https://github.com/symfony/webpack-encore-bundle/tree/v1.11.2"
+                "source": "https://github.com/symfony/webpack-encore-bundle/tree/v1.12.0"
             },
             "funding": [
                 {
@@ -12165,7 +12164,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-26T12:48:17+00:00"
+            "time": "2021-06-18T19:13:11+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -14664,7 +14663,9 @@
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.2.9 || ^8.0"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }
