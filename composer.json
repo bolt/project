@@ -4,7 +4,7 @@
     "description": "Bolt 5 standard project skeleton",
     "license": "MIT",
     "require": {
-        "php": ">=7.2.9 || ^8.0",
+        "php": "^8.0",
         "bobdenotter/configuration-notices": "^1.0",
         "bobdenotter/weatherwidget": "^1.1",
         "bolt/article": "^1.0",
@@ -16,7 +16,7 @@
         "nelmio/security-bundle": "^2.10",
         "symfony/flex": "^1.6"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "prefer-stable": true,
     "replace": {
         "paragonie/random_compat": "*"
