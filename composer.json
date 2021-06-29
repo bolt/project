@@ -28,18 +28,18 @@
             "bolt:copy-assets": "symfony-cmd"
         },
         "post-create-project-cmd": [
-            "php bin/post-create-project.php",
-            "php bin/console bolt:copy-themes"
+            "@php bin/post-create-project.php",
+            "@php bin/console bolt:copy-themes"
         ],
         "post-install-cmd": [
             "@auto-scripts",
-            "php bin/console extensions:configure --with-config",
-            "php bin/console bolt:info"
+            "@php bin/console extensions:configure --with-config",
+            "@php bin/console bolt:info"
         ],
         "post-update-cmd": [
             "@auto-scripts",
-            "php bin/console extensions:configure",
-            "php bin/console bolt:info"
+            "@php bin/console extensions:configure",
+            "@php bin/console bolt:info"
         ]
     },
     "extra": {
