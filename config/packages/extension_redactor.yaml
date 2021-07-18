@@ -4,6 +4,9 @@ services:
         autowire: true
         autoconfigure: true
 
+    Bolt\Redactor\Controller\Images:
+        tags: ['controller.service_arguments']
+
     Bolt\Redactor\Controller\Upload:
         tags: ['controller.service_arguments']
 
