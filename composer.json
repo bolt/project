@@ -50,7 +50,7 @@
             "Bolt\\ComposerScripts\\": "vendor/bolt/core/bin/composer-script/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "prefer-stable": true,
     "scripts": {
         "pre-install-cmd": [
