@@ -2,6 +2,7 @@
 /var/data/*
 
 ###> bolt/core ###
+/build.sh
 config/bolt/*_local.yaml
 config/extensions/*_local.yaml
 /config/packages/local

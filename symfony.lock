@@ -586,6 +586,15 @@
             "config/packages/mailer.yaml"
         ]
     },
+    "symfony/maker-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
+    },
     "symfony/mime": {
         "version": "v5.1.8"
     },
@@ -609,6 +618,9 @@
     },
     "symfony/options-resolver": {
         "version": "v5.1.8"
+    },
+    "symfony/password-hasher": {
+        "version": "v5.3.4"
     },
     "symfony/polyfill-ctype": {
         "version": "v1.20.0"
@@ -639,6 +651,9 @@
     },
     "symfony/polyfill-php80": {
         "version": "v1.20.0"
+    },
+    "symfony/polyfill-php81": {
+        "version": "v1.23.0"
     },
     "symfony/process": {
         "version": "v5.1.8"
