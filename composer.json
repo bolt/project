@@ -72,9 +72,9 @@
         "pre-package-uninstall": [
             "Bolt\\ComposerScripts\\ProjectEventHandler::prePackageUninstall"
         ],
-        "lint": "php vendor/bin/ecs check --no-progress-bar --no-interaction",
-        "lint:fix": "php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
-        "phpstan": "php vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src",
+        "lint": "@php vendor/bin/ecs check --no-progress-bar --no-interaction",
+        "lint:fix": "@php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
+        "phpstan": "@php vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src",
         "auto-scripts": {
 
         }
