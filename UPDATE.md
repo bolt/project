@@ -1,3 +1,19 @@
+Bolt 5 - Beta Update Instructions
+=================================
+
+If you are experiencing issues with translations, make sure that
+you have the following in `config/packages/php_translation.yaml`:
+
+```yaml
+# php-translation config
+
+translation:
+    configs:
+        bolt:
+            output_dir: "%kernel.project_dir%/translations"
+```
+Note this only applies to Bolt 5 beta versions.
+
 Bolt 4 - Beta Update Instructions
 =================================
 
