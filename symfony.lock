@@ -290,6 +290,9 @@
     "nesbot/carbon": {
         "version": "2.41.5"
     },
+    "nette/finder": {
+        "version": "v2.5.2"
+    },
     "nette/robot-loader": {
         "version": "v3.4.0"
     },
@@ -806,6 +809,9 @@
         "version": "8.3.48"
     },
     "symplify/easy-coding-standard": {
+        "version": "8.3.48"
+    },
+    "symplify/package-builder": {
         "version": "8.3.48"
     },
     "symplify/set-config-resolver": {
