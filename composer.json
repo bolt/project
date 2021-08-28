@@ -44,13 +44,13 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Bolt\\ComposerScripts\\": "vendor/bolt/core/bin/composer-script/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/",
-            "Bolt\\ComposerScripts\\": "vendor/bolt/core/bin/composer-script/"
+            "App\\Tests\\": "tests/"
         }
     },
     "scripts": {
