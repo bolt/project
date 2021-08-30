@@ -45,7 +45,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "Bolt\\ComposerScripts\\": "vendor/bolt/core/bin/composer-script/"            
+            "Bolt\\ComposerScripts\\": "vendor/bolt/core/bin/composer-script/"
         }
     },
     "autoload-dev": {
