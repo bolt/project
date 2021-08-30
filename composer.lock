@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ad6131d2e235e6445964633e92ee625",
+    "content-hash": "57bc4074f7c6b30c124ae511331c6ed6",
     "packages": [
         {
             "name": "api-platform/core",
@@ -509,16 +509,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "5.0.0-rc.1",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "7642c5d97dce0287687e2c91ad459e437d4610aa"
+                "reference": "84333378229a94de11c169c36cc79728db2fc538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/7642c5d97dce0287687e2c91ad459e437d4610aa",
-                "reference": "7642c5d97dce0287687e2c91ad459e437d4610aa",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/84333378229a94de11c169c36cc79728db2fc538",
+                "reference": "84333378229a94de11c169c36cc79728db2fc538",
                 "shasum": ""
             },
             "require-dev": {
@@ -538,9 +538,9 @@
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/5.0.0-rc.1"
+                "source": "https://github.com/bolt/assets/tree/5.0.0"
             },
-            "time": "2021-08-28T11:09:34+00:00"
+            "time": "2021-08-30T09:20:13+00:00"
         },
         {
             "name": "bolt/common",
@@ -600,16 +600,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "5.0.0-rc.2",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "e1a73cf25a69b68100601d490c6fa4f7125f34d3"
+                "reference": "39f9eccbdb8da207215326f4cd602180dae37b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/e1a73cf25a69b68100601d490c6fa4f7125f34d3",
-                "reference": "e1a73cf25a69b68100601d490c6fa4f7125f34d3",
+                "url": "https://api.github.com/repos/bolt/core/zipball/39f9eccbdb8da207215326f4cd602180dae37b26",
+                "reference": "39f9eccbdb8da207215326f4cd602180dae37b26",
                 "shasum": ""
             },
             "require": {
@@ -743,7 +743,7 @@
             "description": "🧿 Bolt 5 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/5.0.0-rc.2"
+                "source": "https://github.com/bolt/core/tree/5.0.0"
             },
             "funding": [
                 {
@@ -751,7 +751,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-29T15:04:05+00:00"
+            "time": "2021-08-30T08:26:11+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -14725,7 +14725,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
