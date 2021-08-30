@@ -29,7 +29,6 @@ __*
 !composer.lock
 !symfony.lock
 *lock.json
-!/package-lock.json
 .buildpath
 
 ### Platfom-specific files
