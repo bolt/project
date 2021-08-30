@@ -9,8 +9,6 @@ config/extensions/*_local.yaml
 /public/files/*
 !/public/files/.gitkeep
 !/public/files/index.html
-/public/themes/*
-!/public/themes/.gitkeep
 /public/thumbs/*
 !/public/thumbs/.gitkeep
 !/public/thumbs/index.html
@@ -31,7 +29,6 @@ __*
 !composer.lock
 !symfony.lock
 *lock.json
-!/package-lock.json
 .buildpath
 
 ### Platfom-specific files

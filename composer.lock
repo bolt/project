@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37c110ec7cdeafbde5bfbdf114da8243",
+    "content-hash": "5faf157444bb82fe7acc504779eeb860",
     "packages": [
         {
             "name": "api-platform/core",
@@ -407,16 +407,16 @@
         },
         {
             "name": "bobdenotter/yaml-migrations",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobdenotter/yaml-migrations.git",
-                "reference": "e67a1ec0b92077900cc131c2de28098643a4f012"
+                "reference": "23e210bd393f9cb2ba6e27e9c7d31085107b1e55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobdenotter/yaml-migrations/zipball/e67a1ec0b92077900cc131c2de28098643a4f012",
-                "reference": "e67a1ec0b92077900cc131c2de28098643a4f012",
+                "url": "https://api.github.com/repos/bobdenotter/yaml-migrations/zipball/23e210bd393f9cb2ba6e27e9c7d31085107b1e55",
+                "reference": "23e210bd393f9cb2ba6e27e9c7d31085107b1e55",
                 "shasum": ""
             },
             "require": {
@@ -453,9 +453,9 @@
             "description": "A library to facilitate migrations for YAML configuration files",
             "support": {
                 "issues": "https://github.com/bobdenotter/yaml-migrations/issues",
-                "source": "https://github.com/bobdenotter/yaml-migrations/tree/1.1.0"
+                "source": "https://github.com/bobdenotter/yaml-migrations/tree/1.1.1"
             },
-            "time": "2021-08-26T14:09:42+00:00"
+            "time": "2021-08-29T09:30:24+00:00"
         },
         {
             "name": "bolt/article",
@@ -509,16 +509,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "5.0.0-rc.1",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "7642c5d97dce0287687e2c91ad459e437d4610aa"
+                "reference": "84333378229a94de11c169c36cc79728db2fc538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/7642c5d97dce0287687e2c91ad459e437d4610aa",
-                "reference": "7642c5d97dce0287687e2c91ad459e437d4610aa",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/84333378229a94de11c169c36cc79728db2fc538",
+                "reference": "84333378229a94de11c169c36cc79728db2fc538",
                 "shasum": ""
             },
             "require-dev": {
@@ -538,9 +538,9 @@
             "description": "🛠 Assets used in Bolt's backend. Do not use directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/5.0.0-rc.1"
+                "source": "https://github.com/bolt/assets/tree/5.0.0"
             },
-            "time": "2021-08-28T11:09:34+00:00"
+            "time": "2021-08-30T09:20:13+00:00"
         },
         {
             "name": "bolt/common",
@@ -600,23 +600,23 @@
         },
         {
             "name": "bolt/core",
-            "version": "5.0.0-rc.1",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "5eb0ede756de2592068b12fc2ea9e6ff9842f6fb"
+                "reference": "39f9eccbdb8da207215326f4cd602180dae37b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/5eb0ede756de2592068b12fc2ea9e6ff9842f6fb",
-                "reference": "5eb0ede756de2592068b12fc2ea9e6ff9842f6fb",
+                "url": "https://api.github.com/repos/bolt/core/zipball/39f9eccbdb8da207215326f4cd602180dae37b26",
+                "reference": "39f9eccbdb8da207215326f4cd602180dae37b26",
                 "shasum": ""
             },
             "require": {
                 "api-platform/core": "^2.6",
                 "babdev/pagerfanta-bundle": "^2.5",
                 "beberlei/doctrineextensions": "^1.3",
-                "bobdenotter/yaml-migrations": "^1.1",
+                "bobdenotter/yaml-migrations": "^1.1.1",
                 "bolt/common": "^3.0.4",
                 "cocur/slugify": "^4.0",
                 "composer-runtime-api": "^2",
@@ -743,7 +743,7 @@
             "description": "🧿 Bolt 5 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/5.0.0-rc.1"
+                "source": "https://github.com/bolt/core/tree/5.0.0"
             },
             "funding": [
                 {
@@ -751,7 +751,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-28T11:02:57+00:00"
+            "time": "2021-08-30T08:26:11+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -855,16 +855,16 @@
         },
         {
             "name": "bolt/themes",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/themes.git",
-                "reference": "ea9a68675fd6914519837af1ef231490bc09cf34"
+                "reference": "6c3bab0a18e7dd85447dadb3b413c09d0e996368"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/themes/zipball/ea9a68675fd6914519837af1ef231490bc09cf34",
-                "reference": "ea9a68675fd6914519837af1ef231490bc09cf34",
+                "url": "https://api.github.com/repos/bolt/themes/zipball/6c3bab0a18e7dd85447dadb3b413c09d0e996368",
+                "reference": "6c3bab0a18e7dd85447dadb3b413c09d0e996368",
                 "shasum": ""
             },
             "require": {
@@ -889,16 +889,16 @@
                 "MIT"
             ],
             "description": "🎨 Starter themes for Bolt",
-            "homepage": "http://boltcms.io",
+            "homepage": "https://boltcms.io",
             "keywords": [
                 "cms",
                 "twig"
             ],
             "support": {
                 "issues": "https://github.com/bolt/themes/issues",
-                "source": "https://github.com/bolt/themes/tree/3.5.0"
+                "source": "https://github.com/bolt/themes/tree/3.5.1"
             },
-            "time": "2021-04-29T12:40:32+00:00"
+            "time": "2021-08-21T09:36:35+00:00"
         },
         {
             "name": "brick/math",
@@ -14606,7 +14606,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
