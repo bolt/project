@@ -16,28 +16,35 @@ use PhpCsFixer\Fixer\ClassNotation\FinalInternalClassFixer;
 use PhpCsFixer\Fixer\ClassNotation\NoBlankLinesAfterClassOpeningFixer;
 use PhpCsFixer\Fixer\ClassNotation\OrderedClassElementsFixer;
 use PhpCsFixer\Fixer\ClassNotation\VisibilityRequiredFixer;
+use PhpCsFixer\Fixer\ConstantNotation\NativeConstantInvocationFixer;
+use PhpCsFixer\Fixer\ControlStructure\YodaStyleFixer;
+use PhpCsFixer\Fixer\FunctionNotation\NativeFunctionInvocationFixer;
 use PhpCsFixer\Fixer\FunctionNotation\PhpdocToReturnTypeFixer;
 use PhpCsFixer\Fixer\FunctionNotation\ReturnTypeDeclarationFixer;
 use PhpCsFixer\Fixer\Import\FullyQualifiedStrictTypesFixer;
 use PhpCsFixer\Fixer\Import\NoLeadingImportSlashFixer;
 use PhpCsFixer\Fixer\Import\OrderedImportsFixer;
 use PhpCsFixer\Fixer\LanguageConstruct\DeclareEqualNormalizeFixer;
+use PhpCsFixer\Fixer\Operator\ConcatSpaceFixer;
 use PhpCsFixer\Fixer\Operator\IncrementStyleFixer;
 use PhpCsFixer\Fixer\Operator\NewWithBracesFixer;
 use PhpCsFixer\Fixer\Operator\TernaryOperatorSpacesFixer;
+use PhpCsFixer\Fixer\Operator\UnaryOperatorSpacesFixer;
 use PhpCsFixer\Fixer\Phpdoc\NoSuperfluousPhpdocTagsFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocAlignFixer;
+use PhpCsFixer\Fixer\Phpdoc\PhpdocAnnotationWithoutDotFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocLineSpanFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocSummaryFixer;
 use PhpCsFixer\Fixer\PhpTag\BlankLineAfterOpeningTagFixer;
 use PhpCsFixer\Fixer\PhpUnit\PhpUnitMethodCasingFixer;
 use PhpCsFixer\Fixer\Semicolon\NoSinglelineWhitespaceBeforeSemicolonsFixer;
 use PhpCsFixer\Fixer\Whitespace\NoTrailingWhitespaceFixer;
+use SlevomatCodingStandard\Sniffs\ControlStructures\DisallowYodaComparisonSniff;
+use Symplify\CodingStandard\Fixer\ArrayNotation\ArrayListItemNewlineFixer;
+use Symplify\CodingStandard\Fixer\ArrayNotation\ArrayOpenerAndCloserNewlineFixer;
 use Symplify\CodingStandard\Fixer\ArrayNotation\StandaloneLineInMultilineArrayFixer;
 use Symplify\CodingStandard\Fixer\Commenting\RemoveSuperfluousDocBlockWhitespaceFixer;
 use Symplify\CodingStandard\Fixer\Strict\BlankLineAfterStrictTypesFixer;
-use Symplify\EasyCodingStandard\ValueObject\Option;
-use Symplify\EasyCodingStandard\ValueObject\Set\SetList;
 
 // Suppress `Notice:`s in ECS 8.x This is probably fixed in the 9.x versions,
 // but we can't update to that version, because it's PHP > 7.3 only.
@@ -47,24 +54,27 @@ error_reporting(error_reporting() & ~E_NOTICE);
 return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();
 
-    $parameters->set(Option::SETS, [SetList::CLEAN_CODE, SetList::COMMON, SetList::PHP_70, SetList::PHP_71, SetList::PSR_12, SetList::SYMFONY, SetList::SYMFONY_RISKY]);
+    $parameters->set('sets', ['clean-code', 'common', 'php70', 'php71', 'psr12', 'symfony', 'symfony-risky']);
 
-    $parameters->set(Option::PATHS, [__DIR__.'/']);
+    $parameters->set('paths', [
+        __DIR__ . '/src',
+        __DIR__ . '/ecs.php',
+    ]);
 
-    $parameters->set(Option::EXCLUDE_PATHS, [
-        __DIR__.'/vendor/*',
-        __DIR__.'/var/*',
-        __DIR__.'/config/bundles.php',
-    ]
-    );
+    $parameters->set('cache_directory', 'var/cache/ecs');
 
-    $parameters->set(Option::CACHE_DIRECTORY, 'var/cache/ecs');
-
-    $parameters->set(Option::SKIP, [
+    $parameters->set('skip', [
         OrderedClassElementsFixer::class => null,
+        YodaStyleFixer::class => null,
         IncrementStyleFixer::class => null,
+        PhpdocAnnotationWithoutDotFixer::class => null,
         PhpdocSummaryFixer::class => null,
         PhpdocAlignFixer::class => null,
+        NativeConstantInvocationFixer::class => null,
+        NativeFunctionInvocationFixer::class => null,
+        UnaryOperatorSpacesFixer::class => null,
+        ArrayOpenerAndCloserNewlineFixer::class => null,
+        ArrayListItemNewlineFixer::class => null,
     ]);
 
     $services = $containerConfigurator->services();
@@ -72,6 +82,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(StandaloneLineInMultilineArrayFixer::class);
 
     $services->set(BlankLineAfterStrictTypesFixer::class);
+
+    $services->set(ConcatSpaceFixer::class)
+        ->call('configure', [['spacing' => 'one']]);
 
     $services->set(RemoveSuperfluousDocBlockWhitespaceFixer::class);
 
@@ -95,13 +108,11 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $services->set(OrderedImportsFixer::class)
         ->call('configure', [[
-            'importsOrder' => ['class', 'const', 'function'],
+            'imports_order' => ['class', 'const', 'function'],
         ]]);
 
     $services->set(DeclareEqualNormalizeFixer::class)
-        ->call('configure', [[
-            'space' => 'none',
-        ]]);
+        ->call('configure', [['space' => 'none']]);
 
     $services->set(NewWithBracesFixer::class);
 
@@ -139,7 +150,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(NoSuperfluousPhpdocTagsFixer::class);
 
     $services->set(PhpdocLineSpanFixer::class)
-        ->call('configure', [[
-            'property' => 'single',
-        ]]);
+        ->call('configure', [['property' => 'single']]);
+
+    $services->set(DisallowYodaComparisonSniff::class);
 };
