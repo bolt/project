@@ -7,4 +7,3 @@ parameters:
 includes:
 	- vendor/phpstan/phpstan-symfony/extension.neon
 	- vendor/phpstan/phpstan-doctrine/extension.neon
-	- vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
