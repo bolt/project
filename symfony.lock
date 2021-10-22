@@ -829,12 +829,6 @@
     "symplify/symplify-kernel": {
         "version": "8.3.48"
     },
-    "thecodingmachine/phpstan-safe-rule": {
-        "version": "v1.0.1"
-    },
-    "thecodingmachine/safe": {
-        "version": "v1.3.3"
-    },
     "tightenco/collect": {
         "version": "v7.26.1"
     },
