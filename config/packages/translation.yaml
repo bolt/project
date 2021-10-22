@@ -7,7 +7,7 @@ framework:
 
 # php_translation
 translation:
-    locales: ['en', 'nl', 'pt_BR', 'es']
+    locales: '%locales_array%'
     default_locale: '%locale%'
     webui:
         enabled: true
