@@ -28,7 +28,7 @@
         "symplify/easy-coding-standard": "^9.4"
     },
     "config": {
-        "optimize-autoloaExtensionsConfigureCommand.phpder": true,
+        "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
         },
