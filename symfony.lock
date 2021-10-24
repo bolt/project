@@ -354,13 +354,13 @@
         "version": "0.4.9"
     },
     "phpstan/phpstan": {
-        "version": "0.12.52"
+        "version": "0.12.99"
     },
     "phpstan/phpstan-doctrine": {
-        "version": "0.12.22"
+        "version": "0.12.44"
     },
     "phpstan/phpstan-symfony": {
-        "version": "0.12.10"
+        "version": "0.12.44"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -815,7 +815,7 @@
         "version": "8.3.48"
     },
     "symplify/easy-coding-standard": {
-        "version": "8.3.48"
+        "version": "9.4.70"
     },
     "symplify/package-builder": {
         "version": "8.3.48"
