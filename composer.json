@@ -7,11 +7,11 @@
         "php": ">=7.2.9 || ^8.0",
         "bobdenotter/configuration-notices": "^1.2",
         "bobdenotter/weatherwidget": "^1.1",
-        "bolt/article": "^1.1",
+        "bolt/article": "^2.0",
         "bolt/assets": "^5.0",
         "bolt/core": "^5.0",
         "bolt/newswidget": "^1.3",
-        "bolt/redactor": "^1.1",
+        "bolt/redactor": "^2.0",
         "bolt/themes": "^3.5",
         "nelmio/security-bundle": "^2.10",
         "symfony/flex": "^1.17"
