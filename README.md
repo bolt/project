@@ -1,9 +1,9 @@
-Bolt 4 standard project skeleton
+Bolt 5 standard project skeleton
 ================================
 
 Bolt CMS is an open source, adaptable platform for building and running modern websites. Built on PHP, Symfony and more. [Read the site](https://boltcms.io) for more info. 
 
-**To check out Bolt and set up your first Bolt installation, read [Installing Bolt 4][installation].** 
+**To check out Bolt and set up your first Bolt installation, read [Installing Bolt 5][installation].** 
 
 ---
 
@@ -13,7 +13,7 @@ Bolt CMS is an open source, adaptable platform for building and running modern w
 
 **Note**: Installing with composer and running the site on your local machine using the method described below is the preferred method of the Bolt core development team.
 
-You can set up a new Bolt 4 project, using the following command, replacing `myprojectname` with your desired project's name.
+You can set up a new Bolt 5 project, using the following command, replacing `myprojectname` with your desired project's name.
 
 ```bash
 composer create-project bolt/project myprojectname
