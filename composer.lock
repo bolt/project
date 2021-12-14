@@ -510,16 +510,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "5.1.0-beta.1",
+            "version": "5.1.0-beta.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "ec2985efd41ed1f8c5bd9e00f34cd52d425a6202"
+                "reference": "f527cf196efba73f9faab078455d80ab0180a6b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/ec2985efd41ed1f8c5bd9e00f34cd52d425a6202",
-                "reference": "ec2985efd41ed1f8c5bd9e00f34cd52d425a6202",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/f527cf196efba73f9faab078455d80ab0180a6b2",
+                "reference": "f527cf196efba73f9faab078455d80ab0180a6b2",
                 "shasum": ""
             },
             "require-dev": {
@@ -539,9 +539,9 @@
             "description": "🛠 Javascript and CSS Assets used in Bolt's backend. Do not `require` directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/5.1.0-beta.1"
+                "source": "https://github.com/bolt/assets/tree/5.1.0-beta.2"
             },
-            "time": "2021-12-08T08:55:37+00:00"
+            "time": "2021-12-14T13:53:28+00:00"
         },
         {
             "name": "bolt/common",
@@ -605,12 +605,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "c27281e33473c28b13f16e8668cb8d666c268e7b"
+                "reference": "5d96acff4dbbd222a3c081e6db1531d264ceffeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/c27281e33473c28b13f16e8668cb8d666c268e7b",
-                "reference": "c27281e33473c28b13f16e8668cb8d666c268e7b",
+                "url": "https://api.github.com/repos/bolt/core/zipball/5d96acff4dbbd222a3c081e6db1531d264ceffeb",
+                "reference": "5d96acff4dbbd222a3c081e6db1531d264ceffeb",
                 "shasum": ""
             },
             "require": {
@@ -757,7 +757,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-10T16:13:55+00:00"
+            "time": "2021-12-14T12:43:31+00:00"
         },
         {
             "name": "bolt/newswidget",
