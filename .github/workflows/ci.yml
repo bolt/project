@@ -52,9 +52,6 @@ jobs:
         /home/runner/.symfony/bin/symfony serve --daemon --no-tls
         echo "Check => http://localhost:8000" && curl -fkI http://localhost:8000
         echo "Check => http://localhost:8000/bolt" && curl -fkI http://localhost:8000/bolt
-        echo "Check => http://localhost:8000/api/contents" && curl -fkI http://localhost:8000/api/contents
-        echo "Check => http://localhost:8000/api/fields" && curl -fkI http://localhost:8000/api/fields
-        echo "Check => http://localhost:8000/api/relations" && curl -fkI http://localhost:8000/api/relations
     - name: Validate composer.json
       run: composer validate --no-check-publish
     - name: Run PHP-CS-Fixer
