@@ -4068,38 +4068,38 @@
         },
         {
             "name": "knplabs/doctrine-behaviors",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/DoctrineBehaviors.git",
-                "reference": "a788a8f16e3c7126b64dd5ab0ec07eec8d075a14"
+                "reference": "47a98f25e4e22bc17aaa54fc1bd7c2e8801d2a3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/DoctrineBehaviors/zipball/a788a8f16e3c7126b64dd5ab0ec07eec8d075a14",
-                "reference": "a788a8f16e3c7126b64dd5ab0ec07eec8d075a14",
+                "url": "https://api.github.com/repos/KnpLabs/DoctrineBehaviors/zipball/47a98f25e4e22bc17aaa54fc1bd7c2e8801d2a3f",
+                "reference": "47a98f25e4e22bc17aaa54fc1bd7c2e8801d2a3f",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "^2.7|^3.0",
+                "doctrine/common": "^3.0",
                 "doctrine/dbal": "^2.9",
-                "doctrine/orm": "^2.7",
-                "doctrine/persistence": "^1.3.4|^2.0",
-                "nette/utils": "^3.0",
-                "php": "^7.2|^8.0",
-                "ramsey/uuid": "^3.9|^4.0",
-                "symfony/cache": "^4.4|^5.1",
-                "symfony/dependency-injection": "^4.4|^5.1",
-                "symfony/framework-bundle": "^4.4|^5.1",
-                "symfony/http-kernel": "^4.4|^5.1",
-                "symfony/polyfill-php80": "^1.18",
-                "symfony/security-core": "^4.4|^5.1",
-                "symfony/string": "^5.0",
-                "symfony/translation-contracts": "^2.1"
+                "doctrine/orm": "^2.8",
+                "doctrine/persistence": "^2.0",
+                "nette/utils": "^3.2",
+                "php": ">=7.3",
+                "ramsey/uuid": "^4.0",
+                "symfony/cache": "^4.4|^5.2",
+                "symfony/dependency-injection": "^4.4|^5.2",
+                "symfony/framework-bundle": "^4.4|^5.2",
+                "symfony/http-kernel": "^4.4|^5.2",
+                "symfony/polyfill-php80": "^1.22",
+                "symfony/security-core": "^4.4|^5.2",
+                "symfony/string": "^5.2",
+                "symfony/translation-contracts": "^2.3"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.8",
-                "doctrine/doctrine-bundle": "^2.0",
+                "doctrine/annotations": "^1.12",
+                "doctrine/doctrine-bundle": "^2.2",
                 "ext-pdo_mysql": "*",
                 "ext-pdo_pgsql": "*",
                 "ext-pdo_sqlite": "*",
@@ -4107,7 +4107,7 @@
                 "phpstan/phpstan": "^0.12.80",
                 "phpstan/phpstan-doctrine": "^0.12.33",
                 "phpstan/phpstan-phpunit": "^0.12.18",
-                "phpunit/phpunit": "^8.5|^9.2",
+                "phpunit/phpunit": "^9.5",
                 "psr/log": "^1.1",
                 "rector/rector-prefixed": "^0.9",
                 "symplify/easy-coding-standard": "^9.2.6",
@@ -4146,36 +4146,36 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/DoctrineBehaviors/issues",
-                "source": "https://github.com/KnpLabs/DoctrineBehaviors/tree/2.1.0"
+                "source": "https://github.com/KnpLabs/DoctrineBehaviors/tree/2.2.0"
             },
-            "time": "2021-03-08T21:34:43+00:00"
+            "time": "2021-03-08T21:41:17+00:00"
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "v3.2.0",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "9e7f174862c9a91f1249d18b5c2fa039eef81b8f"
+                "reference": "8bd3dc2afa22c65617c563c5e25e62d6e23e98c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/9e7f174862c9a91f1249d18b5c2fa039eef81b8f",
-                "reference": "9e7f174862c9a91f1249d18b5c2fa039eef81b8f",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/8bd3dc2afa22c65617c563c5e25e62d6e23e98c7",
+                "reference": "8bd3dc2afa22c65617c563c5e25e62d6e23e98c7",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.3 || ^8.0"
             },
             "conflict": {
                 "twig/twig": "<1.40 || >=2,<2.9"
             },
             "require-dev": {
-                "phpspec/prophecy": "^1.8",
+                "phpunit/phpunit": "^9.5",
                 "psr/container": "^1.0",
-                "symfony/http-foundation": "^3.4 || ^4.2|| ^5.0",
-                "symfony/phpunit-bridge": "^3.3 || ^4.2|| ^5.0",
-                "symfony/routing": "^3.4 || ^4.2|| ^5.0",
+                "symfony/http-foundation": "^4.4 || ^5.0 || ^6.0",
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/routing": "^4.4 || ^5.0 || ^6.0",
                 "twig/twig": "^1.40 || ^2.9 || ^3.0"
             },
             "suggest": {
@@ -4184,7 +4184,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -4218,9 +4218,9 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/KnpMenu/issues",
-                "source": "https://github.com/KnpLabs/KnpMenu/tree/v3.2.0"
+                "source": "https://github.com/KnpLabs/KnpMenu/tree/v3.3.0"
             },
-            "time": "2021-05-28T09:10:39+00:00"
+            "time": "2021-10-23T15:01:04+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -4357,43 +4357,37 @@
         },
         {
             "name": "laminas/laminas-eventmanager",
-            "version": "3.2.1",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-eventmanager.git",
-                "reference": "ce4dc0bdf3b14b7f9815775af9dfee80a63b4748"
+                "reference": "a93fd278c97b2d41ebbce5ba048a24e3e6f580ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-eventmanager/zipball/ce4dc0bdf3b14b7f9815775af9dfee80a63b4748",
-                "reference": "ce4dc0bdf3b14b7f9815775af9dfee80a63b4748",
+                "url": "https://api.github.com/repos/laminas/laminas-eventmanager/zipball/a93fd278c97b2d41ebbce5ba048a24e3e6f580ba",
+                "reference": "a93fd278c97b2d41ebbce5ba048a24e3e6f580ba",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^5.6 || ^7.0"
+                "php": "^7.3 || ~8.0.0 || ~8.1.0"
             },
-            "replace": {
-                "zendframework/zend-eventmanager": "self.version"
+            "conflict": {
+                "zendframework/zend-eventmanager": "*"
             },
             "require-dev": {
-                "athletic/athletic": "^0.1",
-                "container-interop/container-interop": "^1.1.0",
-                "laminas/laminas-coding-standard": "~1.0.0",
-                "laminas/laminas-stdlib": "^2.7.3 || ^3.0",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
+                "container-interop/container-interop": "^1.1",
+                "laminas/laminas-coding-standard": "~2.2.1",
+                "laminas/laminas-stdlib": "^3.6",
+                "phpbench/phpbench": "^1.1",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5.5"
             },
             "suggest": {
-                "container-interop/container-interop": "^1.1.0, to use the lazy listeners feature",
+                "container-interop/container-interop": "^1.1, to use the lazy listeners feature",
                 "laminas/laminas-stdlib": "^2.7.3 || ^3.0, to use the FilterChain feature"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev",
-                    "dev-develop": "3.3-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Laminas\\EventManager\\": "src/"
@@ -4419,28 +4413,36 @@
                 "rss": "https://github.com/laminas/laminas-eventmanager/releases.atom",
                 "source": "https://github.com/laminas/laminas-eventmanager"
             },
-            "time": "2019-12-31T16:44:52+00:00"
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2021-09-07T22:35:32+00:00"
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.1.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
+                "reference": "bf180a382393e7db5c1e8d0f2ec0c4af9c724baf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/bf180a382393e7db5c1e8d0f2ec0c4af9c724baf",
+                "reference": "bf180a382393e7db5c1e8d0f2ec0c4af9c724baf",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0 || ^8.0"
+                "php": "^7.3 || ~8.0.0 || ~8.1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
-                "squizlabs/php_codesniffer": "^3.5"
+                "phpunit/phpunit": "^9.3",
+                "psalm/plugin-phpunit": "^0.15.1",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.6"
             },
             "type": "library",
             "extra": {
@@ -4479,7 +4481,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-09-14T14:23:00+00:00"
+            "time": "2021-09-03T17:53:30+00:00"
         },
         {
             "name": "league/flysystem",
@@ -6385,20 +6387,21 @@
         },
         {
             "name": "ramsey/collection",
-            "version": "1.1.4",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/collection.git",
-                "reference": "ab2237657ad99667a5143e32ba2683c8029563d4"
+                "reference": "cccc74ee5e328031b15640b51056ee8d3bb66c0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/collection/zipball/ab2237657ad99667a5143e32ba2683c8029563d4",
-                "reference": "ab2237657ad99667a5143e32ba2683c8029563d4",
+                "url": "https://api.github.com/repos/ramsey/collection/zipball/cccc74ee5e328031b15640b51056ee8d3bb66c0a",
+                "reference": "cccc74ee5e328031b15640b51056ee8d3bb66c0a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8"
+                "php": "^7.3 || ^8",
+                "symfony/polyfill-php81": "^1.23"
             },
             "require-dev": {
                 "captainhook/captainhook": "^5.3",
@@ -6408,6 +6411,7 @@
                 "hamcrest/hamcrest-php": "^2",
                 "jangregor/phpstan-prophecy": "^0.8",
                 "mockery/mockery": "^1.3",
+                "phpspec/prophecy-phpunit": "^2.0",
                 "phpstan/extension-installer": "^1",
                 "phpstan/phpstan": "^0.12.32",
                 "phpstan/phpstan-mockery": "^0.12.5",
@@ -6435,7 +6439,7 @@
                     "homepage": "https://benramsey.com"
                 }
             ],
-            "description": "A PHP 7.2+ library for representing and manipulating collections.",
+            "description": "A PHP library for representing and manipulating collections.",
             "keywords": [
                 "array",
                 "collection",
@@ -6446,7 +6450,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/collection/issues",
-                "source": "https://github.com/ramsey/collection/tree/1.1.4"
+                "source": "https://github.com/ramsey/collection/tree/1.2.2"
             },
             "funding": [
                 {
@@ -6458,7 +6462,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-30T00:58:27+00:00"
+            "time": "2021-10-10T03:01:02+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -12923,31 +12927,31 @@
         },
         {
             "name": "webimpress/safe-writer",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webimpress/safe-writer.git",
-                "reference": "5cfafdec5873c389036f14bf832a5efc9390dcdd"
+                "reference": "9d37cc8bee20f7cb2f58f6e23e05097eab5072e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webimpress/safe-writer/zipball/5cfafdec5873c389036f14bf832a5efc9390dcdd",
-                "reference": "5cfafdec5873c389036f14bf832a5efc9390dcdd",
+                "url": "https://api.github.com/repos/webimpress/safe-writer/zipball/9d37cc8bee20f7cb2f58f6e23e05097eab5072e6",
+                "reference": "9d37cc8bee20f7cb2f58f6e23e05097eab5072e6",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.3 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5.8 || ^9.3.7",
-                "vimeo/psalm": "^3.14.2",
-                "webimpress/coding-standard": "^1.1.5"
+                "phpunit/phpunit": "^9.5.4",
+                "vimeo/psalm": "^4.7",
+                "webimpress/coding-standard": "^1.2.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev",
-                    "dev-develop": "2.2.x-dev",
+                    "dev-master": "2.2.x-dev",
+                    "dev-develop": "2.3.x-dev",
                     "dev-release-1.0": "1.0.x-dev"
                 }
             },
@@ -12970,7 +12974,7 @@
             ],
             "support": {
                 "issues": "https://github.com/webimpress/safe-writer/issues",
-                "source": "https://github.com/webimpress/safe-writer/tree/master"
+                "source": "https://github.com/webimpress/safe-writer/tree/2.2.0"
             },
             "funding": [
                 {
@@ -12978,7 +12982,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-25T07:21:11+00:00"
+            "time": "2021-04-19T16:34:45+00:00"
         },
         {
             "name": "webmozart/assert",
