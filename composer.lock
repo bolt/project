@@ -601,16 +601,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "5.1.0-beta.2",
+            "version": "5.1.0-beta.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "5d96acff4dbbd222a3c081e6db1531d264ceffeb"
+                "reference": "a97ee203dc6e9fb72f64862231fd60f93decbdb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/5d96acff4dbbd222a3c081e6db1531d264ceffeb",
-                "reference": "5d96acff4dbbd222a3c081e6db1531d264ceffeb",
+                "url": "https://api.github.com/repos/bolt/core/zipball/a97ee203dc6e9fb72f64862231fd60f93decbdb4",
+                "reference": "a97ee203dc6e9fb72f64862231fd60f93decbdb4",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +749,7 @@
             "description": "🧿 Bolt 5 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/5.1.0-beta.2"
+                "source": "https://github.com/bolt/core/tree/5.1.0-beta.3"
             },
             "funding": [
                 {
@@ -757,7 +757,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-14T12:43:31+00:00"
+            "time": "2021-12-15T18:16:47+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -12514,16 +12514,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v8.75.0",
+            "version": "v8.76.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tighten/collect.git",
-                "reference": "d05d932b9f066b2de4601fb17f72aab69b7d1c9b"
+                "reference": "c7e8131653480146d4c32c2523d53e0e59a7af19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tighten/collect/zipball/d05d932b9f066b2de4601fb17f72aab69b7d1c9b",
-                "reference": "d05d932b9f066b2de4601fb17f72aab69b7d1c9b",
+                "url": "https://api.github.com/repos/tighten/collect/zipball/c7e8131653480146d4c32c2523d53e0e59a7af19",
+                "reference": "c7e8131653480146d4c32c2523d53e0e59a7af19",
                 "shasum": ""
             },
             "require": {
@@ -12562,9 +12562,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tighten/collect/issues",
-                "source": "https://github.com/tighten/collect/tree/v8.75.0"
+                "source": "https://github.com/tighten/collect/tree/v8.76.1"
             },
-            "time": "2021-12-07T18:53:43+00:00"
+            "time": "2021-12-14T22:01:32+00:00"
         },
         {
             "name": "twig/extra-bundle",
