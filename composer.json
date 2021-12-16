@@ -4,7 +4,7 @@
     "description": "Bolt 5 standard project skeleton",
     "license": "MIT",
     "require": {
-        "php": ">=7.2.9 || ^8.0",
+        "php": "^8.0",
         "bobdenotter/configuration-notices": "^1.2",
         "bobdenotter/weatherwidget": "^1.1",
         "bolt/article": "^2.0",
