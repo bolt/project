@@ -16,7 +16,7 @@
         "nelmio/security-bundle": "^2.10",
         "symfony/flex": "^1.17"
     },
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "replace": {
         "paragonie/random_compat": "*"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "939b6c2d94677d73a1b29c53b0737836",
+    "content-hash": "bb62116e1f84bdeec2ea5979b794af08",
     "packages": [
         {
             "name": "api-platform/core",
@@ -460,16 +460,16 @@
         },
         {
             "name": "bolt/article",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/article.git",
-                "reference": "02fa7bcca54e0eed7bf6dff894c4d7879c7707c5"
+                "reference": "670fcd8df057d88efdd080f89c7843e429e497a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/article/zipball/02fa7bcca54e0eed7bf6dff894c4d7879c7707c5",
-                "reference": "02fa7bcca54e0eed7bf6dff894c4d7879c7707c5",
+                "url": "https://api.github.com/repos/bolt/article/zipball/670fcd8df057d88efdd080f89c7843e429e497a8",
+                "reference": "670fcd8df057d88efdd080f89c7843e429e497a8",
                 "shasum": ""
             },
             "require": {
@@ -504,22 +504,22 @@
             "description": "📝 Bolt Extension to add the Article FieldType",
             "support": {
                 "issues": "https://github.com/bolt/article/issues",
-                "source": "https://github.com/bolt/article/tree/2.0.2"
+                "source": "https://github.com/bolt/article/tree/2.0.3"
             },
-            "time": "2021-12-08T13:38:11+00:00"
+            "time": "2021-12-16T10:06:44+00:00"
         },
         {
             "name": "bolt/assets",
-            "version": "5.1.0-beta.2",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "f527cf196efba73f9faab078455d80ab0180a6b2"
+                "reference": "194bfd5671ffb7228e70d2ae26615df11d53fde8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/f527cf196efba73f9faab078455d80ab0180a6b2",
-                "reference": "f527cf196efba73f9faab078455d80ab0180a6b2",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/194bfd5671ffb7228e70d2ae26615df11d53fde8",
+                "reference": "194bfd5671ffb7228e70d2ae26615df11d53fde8",
                 "shasum": ""
             },
             "require-dev": {
@@ -539,9 +539,9 @@
             "description": "🛠 Javascript and CSS Assets used in Bolt's backend. Do not `require` directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/5.1.0-beta.2"
+                "source": "https://github.com/bolt/assets/tree/5.1.0"
             },
-            "time": "2021-12-14T13:53:28+00:00"
+            "time": "2021-12-16T14:00:17+00:00"
         },
         {
             "name": "bolt/common",
@@ -601,16 +601,16 @@
         },
         {
             "name": "bolt/core",
-            "version": "5.1.0-beta.3",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/core.git",
-                "reference": "a97ee203dc6e9fb72f64862231fd60f93decbdb4"
+                "reference": "23a69b8f91600e49d1e4e8ff5947dffc815e594a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/core/zipball/a97ee203dc6e9fb72f64862231fd60f93decbdb4",
-                "reference": "a97ee203dc6e9fb72f64862231fd60f93decbdb4",
+                "url": "https://api.github.com/repos/bolt/core/zipball/23a69b8f91600e49d1e4e8ff5947dffc815e594a",
+                "reference": "23a69b8f91600e49d1e4e8ff5947dffc815e594a",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +749,7 @@
             "description": "🧿 Bolt 5 Core",
             "support": {
                 "issues": "https://github.com/bolt/core/issues",
-                "source": "https://github.com/bolt/core/tree/5.1.0-beta.3"
+                "source": "https://github.com/bolt/core/tree/5.1.0"
             },
             "funding": [
                 {
@@ -757,7 +757,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-15T18:16:47+00:00"
+            "time": "2021-12-16T13:52:03+00:00"
         },
         {
             "name": "bolt/newswidget",
@@ -13526,7 +13526,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
