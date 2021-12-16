@@ -6,7 +6,9 @@ security:
         ROLE_EDITOR: [ROLE_USER]
         # ROLE_USER is assigned to Bolt Entity Users if no roles have been set
         ROLE_USER: []
+        ROLE_WEBSERVICE: []
 
+    enable_authenticator_manager: true
     encoders:
         Bolt\Entity\User: auto
 
@@ -20,25 +22,28 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-
+        
+        api:
+            pattern: ^/api
+            http_basic: ~
+        
         main:
             pattern: ^/
-            anonymous: true
             user_checker: Bolt\Security\UserChecker
             switch_user: { role: CAN_SWITCH_USER }
+            entry_point: Bolt\Security\AuthenticationEntryPointRedirector
 
-            guard:
-                authenticators:
-                    - Bolt\Security\LoginFormAuthenticator
+            custom_authenticators:
+                - Bolt\Security\LoginFormAuthenticator
 
             logout:
-                handler: Bolt\Security\LogoutListener
                 path: bolt_logout
                 target: bolt_login
+                invalidate_session: false
 
             remember_me:
                 secret: '%kernel.secret%'
-                lifetime: 2592000
+                lifetime: '%bolt.remember_lifetime%'
                 remember_me_parameter: login[remember_me]
 
     access_control:

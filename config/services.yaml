@@ -6,11 +6,16 @@
 parameters:
     locale: 'en'
     # This parameter defines the codes of the locales (languages) enabled in the application
-    app_locales: en|nl|es|fr|de|pl|it|hu|pt_BR|ja|nb|nn|nl_NL|nl_BE|is|ru
+    app_locales: en|nl|es|fr|de|pl|it|hu|pt_BR|ja|nb|nn|nl_NL|nl_BE|is|ru|cs|bg
     app.notifications.email_sender: anonymous@example.com
+    # Default table prefix for Bolt database
     bolt.table_prefix: bolt_
+    # Alternatively may define different table prefixes by entity managers configured in doctrine.yml
+    #    app.table_prefix:
+    #        default: bolt_
+    #        foo_manager: foo_
     bolt.backend_url: /bolt
-
+    bolt.remember_lifetime: 2592000 # 30 days in seconds
 
 services:
     # default configuration for services in *this* file
@@ -27,6 +32,8 @@ services:
             $projectDir: '%kernel.project_dir%'
             $publicFolder: '%bolt.public_folder%'
             $tablePrefix: '%bolt.table_prefix%'
+            $rememberLifetime: '%bolt.remember_lifetime%'
+
     _instanceof:
         Bolt\Menu\ExtensionBackendMenuInterface:
             tags: [ 'bolt.extension_backend_menu' ]
@@ -36,25 +43,25 @@ services:
     App\:
         resource: '../src/*'
         exclude:
-            - '../src/DependencyInjection/'
-            - '../src/Entity/'
-            - '../src/Exception/'
-            - '../src/Kernel.php'
+            - ../src/DependencyInjection/
+            - ../src/Entity/
+            - ../src/Exception/
+            - ../src/Kernel.php
 
-    # makes Bolt classes in vendor/bolt/core/src/ available to be used as services
-    # this creates a service per class whose id is the fully-qualified class name
     Bolt\:
         resource: '../vendor/bolt/core/src/*'
         exclude: '../vendor/bolt/core/src/{Entity,Exception,Kernel.php}'
+
+    Bolt\Api\Extensions\ContentExtension:
+        tags:
+            - { name: api_platform.doctrine.orm.query_extension.collection }
+            - { name: api_platform.doctrine.orm.query_extension.item }
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
     Bolt\Controller\:
         resource: '../vendor/bolt/core/src/Controller'
         tags: ['controller.service_arguments']
-
-    Bolt\Utils\Sanitiser:
-        public: true
 
     Bolt\Doctrine\TablePrefix:
         tags:
@@ -82,23 +89,40 @@ services:
     Bolt\Event\Listener\UserAvatarLoadListener:
         tags:
             - { name: doctrine.event_listener, event: postLoad }
-            
+
     Bolt\Extension\RoutesLoader:
         tags: [routing.loader]
 
     # menus
     Bolt\Menu\BackendMenuBuilder:
-        arguments: 
+        arguments:
             - "@knp_menu.factory"
             - !tagged_iterator bolt.extension_backend_menu
         tags:
-            - { name: knp_menu.menu_builder, method: createAdminMenu, alias: admin_menu } # The alias is what is used to retrieve the menu
+            -
+                name: knp_menu.menu_builder
+                method: createAdminMenu
+                alias: admin_menu # The alias is what is used to retrieve the menu
 
-    Bolt\Menu\BackendMenuBuilderInterface: '@Bolt\Menu\BackendMenuBuilder'
+    Symfony\Bridge\Twig\Extension\AssetExtension: '@twig.extension.assets'
+
+    Bolt\Cache\RelatedOptionsUtilityCacher:
+        decorates: Bolt\Utils\RelatedOptionsUtility
+
+    Bolt\Cache\CanonicalCacher:
+        decorates: Bolt\Canonical
+
+    Bolt\Cache\SelectOptionsCacher:
+        decorates: Bolt\Twig\FieldExtension
+
+    Bolt\Cache\ContentToArrayCacher:
+        decorates: Bolt\Twig\JsonExtension
+
+    Bolt\Menu\BackendMenuBuilderInterface: '@Bolt\Menu\BackendMenu'
 
     Bolt\Menu\FrontendMenuBuilder: ~
 
-    Bolt\Menu\FrontendMenuBuilderInterface: '@Bolt\Menu\FrontendMenuBuilder'
+    Bolt\Menu\FrontendMenuBuilderInterface: '@Bolt\Menu\FrontendMenu'
 
     # Needed for SetContent from bolt/core
     Bolt\Storage\ContentQueryParser:
@@ -116,23 +140,42 @@ services:
     Bolt\Twig\DumpExtension:
         arguments: ["%kernel.environment%"]
 
-    Bolt\Api\Extensions\ContentExtension:
-        tags:
-            - { name: api_platform.doctrine.orm.query_extension.collection }
-            - { name: api_platform.doctrine.orm.query_extension.item }
+    # Validation: specify Bolt\Validator\ContentValidator as validator
+    Bolt\Validator\ContentValidatorInterface: '@Bolt\Validator\ContentValidator'
+
+    Bolt\Utils\Sanitiser:
+        public: true
 
     Doctrine\ORM\Query\Expr: ~
 
     monolog.processor.request:
         class: Bolt\Log\RequestProcessor
         tags:
-            - { name: monolog.processor, method: processRecord, handler: db }
-
-    Twig\Extension\StringLoaderExtension: ~
+            -
+                handler: db
+                method: processRecord
+                name: monolog.processor
 
     Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface: '@error_handler.error_renderer.html'
 
     Squirrel\TwigPhpSyntax\PhpSyntaxExtension: ~
 
-    # Validation: specify Bolt\Validator\ContentValidator as validator
-    Bolt\Validator\ContentValidatorInterface: '@Bolt\Validator\ContentValidator'
+    Twig\Extension\StringLoaderExtension: ~
+
+    twig.extension.pcre:
+        class: Jasny\Twig\PcreExtension
+        tags:
+            - { name: twig.extension }
+
+    twig.extension.text:
+        class: Jasny\Twig\TextExtension
+        tags:
+            - { name: twig.extension }
+
+    twig.extension.array:
+        class: Jasny\Twig\ArrayExtension
+        tags:
+            - { name: twig.extension }
+
+    Bolt\Api\ContentDataPersister:
+        decorates: 'api_platform.doctrine.orm.data_persister'
