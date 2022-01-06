@@ -105,7 +105,7 @@ entries:
             class: large
             group: Entry
         teaser:
-            type: textarea
+            type: markdown
             postfix: |
                 A text-only version of the content, that can be used to "tease"
                 the content when it's used in listing pages or search results.
