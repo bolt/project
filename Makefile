@@ -1,4 +1,4 @@
-.PHONY: help install server server-stop cache csclear cscheck csfix stancheck db-update db-reset
+.PHONY: help install server server-stop cache csclear cscheck csfix stancheck db-create db-update db-reset
 .DEFAULT_GOAL := help
 
 help:
@@ -34,6 +34,12 @@ csfix: ## to fix coding style
 
 stancheck: ## to run phpstan
 	composer phpstan
+
+db-create: ## to create schema database
+	bin/console doctrine:database:create
+	bin/console doctrine:schema:create -q
+	bin/console bolt:add-user --admin
+	bin/console doctrine:fixtures:load --no-interaction
 
 db-update: ## to update schema database
 	bin/console doctrine:schema:update --complete --force
