@@ -14,7 +14,7 @@
         "bolt/redactor": "^2.0",
         "bolt/themes": "^3.5",
         "nelmio/security-bundle": "^2.10",
-        "symfony/flex": "^1.17"
+        "symfony/flex": "^1.17 || ^2.0"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
