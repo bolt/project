@@ -6,7 +6,7 @@ help:
 
 install: ## to install all project
 	composer install
-	make db-create
+	make db-reset
 
 server: ## to start server
 	bin/console server:start 127.0.0.1:8088 || true
