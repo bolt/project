@@ -37,6 +37,7 @@ thumbs.db
 Vagrantfile
 .vagrant*
 .idea
+.php-version
 .vscode/*
 appveyor.yml
 
