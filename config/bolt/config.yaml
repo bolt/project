@@ -11,7 +11,8 @@ secret: '%env(APP_SECRET)%'
 # The expires_after is counted in seconds.
 caching:
     related_options: 3600
-    canonical: 10
+    canonical: 60
+    formatter: 60
     selectoptions: 3600
     content_array: 3600
     frontend_menu: 3600
@@ -101,8 +102,7 @@ forbidden: [ blocks/403-forbidden, 'helpers/page_403.html.twig' ]
 # handled, and you'll have a bad time debugging it!
 internal_server_error: [ 'helpers/page_500.html.twig' ]
 
-# The default template and amount of records to use for listing-pages on the
-# site.
+# The default template for record-pages on the site.
 #
 # Can be overridden for each content type and for each record, if it has a
 # templateselect field.
@@ -188,7 +188,7 @@ filepermissions:
 # the allowed tags. For example, if you set `images: true`, the `<img>` tag
 # will be allowed, regardless of it being in the `allowed_tags` setting.
 htmlcleaner:
-    allowed_tags: [ div, span, p, br, hr, s, u, strong, em, i, b, li, ul, ol, mark, blockquote, pre, code, tt, h1, h2, h3, h4, h5, h6, dd, dl, dt, table, tbody, thead, tfoot, th, td, tr, a, img, address, abbr, iframe, caption, sub, sup, figure, figcaption, article, section, small ]
+    allowed_tags: [ div, span, p, br, hr, s, u, strong, em, i, b, li, ul, ol, mark, blockquote, cite, pre, code, tt, h1, h2, h3, h4, h5, h6, dd, dl, dt, table, tbody, thead, tfoot, th, td, tr, a, img, address, abbr, iframe, caption, sub, sup, figure, figcaption, article, section, small ]
     allowed_attributes: [ id, class, style, name, value, href, src, alt, title, width, height, frameborder, allowfullscreen, scrolling, target, colspan, rowspan, rel, download, hreflang ]
     allowed_frame_targets: [ _blank, _self, _parent, _top ]
 
@@ -236,3 +236,6 @@ reset_password_settings:
     mail_name: "Bolt CMS"
     mail_subject: "Your password reset request"
     mail_template: "reset_password/email.html.twig"
+
+# Adds sorting and filtering of users in backend
+user_show_sort&filter: false
