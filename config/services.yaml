@@ -76,7 +76,6 @@ services:
 
     Bolt\Event\Listener\FieldFillListener:
         tags:
-            - { name: doctrine.event_listener, event: postLoad }
             - { name: doctrine.event_listener, event: preUpdate }
 
     Bolt\Event\Listener\FieldDiscriminatorListener:
@@ -119,6 +118,9 @@ services:
 
     Bolt\Cache\GetFormatCacher:
         decorates: Bolt\Utils\ContentHelper
+
+    Bolt\Cache\FilesIndexCacher:
+        decorates: Bolt\Utils\FilesIndex
 
     Bolt\Menu\BackendMenuBuilderInterface: '@Bolt\Menu\BackendMenu'
 

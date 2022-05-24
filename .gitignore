@@ -39,6 +39,7 @@ Vagrantfile
 .idea
 .php-version
 .vscode/*
+*.code-workspace
 appveyor.yml
 
 ###> Docker ###
