@@ -14,7 +14,7 @@ caching:
     canonical: 60
     formatter: 60
     selectoptions: 3600
-    content_array: 3600
+    content_array: ~
     frontend_menu: 3600
     backend_menu: 3600
 
