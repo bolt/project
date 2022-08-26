@@ -1,7 +1,7 @@
-Bolt 4 standard project skeleton
+Bolt 5 standard project skeleton
 ================================
 
-Welcome! This is a Bolt 4 project, set up using `composer create-project`. If
+Welcome! This is a Bolt 5 project, set up using `composer create-project`. If
 you are the developer of this project, you can modify this README to the
 specifics of your project. Below are the general instructions to set up a _new_
 project, based off the same skeleton.
