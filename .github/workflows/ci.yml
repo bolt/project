@@ -49,7 +49,7 @@ jobs:
     - name: Check HTTP reachability
       run: |
         wget https://get.symfony.com/cli/installer -O - | bash
-        /home/runner/.symfony/bin/symfony serve --daemon --no-tls
+        /home/runner/.symfony5/bin/symfony serve --daemon --no-tls
         echo "Check => http://localhost:8000" && curl -fkI http://localhost:8000
         echo "Check => http://localhost:8000/bolt" && curl -fkI http://localhost:8000/bolt
     - name: Validate composer.json
@@ -124,7 +124,7 @@ jobs:
     - name: Check HTTP reachability
       run: |
         wget https://get.symfony.com/cli/installer -O - | bash
-        /home/runner/.symfony/bin/symfony serve --daemon --no-tls
+        /home/runner/.symfony5/bin/symfony serve --daemon --no-tls
         echo "Check => http://localhost:8000" && curl -fkI http://localhost:8000
         echo "Check => http://localhost:8000/bolt" && curl -fkI http://localhost:8000/bolt
     - name: Validate composer.json
