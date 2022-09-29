@@ -34,11 +34,11 @@ jobs:
         update: true
     - name: Install Symfony Flex
       run: |
-        composer global require --prefer-dist --no-progress --no-suggest --ansi \
-          symfony/flex
+        composer global config --no-plugins allow-plugins.symfony/flex true
+        composer global require --prefer-dist --no-progress --ansi symfony/flex
     - name: Install project with composer
       run: |
-        composer install --prefer-dist --no-progress --no-suggest --no-interaction
+        composer install --prefer-dist --no-progress --no-interaction
         composer clear-cache
     - name: Setup up Bolt project
       run: |
@@ -107,11 +107,11 @@ jobs:
         update: true
     - name: Install Symfony Flex
       run: |
-        composer global require --prefer-dist --no-progress --no-suggest --ansi \
-          symfony/flex
+        composer global config --no-plugins allow-plugins.symfony/flex true
+        composer global require --prefer-dist --no-progress --ansi symfony/flex
     - name: Install project with composer
       run: |
-        composer install --prefer-dist --no-progress --no-suggest --no-interaction
+        composer install --prefer-dist --no-progress --no-interaction
         composer clear-cache
     - name: Verify MySQL connection from host
       run: php bin/console doctrine:query:sql "SELECT 1" > /dev/null 2>&1
