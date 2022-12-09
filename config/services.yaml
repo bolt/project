@@ -49,6 +49,8 @@ services:
             - ../src/Exception/
             - ../src/Kernel.php
 
+    # makes Bolt classes in vendor/bolt/core/src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
     Bolt\:
         resource: '../vendor/bolt/core/src/*'
         exclude: '../vendor/bolt/core/src/{Entity,Exception,Kernel.php}'
