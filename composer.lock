@@ -519,16 +519,16 @@
         },
         {
             "name": "bolt/assets",
-            "version": "5.1.19",
+            "version": "5.1.19-pl.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/assets.git",
-                "reference": "452948ea3507399f71f7d9a2ddb063f7c0f6725f"
+                "reference": "7162b3e8e8ea743d3ad6b0b4c04de39b0eeac53e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/assets/zipball/452948ea3507399f71f7d9a2ddb063f7c0f6725f",
-                "reference": "452948ea3507399f71f7d9a2ddb063f7c0f6725f",
+                "url": "https://api.github.com/repos/bolt/assets/zipball/7162b3e8e8ea743d3ad6b0b4c04de39b0eeac53e",
+                "reference": "7162b3e8e8ea743d3ad6b0b4c04de39b0eeac53e",
                 "shasum": ""
             },
             "require-dev": {
@@ -548,9 +548,9 @@
             "description": "🛠 Javascript and CSS Assets used in Bolt's backend. Do not `require` directly.",
             "support": {
                 "issues": "https://github.com/bolt/assets/issues",
-                "source": "https://github.com/bolt/assets/tree/5.2.0-beta.10"
+                "source": "https://github.com/bolt/assets/tree/5.1.19-pl.1"
             },
-            "time": "2022-12-08T13:16:53+00:00"
+            "time": "2022-12-09T09:55:27+00:00"
         },
         {
             "name": "bolt/common",
@@ -1754,31 +1754,34 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.13.3",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "648b0343343565c4a056bfc8392201385e8d89f0"
+                "reference": "3587ab58646bc515b2e03bbd3cfcd3682e8df5bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/648b0343343565c4a056bfc8392201385e8d89f0",
-                "reference": "648b0343343565c4a056bfc8392201385e8d89f0",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/3587ab58646bc515b2e03bbd3cfcd3682e8df5bf",
+                "reference": "3587ab58646bc515b2e03bbd3cfcd3682e8df5bf",
                 "shasum": ""
             },
             "require": {
-                "doctrine/lexer": "1.*",
+                "doctrine/lexer": "^1 || ^2",
                 "ext-tokenizer": "*",
                 "php": "^7.1 || ^8.0",
                 "psr/cache": "^1 || ^2 || ^3"
             },
             "require-dev": {
                 "doctrine/cache": "^1.11 || ^2.0",
-                "doctrine/coding-standard": "^6.0 || ^8.1",
-                "phpstan/phpstan": "^1.4.10 || ^1.8.0",
-                "phpunit/phpunit": "^7.5 || ^8.0 || ^9.1.5",
-                "symfony/cache": "^4.4 || ^5.2",
+                "doctrine/coding-standard": "^9 || ^10",
+                "phpstan/phpstan": "~1.4.10 || ^1.8.0",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
+                "symfony/cache": "^4.4 || ^5.4 || ^6",
                 "vimeo/psalm": "^4.10"
+            },
+            "suggest": {
+                "php": "PHP 8.0 or higher comes with attributes, a native replacement for annotations"
             },
             "type": "library",
             "autoload": {
@@ -1821,9 +1824,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/1.13.3"
+                "source": "https://github.com/doctrine/annotations/tree/1.14.0"
             },
-            "time": "2022-07-02T10:48:51+00:00"
+            "time": "2022-12-11T18:25:48+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -13721,5 +13724,5 @@
         "php": ">=7.2.9 || ^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
