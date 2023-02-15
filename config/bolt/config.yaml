@@ -239,3 +239,6 @@ reset_password_settings:
 
 # Adds sorting and filtering of users in backend
 user_show_sort&filter: false
+
+# Use Ajaxy saving ("Stay on page"), or traditional saving
+ajaxy_saving: false

@@ -5,16 +5,16 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
-        "bobdenotter/configuration-notices": "^1.3",
+        "bobdenotter/configuration-notices": "^1.4",
         "bobdenotter/weatherwidget": "^1.1",
-        "bolt/article": "^2.0",
+        "bolt/article": "^2.1",
         "bolt/assets": "^5.2",
         "bolt/core": "^5.2",
         "bolt/newswidget": "^1.3",
-        "bolt/redactor": "^2.0",
+        "bolt/redactor": "^2.1",
         "bolt/themes": "^3.5",
         "nelmio/security-bundle": "^2.12",
-        "symfony/flex": "^2.0"
+        "symfony/flex": "^2.2"
     },
     "minimum-stability": "beta",
     "prefer-stable": true,
@@ -79,5 +79,14 @@
         "lint": "@php vendor/bin/ecs check --no-progress-bar --no-interaction",
         "lint:fix": "@php vendor/bin/ecs check --no-progress-bar --no-interaction --fix",
         "phpstan": "@php vendor/bin/phpstan --memory-limit=1G analyse -c phpstan.neon src"
+    },
+    "config": {
+        "allow-plugins": {
+            "drupol/composer-packages": true,
+            "symfony/flex": true
+        },
+        "platform":{
+            "php":"8.0"
+        }
     }
 }
