@@ -9,15 +9,28 @@ secret: '%env(APP_SECRET)%'
 
 # Set the caching configuration for various areas of Bolt.
 # The expires_after is counted in seconds.
-caching:
-    related_options: 3600
-    canonical: 60
-    formatter: 60
-    selectoptions: 3600
-    content_array: 3600
-    frontend_menu: 3600
-    backend_menu: 3600
+#caching:
+#    related_options: 3600
+#    canonical: 1800
+#    formatter: 180
+#    selectoptions: 3600
+#    content_array: 180
+#    frontend_menu: 3600
+#    backend_menu: 3600
+#    files_index: 3600
+#    list_format: true  # Run `bin/console cache:list-format; bin/console bolt:update-list-format` to clear and rebuild these
 
+caching:
+    related_options: ~
+    canonical: ~
+    formatter: ~
+    selectoptions: ~
+    content_array: ~
+    frontend_menu: ~
+    backend_menu: ~
+    files_index: ~
+    list_format: false # Run `bin/console cache:list-format; bin/console bolt:update-list-format` to clear and rebuild these
+    
 # The theme to use.
 #
 # Dont edit the provided templates directly, because they _will_ get updated
@@ -57,6 +70,9 @@ headers:
 
 # If you want to override the canonical template, from the theme:
 #canonical_template: 'partials/_canonical.html.twig'
+
+# If you want to add canonical link in your own way, set this to true
+omit_canonical_link: false
 
 # By setting this to true, you will get a relative canonical path passed to the template.
 #relative_canonical_url: true
@@ -153,9 +169,6 @@ records_per_page: 8
 # Default settings for thumbnails.
 #
 # quality:       Quality should be between 0 (horrible, small file) and 100 (best, huge file).
-# fit:           One of either none, crop (= crop-center), crop-top-left, crop-top, crop-top-right, crop-left, crop-right, crop-bottom-left, crop-bottom or crop-bottom-right.
-# allow_upscale: Determines whether small images will be enlarged to fit
-#                the requested dimensions.
 # save_files:    Save files in the thumbs/ folder, so subsequent requests will serve file directly. Great for performance
 #
 # Note: If you change these values, you might need to clear the cache before
@@ -163,10 +176,9 @@ records_per_page: 8
 thumbnails:
     default_thumbnail: [ 320, 240 ]
     default_image: [ 1000, 750 ]
+    default_cropping: crop
     quality: 80
-    cropping: crop
     save_files: true
-    allow_upscale: false
 
 # File permissions for read/write/execute to set on folders and files that are
 # created. The exact permissions you should be setting depends on the system
@@ -242,3 +254,4 @@ user_show_sort&filter: false
 
 # Use Ajaxy saving ("Stay on page"), or traditional saving
 ajaxy_saving: false
+
