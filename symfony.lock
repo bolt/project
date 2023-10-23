@@ -778,9 +778,6 @@
     "webmozart/assert": {
         "version": "1.9.1"
     },
-    "webmozart/path-util": {
-        "version": "2.3.0"
-    },
     "webonyx/graphql-php": {
         "version": "v0.13.9"
     },
