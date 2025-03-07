@@ -35,14 +35,8 @@ Set up the database, create the first user and add fixtures (dummy content):
 bin/console bolt:setup
 ```
 
-Run Bolt using the built-in webserver, Symfony CLI, Docker or your own
+Run Bolt using Symfony CLI, Docker or your own
 preferred webserver:
-
-```bash
-bin/console server:start
-```
-
-or…
 
 ```bash
 symfony server:start -d
