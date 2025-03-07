@@ -18,12 +18,12 @@ jobs:
       fail-fast: true
       matrix:
         php-versions:
-          - '7.4'
+          - '8.1'
         tools:
-          - 'composer:2'
+          - 'composer:2, symfony-cli'
     timeout-minutes: 5
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v4
     - name: Setup PHP, extensions and composer with shivammathur/setup-php
       uses: shivammathur/setup-php@v2
       with:
@@ -32,6 +32,7 @@ jobs:
         tools: ${{ matrix.tools }}
       env:
         update: true
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Install Symfony Flex
       run: |
         composer global config --no-plugins allow-plugins.symfony/flex true
@@ -48,8 +49,7 @@ jobs:
         php bin/console bolt:info
     - name: Check HTTP reachability
       run: |
-        wget https://get.symfony.com/cli/installer -O - | bash
-        /home/runner/.symfony5/bin/symfony serve --daemon --no-tls
+        symfony serve --daemon --no-tls
         echo "Check => http://localhost:8000" && curl -fkI http://localhost:8000
         echo "Check => http://localhost:8000/bolt" && curl -fkI http://localhost:8000/bolt
     - name: Validate composer.json
@@ -91,12 +91,12 @@ jobs:
       fail-fast: true
       matrix:
         php-versions:
-          - '7.4'
+          - '8.1'
         tools:
-          - 'composer:2'
+          - 'composer:2, symfony-cli'
     timeout-minutes: 5
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v4
     - name: Setup PHP, extensions and composer with shivammathur/setup-php
       uses: shivammathur/setup-php@v2
       with:
@@ -123,8 +123,7 @@ jobs:
         php bin/console bolt:info
     - name: Check HTTP reachability
       run: |
-        wget https://get.symfony.com/cli/installer -O - | bash
-        /home/runner/.symfony5/bin/symfony serve --daemon --no-tls
+        symfony serve --daemon --no-tls
         echo "Check => http://localhost:8000" && curl -fkI http://localhost:8000
         echo "Check => http://localhost:8000/bolt" && curl -fkI http://localhost:8000/bolt
     - name: Validate composer.json
