@@ -47,13 +47,7 @@ composer run post-create-project-cmd # Duplicate themes in the appropriate folde
 bin/console bolt:info # Verify Bolt installation
 ```
 
-Run Bolt using the built-in webserver, Symfony CLI or your own preferred webserver:
-
-```bash
-bin/console server:start
-```
-
-or…
+Run Bolt using Symfony CLI or your own preferred webserver:
 
 ```bash
 symfony server:start -d
