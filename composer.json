@@ -43,7 +43,7 @@
         "public-dir": "public",
         "symfony": {
             "allow-contrib": true,
-            "require": "^5.1"
+            "require": "^5.4"
         }
     },
     "autoload": {
