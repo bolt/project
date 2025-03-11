@@ -43,7 +43,6 @@ RUN set -eux; \
 		gd \
 		exif \
 		pdo \
-		iconv \
 		pcntl \
 		mbstring \
 		fileinfo \
@@ -83,7 +82,8 @@ RUN set -eux; \
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # install Symfony Flex globally to speed up download of Composer packages (parallelized prefetching)
 RUN set -eux; \
-	composer global require "symfony/flex" --prefer-dist --no-progress --no-suggest --classmap-authoritative; \
+    composer global config --no-plugins allow-plugins.symfony/flex true; \
+	composer global require "symfony/flex" --prefer-dist --no-progress --classmap-authoritative; \
 	composer clear-cache
 ENV PATH="${PATH}:/root/.composer/vendor/bin"
 
@@ -93,9 +93,9 @@ WORKDIR /srv/bolt
 ARG APP_ENV=prod
 
 # prevent the reinstallation of vendors at every changes in the source code
-COPY composer.json composer.lock symfony.lock ./
+COPY composer.* symfony.lock ./
 RUN set -eux; \
-	composer install --prefer-dist --no-dev --no-scripts --no-progress --no-suggest; \
+	composer install --prefer-dist --no-dev --no-scripts --no-progress; \
 	composer clear-cache
 
 # do not use .env files in production
