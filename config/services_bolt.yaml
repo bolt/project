@@ -4,6 +4,7 @@ services:
     _defaults:
         autowire: true
         autoconfigure: true
+        bind: {  }
     BobdenOtter\ConfigurationNotices\:
         resource: '../vendor/bobdenotter/configuration-notices/src/*'
         exclude: '../vendor/bobdenotter/configuration-notices/src/{Entity,Exception}'
