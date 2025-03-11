@@ -19,6 +19,11 @@ services:
     build:
       context: ./
       target: php
+    healthcheck:
+        interval: 10s
+        timeout: 3s
+        retries: 3
+        start_period: 30s
     depends_on:
       - db
       - mailcatcher
