@@ -1,16 +1,25 @@
 api_platform:
-    enable_swagger_ui: false # route redirected manually to /bolt/api
+  enable_entrypoint: false # route redirected manually to /bolt/api
+  graphql:
+    graphiql:
+      enabled: false
+  mapping:
+    paths: [ '%kernel.project_dir%/vendor/bolt/core/src/Entity', '%kernel.project_dir%/src/Entity' ]
+  formats:
+    json: [ 'application/json' ]
+    jsonld: [ 'application/ld+json' ]
+    jsonapi: [ 'application/vnd.api+json' ]
+    # html:     ['text/html']
+  serializer:
+    hydra_prefix: true
+  defaults:
+    normalization_context:
+      skip_null_values: false
+    pagination:
+      client_items_per_page: true
+      items_per_page_parameter_name: 'pageSize'
+
+when@prod:
+  api_platform:
     graphql:
-        graphiql:
-            enabled: false
-    mapping:
-        paths: ['%kernel.project_dir%/vendor/bolt/core/src/Entity', '%kernel.project_dir%/src/Entity']
-    formats:
-        json:     ['application/json']
-        jsonld:   ['application/ld+json']
-        jsonapi:  ['application/vnd.api+json']
-        # html:     ['text/html']
-    defaults:
-            pagination:
-                client_items_per_page: true
-                items_per_page_parameter_name: 'pageSize'
+      introspection: false
