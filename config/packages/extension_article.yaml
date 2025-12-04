@@ -1,12 +1,12 @@
 services:
-  
+
   _defaults:
     autowire: true
     autoconfigure: true
-  
+
   Bolt\Article\Controller\Upload:
     tags: [ 'controller.service_arguments' ]
-  
+
   Bolt\Article\Controller\Images:
     tags: [ 'controller.service_arguments' ]
 
