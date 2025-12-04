@@ -67,25 +67,25 @@ jobs:
       run: composer phpstan
 
   test-install-with-composer-and-mysql:
-    name: Install Bolt project with Composer (MySQL 5.7)
+    name: Install Bolt project with Composer (MySQL 8.0)
     runs-on: ubuntu-latest
     env:
       APP_ENV: dev
       APP_SECRET: KnR9FtX39zUT7Um8873wG2Rqv9nU7nve
       TRUSTED_PROXIES: 127.0.0.0/8
       TRUSTED_HOSTS: ^localhost$
-      DATABASE_URL: mysql://bolt:Q2ttiAeS6DT329c9@127.0.0.1:3306/bolt?serverVersion=5.7
+      DATABASE_URL: mysql://bolt:Q2ttiAeS6DT329c9@127.0.0.1:3306/bolt?serverVersion=8.0
       CORS_ALLOW_ORIGIN: ^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$
     services:
       mysql:
-        image: mysql:5.7
+        image: mysql:8.0
         env:
           MYSQL_DATABASE: bolt
           MYSQL_PASSWORD: Q2ttiAeS6DT329c9
           MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
           MYSQL_USER: bolt
         ports:
-        - 3306:3306
+          - 3306:3306
         options: >-
           --mount type=tmpfs,destination=/var/lib/mysql
           --health-cmd "mysqladmin ping"
