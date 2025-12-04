@@ -1,9 +1,0 @@
-parameters:
-	tmpDir: var/cache/ecs
-	level: 2
-	symfony:
-		container_xml_path: '%rootDir%/../../../var/cache/dev/App_KernelDevDebugContainer.xml'
-
-includes:
-	- vendor/phpstan/phpstan-symfony/extension.neon
-	- vendor/phpstan/phpstan-doctrine/extension.neon

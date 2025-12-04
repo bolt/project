@@ -169,7 +169,7 @@ docker-compose exec php composer lint # Launch ECS by the php container
 
 - [**PHPStan - PHP Static Analysis Tool**](https://github.com/phpstan/phpstan)
 
-[The `phpstan.neon` configuration file is located at the root of the cms project](./phpstan.neon)
+[The `phpstan.neon` configuration file is located at the root of the cms project](./phpstan.dist.neon)
 
 ```bash
 # With Composer
