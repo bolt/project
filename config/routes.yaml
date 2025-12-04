@@ -14,7 +14,7 @@
 frontend:
   resource: '../vendor/bolt/core/src/Controller/Frontend/'
   prefix: /
-  type: annotation
+  type: attribute
 
 # ------------------------------------------------------------------------------
 # Place your own routes here, that have a LOWER priority than the default routes.
@@ -25,7 +25,7 @@ frontend:
 project:
   resource: '../src/Controller'
   prefix: /
-  type: annotation
+  type: attribute
 
 # ------------------------------------------------------------------------------
 # Examples:
