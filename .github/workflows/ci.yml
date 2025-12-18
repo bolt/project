@@ -2,6 +2,9 @@ name: Continuous Integration
 
 on: [pull_request]
 
+env:
+  COMPOSER_CACHE_DIR: /tmp/composer-cache
+
 jobs:
 
   test-install-with-composer-and-sqlite:
@@ -36,7 +39,7 @@ jobs:
     - name: Cache Composer dependencies
       uses: actions/cache@v4
       with:
-        path: /tmp/composer-cache
+        path: ${{ env.COMPOSER_CACHE_DIR }}
         key: ${{ runner.os }}-${{ matrix.php-version }}-${{ hashFiles('**/composer.json') }}
     - name: Install Symfony Flex
       run: |
@@ -114,7 +117,7 @@ jobs:
     - name: Cache Composer dependencies
       uses: actions/cache@v4
       with:
-        path: /tmp/composer-cache
+        path: ${{ env.COMPOSER_CACHE_DIR }}
         key: ${{ runner.os }}-${{ matrix.php-version }}-${{ hashFiles('**/composer.json') }}
     - name: Install Symfony Flex
       run: |
